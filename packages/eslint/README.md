@@ -6,22 +6,22 @@ Add eslint to your packages. Based on [NullVoxPopuli/eslint-config](https://gith
 
 1) Install these packages:
 
-```sh
-pnpm add -D @gossi/config-eslint eslint
-```
+    ```sh
+    pnpm add -D @gossi/config-eslint eslint
+    ```
 
 2) Create a `.eslintrc.js` file with your desired config (see below)
 
 3) Add scripts to execute linting
 
-```json
-{
-  "scripts": {
-    "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix"
-  }
-}
-```
+    ```json
+    {
+      "scripts": {
+        "lint:js": "eslint . --cache",
+        "lint:js:fix": "eslint . --fix"
+      }
+    }
+    ```
 
 ## Configs
 

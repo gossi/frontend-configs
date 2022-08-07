@@ -6,28 +6,28 @@ Adds stylelint to your packages.
 
 1) Install these packages:
 
-```sh
-pnpm add -D @gossi/config-stylelint stylelint
-```
+    ```sh
+    pnpm add -D @gossi/config-stylelint stylelint
+    ```
 
 2) Create a `.stylelintrc.js` file with these contents:
 
-```js
-'use strict';
+    ```js
+    'use strict';
 
-module.exports = require('@gossi/config-stylelint');
-```
+    module.exports = require('@gossi/config-stylelint');
+    ```
 
 3) Add scripts to execute linting
 
-```json
-{
-  "scripts": {
-    "lint:css": "stylelint \"path/to/css/**/*.css\" --allow-empty-input --cache",
-    "lint:css:fix": "stylelint \"path/to/css/**/*.css\" --allow-empty-input --fix",
-  }
-}
-```
+    ```json
+    {
+      "scripts": {
+        "lint:css": "stylelint \"path/to/css/**/*.css\" --allow-empty-input --cache",
+        "lint:css:fix": "stylelint \"path/to/css/**/*.css\" --allow-empty-input --fix",
+      }
+    }
+    ```
 
 ## Usage in vscode
 

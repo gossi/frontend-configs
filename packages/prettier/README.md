@@ -6,24 +6,14 @@ Add prettier to your packages.
 
 1) Install these packages:
 
-```sh
-pnpm add -D prettier
-```
-
-Plus this config:
-
-```json
-{
-  "devDependencies": {
-    "@gossi/config-prettiier": "*"
-  }
-}
-```
+    ```sh
+    pnpm add -D @gossi/config-prettier prettier
+    ```
 
 2) Create a `.prettierrc.js` file with these contents:
 
-```js
-'use strict';
+    ```js
+    'use strict';
 
-module.exports = require('@gossi/config-prettier');
-```
+    module.exports = require('@gossi/config-prettier');
+    ```
