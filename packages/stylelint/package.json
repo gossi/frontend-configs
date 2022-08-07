@@ -1,0 +1,27 @@
+{
+  "name": "@gossi/config-stylelint",
+  "version": "0.0.0",
+  "dependencies": {
+    "@gossi/config-targets": "*",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.3",
+    "stylelint-order": "^5.0.0"
+  },
+  "devDependencies": {
+    "@gossi/config-eslint": "*",
+    "@gossi/config-prettier": "*",
+    "eslint": "^8.20.0",
+    "prettier": "2.7.1",
+    "stylelint": "^14.9.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.9.1"
+  },
+  "engines": {
+    "node": "14.* || >= 16.*"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@gossi/config-template-lint",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@gossi/config-eslint": "*",
+    "@gossi/config-prettier": "*",
+    "eslint": "^8.20.0",
+    "prettier": "2.7.1"
+  },
+  "peerDependencies": {
+    "ember-template-lint": "^4.12.0"
+  },
+  "engines": {
+    "node": "14.* || >= 16.*"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@gossi/config-postcss",
+  "version": "0.0.0",
+  "description": "postcss config for kujenga",
+  "dependencies": {
+    "@gossi/config-targets": "*",
+    "postcss-each": "^1.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-parcel-css": "^0.5.0",
+    "postcss-pow": "^1.0.1",
+    "postcss-preset-env": "^7.7.2"
+  },
+  "devDependencies": {
+    "@gossi/config-eslint": "*",
+    "@gossi/config-prettier": "*",
+    "postcss": "^8.4.14",
+    "eslint": "^8.20.0",
+    "prettier": "2.7.1"
+  },
+  "peerDependencies": {
+    "@parcel/css": "^1.11.2",
+    "postcss": "^8.4.14"
+  },
+  "engines": {
+    "node": "14.* || >= 16.*"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
