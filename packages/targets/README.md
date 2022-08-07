@@ -1,13 +1,13 @@
-# `@gossi/config-prettier`
+# `@gossi/config-targets`
 
-Add prettier to your packages.
+Provides compilation targets
 
 ## Installation
 
 1) Install these packages:
 
     ```sh
-    pnpm add -D @gossi/config-targs
+    pnpm add -D @gossi/config-targets
     ```
 
 2) Import targets:
