@@ -17,6 +17,7 @@
     "git": {
       "tagName": "v${version}",
       "commitMessage": "release v${version}"
-    }
+    },
+    "npm": false
   }
 }
