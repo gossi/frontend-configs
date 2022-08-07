@@ -15,6 +15,7 @@
       "@release-it-plugins/workspaces": true
     },
     "git": {
+      "changelog": false,
       "tagName": "v${version}",
       "commitMessage": "release v${version}"
     },
