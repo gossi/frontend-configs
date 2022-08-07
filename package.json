@@ -20,5 +20,6 @@
       "commitMessage": "release v${version}"
     },
     "npm": false
-  }
+  },
+  "version": "0.0.1"
 }
