@@ -10,8 +10,16 @@ Provides compilation targets
     pnpm add -D @gossi/config-targets
     ```
 
-2) Import targets:
+## Usage
 
-    ```js
-    const { browsers } = require('@gossi/config-targets');
-    ```
+Import from ESM
+
+```js
+import { browsers } from '@gossi/config-targets';
+```
+
+Import from CJS
+
+```js
+const { browsers } = require('@gossi/config-targets');
+```
