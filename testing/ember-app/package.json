@@ -32,6 +32,7 @@
     "@gossi/config-prettier": "*",
     "@gossi/config-targets": "*",
     "@gossi/config-template-lint": "*",
+    "@tsconfig/ember": "^1.0.1",
     "@types/ember": "^4.0.1",
     "@types/ember-qunit": "^5.0.1",
     "@types/ember-resolver": "^5.0.11",
