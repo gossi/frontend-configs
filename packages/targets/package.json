@@ -1,9 +1,9 @@
 {
   "name": "@gossi/config-targets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
-    "@gossi/config-eslint": "0.1.0",
-    "@gossi/config-prettier": "0.1.0",
+    "@gossi/config-eslint": "0.1.1",
+    "@gossi/config-prettier": "0.1.1",
     "eslint": "^8.20.0",
     "prettier": "2.7.1"
   },
