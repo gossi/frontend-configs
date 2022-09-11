@@ -27,11 +27,13 @@ Add eslint to your packages. Based on [NullVoxPopuli/eslint-config](https://gith
 
 ### Ember
 
+Accommodates: JS, TS, App, and Addon
+
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
-// accommodates: JS, TS, App, and Addon
+const { configs } = require('@gossi/config-eslint');
+
 module.exports = configs.ember();
 ```
 
@@ -43,7 +45,7 @@ extension.
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
+const { configs } = require('@gossi/config-eslint');
 // accommodates: JS
 module.exports = configs.node();
 ```
@@ -56,7 +58,7 @@ extension.
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
+const { configs } = require('@gossi/config-eslint');
 // accommodates: JS
 module.exports = configs.nodeCJS();
 ```
@@ -66,7 +68,7 @@ module.exports = configs.nodeCJS();
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
+const { configs } = require('@gossi/config-eslint');
 // accommodates: JS, TS
 module.exports = configs.nodeTS();
 ```
@@ -81,7 +83,7 @@ _overriding_:
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
+const { configs } = require('@gossi/config-eslint');
 const config = configs.ember();
 module.exports = {
   ...config,
@@ -98,7 +100,7 @@ _overriding prettier configuration example_:
 ```js
 // .eslintrc.js
 'use strict';
-const { configs } = require('@gossi/eslint-configs');
+const { configs } = require('@gossi/config-eslint');
 const config = configs.ember();
 module.exports = {
   ...config,

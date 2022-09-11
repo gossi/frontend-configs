@@ -1,0 +1,74 @@
+{
+  "name": "ember-addon-v2",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The default blueprint for Embroider v2 addons.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "repository": "",
+  "license": "MIT",
+  "author": "",
+  "files": [
+    "addon-main.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "concurrently 'npm:lint:*(!fix)'",
+    "lint:fix": "concurrently 'npm:lint:*:fix'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "start": "rollup --config --watch"
+  },
+  "dependencies": {
+    "@embroider/addon-shim": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.0",
+    "@babel/plugin-syntax-decorators": "^7.17.0",
+    "@embroider/addon-dev": "^1.0.0",
+    "@glimmer/component": "^1.1.2",
+    "@gossi/config-eslint": "*",
+    "@gossi/config-prettier": "*",
+    "@gossi/config-targets": "*",
+    "@gossi/config-template-lint": "*",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@tsconfig/ember": "^1.0.1",
+    "concurrently": "^7.4.0",
+    "ember-template-lint": "^4.0.0",
+    "ember-cli-htmlbars": "^6.1.1",
+    "eslint": "^7.32.0",
+    "rollup": "^2.67.0"
+  },
+  "peerDependencies": {
+    "@glimmer/component": "^1.1.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*",
+    "./addon-main.js": "./addon-main.js"
+  }
+}
