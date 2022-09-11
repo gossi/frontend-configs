@@ -31,6 +31,28 @@ const appTS = {
     // much concise
     '@typescript-eslint/prefer-optional-chain': 'error',
 
+    '@typescript-eslint/naming-convention': [
+      ...tsBase.rules['@typescript-eslint/naming-convention'],
+      {
+        selector: 'property',
+        format: ['StrictPascalCase'],
+        filter: {
+          regex: 'Resolver|Router',
+          match: true
+        }
+      },
+
+      // component signatures: https://rfcs.emberjs.com/id/0748-glimmer-component-signature
+      {
+        selector: 'property',
+        format: ['StrictPascalCase'],
+        filter: {
+          regex: 'Args|Element|Blocks',
+          match: true
+        }
+      }
+    ],
+
     ...baseRulesAppliedLast
   }
 };
@@ -67,6 +89,35 @@ const addonV2JS = {
 const addonV2TS = {
   ...appTS,
   files: ['./src/**/*.ts']
+};
+
+const storiesTS = {
+  ...appTS,
+  files: ['./**/stories.ts'],
+  extends: [...appTS.extends, 'plugin:storybook/recommended'],
+  rules: {
+    ...appTS.rules,
+
+    '@typescript-eslint/naming-convention': [
+      ...tsBase.rules['@typescript-eslint/naming-convention'].filter(
+        // let's filter out variable as we are overwriting it below
+        // and anyway both options would be present but the first one would take precedence
+        (option) => option.selector !== 'variable'
+      ),
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
+      }
+    ]
+  }
+};
+const storiesJS = {
+  ...appJS,
+  files: ['./**/stories.js'],
+  extends: [...appJS.extends, 'plugin:storybook/recommended'],
+  rules: {
+    ...appJS.rules
+  }
 };
 
 const testsTS = {
@@ -116,7 +167,30 @@ const typeDeclarations = {
   rules: {
     ...tsBase.rules,
     // custom type declarations get wonky
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+
+    '@typescript-eslint/naming-convention': [
+      ...tsBase.rules['@typescript-eslint/naming-convention'],
+      // component signatures: https://rfcs.emberjs.com/id/0748-glimmer-component-signature
+      {
+        selector: 'property',
+        format: ['StrictPascalCase'],
+        filter: {
+          regex: 'Args|Element|Blocks',
+          match: true
+        }
+      },
+
+      // for `test-app/app/config/environment.d.ts`
+      {
+        selector: 'property',
+        format: ['UPPER_CASE'],
+        filter: {
+          regex: 'APP',
+          match: true
+        }
+      }
+    ]
   }
 };
 
@@ -179,6 +253,8 @@ module.exports = {
     addonJS,
     addonV2JS,
     addonV2TS,
+    storiesTS,
+    storiesJS,
     testsTS,
     testsJS,
     typeDeclarations,
@@ -192,6 +268,8 @@ module.exports = {
     addonJS,
     addonV2JS,
     addonV2TS,
+    storiesTS,
+    storiesJS,
     testsTS,
     testsJS,
     typeDeclarations,
