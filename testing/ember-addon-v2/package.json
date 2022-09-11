@@ -43,7 +43,7 @@
     "concurrently": "^7.4.0",
     "ember-template-lint": "^4.0.0",
     "ember-cli-htmlbars": "^6.1.1",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "rollup": "^2.67.0"
   },
   "peerDependencies": {
