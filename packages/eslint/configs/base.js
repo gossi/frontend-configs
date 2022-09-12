@@ -284,6 +284,16 @@ const tsBase = {
           regex: '^I[A-Z]',
           match: false
         }
+      },
+
+      /**
+       * require underscore for unused parameters
+       */
+      {
+        format: null,
+        selector: 'parameter',
+        modifiers: ['unused'],
+        leadingUnderscore: 'allowed'
       }
     ],
 
