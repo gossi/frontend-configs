@@ -4,7 +4,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "0.1.2",
     "@gossi/config-prettier": "0.1.2",
-    "eslint": "^8.20.0",
+    "eslint": "^8.23.1",
     "prettier": "2.7.1"
   },
   "engines": {
