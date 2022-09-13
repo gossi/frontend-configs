@@ -293,7 +293,7 @@ const tsBase = {
         format: null,
         selector: 'parameter',
         modifiers: ['unused'],
-        leadingUnderscore: 'allowed'
+        leadingUnderscore: 'allow'
       }
     ],
 
