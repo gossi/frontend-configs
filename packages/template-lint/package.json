@@ -1,9 +1,9 @@
 {
   "name": "@gossi/config-template-lint",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "devDependencies": {
-    "@gossi/config-eslint": "0.1.2",
-    "@gossi/config-prettier": "0.1.2",
+    "@gossi/config-eslint": "0.1.3",
+    "@gossi/config-prettier": "0.1.3",
     "eslint": "^8.23.1",
     "prettier": "2.7.1"
   },
