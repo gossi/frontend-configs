@@ -53,9 +53,9 @@ importers:
 
   packages/postcss:
     specifiers:
-      '@gossi/config-eslint': 0.1.2
-      '@gossi/config-prettier': 0.1.2
-      '@gossi/config-targets': 0.1.2
+      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-prettier': 0.1.4
+      '@gossi/config-targets': 0.1.3
       eslint: ^8.23.1
       postcss: ^8.4.16
       postcss-each: ^1.1.0
@@ -65,7 +65,7 @@ importers:
       postcss-preset-env: ^7.8.1
       prettier: 2.7.1
     dependencies:
-      '@gossi/config-targets': link:../targets
+      '@gossi/config-targets': 0.1.3
       postcss-each: 1.1.0_postcss@8.4.16
       postcss-nested: 5.0.6_postcss@8.4.16
       postcss-parcel-css: 0.5.1_postcss@8.4.16
@@ -80,7 +80,7 @@ importers:
 
   packages/prettier:
     specifiers:
-      '@gossi/config-eslint': 0.1.2
+      '@gossi/config-eslint': 0.1.4
       eslint: ^8.23.1
       prettier: ^2.7.1
     devDependencies:
@@ -90,9 +90,9 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@gossi/config-eslint': 0.1.2
-      '@gossi/config-prettier': 0.1.2
-      '@gossi/config-targets': 0.1.2
+      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-prettier': 0.1.4
+      '@gossi/config-targets': 0.1.3
       eslint: ^8.23.1
       prettier: 2.7.1
       stylelint: ^14.11.0
@@ -101,7 +101,7 @@ importers:
       stylelint-no-unsupported-browser-features: ^5.0.4
       stylelint-order: ^5.0.0
     dependencies:
-      '@gossi/config-targets': link:../targets
+      '@gossi/config-targets': 0.1.3
       stylelint-config-prettier: 9.0.3_stylelint@14.11.0
       stylelint-config-standard: 28.0.0_stylelint@14.11.0
       stylelint-no-unsupported-browser-features: 5.0.4_stylelint@14.11.0
@@ -115,8 +115,8 @@ importers:
 
   packages/targets:
     specifiers:
-      '@gossi/config-eslint': 0.1.2
-      '@gossi/config-prettier': 0.1.2
+      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-prettier': 0.1.4
       eslint: ^8.23.1
       prettier: 2.7.1
     devDependencies:
@@ -127,8 +127,8 @@ importers:
 
   packages/template-lint:
     specifiers:
-      '@gossi/config-eslint': 0.1.2
-      '@gossi/config-prettier': 0.1.2
+      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-prettier': 0.1.4
       eslint: ^8.23.1
       prettier: 2.7.1
     devDependencies:
@@ -147,10 +147,10 @@ importers:
       '@embroider/addon-dev': ^1.8.3
       '@embroider/addon-shim': ^1.8.3
       '@glimmer/component': ^1.1.2
-      '@gossi/config-eslint': ^0.1.2
-      '@gossi/config-prettier': ^0.1.2
-      '@gossi/config-targets': ^0.1.2
-      '@gossi/config-template-lint': ^0.1.2
+      '@gossi/config-eslint': ^0.1.4
+      '@gossi/config-prettier': ^0.1.4
+      '@gossi/config-targets': ^0.1.3
+      '@gossi/config-template-lint': ^0.1.4
       '@rollup/plugin-babel': ^5.3.1
       '@tsconfig/ember': ^1.0.1
       concurrently: ^7.4.0
@@ -187,10 +187,10 @@ importers:
       '@ember/test-helpers': ^2.8.1
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
-      '@gossi/config-eslint': 0.1.2
-      '@gossi/config-prettier': 0.1.2
-      '@gossi/config-targets': 0.1.2
-      '@gossi/config-template-lint': 0.1.2
+      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-prettier': 0.1.4
+      '@gossi/config-targets': 0.1.3
+      '@gossi/config-template-lint': 0.1.4
       '@tsconfig/ember': ^1.0.1
       '@types/ember': ^4.0.1
       '@types/ember-qunit': ^5.0.1
@@ -249,7 +249,7 @@ importers:
       '@glimmer/tracking': 1.1.2
       '@gossi/config-eslint': link:../../packages/eslint
       '@gossi/config-prettier': link:../../packages/prettier
-      '@gossi/config-targets': link:../../packages/targets
+      '@gossi/config-targets': 0.1.3
       '@gossi/config-template-lint': link:../../packages/template-lint
       '@tsconfig/ember': 1.0.1
       '@types/ember': 4.0.1_@babel+core@7.19.0
@@ -2098,6 +2098,10 @@ packages:
       '@glimmer/interfaces': 0.42.2
       '@glimmer/util': 0.42.2
     dev: true
+
+  /@gossi/config-targets/0.1.3:
+    resolution: {integrity: sha512-gKmEwYRZmXIcL0yUS0RSRrZKURMphMlMLLYR/EvUnItxqeAbsPWheN/ulL9cL9oxMktjY1uVahW69agD5KXJag==}
+    engines: {node: 14.* || >= 16.*}
 
   /@handlebars/parser/2.0.0:
     resolution: {integrity: sha512-EP9uEDZv/L5Qh9IWuMUGJRfwhXJ4h1dqKTT4/3+tY0eu7sPis7xh23j61SYUnNF4vqCQvvUXpDo9Bh/+q1zASA==}

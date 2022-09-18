@@ -36,7 +36,7 @@
     "@glimmer/component": "^1.1.2",
     "@gossi/config-eslint": "^0.1.4",
     "@gossi/config-prettier": "^0.1.4",
-    "@gossi/config-targets": "^0.1.4",
+    "@gossi/config-targets": "^0.1.3",
     "@gossi/config-template-lint": "^0.1.4",
     "@rollup/plugin-babel": "^5.3.1",
     "@tsconfig/ember": "^1.0.1",
