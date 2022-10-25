@@ -8,7 +8,7 @@
     "release-it": "^15.2.0"
   },
   "volta": {
-    "node": "18.11.0"
+    "node": "18.12.0"
   },
   "release-it": {
     "plugins": {
