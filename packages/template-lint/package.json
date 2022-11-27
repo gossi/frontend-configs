@@ -5,7 +5,7 @@
     "@gossi/config-eslint": "0.1.4",
     "@gossi/config-prettier": "0.1.4",
     "eslint": "^8.23.1",
-    "prettier": "2.7.1"
+    "prettier": "2.8.0"
   },
   "peerDependencies": {
     "ember-template-lint": "^4.14.0"
