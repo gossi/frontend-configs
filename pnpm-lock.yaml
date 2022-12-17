@@ -55,9 +55,9 @@ importers:
 
   packages/postcss:
     specifiers:
-      '@gossi/config-eslint': 0.1.4
-      '@gossi/config-prettier': 0.1.4
-      '@gossi/config-targets': 0.1.4
+      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-prettier': 0.2.0
+      '@gossi/config-targets': 0.2.0
       eslint: ^8.23.1
       postcss: ^8.4.20
       postcss-each: ^1.1.0
@@ -82,7 +82,7 @@ importers:
 
   packages/prettier:
     specifiers:
-      '@gossi/config-eslint': 0.1.4
+      '@gossi/config-eslint': 0.2.0
       eslint: ^8.23.1
       prettier: ^2.7.1
     devDependencies:
@@ -92,9 +92,9 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@gossi/config-eslint': 0.1.4
-      '@gossi/config-prettier': 0.1.4
-      '@gossi/config-targets': 0.1.4
+      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-prettier': 0.2.0
+      '@gossi/config-targets': 0.2.0
       eslint: ^8.23.1
       prettier: 2.8.1
       stylelint: ^14.11.0
@@ -117,8 +117,8 @@ importers:
 
   packages/targets:
     specifiers:
-      '@gossi/config-eslint': 0.1.4
-      '@gossi/config-prettier': 0.1.4
+      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-prettier': 0.2.0
       eslint: ^8.23.1
       prettier: 2.8.1
     devDependencies:
@@ -129,8 +129,8 @@ importers:
 
   packages/template-lint:
     specifiers:
-      '@gossi/config-eslint': 0.1.4
-      '@gossi/config-prettier': 0.1.4
+      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-prettier': 0.2.0
       eslint: ^8.23.1
       prettier: 2.8.1
     devDependencies:
@@ -149,10 +149,10 @@ importers:
       '@embroider/addon-dev': ^3.0.0
       '@embroider/addon-shim': ^1.8.4
       '@glimmer/component': ^1.1.2
-      '@gossi/config-eslint': ^0.1.4
-      '@gossi/config-prettier': ^0.1.4
-      '@gossi/config-targets': ^0.1.4
-      '@gossi/config-template-lint': ^0.1.4
+      '@gossi/config-eslint': ^0.2.0
+      '@gossi/config-prettier': ^0.2.0
+      '@gossi/config-targets': ^0.2.0
+      '@gossi/config-template-lint': ^0.2.0
       '@rollup/plugin-babel': ^6.0.3
       '@tsconfig/ember': ^1.0.1
       concurrently: ^7.4.0
@@ -189,10 +189,10 @@ importers:
       '@ember/test-helpers': ^2.8.1
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
-      '@gossi/config-eslint': 0.1.4
-      '@gossi/config-prettier': 0.1.4
-      '@gossi/config-targets': 0.1.4
-      '@gossi/config-template-lint': 0.1.4
+      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-prettier': 0.2.0
+      '@gossi/config-targets': 0.2.0
+      '@gossi/config-template-lint': 0.2.0
       '@tsconfig/ember': ^1.0.1
       '@types/ember': ^4.0.1
       '@types/ember-qunit': ^5.0.1
