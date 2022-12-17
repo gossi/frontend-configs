@@ -6,9 +6,7 @@
   ],
   "automerge": true,
   "masterIssue": true,
-  // bump for apps
-  // update-lockfile for addons/libraries
-  "rangeStrategy": "update-lockfile",
+  "rangeStrategy": "bump",
   // From the docs:
   // https://docs.renovatebot.com/configuration-options/#packagerules
   // Important to know: Renovate will evaluate all packageRules and not stop once it gets a first match.
