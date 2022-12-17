@@ -1,6 +1,7 @@
 {
   "name": "@gossi/config-eslint",
   "version": "0.1.4",
+  "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",

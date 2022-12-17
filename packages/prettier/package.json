@@ -1,6 +1,7 @@
 {
   "name": "@gossi/config-prettier",
   "version": "0.1.4",
+  "repository": "https://github.com/gossi/frontend-configs",
   "devDependencies": {
     "@gossi/config-eslint": "0.1.4",
     "eslint": "^8.23.1",
