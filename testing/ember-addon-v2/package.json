@@ -38,7 +38,7 @@
     "@gossi/config-prettier": "^0.1.4",
     "@gossi/config-targets": "^0.1.4",
     "@gossi/config-template-lint": "^0.1.4",
-    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^1.0.1",
     "concurrently": "^7.4.0",
     "ember-template-lint": "^5.0.0",
