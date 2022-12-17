@@ -1,5 +1,22 @@
 import Component from '@glimmer/component';
 
+const isValid = function(): boolean {
+  return false;
+}
+
+class Test {
+  get isValid() {
+    return false;
+  }
+}
+
+const test = new Test();
+test.isValid;
+
+if (isValid()) {
+  // oink
+}
+
 export interface GreetingSignature {
   Element: HTMLDivElement;
   Args: {

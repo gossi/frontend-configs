@@ -1,5 +1,8 @@
 'use strict';
 
+const process = require('process');
+const path = require('path');
+
 const base = {
   // plugin order doesn't matter
   plugins: ['prettier', 'decorator-position'],
@@ -108,9 +111,14 @@ const jsBase = {
   }
 };
 
+console.log('OLAAAA', process.cwd());
+
 const tsBase = {
   ...base,
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: path.join(process.cwd(), 'tsconfig.json')
+  },
   env: {
     browser: true
   },
@@ -255,7 +263,26 @@ const tsBase = {
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE']
+        format: ['camelCase', 'UPPER_CASE'],
+        // anti-imposter rules:
+        custom: {
+          regex: '^(is|should|has|can|did|will)',
+          match: false
+        }
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+        types: ['function']
+      },
+      {
+        selector: 'accessor',
+        format: ['camelCase'],
+        // anti-imposter rules:
+        custom: {
+          regex: '^(is|should|has|can|did|will)',
+          match: false
+        }
       },
       {
         selector: 'parameter',
