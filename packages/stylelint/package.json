@@ -19,7 +19,7 @@
     "stylelint": "^14.11.0"
   },
   "engines": {
-    "node": "14.* || >= 16.*"
+    "node": "16.* || >= 18.*"
   },
   "volta": {
     "extends": "../../package.json"
