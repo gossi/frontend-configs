@@ -1,7 +1,8 @@
 import { hbs } from 'ember-cli-htmlbars';
 
 export default {
-  title: 'Greeting'
+  title: 'Greeting',
+  component: 'Greeting'
 };
 
 export const Default = (args: { hello: string; to: string }) => ({
