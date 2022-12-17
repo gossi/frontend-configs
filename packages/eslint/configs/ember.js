@@ -42,12 +42,14 @@ const appTS = {
         }
       },
 
-      // component signatures: https://rfcs.emberjs.com/id/0748-glimmer-component-signature
+      // Signatures:
+      // https://rfcs.emberjs.com/id/0748-glimmer-component-signature
+      // https://typed-ember.gitbook.io/glint/using-glint/ember/helper-and-modifier-signatures
       {
         selector: 'property',
         format: ['StrictPascalCase'],
         filter: {
-          regex: 'Args|Element|Blocks',
+          regex: 'Element|Args|Blocks|Return|Positional|Named',
           match: true
         }
       }
