@@ -54,11 +54,14 @@ const MAP = {
     json: 'eslint-plugin-json',
     import: 'eslint-plugin-import',
     'decorator-position': 'eslint-plugin-decorator-position',
-    ember: 'eslint-plugin-ember'
+    ember: 'eslint-plugin-ember',
+    storybook: 'eslint-plugin-storybook'
   },
   extends: {
     'plugin:@typescript-eslint/recommended': '@typescript-eslint/eslint-plugin',
     'plugin:ember/*': 'eslint-plugin-ember',
+    'plugin:storybook/recommended': 'eslint-plugin-storybook',
+    'plugin:storybook/csf': 'eslint-plugin-storybook',
     'plugin:decorator-position/*': 'eslint-plugin-decorator-position',
     'plugin:@typescript-eslint/*': '@typescript-eslint/eslint-plugin',
     'plugin:json/*': 'eslint-plugin-json',
@@ -186,6 +189,7 @@ function cleanDependencies(overrides = [], dangerHas = require) {
 function cleanRules(overrides) {
   return overrides.filter((override) => {
     let { rules, extends: configs } = override;
+    // @ts-ignore
     let result = Object.keys(rules || {}).length > 0 || configs?.length > 0;
 
     return result;

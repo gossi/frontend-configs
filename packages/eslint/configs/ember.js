@@ -93,8 +93,9 @@ const addonV2TS = {
 
 const storiesTS = {
   ...appTS,
-  files: ['./**/stories.ts'],
-  extends: [...appTS.extends, 'plugin:storybook/recommended'],
+  files: ['./**/stories.ts', './**/*.stories.ts'],
+  plugins: [...appTS.plugins, 'storybook'].flat(),
+  extends: [...appTS.extends, 'plugin:storybook/recommended', 'plugin:storybook/csf'],
   rules: {
     ...appTS.rules,
 
@@ -113,8 +114,9 @@ const storiesTS = {
 };
 const storiesJS = {
   ...appJS,
-  files: ['./**/stories.js'],
-  extends: [...appJS.extends, 'plugin:storybook/recommended'],
+  files: ['./**/stories.js', './**/*.stories.js'],
+  plugins: [...appJS.plugins, 'storybook'].flat(),
+  extends: [...appJS.extends, 'plugin:storybook/recommended', 'plugin:storybook/csf'],
   rules: {
     ...appJS.rules
   }
