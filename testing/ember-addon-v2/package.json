@@ -35,7 +35,7 @@
     "@embroider/addon-dev": "^3.0.0",
     "@glimmer/component": "^1.1.2",
     "@gossi/config-eslint": "^0.2.0",
-    "@gossi/config-prettier": "^0.2.0",
+    "@gossi/config-prettier": "^0.1.4",
     "@gossi/config-targets": "^0.2.0",
     "@gossi/config-template-lint": "^0.2.0",
     "@rollup/plugin-babel": "^6.0.3",
