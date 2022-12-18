@@ -227,7 +227,7 @@ importers:
       ember-cli-inject-live-reload: ^2.1.0
       ember-cli-sri: ^2.1.1
       ember-cli-terser: ^4.0.2
-      ember-cli-typescript: ^5.1.1
+      ember-cli-typescript: ^5.2.1
       ember-cli-typescript-blueprints: ^3.0.0
       ember-load-initializers: ^2.1.2
       ember-page-title: ^7.0.0
@@ -287,7 +287,7 @@ importers:
       ember-cli-inject-live-reload: 2.1.0
       ember-cli-sri: 2.1.1
       ember-cli-terser: 4.0.2
-      ember-cli-typescript: 5.1.1
+      ember-cli-typescript: 5.2.1
       ember-cli-typescript-blueprints: 3.0.0
       ember-load-initializers: 2.1.2_@babel+core@7.20.5
       ember-page-title: 7.0.0
@@ -6203,8 +6203,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-typescript/5.1.1:
-    resolution: {integrity: sha512-DbzATYWY8nbXwSxXqtK8YlqGJTcyFyL+eg6IGCc2ur0AMnq/H+o6Z9np9eGoq1sI+HwX7vBkOVoD3k0WurAwXg==}
+  /ember-cli-typescript/5.2.1:
+    resolution: {integrity: sha512-qqp5TAIuPHxHiGXJKL+78Euyhy0zSKQMovPh8sJpN/ZBYx0H90pONufHR3anaMcp1snVfx4B+mb9+7ijOik8ZA==}
     engines: {node: '>= 12.*'}
     dependencies:
       ansi-to-html: 0.6.15
@@ -6214,7 +6214,7 @@ packages:
       fs-extra: 9.1.0
       resolve: 1.22.1
       rsvp: 4.8.5
-      semver: 7.3.7
+      semver: 7.3.8
       stagehand: 1.0.0
       walk-sync: 2.2.0
     transitivePeerDependencies:
