@@ -53,7 +53,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= v16.19.0"
   },
   "volta": {
     "extends": "../../package.json"
