@@ -44,7 +44,7 @@
     "ember-template-lint": "^5.0.0",
     "ember-cli-htmlbars": "^6.1.1",
     "eslint": "^8.23.1",
-    "rollup": "^3.0.0"
+    "rollup": "^3.7.5"
   },
   "peerDependencies": {
     "@glimmer/component": "^1.1.2"
