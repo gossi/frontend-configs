@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@gossi/config-targets": "0.3.0",
+    "@gossi/config-targets": "0.2.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-no-unsupported-browser-features": "^6.0.1",
