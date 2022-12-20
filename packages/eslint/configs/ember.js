@@ -212,6 +212,13 @@ const nodeFiles = [
   './scripts/**/*.js'
 ];
 
+const rollupConfig = [
+  {
+    ...baseModulesConfig,
+    files: ['rollup.config.js']
+  }
+];
+
 const nodeConfigs = isModules
   ? [
       {
@@ -221,7 +228,8 @@ const nodeConfigs = isModules
       {
         ...baseModulesConfig,
         files: [...nodeFiles, ...nodeFiles.map((filePath) => filePath.replace('.js', '.mjs'))]
-      }
+      },
+      ...rollupConfig
     ]
   : [
       {
@@ -231,7 +239,8 @@ const nodeConfigs = isModules
       {
         ...baseModulesConfig,
         files: nodeFiles.map((filePath) => filePath.replace('.js', '.mjs'))
-      }
+      },
+      ...rollupConfig
     ];
 
 const deprecationWorkflow = {
