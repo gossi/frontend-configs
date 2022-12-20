@@ -1,5 +1,20 @@
 # Changelog
 
+## Release v0.3.0 (2022-12-20)
+
+#### :rocket: Enhancement
+* `template-lint`
+  * [#66](https://github.com/gossi/frontend-configs/pull/66) Add `ember-template-lint-plugin-prettier` + config ([@gossi](https://github.com/gossi))
+
+#### :bug: Bug Fix
+* `eslint`
+  * [#67](https://github.com/gossi/frontend-configs/pull/67) Treat `rollup.config.js` as module ([@gossi](https://github.com/gossi))
+* `template-lint`
+  * [#65](https://github.com/gossi/frontend-configs/pull/65) Set proper version for `ember-template-lint` in `peerDependencies` ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release v0.2.0 (2022-12-18)
 
 #### :boom: Breaking Change
