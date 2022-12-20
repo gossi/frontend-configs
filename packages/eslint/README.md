@@ -115,3 +115,11 @@ module.exports = {
   ]
 }
 ```
+
+## Debugging
+
+To see what the resolved config looks like for a file
+
+```sh
+node_modules/.bin/eslint --print-config path/to/file
+```
