@@ -1,10 +1,10 @@
 {
   "name": "@gossi/config-targets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "devDependencies": {
-    "@gossi/config-eslint": "0.2.0",
-    "@gossi/config-prettier": "0.2.0",
+    "@gossi/config-eslint": "0.3.0",
+    "@gossi/config-prettier": "0.3.0",
     "eslint": "^8.30.0",
     "prettier": "2.8.1"
   },
