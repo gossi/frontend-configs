@@ -55,9 +55,9 @@ importers:
 
   packages/postcss:
     specifiers:
-      '@gossi/config-eslint': 0.2.0
-      '@gossi/config-prettier': 0.2.0
-      '@gossi/config-targets': 0.2.0
+      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-prettier': 0.3.0
+      '@gossi/config-targets': 0.3.0
       eslint: ^8.30.0
       postcss: ^8.4.20
       postcss-each: ^1.1.0
@@ -82,7 +82,7 @@ importers:
 
   packages/prettier:
     specifiers:
-      '@gossi/config-eslint': 0.2.0
+      '@gossi/config-eslint': 0.3.0
       eslint: ^8.30.0
       prettier: ^2.8.1
     devDependencies:
@@ -92,9 +92,9 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@gossi/config-eslint': 0.2.0
-      '@gossi/config-prettier': 0.2.0
-      '@gossi/config-targets': 0.2.0
+      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-prettier': 0.3.0
+      '@gossi/config-targets': 0.3.0
       eslint: ^8.30.0
       prettier: 2.8.1
       stylelint: ^14.16.0
@@ -117,8 +117,8 @@ importers:
 
   packages/targets:
     specifiers:
-      '@gossi/config-eslint': 0.2.0
-      '@gossi/config-prettier': 0.2.0
+      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-prettier': 0.3.0
       eslint: ^8.30.0
       prettier: 2.8.1
     devDependencies:
@@ -129,8 +129,8 @@ importers:
 
   packages/template-lint:
     specifiers:
-      '@gossi/config-eslint': 0.2.0
-      '@gossi/config-prettier': 0.2.0
+      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-prettier': 0.3.0
       ember-template-lint: ^5.3.0
       ember-template-lint-plugin-prettier: ^4.1.0
       eslint: ^8.30.0
@@ -154,10 +154,10 @@ importers:
       '@embroider/addon-dev': ^3.0.0
       '@embroider/addon-shim': ^1.8.4
       '@glimmer/component': ^1.1.2
-      '@gossi/config-eslint': ^0.2.0
-      '@gossi/config-prettier': ^0.2.0
-      '@gossi/config-targets': ^0.2.0
-      '@gossi/config-template-lint': ^0.2.0
+      '@gossi/config-eslint': ^0.3.0
+      '@gossi/config-prettier': ^0.3.0
+      '@gossi/config-targets': ^0.3.0
+      '@gossi/config-template-lint': ^0.3.0
       '@rollup/plugin-babel': ^6.0.3
       '@tsconfig/ember': ^1.1.0
       concurrently: ^7.4.0
@@ -197,10 +197,10 @@ importers:
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
       '@glimmer/validator': ^0.84.2
-      '@gossi/config-eslint': 0.2.0
-      '@gossi/config-prettier': 0.2.0
-      '@gossi/config-targets': 0.2.0
-      '@gossi/config-template-lint': 0.2.0
+      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-prettier': 0.3.0
+      '@gossi/config-targets': 0.3.0
+      '@gossi/config-template-lint': 0.3.0
       '@tsconfig/ember': ^1.1.0
       '@types/eslint': ^8.4.10
       '@types/qunit': ^2.19.3
@@ -221,7 +221,7 @@ importers:
       ember-load-initializers: ^2.1.2
       ember-page-title: ^7.0.0
       ember-qunit: ^6.1.1
-      ember-resolver: ^9.0.0
+      ember-resolver: ^9.0.1
       ember-source: ~4.9.3
       ember-template-lint: ^5.3.0
       ember-welcome-page: ^6.2.0
@@ -263,7 +263,7 @@ importers:
       ember-load-initializers: 2.1.2_@babel+core@7.20.5
       ember-page-title: 7.0.0
       ember-qunit: 6.1.1_ex32xrm4hoj6qvdwr3kgukq7n4
-      ember-resolver: 9.0.0_ember-source@4.9.3
+      ember-resolver: 9.0.1_ember-source@4.9.3
       ember-source: 4.9.3_vnrh5wqqakkeaioc2xfvwodvoq
       ember-template-lint: 5.3.0_ember-cli-htmlbars@6.1.1
       ember-welcome-page: 6.2.0
@@ -6139,8 +6139,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-resolver/9.0.0_ember-source@4.9.3:
-    resolution: {integrity: sha512-oC8HzL6XyfnLFZfyMgc1gDif5s1IOKLCGesvRO57tZoA92QzXW8eD8WNVMT9reoJPKRhymTFlWnwBmq7iQE3wg==}
+  /ember-resolver/9.0.1_ember-source@4.9.3:
+    resolution: {integrity: sha512-vFdaxDuwp0xptxa4uhJE8mNLQf6/8Mz+mBohsF4721hz03ieW+zdSSR04fCetFVCLxtNhGmmrIZrClDcA5dB9w==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
       ember-source: ^4.8.3
