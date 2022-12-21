@@ -193,7 +193,7 @@ importers:
     specifiers:
       '@babel/core': ^7.20.5
       '@ember/optional-features': ^2.0.0
-      '@ember/test-helpers': ^2.9.1
+      '@ember/test-helpers': ^2.9.3
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
       '@glimmer/validator': ^0.84.2
@@ -235,7 +235,7 @@ importers:
     devDependencies:
       '@babel/core': 7.20.5
       '@ember/optional-features': 2.0.0
-      '@ember/test-helpers': 2.9.1_3pdd4br6jrfswe74dygtpknfbu
+      '@ember/test-helpers': 2.9.3_3pdd4br6jrfswe74dygtpknfbu
       '@glimmer/component': 1.1.2_@babel+core@7.20.5
       '@glimmer/tracking': 1.1.2
       '@glimmer/validator': 0.84.2
@@ -1818,8 +1818,8 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers/2.9.1_3pdd4br6jrfswe74dygtpknfbu:
-    resolution: {integrity: sha512-1ZFZCnNfkXcQOf6Vxep/vbZMwFLfD+8heiLiQ6LSB5SY9F3VCF1yNslfgtDqmyQZXhAbbhRTDhy+rHuzzpd+yA==}
+  /@ember/test-helpers/2.9.3_3pdd4br6jrfswe74dygtpknfbu:
+    resolution: {integrity: sha512-ejVg4Dj+G/6zyLvQsYOvmGiOLU6AS94tY4ClaO1E2oVvjjtVJIRmVLFN61I+DuyBg9hS3cFoPjQRTZB9MRIbxQ==}
     engines: {node: 10.* || 12.* || 14.* || 15.* || >= 16.*}
     peerDependencies:
       ember-source: '>=3.8.0'
