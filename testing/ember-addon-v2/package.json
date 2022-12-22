@@ -40,7 +40,7 @@
     "@gossi/config-targets": "^0.3.0",
     "@gossi/config-template-lint": "^0.3.0",
     "@rollup/plugin-babel": "^6.0.3",
-    "@tsconfig/ember": "^1.1.0",
+    "@tsconfig/ember": "^2.0.0",
     "concurrently": "^7.4.0",
     "ember-template-lint": "^5.3.0",
     "ember-cli-htmlbars": "^6.1.1",
