@@ -159,7 +159,7 @@ importers:
       '@gossi/config-targets': ^0.3.0
       '@gossi/config-template-lint': ^0.3.0
       '@rollup/plugin-babel': ^6.0.3
-      '@tsconfig/ember': ^1.1.0
+      '@tsconfig/ember': ^2.0.0
       concurrently: ^7.4.0
       ember-cli-htmlbars: ^6.1.1
       ember-template-lint: ^5.3.0
@@ -181,7 +181,7 @@ importers:
       '@gossi/config-targets': link:../../packages/targets
       '@gossi/config-template-lint': link:../../packages/template-lint
       '@rollup/plugin-babel': 6.0.3_zrxplyvfi52whpdwd6wkjjeo5q
-      '@tsconfig/ember': 1.1.0
+      '@tsconfig/ember': 2.0.0
       concurrently: 7.4.0
       ember-cli-htmlbars: 6.1.1
       ember-template-lint: 5.3.0_ember-cli-htmlbars@6.1.1
@@ -201,7 +201,7 @@ importers:
       '@gossi/config-prettier': 0.3.0
       '@gossi/config-targets': 0.3.0
       '@gossi/config-template-lint': 0.3.0
-      '@tsconfig/ember': ^1.1.0
+      '@tsconfig/ember': ^2.0.0
       '@types/eslint': ^8.4.10
       '@types/qunit': ^2.19.3
       '@types/rsvp': ^4.0.4
@@ -243,7 +243,7 @@ importers:
       '@gossi/config-prettier': link:../../packages/prettier
       '@gossi/config-targets': link:../../packages/targets
       '@gossi/config-template-lint': link:../../packages/template-lint
-      '@tsconfig/ember': 1.1.0
+      '@tsconfig/ember': 2.0.0
       '@types/eslint': 8.4.10
       '@types/qunit': 2.19.3
       '@types/rsvp': 4.0.4
@@ -2564,8 +2564,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /@tsconfig/ember/1.1.0:
-    resolution: {integrity: sha512-VzIrPO7ZpnIEmU+dJe3ubEPhxUIyavwIh2vxg8rXrwSnB99hdVcq0ZFPQ4KRP0LrSNzaPI1QA2sATIPwnBYPQg==}
+  /@tsconfig/ember/2.0.0:
+    resolution: {integrity: sha512-RzbDYYcjxVdG8Ki0xe99HN3+nHTZe6EBgw6N7B3yup7QogVFQQxA9nY7X80j1XzF15xqetwWiYfAjv5lkkp0/A==}
     dev: true
 
   /@types/body-parser/1.19.2:
