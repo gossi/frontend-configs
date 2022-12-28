@@ -6,11 +6,11 @@ importers:
     specifiers:
       '@release-it-plugins/lerna-changelog': ^5.0.0
       '@release-it-plugins/workspaces': ^3.2.0
-      release-it: ^15.5.1
+      release-it: ^15.6.0
     devDependencies:
-      '@release-it-plugins/lerna-changelog': 5.0.0_release-it@15.5.1
-      '@release-it-plugins/workspaces': 3.2.0_release-it@15.5.1
-      release-it: 15.5.1
+      '@release-it-plugins/lerna-changelog': 5.0.0_release-it@15.6.0
+      '@release-it-plugins/workspaces': 3.2.0_release-it@15.6.0
+      release-it: 15.6.0
 
   packages/eslint:
     specifiers:
@@ -2463,7 +2463,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it-plugins/lerna-changelog/5.0.0_release-it@15.5.1:
+  /@release-it-plugins/lerna-changelog/5.0.0_release-it@15.6.0:
     resolution: {integrity: sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -2473,7 +2473,7 @@ packages:
       lerna-changelog: 2.2.0
       lodash.template: 4.5.0
       mdast-util-from-markdown: 1.2.0
-      release-it: 15.5.1
+      release-it: 15.6.0
       tmp: 0.2.1
       validate-peer-dependencies: 2.1.0
       which: 2.0.2
@@ -2482,7 +2482,7 @@ packages:
       - supports-color
     dev: true
 
-  /@release-it-plugins/workspaces/3.2.0_release-it@15.5.1:
+  /@release-it-plugins/workspaces/3.2.0_release-it@15.6.0:
     resolution: {integrity: sha512-ooEIgwb4qwGFQa9kXoTaQDHgD2Vymy5Z/aKL1JefnVUg1hiKL8Lh5fEfkDXggeXetTYk+SaFm2YNLrVOarX+Kw==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -2490,7 +2490,7 @@ packages:
     dependencies:
       detect-indent: 6.1.0
       detect-newline: 3.1.0
-      release-it: 15.5.1
+      release-it: 15.6.0
       semver: 7.3.7
       url-join: 4.0.1
       validate-peer-dependencies: 1.2.0
@@ -7543,15 +7543,6 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /form-data/4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
-    engines: {node: '>= 6'}
-    dependencies:
-      asynckit: 0.4.0
-      combined-stream: 1.0.8
-      mime-types: 2.1.35
-    dev: true
-
   /formdata-polyfill/4.0.10:
     resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
     engines: {node: '>=12.20.0'}
@@ -11736,8 +11727,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it/15.5.1:
-    resolution: {integrity: sha512-1X1oyqay/amJh/V+xkSU9zN6LqGmLQJ0Q40+FaHE6+Pu6QCmgX9HbrpHxvF0HZeXkB5cdhHjmYsPbHnUQLRnYg==}
+  /release-it/15.6.0:
+    resolution: {integrity: sha512-NXewgzO8QV1LOFjn2K7/dgE1Y1cG+2JiLOU/x9X/Lq9UdFn2hTH1r9SSrufCxG+y/Rp+oN8liYTsNptKrj92kg==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
@@ -11747,7 +11738,6 @@ packages:
       chalk: 5.1.2
       cosmiconfig: 8.0.0
       execa: 6.1.0
-      form-data: 4.0.0
       git-url-parse: 13.1.0
       globby: 13.1.2
       got: 12.5.3
