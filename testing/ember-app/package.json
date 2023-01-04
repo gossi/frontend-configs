@@ -24,7 +24,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.9.3",
     "@glimmer/component": "^1.1.2",
