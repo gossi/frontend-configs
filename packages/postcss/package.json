@@ -14,7 +14,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "0.3.0",
     "@gossi/config-prettier": "0.3.0",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.21",
     "eslint": "^8.30.0",
     "prettier": "2.8.1"
   },
