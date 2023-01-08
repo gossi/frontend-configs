@@ -203,7 +203,7 @@ importers:
       '@gossi/config-template-lint': 0.3.0
       '@tsconfig/ember': ^2.0.0
       '@types/eslint': ^8.4.10
-      '@types/qunit': ^2.19.3
+      '@types/qunit': ^2.19.4
       '@types/rsvp': ^4.0.4
       broccoli-asset-rev: ^3.0.0
       concurrently: ^7.6.0
@@ -245,7 +245,7 @@ importers:
       '@gossi/config-template-lint': link:../../packages/template-lint
       '@tsconfig/ember': 2.0.0
       '@types/eslint': 8.4.10
-      '@types/qunit': 2.19.3
+      '@types/qunit': 2.19.4
       '@types/rsvp': 4.0.4
       broccoli-asset-rev: 3.0.0
       concurrently: 7.6.0
@@ -2726,8 +2726,8 @@ packages:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
     dev: true
 
-  /@types/qunit/2.19.3:
-    resolution: {integrity: sha512-Vi47qmJ0viJoxW1kRDbhuYXGd2F0RREDfh69Hd4v/nlDV0YIjXPCAy6OebWKCZIZr680bQVQTJTL1OfhQoTvVw==}
+  /@types/qunit/2.19.4:
+    resolution: {integrity: sha512-EocRiD2JRWrOaA0dnyyLX083DIo1p3OSBBiGODcHaMzOFhteXtvRRp0kKsiYYqynnBSMqnqRI92iE32axdoXZw==}
     dev: true
 
   /@types/range-parser/1.2.4:
