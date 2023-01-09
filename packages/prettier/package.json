@@ -4,8 +4,8 @@
   "repository": "https://github.com/gossi/frontend-configs",
   "devDependencies": {
     "@gossi/config-eslint": "0.3.0",
-    "eslint": "^8.30.0",
-    "prettier": "^2.8.1"
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.2"
   },
   "peerDependencies": {
     "prettier": "^2.7.1"
