@@ -5,18 +5,18 @@
   "dependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
-    "@typescript-eslint/eslint-plugin": "^5.48.0",
-    "@typescript-eslint/parser": "^5.48.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-decorator-position": "^5.0.1",
     "eslint-plugin-ember": "^11.4.2",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.27.4",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.4",
     "eslint-plugin-simple-import-sort": "^8.0.0",
-    "eslint-plugin-storybook": "^0.6.8"
+    "eslint-plugin-storybook": "^0.6.10"
   },
   "peerDependencies": {
     "eslint": "^8.23.1",
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
-    "eslint": "^8.31.0",
-    "prettier": "^2.8.2",
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.3",
     "typescript": "~4.9.4"
   },
   "engines": {

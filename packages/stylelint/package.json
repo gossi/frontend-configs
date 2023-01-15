@@ -12,8 +12,8 @@
   "devDependencies": {
     "@gossi/config-eslint": "0.3.0",
     "@gossi/config-prettier": "0.3.0",
-    "eslint": "^8.31.0",
-    "prettier": "2.8.2",
+    "eslint": "^8.32.0",
+    "prettier": "2.8.3",
     "stylelint": "^14.16.1"
   },
   "peerDependencies": {
