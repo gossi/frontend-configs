@@ -101,13 +101,13 @@ importers:
       stylelint-config-prettier: ^9.0.4
       stylelint-config-standard: ^29.0.0
       stylelint-no-unsupported-browser-features: ^6.0.1
-      stylelint-order: ^5.0.0
+      stylelint-order: ^6.0.1
     dependencies:
       '@gossi/config-targets': link:../targets
       stylelint-config-prettier: 9.0.4_stylelint@14.16.1
       stylelint-config-standard: 29.0.0_stylelint@14.16.1
       stylelint-no-unsupported-browser-features: 6.0.1_stylelint@14.16.1
-      stylelint-order: 5.0.0_stylelint@14.16.1
+      stylelint-order: 6.0.1_stylelint@14.16.1
     devDependencies:
       '@gossi/config-eslint': link:../eslint
       '@gossi/config-prettier': link:../prettier
@@ -11241,10 +11241,10 @@ packages:
       postcss: 8.4.21
     dev: false
 
-  /postcss-sorting/7.0.1_postcss@8.4.21:
-    resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
+  /postcss-sorting/8.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-go9Zoxx7KQH+uLrJ9xa5wRErFeXu01ydA6O8m7koPXkmAN7Ts//eRcIqjo0stBR4+Nir2gMYDOWAOx7O5EPUZA==}
     peerDependencies:
-      postcss: ^8.3.9
+      postcss: ^8.4.20
     dependencies:
       postcss: 8.4.21
     dev: false
@@ -12723,13 +12723,13 @@ packages:
       stylelint: 14.16.1
     dev: false
 
-  /stylelint-order/5.0.0_stylelint@14.16.1:
-    resolution: {integrity: sha512-OWQ7pmicXufDw5BlRqzdz3fkGKJPgLyDwD1rFY3AIEfIH/LQY38Vu/85v8/up0I+VPiuGRwbc2Hg3zLAsJaiyw==}
+  /stylelint-order/6.0.1_stylelint@14.16.1:
+    resolution: {integrity: sha512-C9gJDZArRBZvn+4MPgggwYTp7dK49WPnYa5+6tBEkZnW/YWj4xBVNJdQjIik14w5orlF9RqFpYDHN0FPWIFOSQ==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
       postcss: 8.4.21
-      postcss-sorting: 7.0.1_postcss@8.4.21
+      postcss-sorting: 8.0.1_postcss@8.4.21
       stylelint: 14.16.1
     dev: false
 
