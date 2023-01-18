@@ -161,7 +161,7 @@ importers:
       '@rollup/plugin-babel': ^6.0.3
       '@tsconfig/ember': ^2.0.0
       concurrently: ^7.6.0
-      ember-cli-htmlbars: ^6.1.1
+      ember-cli-htmlbars: ^6.2.0
       ember-template-lint: ^5.3.1
       eslint: ^8.32.0
       rollup: ^3.10.0
@@ -183,8 +183,8 @@ importers:
       '@rollup/plugin-babel': 6.0.3_rwtmcocladng44j6a3ylx32v3q
       '@tsconfig/ember': 2.0.0
       concurrently: 7.6.0
-      ember-cli-htmlbars: 6.1.1
-      ember-template-lint: 5.3.1_ember-cli-htmlbars@6.1.1
+      ember-cli-htmlbars: 6.2.0
+      ember-template-lint: 5.3.1_ember-cli-htmlbars@6.2.0
       eslint: 8.32.0
       rollup: 3.10.0
       typescript: 4.9.4
@@ -212,7 +212,7 @@ importers:
       ember-cli-app-version: ^5.0.0
       ember-cli-babel: ^7.26.11
       ember-cli-dependency-checker: ^3.3.1
-      ember-cli-htmlbars: ^6.1.1
+      ember-cli-htmlbars: ^6.2.0
       ember-cli-inject-live-reload: ^2.1.0
       ember-cli-sri: ^2.1.1
       ember-cli-terser: ^4.0.2
@@ -254,7 +254,7 @@ importers:
       ember-cli-app-version: 5.0.0
       ember-cli-babel: 7.26.11
       ember-cli-dependency-checker: 3.3.1_ember-cli@4.9.2
-      ember-cli-htmlbars: 6.1.1
+      ember-cli-htmlbars: 6.2.0
       ember-cli-inject-live-reload: 2.1.0
       ember-cli-sri: 2.1.1
       ember-cli-terser: 4.0.2
@@ -265,7 +265,7 @@ importers:
       ember-qunit: 6.1.1_5ktap2q25e4atihwflggpmckye
       ember-resolver: 10.0.0_ember-source@4.10.0
       ember-source: 4.10.0_ipwtokbwlukr3yko7oz5lbj6xy
-      ember-template-lint: 5.3.1_ember-cli-htmlbars@6.1.1
+      ember-template-lint: 5.3.1_ember-cli-htmlbars@6.2.0
       ember-welcome-page: 6.2.0
       eslint: 8.32.0
       loader.js: 4.7.0
@@ -1826,7 +1826,7 @@ packages:
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.1.1
+      ember-cli-htmlbars: 6.2.0
       ember-destroyable-polyfill: 2.0.3_@babel+core@7.20.12
       ember-source: 4.10.0_ipwtokbwlukr3yko7oz5lbj6xy
     transitivePeerDependencies:
@@ -3542,16 +3542,6 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
       ember-rfc176-data: 0.3.17
-    dev: true
-
-  /babel-plugin-ember-template-compilation/1.0.2:
-    resolution: {integrity: sha512-4HBMksmlYsWEf/C/n3uW5rkBRbUp4FNaspzdQTAHgLbfCJnkLze8R6i6sUSge48y/Wne7mx+vcImI1o6rlUwXQ==}
-    engines: {node: '>= 12.*'}
-    dependencies:
-      babel-import-util: 1.3.0
-      line-column: 1.0.2
-      magic-string: 0.26.7
-      string.prototype.matchall: 4.0.7
     dev: true
 
   /babel-plugin-ember-template-compilation/2.0.0:
@@ -5690,12 +5680,12 @@ packages:
     resolution: {integrity: sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==}
     dev: true
 
-  /ember-cli-htmlbars/6.1.1:
-    resolution: {integrity: sha512-DKf2rjzIVw9zWCuFsBGJScrgf5Mz7dSg08Cq+FWFYIxnpssINUbNUoB0NHWnUJK4QqCvaExOyOmjm0kO455CPg==}
+  /ember-cli-htmlbars/6.2.0:
+    resolution: {integrity: sha512-j5EGixjGau23HrqRiW/JjoAovg5UBHfjbyN7wX5ekE90knIEqUUj1z/Mo/cTx/J2VepQ2lE6HdXW9LWQ/WdMtw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@ember/edition-utils': 1.2.0
-      babel-plugin-ember-template-compilation: 1.0.2
+      babel-plugin-ember-template-compilation: 2.0.0
       babel-plugin-htmlbars-inline-precompile: 5.3.1
       broccoli-debug: 0.6.5
       broccoli-persistent-filter: 3.1.3
@@ -5705,7 +5695,7 @@ packages:
       hash-for-dep: 1.5.1
       heimdalljs-logger: 0.1.10
       js-string-escape: 1.0.1
-      semver: 7.3.7
+      semver: 7.3.8
       silent-error: 1.1.1
       walk-sync: 2.2.0
     transitivePeerDependencies:
@@ -6242,7 +6232,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /ember-template-imports/3.4.0_ember-cli-htmlbars@6.1.1:
+  /ember-template-imports/3.4.0_ember-cli-htmlbars@6.2.0:
     resolution: {integrity: sha512-3Cwcj3NXA129g3ZhmrQ/nYOxksFonTmB/qxyaSNTHrLBSoc93UZys47hBz13DlcfoeSCCrNt2Qpq1j890I04PQ==}
     engines: {node: 12.* || >= 14}
     peerDependencies:
@@ -6251,7 +6241,7 @@ packages:
       babel-import-util: 0.2.0
       broccoli-stew: 3.0.0
       ember-cli-babel-plugin-helpers: 1.1.1
-      ember-cli-htmlbars: 6.1.1
+      ember-cli-htmlbars: 6.2.0
       ember-cli-version-checker: 5.1.2
       line-column: 1.0.2
       magic-string: 0.25.9
@@ -6301,7 +6291,7 @@ packages:
       - ember-cli-htmlbars
       - supports-color
 
-  /ember-template-lint/5.3.1_ember-cli-htmlbars@6.1.1:
+  /ember-template-lint/5.3.1_ember-cli-htmlbars@6.2.0:
     resolution: {integrity: sha512-c1eqYkjMjbZ2Hxfsv49bQcNCfRd2gDjoQv9t48BOb8/l94ygzf8YQN6uzQcIW/zvtVEugh04yGm8moxd7UR4vQ==}
     engines: {node: ^14.18.0 || ^16.0.0 || >= 18.0.0}
     hasBin: true
@@ -6311,7 +6301,7 @@ packages:
       chalk: 5.2.0
       ci-info: 3.7.0
       date-fns: 2.29.2
-      ember-template-imports: 3.4.0_ember-cli-htmlbars@6.1.1
+      ember-template-imports: 3.4.0_ember-cli-htmlbars@6.2.0
       ember-template-recast: 6.1.3
       eslint-formatter-kakoune: 1.0.0
       find-up: 6.3.0
@@ -9397,13 +9387,6 @@ packages:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
-
-  /magic-string/0.26.7:
-    resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
-    engines: {node: '>=12'}
-    dependencies:
-      sourcemap-codec: 1.4.8
-    dev: true
 
   /magic-string/0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
