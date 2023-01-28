@@ -64,7 +64,7 @@ importers:
       postcss-nested: ^6.0.0
       postcss-parcel-css: ^0.5.1
       postcss-pow: ^1.0.1
-      postcss-preset-env: ^8.0.0
+      postcss-preset-env: ^8.0.1
       prettier: 2.8.3
     dependencies:
       '@gossi/config-targets': link:../targets
@@ -72,7 +72,7 @@ importers:
       postcss-nested: 6.0.0_postcss@8.4.21
       postcss-parcel-css: 0.5.1_postcss@8.4.21
       postcss-pow: 1.0.1
-      postcss-preset-env: 8.0.0_postcss@8.4.21
+      postcss-preset-env: 8.0.1_postcss@8.4.21
     devDependencies:
       '@gossi/config-eslint': link:../eslint
       '@gossi/config-prettier': link:../prettier
@@ -11255,8 +11255,8 @@ packages:
       postcss: 7.0.39
     dev: false
 
-  /postcss-preset-env/8.0.0_postcss@8.4.21:
-    resolution: {integrity: sha512-/kFWdq109OONR2Hl3T3nmo1dOdS7lHB6kF/nPaBn/2lGjQ99f/j5vGBYvupSmSni+F7T/0A0Xb0nfbJLnxwdjA==}
+  /postcss-preset-env/8.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-IUbymw0JlUbyVG+I85963PNWgPp3KhnFa1sxU7M/2dGthxV8e297P0VV5W9XcyypoH4hirH2fp1c6fmqh6YnSg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
