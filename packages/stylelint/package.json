@@ -10,7 +10,7 @@
     "stylelint-order": "^6.0.1"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.3.1",
+    "@gossi/config-eslint": "0.3.0",
     "@gossi/config-prettier": "0.3.1",
     "eslint": "^8.33.0",
     "prettier": "2.8.3",
