@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.3.1 (2023-02-06)
+
 ## Release v0.3.0 (2022-12-20)
 
 #### :rocket: Enhancement
