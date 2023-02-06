@@ -202,7 +202,7 @@ importers:
       '@gossi/config-targets': 0.3.0
       '@gossi/config-template-lint': 0.3.0
       '@tsconfig/ember': ^2.0.0
-      '@types/eslint': ^8.4.10
+      '@types/eslint': ^8.21.0
       '@types/qunit': ^2.19.4
       '@types/rsvp': ^4.0.4
       broccoli-asset-rev: ^3.0.0
@@ -244,7 +244,7 @@ importers:
       '@gossi/config-targets': link:../../packages/targets
       '@gossi/config-template-lint': link:../../packages/template-lint
       '@tsconfig/ember': 2.0.0
-      '@types/eslint': 8.4.10
+      '@types/eslint': 8.21.0
       '@types/qunit': 2.19.4
       '@types/rsvp': 4.0.4
       broccoli-asset-rev: 3.0.0
@@ -2686,7 +2686,7 @@ packages:
   /@types/eslint-scope/3.7.4:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
-      '@types/eslint': 8.4.10
+      '@types/eslint': 8.21.0
       '@types/estree': 1.0.0
     dev: true
 
@@ -2696,8 +2696,8 @@ packages:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
 
-  /@types/eslint/8.4.10:
-    resolution: {integrity: sha512-Sl/HOqN8NKPmhWo2VBEPm0nvHnu2LL3v9vKo8MEq0EtbJ4eVzGPl41VNPvn5E1i5poMk4/XD8UriLHpJvEP/Nw==}
+  /@types/eslint/8.21.0:
+    resolution: {integrity: sha512-35EhHNOXgxnUgh4XCJsGhE7zdlDhYDN/aMG6UbkByCFFNgQ7b3U+uVoqBpicFydR8JEfgdjCF7SJ7MiJfzuiTA==}
     dependencies:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
