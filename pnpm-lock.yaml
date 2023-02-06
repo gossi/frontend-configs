@@ -55,9 +55,9 @@ importers:
 
   packages/postcss:
     specifiers:
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.0
-      '@gossi/config-targets': 0.3.0
+      '@gossi/config-targets': 0.3.1
       eslint: ^8.33.0
       postcss: ^8.4.21
       postcss-each: ^1.1.0
@@ -75,14 +75,14 @@ importers:
       postcss-preset-env: 8.0.1_postcss@8.4.21
     devDependencies:
       '@gossi/config-eslint': link:../eslint
-      '@gossi/config-prettier': link:../prettier
+      '@gossi/config-prettier': 0.3.0_prettier@2.8.3
       eslint: 8.33.0
       postcss: 8.4.21
       prettier: 2.8.3
 
   packages/prettier:
     specifiers:
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       eslint: ^8.33.0
       prettier: ^2.8.3
     devDependencies:
@@ -92,9 +92,9 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.0
-      '@gossi/config-targets': 0.3.0
+      '@gossi/config-targets': 0.3.1
       eslint: ^8.33.0
       prettier: 2.8.3
       stylelint: ^14.16.1
@@ -110,26 +110,26 @@ importers:
       stylelint-order: 6.0.1_stylelint@14.16.1
     devDependencies:
       '@gossi/config-eslint': link:../eslint
-      '@gossi/config-prettier': link:../prettier
+      '@gossi/config-prettier': 0.3.0_prettier@2.8.3
       eslint: 8.33.0
       prettier: 2.8.3
       stylelint: 14.16.1
 
   packages/targets:
     specifiers:
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.0
       eslint: ^8.33.0
       prettier: 2.8.3
     devDependencies:
       '@gossi/config-eslint': link:../eslint
-      '@gossi/config-prettier': link:../prettier
+      '@gossi/config-prettier': 0.3.0_prettier@2.8.3
       eslint: 8.33.0
       prettier: 2.8.3
 
   packages/template-lint:
     specifiers:
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.0
       ember-template-lint: ^5.3.3
       ember-template-lint-plugin-prettier: ^4.1.0
@@ -139,7 +139,7 @@ importers:
       ember-template-lint-plugin-prettier: 4.1.0_zb2unelkuepcaqtp6jhc4dg5aq
     devDependencies:
       '@gossi/config-eslint': link:../eslint
-      '@gossi/config-prettier': link:../prettier
+      '@gossi/config-prettier': 0.3.0_prettier@2.8.3
       ember-template-lint: 5.3.3
       eslint: 8.33.0
       prettier: 2.8.3
@@ -154,10 +154,10 @@ importers:
       '@embroider/addon-dev': ^3.0.0
       '@embroider/addon-shim': ^1.8.4
       '@glimmer/component': ^1.1.2
-      '@gossi/config-eslint': ^0.3.0
+      '@gossi/config-eslint': ^0.3.1
       '@gossi/config-prettier': ^0.3.0
-      '@gossi/config-targets': ^0.3.0
-      '@gossi/config-template-lint': ^0.3.0
+      '@gossi/config-targets': ^0.3.1
+      '@gossi/config-template-lint': ^0.3.1
       '@rollup/plugin-babel': ^6.0.3
       '@tsconfig/ember': ^2.0.0
       concurrently: ^7.6.0
@@ -197,10 +197,10 @@ importers:
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
       '@glimmer/validator': ^0.84.2
-      '@gossi/config-eslint': 0.3.0
+      '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.0
-      '@gossi/config-targets': 0.3.0
-      '@gossi/config-template-lint': 0.3.0
+      '@gossi/config-targets': 0.3.1
+      '@gossi/config-template-lint': 0.3.1
       '@tsconfig/ember': ^2.0.0
       '@types/eslint': ^8.21.0
       '@types/qunit': ^2.19.4
@@ -240,7 +240,7 @@ importers:
       '@glimmer/tracking': 1.1.2
       '@glimmer/validator': 0.84.2
       '@gossi/config-eslint': link:../../packages/eslint
-      '@gossi/config-prettier': link:../../packages/prettier
+      '@gossi/config-prettier': 0.3.0_prettier@2.8.3
       '@gossi/config-targets': link:../../packages/targets
       '@gossi/config-template-lint': link:../../packages/template-lint
       '@tsconfig/ember': 2.0.0
@@ -2190,6 +2190,15 @@ packages:
       babel-plugin-debug-macros: 0.3.4_@babel+core@7.20.12
     transitivePeerDependencies:
       - '@babel/core'
+    dev: true
+
+  /@gossi/config-prettier/0.3.0_prettier@2.8.3:
+    resolution: {integrity: sha512-9pUO0f+DwjprvWdXSxshQ7F8GibW4mML2rF0Nin8X4ecQY1Qq394Zm1nJU0snbnmeHRTxt5P5pVi08JNO4DPQg==}
+    engines: {node: 16.* || >= 18.*}
+    peerDependencies:
+      prettier: ^2.7.1
+    dependencies:
+      prettier: 2.8.3
     dev: true
 
   /@handlebars/parser/2.0.0:
