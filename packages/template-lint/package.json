@@ -8,9 +8,9 @@
   "devDependencies": {
     "@gossi/config-eslint": "0.3.1",
     "@gossi/config-prettier": "0.3.1",
-    "ember-template-lint": "^5.3.3",
-    "eslint": "^8.33.0",
-    "prettier": "2.8.3"
+    "ember-template-lint": "^5.5.1",
+    "eslint": "^8.34.0",
+    "prettier": "2.8.4"
   },
   "peerDependencies": {
     "ember-template-lint": "^5.0.0"
