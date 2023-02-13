@@ -224,7 +224,7 @@ importers:
       ember-resolver: ^10.0.0
       ember-source: ~4.10.0
       ember-template-lint: ^5.5.1
-      ember-welcome-page: ^6.2.0
+      ember-welcome-page: ^7.0.1
       eslint: ^8.34.0
       loader.js: ^4.7.0
       prettier: ^2.8.4
@@ -266,7 +266,7 @@ importers:
       ember-resolver: 10.0.0_ember-source@4.10.0
       ember-source: 4.10.0_ipwtokbwlukr3yko7oz5lbj6xy
       ember-template-lint: 5.5.1
-      ember-welcome-page: 6.2.0
+      ember-welcome-page: 7.0.1_@babel+core@7.20.12
       eslint: 8.34.0
       loader.js: 4.7.0
       prettier: 2.8.4
@@ -6434,12 +6434,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /ember-welcome-page/6.2.0:
-    resolution: {integrity: sha512-bDPgNgW0eRhLCHLaFK87p1mcP8hGwr0pXvPoskDeUGQzsOI3Pc3U/8WLpUSi2mNrmv0eNtfWqE+A1Wbx6F2l0Q==}
-    engines: {node: 12.* || 14.* || >= 16}
+  /ember-welcome-page/7.0.1_@babel+core@7.20.12:
+    resolution: {integrity: sha512-3Dj7+ap38O/rgQBNqBsd7RPfH81a6DE1xJbipMt9mjOkvLo3OamZiiekAeax3Ydnm3yKYCtbxHPkCIEn4G6B8A==}
+    engines: {node: 14.* || 16.* || >= 18}
     dependencies:
       '@embroider/addon-shim': 1.8.4
+      '@glimmer/component': 1.1.2_@babel+core@7.20.12
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
     dev: true
 
