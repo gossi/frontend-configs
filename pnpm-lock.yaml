@@ -61,7 +61,7 @@ importers:
       eslint: ^8.34.0
       postcss: ^8.4.21
       postcss-each: ^1.1.0
-      postcss-nested: ^6.0.0
+      postcss-nested: ^6.0.1
       postcss-parcel-css: ^0.5.1
       postcss-pow: ^1.0.1
       postcss-preset-env: ^8.0.1
@@ -69,7 +69,7 @@ importers:
     dependencies:
       '@gossi/config-targets': link:../targets
       postcss-each: 1.1.0_postcss@8.4.21
-      postcss-nested: 6.0.0_postcss@8.4.21
+      postcss-nested: 6.0.1_postcss@8.4.21
       postcss-parcel-css: 0.5.1_postcss@8.4.21
       postcss-pow: 1.0.1
       postcss-preset-env: 8.0.1_postcss@8.4.21
@@ -11132,14 +11132,14 @@ packages:
       postcss: 8.4.21
     dev: true
 
-  /postcss-nested/6.0.0_postcss@8.4.21:
-    resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
+  /postcss-nested/6.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.21
-      postcss-selector-parser: 6.0.10
+      postcss-selector-parser: 6.0.11
     dev: false
 
   /postcss-nesting/11.0.0_postcss@8.4.21:
@@ -11308,14 +11308,6 @@ packages:
     dependencies:
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
-    dev: false
-
-  /postcss-selector-parser/6.0.10:
-    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
     dev: false
 
   /postcss-selector-parser/6.0.11:
