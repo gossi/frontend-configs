@@ -220,7 +220,7 @@ importers:
       ember-cli-typescript-blueprints: ^3.0.0
       ember-load-initializers: ^2.1.2
       ember-page-title: ^7.0.0
-      ember-qunit: ^6.1.1
+      ember-qunit: ^6.2.0
       ember-resolver: ^10.0.0
       ember-source: ~4.11.0
       ember-template-lint: ^5.6.0
@@ -262,7 +262,7 @@ importers:
       ember-cli-typescript-blueprints: 3.0.0
       ember-load-initializers: 2.1.2_@babel+core@7.21.0
       ember-page-title: 7.0.0
-      ember-qunit: 6.1.1_ctcbkj4xro4mdfer2osyhq5z4q
+      ember-qunit: 6.2.0_qzpscdypvst2a7p4oplhefmfda
       ember-resolver: 10.0.0_ember-source@4.11.0
       ember-source: 4.11.0_rvahiuopogey6sgsr5ushfa7te
       ember-template-lint: 5.6.0
@@ -6268,13 +6268,15 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit/6.1.1_ctcbkj4xro4mdfer2osyhq5z4q:
-    resolution: {integrity: sha512-3/jCpoecltFV6vm7GCtSDNRxBzWx96nP+QrbereJAnioSaGeLe+slKL3l80mGzMYDTvn7ESobZ+Ba+OQ1vMMKQ==}
+  /ember-qunit/6.2.0_qzpscdypvst2a7p4oplhefmfda:
+    resolution: {integrity: sha512-mC+0bp8DwWzJLn8SW3GS8KDZIkl4yLsNYwMi5Dw6+aFllq7FM2crd/dfY4MuOIHK7GKdjtmWJTMGnjSpeSayaw==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
-      ember-source: ^3.28 || ^4.0
+      '@ember/test-helpers': ^2.9.3
+      ember-source: '>=3.28'
       qunit: ^2.13.0
     dependencies:
+      '@ember/test-helpers': 2.9.3_tdbzy47nbsiytitk6ukbodh4zu
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
@@ -6285,7 +6287,7 @@ packages:
       qunit: 2.19.4
       resolve-package-path: 4.0.3
       silent-error: 1.1.1
-      validate-peer-dependencies: 2.1.0
+      validate-peer-dependencies: 2.2.0
     transitivePeerDependencies:
       - supports-color
       - webpack
@@ -13679,6 +13681,14 @@ packages:
 
   /validate-peer-dependencies/2.1.0:
     resolution: {integrity: sha512-x+M+mp16g4N+jDQJO6a+AKnMHAViov9mRzYfgMYR6Bq+UTwewf8aTQsP+e1QH0oZrADqP7fuI/bEbl3CzRFhOQ==}
+    engines: {node: '>= 12'}
+    dependencies:
+      resolve-package-path: 4.0.3
+      semver: 7.3.8
+    dev: true
+
+  /validate-peer-dependencies/2.2.0:
+    resolution: {integrity: sha512-8X1OWlERjiUY6P6tdeU9E0EwO8RA3bahoOVG7ulOZT5MqgNDUO/BQoVjYiHPcNe+v8glsboZRIw9iToMAA2zAA==}
     engines: {node: '>= 12'}
     dependencies:
       resolve-package-path: 4.0.3
