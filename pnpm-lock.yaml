@@ -196,7 +196,7 @@ importers:
       '@ember/test-helpers': ^2.9.3
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
-      '@glimmer/validator': ^0.84.2
+      '@glimmer/validator': ^0.84.3
       '@gossi/config-eslint': 0.3.1
       '@gossi/config-prettier': 0.3.1
       '@gossi/config-targets': 0.3.1
@@ -238,7 +238,7 @@ importers:
       '@ember/test-helpers': 2.9.3_vhmtgy5g3g675connghzwama5y
       '@glimmer/component': 1.1.2_@babel+core@7.21.3
       '@glimmer/tracking': 1.1.2
-      '@glimmer/validator': 0.84.2
+      '@glimmer/validator': 0.84.3
       '@gossi/config-eslint': link:../../packages/eslint
       '@gossi/config-prettier': link:../../packages/prettier
       '@gossi/config-targets': link:../../packages/targets
@@ -2160,8 +2160,8 @@ packages:
     dependencies:
       '@glimmer/env': 0.1.7
 
-  /@glimmer/global-context/0.84.2:
-    resolution: {integrity: sha512-6FycLh/Eq0P3LA94bJL6WHPJyOTKeQD4KBWhowZ9TbeO3p4/WUr+POKPVEyfIx6YHybhpL9MGj45Y2r0hqVigw==}
+  /@glimmer/global-context/0.84.3:
+    resolution: {integrity: sha512-8Oy9Wg5IZxMEeAnVmzD2NkObf89BeHoFSzJgJROE/deutd3rxg83mvlOez4zBBGYwnTb+VGU2LYRpet92egJjA==}
     dependencies:
       '@glimmer/env': 0.1.7
     dev: true
@@ -2239,11 +2239,11 @@ packages:
       '@glimmer/env': 0.1.7
       '@glimmer/global-context': 0.83.1
 
-  /@glimmer/validator/0.84.2:
-    resolution: {integrity: sha512-9tpSmwiktsJDqriNEiFfyP+9prMSdk08THA6Ik71xS/sudBKxoDpul678uvyEYST/+Z23F8MxwKccC+QxCMXNA==}
+  /@glimmer/validator/0.84.3:
+    resolution: {integrity: sha512-RTBV4TokUB0vI31UC7ikpV7lOYpWUlyqaKV//pRC4pexYMlmqnVhkFrdiimB/R1XyNdUOQUmnIAcdic39NkbhQ==}
     dependencies:
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.84.2
+      '@glimmer/global-context': 0.84.3
     dev: true
 
   /@glimmer/vm-babel-plugins/0.84.2_@babel+core@7.21.3:
