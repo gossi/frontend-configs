@@ -6,11 +6,11 @@ importers:
     specifiers:
       '@release-it-plugins/lerna-changelog': ^5.0.0
       '@release-it-plugins/workspaces': ^3.2.0
-      release-it: ^15.9.1
+      release-it: ^15.9.3
     devDependencies:
-      '@release-it-plugins/lerna-changelog': 5.0.0_release-it@15.9.1
-      '@release-it-plugins/workspaces': 3.2.0_release-it@15.9.1
-      release-it: 15.9.1
+      '@release-it-plugins/lerna-changelog': 5.0.0_release-it@15.9.3
+      '@release-it-plugins/workspaces': 3.2.0_release-it@15.9.3
+      release-it: 15.9.3
 
   packages/eslint:
     specifiers:
@@ -2607,7 +2607,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it-plugins/lerna-changelog/5.0.0_release-it@15.9.1:
+  /@release-it-plugins/lerna-changelog/5.0.0_release-it@15.9.3:
     resolution: {integrity: sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -2617,7 +2617,7 @@ packages:
       lerna-changelog: 2.2.0
       lodash.template: 4.5.0
       mdast-util-from-markdown: 1.2.0
-      release-it: 15.9.1
+      release-it: 15.9.3
       tmp: 0.2.1
       validate-peer-dependencies: 2.1.0
       which: 2.0.2
@@ -2626,7 +2626,7 @@ packages:
       - supports-color
     dev: true
 
-  /@release-it-plugins/workspaces/3.2.0_release-it@15.9.1:
+  /@release-it-plugins/workspaces/3.2.0_release-it@15.9.3:
     resolution: {integrity: sha512-ooEIgwb4qwGFQa9kXoTaQDHgD2Vymy5Z/aKL1JefnVUg1hiKL8Lh5fEfkDXggeXetTYk+SaFm2YNLrVOarX+Kw==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -2634,7 +2634,7 @@ packages:
     dependencies:
       detect-indent: 6.1.0
       detect-newline: 3.1.0
-      release-it: 15.9.1
+      release-it: 15.9.3
       semver: 7.3.7
       url-join: 4.0.1
       validate-peer-dependencies: 1.2.0
@@ -8633,7 +8633,7 @@ packages:
       figures: 5.0.0
       lodash: 4.17.21
       mute-stream: 1.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       run-async: 2.4.1
       rxjs: 7.8.0
       string-width: 5.1.2
@@ -10655,8 +10655,8 @@ packages:
       strip-ansi: 6.0.1
       wcwidth: 1.0.1
 
-  /ora/6.2.0:
-    resolution: {integrity: sha512-c1qb/1rdE+EFDYiLXh10VY459uMh7DN9zlgd8mZJLoeiPpYllN8eAOiih2Rkah5ywxRm5tHN5C9zPheDq8d1MA==}
+  /ora/6.3.0:
+    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
@@ -11934,8 +11934,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it/15.9.1:
-    resolution: {integrity: sha512-qTAjTkaBZDRJM0j/je2MzNASuwhBXFn0GTqHB7MfLEe9rIdVk+xEwUphbhNemp+wuC7PuZucBulUbH2m3EokHg==}
+  /release-it/15.9.3:
+    resolution: {integrity: sha512-yFZTGJ9lH075zEAiVB4w58GgQ+bFR4by+eNClN3sdLtTLwbEm9VXrISt+8vO1fHDH83557Fns5ub1FuhAY/a3A==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
@@ -11955,7 +11955,7 @@ packages:
       new-github-release-url: 2.0.0
       node-fetch: 3.3.1
       open: 9.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       os-name: 5.1.0
       promise.allsettled: 1.0.6
       proxy-agent: 5.0.0
