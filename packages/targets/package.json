@@ -6,7 +6,7 @@
     "@gossi/config-eslint": "0.3.1",
     "@gossi/config-prettier": "0.3.1",
     "eslint": "^8.36.0",
-    "prettier": "2.8.4"
+    "prettier": "2.8.7"
   },
   "engines": {
     "node": "16.* || >= 18.*"

@@ -60,7 +60,7 @@
     "ember-welcome-page": "^7.0.1",
     "eslint": "^8.36.0",
     "loader.js": "^4.7.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "qunit": "^2.19.4",
     "qunit-dom": "^2.0.0",
     "typescript": "^5.0.2",
