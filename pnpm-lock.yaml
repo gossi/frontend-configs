@@ -6,13 +6,13 @@ importers:
     devDependencies:
       '@release-it-plugins/lerna-changelog':
         specifier: ^5.0.0
-        version: 5.0.0(release-it@15.10.0)
+        version: 5.0.0(release-it@15.10.1)
       '@release-it-plugins/workspaces':
         specifier: ^3.2.0
-        version: 3.2.0(release-it@15.10.0)
+        version: 3.2.0(release-it@15.10.1)
       release-it:
-        specifier: ^15.10.0
-        version: 15.10.0
+        specifier: ^15.10.1
+        version: 15.10.1
 
   packages/eslint:
     dependencies:
@@ -2663,7 +2663,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it-plugins/lerna-changelog@5.0.0(release-it@15.10.0):
+  /@release-it-plugins/lerna-changelog@5.0.0(release-it@15.10.1):
     resolution: {integrity: sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -2673,7 +2673,7 @@ packages:
       lerna-changelog: 2.2.0
       lodash.template: 4.5.0
       mdast-util-from-markdown: 1.2.0
-      release-it: 15.10.0
+      release-it: 15.10.1
       tmp: 0.2.1
       validate-peer-dependencies: 2.1.0
       which: 2.0.2
@@ -2682,7 +2682,7 @@ packages:
       - supports-color
     dev: true
 
-  /@release-it-plugins/workspaces@3.2.0(release-it@15.10.0):
+  /@release-it-plugins/workspaces@3.2.0(release-it@15.10.1):
     resolution: {integrity: sha512-ooEIgwb4qwGFQa9kXoTaQDHgD2Vymy5Z/aKL1JefnVUg1hiKL8Lh5fEfkDXggeXetTYk+SaFm2YNLrVOarX+Kw==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -2690,7 +2690,7 @@ packages:
     dependencies:
       detect-indent: 6.1.0
       detect-newline: 3.1.0
-      release-it: 15.10.0
+      release-it: 15.10.1
       semver: 7.3.7
       url-join: 4.0.1
       validate-peer-dependencies: 1.2.0
@@ -12044,8 +12044,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it@15.10.0:
-    resolution: {integrity: sha512-cXY7cZyXjZ/e8TPUjzM7AHvnOKzNmj2NwNT3gREmZIdnDRmuX3DSnS3S3SLbVF8S3SmM88WfHVifGxFaFjNthQ==}
+  /release-it@15.10.1:
+    resolution: {integrity: sha512-Wkk4aFHSo27vQwHIlcEy77lJwnQlh4UDQckc53gh5tKo7F22mAUEAe8SYQZJcFh7icdkf0OV70onhB1dDmeClA==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
