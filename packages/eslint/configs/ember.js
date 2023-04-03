@@ -34,6 +34,9 @@ module.exports = () => {
     ),
     forFiles('**/*.d.ts', config.modules.browser.declarations),
 
+    forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
+    forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
+
     // ----------------------
     // Tests
     forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),

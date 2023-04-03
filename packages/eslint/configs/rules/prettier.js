@@ -11,8 +11,6 @@ module.exports = {
 
     let prettierResult = prettier.search();
 
-    console.log(prettierResult);
-
     return {
       plugins: ['prettier'],
       rules: {
