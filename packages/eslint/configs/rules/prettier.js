@@ -1,3 +1,5 @@
+const console = require('console');
+
 module.exports = {
   /**
    *
@@ -7,13 +9,15 @@ module.exports = {
     let { cosmiconfigSync } = require('cosmiconfig');
     let prettier = cosmiconfigSync('prettier');
 
-    let prettierResault = prettier.search();
+    let prettierResult = prettier.search();
+
+    console.log(prettierResult);
 
     return {
       plugins: ['prettier'],
       rules: {
-        'prettier/prettier': prettierResault?.config
-          ? ['error', prettierResault.config]
+        'prettier/prettier': prettierResult?.config
+          ? ['error', prettierResult.config]
           : ['error', { singleQuote: true, printWidth: 100, trailingComma: 'es5' }]
       }
     };

@@ -1,13 +1,11 @@
 'use strict';
 
-const path = require('path');
-
 const { hasDep, configFor, pipe, merge, forFiles } = require('./-utils');
 
 /**
- *
+ * @param {import('./types').Options} options
  */
-const configBuilder = () => {
+const configBuilder = (options = {}) => {
   let hasTypeScript = hasDep('typescript');
 
   let personalPreferences = pipe(
@@ -31,7 +29,7 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended']
+            extends: []
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports'))
@@ -52,11 +50,11 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended', 'plugin:import/typescript']
+            extends: ['plugin:import/typescript']
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports')),
-          (config) => merge(config, require('./rules/typescript'))
+          (config) => merge(config, require('./rules/typescript').build())
         );
       }
     },
@@ -74,7 +72,7 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended']
+            extends: []
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports'))
@@ -97,7 +95,7 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended', 'plugin:import/typescript']
+            extends: ['plugin:import/typescript']
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports')),
@@ -109,6 +107,16 @@ const configBuilder = () => {
       return {
         rules: {
           // devDependencies
+          'n/no-unpublished-import': 'off',
+          // side-effects are... fine?
+          'import/no-unassigned-import': 'off'
+        }
+      };
+    },
+    get config() {
+      return {
+        rules: {
+          // devDependencies
           'n/no-unpublished-import': 'off'
         }
       };
@@ -116,64 +124,17 @@ const configBuilder = () => {
   };
 };
 
-module.exports = {
-  configBuilder,
-  /**
-   * as long as eslint is invoked from from the same directory as the package.json,
-   * you can be worry free about file format (cjs, cts, mts, mjs, etc etc)
-   */
-  node() {
-    let packageJsonPath;
-    let packageJson;
+function crossPlatform(options = {}) {
+  let config = configBuilder(options);
 
-    try {
-      packageJsonPath = path.resolve(path.join(process.cwd(), 'package.json'));
-      packageJson = require(packageJsonPath);
-    } catch (e) {
-      console.error(
-        'Failed to find package.json. ' +
-          'When using the `node` config from `@nullvoxpopuli/eslint-configs`, ' +
-          'you must invoke `eslint` from the same directory as package.json ' +
-          'so that the config can correctly determine if your project is ESM or CJS. ' +
-          'The current working directory is ' +
-          process.cwd()
-      );
+  return configFor([
+    forFiles('**/*.cjs', config.commonjs.js),
+    forFiles('**/*.cts', config.commonjs.ts),
+    forFiles('**/*.{mts,ts}', config.modules.ts),
+    forFiles('**/*.{mjs,js}', config.modules.js),
+    forFiles('config/**/*', config.config),
+    forFiles(['vitest.config.ts', 'tests/**/*'], config.tests)
+  ]);
+}
 
-      throw e;
-    }
-
-    if (packageJson.type === 'module') {
-      return module.exports.nodeESM();
-    }
-
-    return module.exports.nodeCJS();
-  },
-  /**
-   *
-   */
-  nodeCJS() {
-    let config = configBuilder();
-
-    return configFor([
-      forFiles('**/*.{cjs,js}', config.commonjs.js),
-      forFiles('**/*.{cts,ts}', config.commonjs.ts),
-      forFiles('**/*.mts', config.modules.ts),
-      forFiles('**/*.mjs', config.modules.js),
-      forFiles(['vitest.config.ts', 'tests/**/*'], config.tests)
-    ]);
-  },
-  /**
-   *
-   */
-  nodeESM() {
-    let config = configBuilder();
-
-    return configFor([
-      forFiles('**/*.cjs', config.commonjs.js),
-      forFiles('**/*.cts', config.commonjs.ts),
-      forFiles('**/*.{mts,ts}', config.modules.ts),
-      forFiles('**/*.{mjs,js}', config.modules.js),
-      forFiles(['vitest.config.ts', 'tests/**/*'], config.tests)
-    ]);
-  }
-};
+module.exports = crossPlatform;

@@ -16,24 +16,19 @@ const config = {
       '^qunit',
       '^ember-qunit',
       '^@embroider',
-      '^@embroider',
       '^node:'
     ],
 
     // Packages.
-    // Things that start with a letter (or digit or underscore), or `@` followed
-    // by a letter.
+    // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
     ['^@?\\w'],
 
     // Absolute imports and other imports such as Vue-style `@/foo`.
     // Anything not matched in another group.
     ['^'],
 
-    // monorepo apps
-    ['^emberclear', '^pinochle', '^limber'],
-
     // monorepo packages
-    ['^@emberclear', '^@limber', '@glimdown'],
+    ['^@gossi', '@hokulea', '@theemo'],
 
     // paths with test-support in the name
     ['/test-support'],
@@ -42,7 +37,7 @@ const config = {
     // Anything that starts with a dot.
     ['^\\.'],
 
-    // Stray Type imports
+    // Type imports
     ['^.+\\u0000$']
   ]
 };
