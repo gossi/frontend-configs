@@ -3,6 +3,7 @@
 const { merge, hasDep, pipe, configFor, forFiles } = require('./-utils');
 const { applyNamingConventions } = require('./naming-conventions/-utils');
 const componentsConventions = require('./naming-conventions/components');
+const templateRegistryConventions = require('./naming-conventions/template-registry');
 const emberConventions = require('./naming-conventions/ember');
 
 /**
@@ -33,6 +34,11 @@ module.exports = () => {
       applyNamingConventions(config.modules.browser.ts, componentsConventions)
     ),
     forFiles('**/*.d.ts', config.modules.browser.declarations),
+
+    forFiles(
+      'src/template-registry.{d.ts,ts}',
+      applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
+    ),
 
     forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
     forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),

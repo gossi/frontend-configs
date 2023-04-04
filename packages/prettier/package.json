@@ -10,6 +10,9 @@
   "peerDependencies": {
     "prettier": "^2.7.1"
   },
+  "dependencies": {
+    "prettier-plugin-ember-template-tag": "^0.3.2"
+  },
   "engines": {
     "node": "16.* || >= 18.*"
   },

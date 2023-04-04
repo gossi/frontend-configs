@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 
 export interface GreetingSignature {
-  Element: HTMLDivElement;
+  Element: HTMLSpanElement;
   Args: {
     hello: string;
     to: string;
