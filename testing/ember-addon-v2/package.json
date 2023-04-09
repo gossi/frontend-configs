@@ -44,7 +44,7 @@
     "concurrently": "^7.6.0",
     "ember-template-lint": "^5.7.2",
     "ember-cli-htmlbars": "^6.2.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "rollup": "^3.20.2",
     "typescript": "^5.0.4"
   },
