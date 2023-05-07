@@ -7,6 +7,22 @@ const templateRegistryConventions = require('./naming-conventions/template-regis
 const emberConventions = require('./naming-conventions/ember');
 
 /**
+ * Until this one is solved:
+ *
+ * https://github.com/gitKrystan/prettier-plugin-ember-template-tag/issues/20
+ *
+ * @param {Partial<import('eslint').Linter.Config>} config
+ * @returns {Partial<import('eslint').Linter.Config>}
+ */
+function deactivatePrettier(config) {
+  if (config.rules && config.rules['prettier/prettier'] !== undefined) {
+    delete config.rules['prettier/prettier'];
+  }
+
+  return config;
+}
+
+/**
  * @returns {import('eslint').Linter.Config}
  */
 module.exports = () => {
@@ -31,7 +47,11 @@ module.exports = () => {
     forFiles('{src,app,addon,addon-test-support,tests,types}/**/*.ts', config.modules.browser.ts),
     forFiles(
       '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
-      applyNamingConventions(config.modules.browser.ts, componentsConventions)
+      pipe(
+        config.modules.browser.ts,
+        (config) => applyNamingConventions(config, componentsConventions),
+        deactivatePrettier
+      )
     ),
     forFiles('**/*.d.ts', config.modules.browser.declarations),
 
@@ -40,26 +60,52 @@ module.exports = () => {
       applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
     ),
 
-    forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
-    forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
+    // ideally:
+    // forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
+    // forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
+
+    // but ...
+    forFiles(['./**/stories.js', './**/*.stories.js'], config.modules.stories.js),
+    forFiles(['./**/stories.ts', './**/*.stories.ts'], config.modules.stories.ts),
+
+    forFiles(
+      ['./**/stories.gjs', './**/*.stories.gjs'],
+      pipe(config.modules.tests.js, deactivatePrettier)
+    ),
+    forFiles(
+      ['./**/stories.gts', './**/*.stories.gts'],
+      pipe(config.modules.tests.ts, deactivatePrettier)
+    ),
 
     // ----------------------
     // Tests
-    forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
-    forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
+
+    // ideally:
+    // forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
+    // forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
+
+    // but ...
+    forFiles('tests/**/*-test.js', config.modules.tests.js),
+    forFiles('tests/**/*-test.ts', config.modules.tests.ts),
+
+    forFiles('tests/**/*-test.gjs', pipe(config.modules.tests.js, deactivatePrettier)),
+    forFiles('tests/**/*-test.gts', pipe(config.modules.tests.ts, deactivatePrettier)),
 
     // ----------------------
     // Config files, usually
     forFiles(
       [
-        './*.{cjs,js}',
+        './*.{js,cjs}',
         './config/**/*.js',
         './lib/*/index.js',
         './server/**/*.js',
         './blueprints/*/index.js'
       ],
       config.commonjs.node.js
-    )
+    ),
+
+    // next gen config files
+    forFiles(['./*.mjs'], config.modules.node.js)
   ]);
 };
 
@@ -104,7 +150,7 @@ function configBuilder() {
         get ts() {
           if (!hasTypeScript) return;
 
-          const config = pipe(
+          return pipe(
             {
               env: {
                 browser: true
@@ -112,25 +158,66 @@ function configBuilder() {
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
-            (config) => merge(config, require('./rules/typescript'))
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => applyNamingConventions(config, emberConventions)
           );
-
-          return applyNamingConventions(config, emberConventions);
         },
         get declarations() {
           if (!hasTypeScript) return;
 
-          const config = pipe(
+          return pipe(
             {
               env: {
                 browser: true
               }
             },
             (config) => merge(config, personalPreferences),
-            (config) => merge(config, require('./rules/typescript-declarations'))
+            (config) => merge(config, require('./rules/typescript-declarations')),
+            (config) => applyNamingConventions(config, emberConventions)
           );
+        }
+      },
+      node: {
+        get js() {
+          return pipe(
+            {
+              parserOptions: {
+                sourceType: 'module',
+                ecmaVersion: 'latest'
+              },
+              env: {
+                browser: false,
+                node: true,
+                es6: true
+              },
+              plugins: ['n'],
+              extends: []
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/imports'))
+          );
+        },
+        get ts() {
+          if (!hasTypeScript) return;
 
-          return applyNamingConventions(config, emberConventions);
+          return pipe(
+            {
+              parserOptions: {
+                sourceType: 'module',
+                ecmaVersion: 'latest'
+              },
+              env: {
+                browser: false,
+                node: true,
+                es6: true
+              },
+              plugins: ['n'],
+              extends: ['plugin:import/typescript']
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/imports')),
+            (config) => merge(config, require('./rules/typescript'))
+          );
         }
       },
       stories: {
@@ -150,7 +237,7 @@ function configBuilder() {
         get ts() {
           if (!hasTypeScript) return;
 
-          const config = pipe(
+          return pipe(
             {
               env: {
                 browser: true
@@ -159,10 +246,9 @@ function configBuilder() {
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
             (config) => merge(config, require('./rules/typescript')),
-            (config) => merge(config, require('./rules/storybook'))
+            (config) => merge(config, require('./rules/storybook')),
+            (config) => applyNamingConventions(config, emberConventions, componentsConventions)
           );
-
-          return applyNamingConventions(config, emberConventions, componentsConventions);
         }
       },
       tests: {

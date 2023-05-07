@@ -2,16 +2,16 @@
   "name": "@gossi/config-prettier",
   "version": "0.3.1",
   "repository": "https://github.com/gossi/frontend-configs",
-  "devDependencies": {
-    "@gossi/config-eslint": "0.3.1",
-    "eslint": "^8.42.0",
-    "prettier": "^2.8.8"
+  "dependencies": {
+    "prettier-plugin-ember-template-tag": "^0.3.2"
   },
   "peerDependencies": {
     "prettier": "^2.7.1"
   },
-  "dependencies": {
-    "prettier-plugin-ember-template-tag": "^0.3.2"
+  "devDependencies": {
+    "@gossi/config-eslint": "0.3.1",
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8"
   },
   "engines": {
     "node": "16.* || >= 18.*"

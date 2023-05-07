@@ -1,6 +1,6 @@
 {
   "name": "ember-addon-v2-ts",
-  "version": "0.3.1",
+  "version": "0.0.0",
   "private": true,
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [
@@ -10,7 +10,7 @@
   "license": "MIT",
   "author": "",
   "files": [
-    "addon-main.js",
+    "addon-main.cjs",
     "dist"
   ],
   "scripts": {
@@ -34,22 +34,24 @@
     "@babel/plugin-proposal-decorators": "^7.21.0",
     "@babel/plugin-syntax-decorators": "^7.21.0",
     "@embroider/addon-dev": "^3.0.0",
-    "@glint/core": "^1.0.0-beta.4",
-    "@glint/environment-ember-loose": "^1.0.0-beta.4",
-    "@glint/environment-ember-template-imports": "^1.0.0-beta.4",
-    "@glint/template": "^1.0.0-beta.4",
+    "@glint/core": "^1.0.2",
+    "@glint/environment-ember-loose": "^1.0.2",
+    "@glint/environment-ember-template-imports": "^1.0.2",
+    "@glint/template": "^1.0.2",
     "@glimmer/component": "^1.1.2",
-    "@gossi/config-eslint": "^0.3.1",
-    "@gossi/config-prettier": "^0.3.1",
-    "@gossi/config-targets": "^0.3.1",
-    "@gossi/config-template-lint": "^0.3.1",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-targets": "workspace:*",
+    "@gossi/config-template-lint": "workspace:*",
     "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^2.0.0",
     "concurrently": "^7.6.0",
+    "ember-modifier": "^4.1.0",
     "ember-source": "^4.12.0",
     "ember-template-lint": "^5.7.2",
     "ember-cli-htmlbars": "^6.2.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.7",
     "rollup": "^3.20.2",
     "rollup-plugin-glimmer-template-tag": "^0.4.0",
     "typescript": "^5.0.3",
@@ -73,11 +75,11 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.js"
+    "main": "addon-main.cjs"
   },
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*",
-    "./addon-main.js": "./addon-main.js"
+    "./addon-main.js": "./addon-main.cjs"
   }
 }

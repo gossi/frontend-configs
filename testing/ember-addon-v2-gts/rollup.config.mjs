@@ -1,5 +1,7 @@
-import ts from 'rollup-plugin-ts';
 import { Addon } from '@embroider/addon-dev/rollup';
+
+import ts from 'rollup-plugin-ts';
+
 import { browsers } from '@gossi/config-targets';
 
 const addon = new Addon({
