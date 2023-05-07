@@ -12,7 +12,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "0.3.1",
     "@gossi/config-prettier": "0.3.1",
-    "eslint": "^8.39.0",
+    "eslint": "^8.40.0",
     "prettier": "2.8.8",
     "stylelint": "^14.16.1"
   },
