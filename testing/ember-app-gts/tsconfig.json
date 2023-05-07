@@ -6,10 +6,10 @@
     // work with TypeScript.
     "baseUrl": ".",
     "paths": {
-      "ember-app-ts/tests/*": [
+      "ember-app-gts/tests/*": [
         "tests/*"
       ],
-      "ember-app-ts/*": [
+      "ember-app-gts/*": [
         "app/*"
       ],
       "*": [
@@ -21,5 +21,14 @@
     "app/**/*",
     "tests/**/*",
     "types/**/*"
-  ]
+  ],
+  "exclude": [
+    "**/*.stories.ts"
+  ],
+  "glint": {
+    "environment": [
+      "ember-loose",
+      "ember-template-imports"
+    ]
+  }
 }

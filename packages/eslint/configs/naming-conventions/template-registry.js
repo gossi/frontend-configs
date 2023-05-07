@@ -10,6 +10,10 @@ module.exports = (rules) => [
   ...rules,
   {
     selector: 'property',
-    format: ['camelCase', 'PascalCase']
+    format: ['camelCase', 'PascalCase'],
+    custom: {
+      match: true,
+      regex: '[a-z\\-]'
+    }
   }
 ];

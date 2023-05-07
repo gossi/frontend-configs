@@ -44,7 +44,14 @@ module.exports = () => {
         globals: { self: 'readonly' }
       })
     ),
-    forFiles('{src,app,addon,addon-test-support,tests,types}/**/*.ts', config.modules.browser.ts),
+    forFiles(
+      '{src,app,addon,addon-test-support,tests,types}/**/*.ts',
+      applyNamingConventions(
+        config.modules.browser.ts,
+        componentsConventions,
+        templateRegistryConventions
+      )
+    ),
     forFiles(
       '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
       pipe(
@@ -56,7 +63,7 @@ module.exports = () => {
     forFiles('**/*.d.ts', config.modules.browser.declarations),
 
     forFiles(
-      'src/template-registry.{d.ts,ts}',
+      '{types,src}/template-registry.{d.ts,ts}',
       applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
     ),
 
@@ -65,16 +72,16 @@ module.exports = () => {
     // forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
 
     // but ...
-    forFiles(['./**/stories.js', './**/*.stories.js'], config.modules.stories.js),
-    forFiles(['./**/stories.ts', './**/*.stories.ts'], config.modules.stories.ts),
+    forFiles(['**/stories.js', '**/*.stories.js'], config.modules.stories.js),
+    forFiles(['**/stories.ts', '**/*.stories.ts'], config.modules.stories.ts),
 
     forFiles(
-      ['./**/stories.gjs', './**/*.stories.gjs'],
-      pipe(config.modules.tests.js, deactivatePrettier)
+      ['**/stories.gjs', '**/*.stories.gjs'],
+      pipe(config.modules.stories.js, deactivatePrettier)
     ),
     forFiles(
-      ['./**/stories.gts', './**/*.stories.gts'],
-      pipe(config.modules.tests.ts, deactivatePrettier)
+      ['**/stories.gts', '**/*.stories.gts'],
+      pipe(config.modules.stories.ts, deactivatePrettier)
     ),
 
     // ----------------------
