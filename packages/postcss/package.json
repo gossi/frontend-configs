@@ -15,7 +15,7 @@
     "@gossi/config-eslint": "0.3.1",
     "@gossi/config-prettier": "0.3.1",
     "postcss": "^8.4.23",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "prettier": "2.8.8"
   },
   "peerDependencies": {
