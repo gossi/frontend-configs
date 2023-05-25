@@ -361,8 +361,8 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       ember-welcome-page:
-        specifier: ^7.0.1
-        version: 7.0.1(@babel/core@7.21.8)
+        specifier: ^7.0.2
+        version: 7.0.2
       eslint:
         specifier: ^8.41.0
         version: 8.41.0
@@ -6568,14 +6568,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /ember-welcome-page@7.0.1(@babel/core@7.21.8):
-    resolution: {integrity: sha512-3Dj7+ap38O/rgQBNqBsd7RPfH81a6DE1xJbipMt9mjOkvLo3OamZiiekAeax3Ydnm3yKYCtbxHPkCIEn4G6B8A==}
+  /ember-welcome-page@7.0.2:
+    resolution: {integrity: sha512-TyaKxFIRXhODW5BTbqD/by0Gu8Z9B9AA1ki3Bzzm6fOj2b30Qlprtt+XUG52kS0zVNmxYj/WWoT0TsKiU61VOw==}
     engines: {node: 14.* || 16.* || >= 18}
     dependencies:
       '@embroider/addon-shim': 1.8.5
-      '@glimmer/component': 1.1.2(@babel/core@7.21.8)
     transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
     dev: true
 
