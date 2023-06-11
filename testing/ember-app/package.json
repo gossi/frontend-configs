@@ -56,7 +56,7 @@
     "ember-qunit": "^6.2.0",
     "ember-resolver": "^10.1.0",
     "ember-source": "~4.12.0",
-    "ember-template-lint": "^5.10.0",
+    "ember-template-lint": "^5.10.1",
     "ember-welcome-page": "^7.0.2",
     "eslint": "^8.42.0",
     "loader.js": "^4.7.0",
