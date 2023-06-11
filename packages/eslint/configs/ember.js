@@ -7,22 +7,6 @@ const templateRegistryConventions = require('./naming-conventions/template-regis
 const emberConventions = require('./naming-conventions/ember');
 
 /**
- * Until this one is solved:
- *
- * https://github.com/gitKrystan/prettier-plugin-ember-template-tag/issues/20
- *
- * @param {Partial<import('eslint').Linter.Config>} config
- * @returns {Partial<import('eslint').Linter.Config>}
- */
-function deactivatePrettier(config) {
-  if (config.rules && config.rules['prettier/prettier'] !== undefined) {
-    delete config.rules['prettier/prettier'];
-  }
-
-  return config;
-}
-
-/**
  * @returns {import('eslint').Linter.Config}
  */
 module.exports = () => {
@@ -54,11 +38,7 @@ module.exports = () => {
     ),
     forFiles(
       '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
-      pipe(
-        config.modules.browser.ts,
-        (config) => applyNamingConventions(config, componentsConventions),
-        deactivatePrettier
-      )
+      applyNamingConventions(config.modules.browser.ts, componentsConventions)
     ),
     forFiles('**/*.d.ts', config.modules.browser.declarations),
 
@@ -67,36 +47,14 @@ module.exports = () => {
       applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
     ),
 
-    // ideally:
-    // forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
-    // forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
-
-    // but ...
-    forFiles(['**/stories.js', '**/*.stories.js'], config.modules.stories.js),
-    forFiles(['**/stories.ts', '**/*.stories.ts'], config.modules.stories.ts),
-
-    forFiles(
-      ['**/stories.gjs', '**/*.stories.gjs'],
-      pipe(config.modules.stories.js, deactivatePrettier)
-    ),
-    forFiles(
-      ['**/stories.gts', '**/*.stories.gts'],
-      pipe(config.modules.stories.ts, deactivatePrettier)
-    ),
+    forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
+    forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
 
     // ----------------------
     // Tests
 
-    // ideally:
-    // forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
-    // forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
-
-    // but ...
-    forFiles('tests/**/*-test.js', config.modules.tests.js),
-    forFiles('tests/**/*-test.ts', config.modules.tests.ts),
-
-    forFiles('tests/**/*-test.gjs', pipe(config.modules.tests.js, deactivatePrettier)),
-    forFiles('tests/**/*-test.gts', pipe(config.modules.tests.ts, deactivatePrettier)),
+    forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
+    forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
 
     // ----------------------
     // Config files, usually

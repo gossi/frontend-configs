@@ -1,16 +1,6 @@
 {
-  // "[gjs]": {
-  //   // "editor.formatOnSave": true,
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "[gts]": {
-  //   // "editor.formatOnSave": true,
-  //   // "editor.defaultFormatter": "esbenp.prettier-vscode"
-  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  // },
   "[glimmer-ts]": {
     "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "eslint.workingDirectories": [
@@ -22,6 +12,7 @@
     "packages/template-lint",
     "testing/ember-addon-v2-gts",
     "testing/ember-addon-v2-ts",
+    "testing/ember-app-gts",
     "testing/ember-app-ts"
   ]
 }

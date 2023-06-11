@@ -1,6 +1,6 @@
 import Application from '@ember/application';
 
-import config from 'ember-app/config/environment';
+import config from 'ember-app-ts/config/environment';
 import loadInitializers from 'ember-load-initializers';
 import Resolver from 'ember-resolver';
 
