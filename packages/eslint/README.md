@@ -116,7 +116,7 @@ module.exports = {
 
 ### Node (CJS)
 
-This config is for when `*.js` is cjs, and ES Modules are used via the `*.mjs`
+This config is for when `*.js` is CommonJS, and ES Modules are used via the `*.mjs`
 extension.
 
 ```js
@@ -130,7 +130,7 @@ module.exports = configs.nodeCJS();
 
 ### Node (ESM)
 
-This config is for when `*.js` is ESM, and CommonJS are used via the `*.cjs`
+This config is for when `*.js` is ES Modules, and CommonJS are used via the `*.cjs`
 extension.
 
 ```js
