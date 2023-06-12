@@ -1,27 +1,60 @@
 # `@gossi/config-eslint`
 
-Add eslint to your packages. Based on [NullVoxPopuli/eslint-config](https://github.com/NullVoxPopuli/eslint-configs).
+Add eslint to your packages. Based on
+[NullVoxPopuli/eslint-config](https://github.com/NullVoxPopuli/eslint-configs).
+
+This lint config meta package is setup to lazily detect which plugins and
+configurations you have installed and automatically add them to your lint
+config.
+
+This has the following benefits:
+
+- No need to install dependencies you don't use (typescript, for example)
+- Progressive enhancement as you decide you want more behaviors / lints
+- Minimal impact to node_modules so that local dev and C.I. are not unnecessarily hit with extra dependencies
 
 ## Installation
 
-1) Install these packages:
+### 1) Install these packages
 
-    ```sh
-    pnpm add -D @gossi/config-eslint eslint
-    ```
+```sh
+pnpm add -D @gossi/config-eslint eslint
+```
 
-2) Create a `.eslintrc.js` file with your desired config (see below)
+### 2) Create Config
 
-3) Add scripts to execute linting
+Create a `.eslintrc.js` file with your desired config (see below)
 
-    ```json
-    {
-      "scripts": {
-        "lint:js": "eslint . --cache",
-        "lint:js:fix": "eslint . --fix"
-      }
-    }
-    ```
+### 3) Add scripts to execute linting
+
+```json
+{
+  "scripts": {
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  }
+}
+```
+
+### 4) Add packages to describe your project
+
+Describe your project:
+
+- Basic:
+  - `@babel/core` (bring your version)
+- Javascript:
+  - `@babel/eslint-parser`
+- Typescript:
+  - `@typescript-eslint/eslint-plugin`
+  - `@typescript-eslint/parser`
+
+Zero config for these plugins, installing them is enough:
+
+- Ember:
+  - `eslint-plugin-ember`
+  - `eslint-plugin-qunit`
+- Storybook:
+  - `eslint-plugin-storybook`
 
 ## Configs
 
@@ -34,57 +67,19 @@ Accommodates: JS, TS, App, and Addon
 'use strict';
 const { configs } = require('@gossi/config-eslint');
 
+// accommodates: JS, TS, App, Addon, and V2 Addon
 module.exports = configs.ember();
 ```
 
-### Node
-
-This config is native ES Modules, and cjs is allowed via files with the `*.cjs`
-extension.
+overriding:
 
 ```js
 // .eslintrc.js
 'use strict';
 const { configs } = require('@gossi/config-eslint');
-// accommodates: JS
-module.exports = configs.node();
-```
 
-### Node (CJS as defaultl)
-
-This config is for when `*.js` is cjs, and ES Modules are used via the `*.mjs`
-extension.
-
-```js
-// .eslintrc.js
-'use strict';
-const { configs } = require('@gossi/config-eslint');
-// accommodates: JS
-module.exports = configs.nodeCJS();
-```
-
-### Node (ES Modules in TypeScript)
-
-```js
-// .eslintrc.js
-'use strict';
-const { configs } = require('@gossi/config-eslint');
-// accommodates: JS, TS
-module.exports = configs.nodeTS();
-```
-
-## Overriding
-
-Every of the above config is overridable. Here are two examples of _how_ you can
-override the provided configs:
-
-_overriding_:
-
-```js
-// .eslintrc.js
-'use strict';
-const { configs } = require('@gossi/config-eslint');
 const config = configs.ember();
+
 module.exports = {
   ...config,
   overrides: [
@@ -95,25 +90,78 @@ module.exports = {
 }
 ```
 
-_overriding prettier configuration example_:
+### Cross Platform
+
+This config is ESM, as ESM is the most widely supported module format across different distributions (browser, node, etc).
+
+```js
+// .eslintrc.cjs
+'use strict';
+
+const { configs } = require('@gossi/config-eslint');
+
+// accommodates: JS, TS, ESM, and CJS
+module.exports = configs.crossPlatform();
+```
+
+### Node
+
+This config looks at your package.json to determine if your project is CommonJS or ES Modules.
 
 ```js
 // .eslintrc.js
 'use strict';
 const { configs } = require('@gossi/config-eslint');
-const config = configs.ember();
+
+// accommodates: JS, TS, ESM, and CJS
+module.exports = configs.node();
+```
+
+overriding:
+
+```js
+// .eslintrc.js
+'use strict';
+
+const { configs } = require('@gossi/config-eslint');
+const config = configs.node();
+
 module.exports = {
   ...config,
   overrides: [
     ...config.overrides,
-    {
-      files: ['**/*.js', '**/*.ts'],
-      rules: {
-        'prettier/prettier': ['error', { singleQuote: true, printWidth: 120, trailingComma: 'none' }],
-      },
-    },
+    // your modifications here
+    // see: https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work
   ]
 }
+```
+
+### Node (CJS)
+
+This config is for when `*.js` is CommonJS, and ES Modules are used via the `*.mjs`
+extension.
+
+```js
+// .eslintrc.js
+'use strict';
+const { configs } = require('@gossi/config-eslint');
+
+// accommodates: JS, TS, and CJS
+module.exports = configs.nodeCJS();
+```
+
+### Node (ESM)
+
+This config is for when `*.js` is ES Modules, and CommonJS are used via the `*.cjs`
+extension.
+
+```js
+// .eslintrc.js
+'use strict';
+const { configs } = require('@gossi/config-eslint');
+
+// accommodates: JS, TS, and ESM
+module.exports = configs.nodeESM();
 ```
 
 ## Debugging

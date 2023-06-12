@@ -1,292 +1,282 @@
 'use strict';
 
-const { tsBase, jsBase, moduleBase, moduleImports, baseRulesAppliedLast } = require('./base');
+const { merge, hasDep, pipe, configFor, forFiles } = require('./-utils');
+const { applyNamingConventions } = require('./naming-conventions/-utils');
+const componentsConventions = require('./naming-conventions/components');
+const templateRegistryConventions = require('./naming-conventions/template-registry');
+const emberConventions = require('./naming-conventions/ember');
 
-const emberLintRules = {
-  // this is a silly convention from back in the rails days
-  // it has no place in JS where things are camelCase
-  'ember/routes-segments-snake-case': 'off',
-  // co-located test files are filtered out of production bundle
-  'ember/no-test-support-import': 'off'
+/**
+ * @returns {import('eslint').Linter.Config}
+ */
+module.exports = () => {
+  let config = configBuilder();
+
+  return configFor([
+    // ----------------------
+    // Project Files
+    forFiles(
+      [
+        '{src,app,addon,addon-test-support,tests}/**/*.{gjs,js}',
+        'tests/dummy/config/deprecation-workflow.js'
+      ],
+      config.modules.browser.js
+    ),
+    forFiles(
+      'config/deprecation-workflow.js',
+      merge(config.modules.browser.js, {
+        globals: { self: 'readonly' }
+      })
+    ),
+    forFiles(
+      '{src,app,addon,addon-test-support,tests,types}/**/*.ts',
+      applyNamingConventions(
+        config.modules.browser.ts,
+        componentsConventions,
+        templateRegistryConventions
+      )
+    ),
+    forFiles(
+      '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
+      applyNamingConventions(config.modules.browser.ts, componentsConventions)
+    ),
+    forFiles('**/*.d.ts', config.modules.browser.declarations),
+
+    forFiles(
+      '{types,src}/template-registry.{d.ts,ts}',
+      applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
+    ),
+
+    forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
+    forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
+
+    // ----------------------
+    // Tests
+
+    forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
+    forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
+
+    // ----------------------
+    // Config files, usually
+    forFiles(
+      [
+        './*.{js,cjs}',
+        './config/**/*.js',
+        './lib/*/index.js',
+        './server/**/*.js',
+        './blueprints/*/index.js'
+      ],
+      config.commonjs.node.js
+    ),
+
+    // next gen config files
+    forFiles(['./*.mjs'], config.modules.node.js)
+  ]);
 };
 
-const appTS = {
-  ...tsBase,
-  files: ['./app/**/*.ts'],
-  plugins: [tsBase.plugins, moduleImports.plugins, 'ember', '@typescript-eslint'].flat(),
-  extends: [
-    'eslint:recommended',
-    'plugin:ember/recommended',
-    'plugin:decorator-position/ember',
-    'plugin:@typescript-eslint/recommended',
-    'prettier'
-  ],
-  rules: {
-    ...tsBase.rules,
-    ...emberLintRules,
-    ...moduleImports.rules,
+/**
+ *
+ */
+function configBuilder() {
+  let hasTypeScript = hasDep('typescript');
 
-    // not applicable due to how the runtime is
-    '@typescript-eslint/no-use-before-define': 'off',
-    // much concise
-    '@typescript-eslint/prefer-optional-chain': 'error',
+  let personalPreferences = pipe(
+    {},
+    (config) => merge(config, require('./base').base),
+    (config) => merge(config, require('./rules/decorator-position')),
+    (config) => merge(config, require('./rules/prettier').resolveRule())
+  );
 
-    '@typescript-eslint/naming-convention': [
-      ...tsBase.rules['@typescript-eslint/naming-convention'],
-      {
-        selector: 'property',
-        format: ['StrictPascalCase'],
-        filter: {
-          regex: 'Resolver|Router',
-          match: true
+  const babelParser = {
+    parser: '@babel/eslint-parser',
+    parserOptions: {
+      requireConfigFile: false,
+      babelOptions: {
+        plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]]
+      }
+    }
+  };
+
+  const configBuilder = {
+    modules: {
+      browser: {
+        get js() {
+          return pipe(
+            {
+              ...babelParser,
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember'))
+          );
+        },
+        get ts() {
+          if (!hasTypeScript) return;
+
+          return pipe(
+            {
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => applyNamingConventions(config, emberConventions)
+          );
+        },
+        get declarations() {
+          if (!hasTypeScript) return;
+
+          return pipe(
+            {
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/typescript-declarations')),
+            (config) => applyNamingConventions(config, emberConventions)
+          );
         }
       },
+      node: {
+        get js() {
+          return pipe(
+            {
+              parserOptions: {
+                sourceType: 'module',
+                ecmaVersion: 'latest'
+              },
+              env: {
+                browser: false,
+                node: true,
+                es6: true
+              },
+              plugins: ['n'],
+              extends: []
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/imports'))
+          );
+        },
+        get ts() {
+          if (!hasTypeScript) return;
 
-      // Signatures:
-      // https://rfcs.emberjs.com/id/0748-glimmer-component-signature
-      // https://typed-ember.gitbook.io/glint/using-glint/ember/helper-and-modifier-signatures
-      {
-        selector: 'property',
-        format: ['StrictPascalCase'],
-        filter: {
-          regex: 'Element|Args|Blocks|Return|Positional|Named',
-          match: true
+          return pipe(
+            {
+              parserOptions: {
+                sourceType: 'module',
+                ecmaVersion: 'latest'
+              },
+              env: {
+                browser: false,
+                node: true,
+                es6: true
+              },
+              plugins: ['n'],
+              extends: ['plugin:import/typescript']
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/imports')),
+            (config) => merge(config, require('./rules/typescript'))
+          );
+        }
+      },
+      stories: {
+        get js() {
+          return pipe(
+            {
+              ...babelParser,
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/storybook'))
+          );
+        },
+        get ts() {
+          if (!hasTypeScript) return;
+
+          return pipe(
+            {
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/storybook')),
+            (config) => applyNamingConventions(config, emberConventions, componentsConventions)
+          );
+        }
+      },
+      tests: {
+        get js() {
+          let browserJS = configBuilder.modules.browser.js;
+
+          return {
+            ...browserJS,
+            extends: [...browserJS.extends, 'plugin:qunit/recommended']
+          };
+        },
+        get ts() {
+          if (!hasTypeScript) return;
+
+          let browserTS = configBuilder.modules.browser.ts;
+
+          return {
+            ...browserTS,
+            extends: [...browserTS.extends, 'plugin:qunit/recommended']
+          };
         }
       }
-    ],
+    },
+    commonjs: {
+      node: {
+        get js() {
+          const EXPECTED_NODE_VERSION = '16.0.0'; // or greater
 
-    ...baseRulesAppliedLast
-  }
-};
-
-const appJS = {
-  ...jsBase,
-  files: ['./app/**/*.js'],
-  plugins: [moduleBase.plugins, moduleImports.plugins, 'ember', 'decorator-position'].flat(),
-  extends: [
-    'eslint:recommended',
-    'plugin:ember/recommended',
-    'plugin:decorator-position/ember',
-    'prettier'
-  ],
-  rules: {
-    ...jsBase.rules,
-    ...emberLintRules,
-    ...moduleImports.rules,
-    ...baseRulesAppliedLast
-  }
-};
-const addonTS = {
-  ...appTS,
-  files: ['./addon/**/*.ts', './addon-test-support/**/*.ts']
-};
-const addonJS = {
-  ...appJS,
-  files: ['./addon/**/*.js', './addon-test-support/**/*.js']
-};
-const addonV2JS = {
-  ...appJS,
-  files: ['./src/**/*.js']
-};
-const addonV2TS = {
-  ...appTS,
-  files: ['./src/**/*.ts']
-};
-
-const storiesTS = {
-  ...appTS,
-  files: ['./**/stories.ts', './**/*.stories.ts'],
-  plugins: [...appTS.plugins, 'storybook'].flat(),
-  extends: [...appTS.extends, 'plugin:storybook/recommended', 'plugin:storybook/csf'],
-  rules: {
-    ...appTS.rules,
-
-    '@typescript-eslint/naming-convention': [
-      ...tsBase.rules['@typescript-eslint/naming-convention'].filter(
-        // let's filter out variable as we are overwriting it below
-        // and anyway both options would be present but the first one would take precedence
-        (option) => option.selector !== 'variable'
-      ),
-      {
-        selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
-      }
-    ]
-  }
-};
-const storiesJS = {
-  ...appJS,
-  files: ['./**/stories.js', './**/*.stories.js'],
-  plugins: [...appJS.plugins, 'storybook'].flat(),
-  extends: [...appJS.extends, 'plugin:storybook/recommended', 'plugin:storybook/csf'],
-  rules: {
-    ...appJS.rules
-  }
-};
-
-const testsTS = {
-  ...appTS,
-  files: ['./tests/**/*.ts'],
-  excludedFiles: ['tests/dummy/declarations/**'],
-  plugins: [...appTS.plugins, 'qunit'],
-  extends: [...appTS.extends, 'plugin:qunit/recommended'],
-  env: {
-    ...appTS.env,
-    embertest: true
-  },
-  rules: {
-    ...appTS.rules,
-
-    // doesn't support deep nesting
-    'qunit/no-identical-names': 'warn',
-    // this rule is incomplete
-    'ember/no-test-import-export': 'off',
-
-    // handy to do this sort of thing in tests
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/no-floating-promises': 'off'
-  }
-};
-const testsJS = {
-  ...appJS,
-  files: ['./tests/**/*.js'],
-  plugins: [...appJS.plugins, 'qunit'],
-  extends: [...appJS.extends, 'plugin:qunit/recommended'],
-  env: {
-    ...appJS.env,
-    embertest: true
-  },
-  rules: {
-    ...appJS.rules,
-
-    // doesn't support deep nesting
-    'qunit/no-identical-names': 'warn',
-    // this rule is incomplete
-    'ember/no-test-import-export': 'off'
-  }
-};
-const typeDeclarations = {
-  ...tsBase,
-  files: ['./types/**', '*.d.ts'],
-  rules: {
-    ...tsBase.rules,
-    // custom type declarations get wonky
-    '@typescript-eslint/no-explicit-any': 'off',
-
-    '@typescript-eslint/naming-convention': [
-      ...tsBase.rules['@typescript-eslint/naming-convention'],
-      // component signatures: https://rfcs.emberjs.com/id/0748-glimmer-component-signature
-      {
-        selector: 'property',
-        format: ['StrictPascalCase'],
-        filter: {
-          regex: 'Args|Element|Blocks',
-          match: true
-        }
-      },
-
-      // for `test-app/app/config/environment.d.ts`
-      {
-        selector: 'property',
-        format: ['UPPER_CASE'],
-        filter: {
-          regex: 'APP',
-          match: true
+          return pipe(
+            {
+              parserOptions: {
+                sourceType: 'script',
+                ecmaVersion: 'latest'
+              },
+              env: {
+                browser: false,
+                node: true,
+                es6: true
+              },
+              plugins: ['n'],
+              extends: ['plugin:n/recommended'],
+              rules: {
+                'n/no-unsupported-features/es-syntax': [
+                  'error',
+                  {
+                    version: EXPECTED_NODE_VERSION
+                  }
+                ],
+                'n/no-unsupported-features': [
+                  'error',
+                  {
+                    version: EXPECTED_NODE_VERSION,
+                    ignores: []
+                  }
+                ]
+              }
+            },
+            (config) => merge(config, personalPreferences)
+          );
         }
       }
-    ]
-  }
-};
+    }
+  };
 
-const { baseConfig, baseModulesConfig } = require('./node');
-
-const packagePath = require.resolve(process.cwd() + '/package.json');
-const packageJson = require(packagePath);
-const isModules = packageJson.type === 'module' || packageJson['ember-addon']?.version === 2;
-const nodeFiles = [
-  './*.js',
-  './blueprints/*/index.js',
-  './config/**/*.js',
-  './lib/**/*.js',
-  './tests/dummy/config/**/*.js',
-  './scripts/**/*.js'
-];
-
-const rollupConfig = [
-  {
-    ...baseModulesConfig,
-    files: ['rollup.config.js']
-  }
-];
-
-const nodeConfigs = isModules
-  ? [
-      {
-        ...baseConfig,
-        files: nodeFiles.map((filePath) => filePath.replace('.js', '.cjs'))
-      },
-      {
-        ...baseModulesConfig,
-        files: [...nodeFiles, ...nodeFiles.map((filePath) => filePath.replace('.js', '.mjs'))]
-      },
-      ...rollupConfig
-    ]
-  : [
-      {
-        ...baseConfig,
-        files: [...nodeFiles, ...nodeFiles.map((filePath) => filePath.replace('.js', '.cjs'))]
-      },
-      {
-        ...baseModulesConfig,
-        files: nodeFiles.map((filePath) => filePath.replace('.js', '.mjs'))
-      },
-      ...rollupConfig
-    ];
-
-const deprecationWorkflow = {
-  ...jsBase,
-  parserOptions: {
-    ...jsBase.parserOptions,
-    sourceType: 'script'
-  },
-  files: ['tests/dummy/config/deprecation-workflow.js', 'config/deprecation-workflow.js'],
-  plugins: [moduleBase.plugins].flat(),
-  extends: ['eslint:recommended', 'prettier'],
-  rules: {
-    ...jsBase.rules,
-    ...baseRulesAppliedLast
-  }
-};
-
-module.exports = {
-  parts: {
-    appTS,
-    appJS,
-    addonTS,
-    addonJS,
-    addonV2JS,
-    addonV2TS,
-    storiesTS,
-    storiesJS,
-    testsTS,
-    testsJS,
-    typeDeclarations,
-    nodeConfigs,
-    deprecationWorkflow
-  },
-  ember: [
-    appTS,
-    appJS,
-    addonTS,
-    addonJS,
-    addonV2JS,
-    addonV2TS,
-    storiesTS,
-    storiesJS,
-    testsTS,
-    testsJS,
-    typeDeclarations,
-    ...nodeConfigs,
-    deprecationWorkflow
-  ]
-};
+  return configBuilder;
+}

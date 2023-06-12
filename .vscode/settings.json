@@ -1,0 +1,18 @@
+{
+  "[glimmer-ts]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.workingDirectories": [
+    "packages/eslint",
+    "packages/postcss",
+    "packages/prettier",
+    "packages/stylelint",
+    "packages/targets",
+    "packages/template-lint",
+    "testing/ember-addon-v2-gts",
+    "testing/ember-addon-v2-ts",
+    "testing/ember-app-gts",
+    "testing/ember-app-ts"
+  ]
+}

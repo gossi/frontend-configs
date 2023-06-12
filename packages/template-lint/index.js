@@ -9,6 +9,12 @@ module.exports = {
       rules: {
         prettier: 'off'
       }
+    },
+    {
+      files: ['**/*.{gjs,gts}'],
+      rules: {
+        prettier: 'off'
+      }
     }
   ]
 };

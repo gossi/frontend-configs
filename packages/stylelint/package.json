@@ -3,21 +3,21 @@
   "version": "0.3.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@gossi/config-targets": "0.3.1",
+    "@gossi/config-targets": "workspace:*",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard": "^33.0.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-order": "^6.0.3"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.3.1",
-    "@gossi/config-prettier": "0.3.1",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
     "eslint": "^8.42.0",
     "prettier": "2.8.8",
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.7.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.11.0"
+    "stylelint": "^15.0.0"
   },
   "engines": {
     "node": "16.* || >= 18.*"
