@@ -15,24 +15,46 @@ This has the following benefits:
 
 ## Installation
 
-1) Install these packages:
+### 1) Install these packages
 
-    ```sh
-    pnpm add -D @gossi/config-eslint eslint
-    ```
+```sh
+pnpm add -D @gossi/config-eslint eslint
+```
 
-2) Create a `.eslintrc.js` file with your desired config (see below)
+### 2) Create Config
 
-3) Add scripts to execute linting
+Create a `.eslintrc.js` file with your desired config (see below)
 
-    ```json
-    {
-      "scripts": {
-        "lint:js": "eslint . --cache",
-        "lint:js:fix": "eslint . --fix"
-      }
-    }
-    ```
+### 3) Add scripts to execute linting
+
+```json
+{
+  "scripts": {
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  }
+}
+```
+
+### 4) Add packages to describe your project
+
+Describe your project:
+
+- Basic:
+  - `@babel/core` (bring your version)
+- Javascript:
+  - `@babel/eslint-parser`
+- Typescript:
+  - `@typescript-eslint/eslint-plugin`
+  - `@typescript-eslint/parser`
+
+Zero config for these plugins, installing them is enough:
+
+- Ember:
+  - `eslint-plugin-ember`
+  - `eslint-plugin-qunit`
+- Storybook:
+  - `eslint-plugin-storybook`
 
 ## Configs
 

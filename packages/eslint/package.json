@@ -3,37 +3,61 @@
   "version": "0.3.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/eslint-parser": "^7.22.5",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.9",
     "cosmiconfig": "^8.2.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-decorator-position": "^5.0.2",
-    "eslint-plugin-ember": "^11.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-qunit": "^7.3.4",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-storybook": "^0.6.12"
+    "eslint-plugin-simple-import-sort": "^10.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.23.1",
-    "typescript": "^4.8.3"
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "eslint": "^7.0.0 || ^8.0.0",
+    "eslint-plugin-ember": "^11.8.0",
+    "eslint-plugin-qunit": "^7.3.4",
+    "eslint-plugin-storybook": "^0.6.12"
   },
   "peerDependenciesMeta": {
-    "typescript": {
+    "@babel/core": {
+      "optional": true
+    },
+    "@babel/eslint-parser": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "eslint-plugin-ember": {
+      "optional": true
+    },
+    "eslint-plugin-qunit": {
+      "optional": true
+    },
+    "eslint-plugin-storybook": {
       "optional": true
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@tsconfig/node18": "^2.0.1",
     "@tsconfig/strictest": "^2.0.1",
     "@types/node": "^20.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
     "eslint": "^8.42.0",
+    "eslint-plugin-ember": "^11.8.0",
+    "eslint-plugin-qunit": "^7.3.4",
+    "eslint-plugin-storybook": "^0.6.12",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   },
