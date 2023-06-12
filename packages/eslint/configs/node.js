@@ -132,7 +132,7 @@ module.exports = {
     } catch (e) {
       console.error(
         'Failed to find package.json. ' +
-          'When using the `node` config from `@nullvoxpopuli/eslint-configs`, ' +
+          'When using the `node` config from `@gossi/config-eslint`, ' +
           'you must invoke `eslint` from the same directory as package.json ' +
           'so that the config can correctly determine if your project is ESM or CJS. ' +
           'The current working directory is ' +
