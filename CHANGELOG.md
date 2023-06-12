@@ -1,5 +1,15 @@
 # Changelog
 
+
+## v0.4.0 (2023-06-12)
+
+#### :rocket: Enhancement
+* `eslint`, `postcss`, `prettier`, `stylelint`, `targets`, `template-lint`
+  * [#167](https://github.com/gossi/frontend-configs/pull/167) Next version of eslint config ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.3.1 (2023-02-06)
 
 ## Release v0.3.0 (2022-12-20)

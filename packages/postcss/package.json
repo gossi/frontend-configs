@@ -1,10 +1,10 @@
 {
   "name": "@gossi/config-postcss",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "postcss config",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@gossi/config-targets": "workspace:*",
+    "@gossi/config-targets": "0.4.0",
     "postcss-each": "^1.1.0",
     "postcss-nested": "^6.0.1",
     "postcss-parcel-css": "^0.5.1",
@@ -12,8 +12,8 @@
     "postcss-preset-env": "^8.4.2"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "workspace:*",
-    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-eslint": "0.4.0",
+    "@gossi/config-prettier": "0.4.0",
     "postcss": "^8.4.24",
     "eslint": "^8.42.0",
     "prettier": "2.8.8"

@@ -1,13 +1,13 @@
 {
   "name": "@gossi/config-template-lint",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
     "ember-template-lint-plugin-prettier": "^4.1.1"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "workspace:*",
-    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-eslint": "0.4.0",
+    "@gossi/config-prettier": "0.4.0",
     "ember-template-lint": "^5.10.1",
     "eslint": "^8.42.0",
     "prettier": "2.8.8"
