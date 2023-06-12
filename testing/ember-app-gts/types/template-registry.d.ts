@@ -1,4 +1,5 @@
 import '@glint/environment-ember-loose';
+import '@glint/environment-ember-template-imports';
 
 import type { HelperLike } from '@glint/template';
 import type WelcomePage from 'ember-welcome-page/components/welcome-page';
