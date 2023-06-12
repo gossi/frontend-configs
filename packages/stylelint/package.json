@@ -5,7 +5,7 @@
   "dependencies": {
     "@gossi/config-targets": "0.3.1",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard": "^33.0.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-order": "^6.0.3"
   },
@@ -14,7 +14,7 @@
     "@gossi/config-prettier": "0.3.1",
     "eslint": "^8.42.0",
     "prettier": "2.8.8",
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.7.0"
   },
   "peerDependencies": {
     "stylelint": "^14.11.0"
