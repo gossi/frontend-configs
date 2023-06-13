@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -87,7 +91,7 @@ importers:
   packages/postcss:
     dependencies:
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../targets
       '@parcel/css':
         specifier: ^1.14.0
@@ -109,10 +113,10 @@ importers:
         version: 8.4.2(postcss@8.4.24)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../prettier
       eslint:
         specifier: ^8.42.0
@@ -131,7 +135,7 @@ importers:
         version: 0.3.2
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../eslint
       eslint:
         specifier: ^8.42.0
@@ -143,7 +147,7 @@ importers:
   packages/stylelint:
     dependencies:
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../targets
       stylelint-config-prettier:
         specifier: ^9.0.5
@@ -159,10 +163,10 @@ importers:
         version: 6.0.3(stylelint@15.7.0)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../prettier
       eslint:
         specifier: ^8.42.0
@@ -177,10 +181,10 @@ importers:
   packages/targets:
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../prettier
       eslint:
         specifier: ^8.42.0
@@ -196,10 +200,10 @@ importers:
         version: 4.1.1(ember-template-lint@5.10.1)(prettier@2.8.8)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../prettier
       ember-template-lint:
         specifier: ^5.10.1
@@ -248,16 +252,16 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -281,7 +285,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(ember-source@4.12.1)
       ember-source:
-        specifier: ^4.12.0
+        specifier: ^4.12.1
         version: 4.12.1(@babel/core@7.22.5)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(webpack@5.86.0)
       ember-template-lint:
         specifier: ^5.10.1
@@ -339,16 +343,16 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@babel/core@7.22.5)
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -372,7 +376,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(ember-source@4.12.1)
       ember-source:
-        specifier: ^4.12.0
+        specifier: ^4.12.1
         version: 4.12.1(@babel/core@7.22.5)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(webpack@5.86.0)
       ember-template-lint:
         specifier: ^5.10.1
@@ -429,16 +433,16 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/template-lint
       '@tsconfig/ember':
         specifier: ^2.0.0
@@ -513,7 +517,7 @@ importers:
         specifier: ^10.1.0
         version: 10.1.0(@ember/string@3.1.1)(ember-source@4.12.1)
       ember-source:
-        specifier: ~4.12.0
+        specifier: ~4.12.1
         version: 4.12.1(@babel/core@7.22.5)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(webpack@5.86.0)
       ember-template-imports:
         specifier: ^3.4.2
@@ -576,16 +580,16 @@ importers:
         specifier: ^0.84.3
         version: 0.84.3
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: workspace:*
+        specifier: 0.4.0
         version: link:../../packages/template-lint
       '@tsconfig/ember':
         specifier: ^2.0.0
