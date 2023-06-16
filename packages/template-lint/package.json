@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "ember-template-lint-plugin-prettier": "^4.1.1"
+    "ember-template-lint-plugin-prettier": "^4.2.0"
   },
   "devDependencies": {
     "@gossi/config-eslint": "0.4.0",
