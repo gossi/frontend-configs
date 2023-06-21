@@ -73,7 +73,7 @@
     "webpack": "^5.87.0"
   },
   "engines": {
-    "node": ">= v18.16.0"
+    "node": ">= v18.16.1"
   },
   "volta": {
     "extends": "../../package.json"
