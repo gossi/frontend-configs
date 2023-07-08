@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-eslint",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
     "cosmiconfig": "^8.2.0",

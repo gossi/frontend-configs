@@ -1,6 +1,19 @@
 # Changelog
 
 
+
+## v0.4.1 (2023-07-08)
+
+#### :bug: Bug Fix
+* `eslint`
+  * [#285](https://github.com/gossi/frontend-configs/pull/285) Make plugin configs optional when not present ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* [#288](https://github.com/gossi/frontend-configs/pull/288) lock release-it (until plugins are updated) ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.4.0 (2023-06-12)
 
 #### :rocket: Enhancement
