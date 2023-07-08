@@ -67,6 +67,13 @@ function merge(source, override, options = { mandatory: true }) {
     return source;
   }
 
+  // when this override is based on the existence of a given plugin, then we
+  // check if the plugin is present and if not don't apply the config to not
+  // break the users' eslint run
+  if (override.plugin && !hasDep(override.plugin)) {
+    return source;
+  }
+
   if ('rule' in override) {
     return merge(source, override.rule, options);
   }
