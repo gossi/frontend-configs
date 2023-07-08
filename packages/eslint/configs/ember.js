@@ -220,20 +220,14 @@ function configBuilder() {
         get js() {
           let browserJS = configBuilder.modules.browser.js;
 
-          return pipe(
-            browserJS,
-            (config) => merge(config, require('./rules/qunit'))
-          );
+          return pipe(browserJS, (config) => merge(config, require('./rules/qunit')));
         },
         get ts() {
           if (!hasTypeScript) return;
 
           let browserTS = configBuilder.modules.browser.ts;
 
-          return pipe({
-            browserTS,
-            (config) => merge(config, require('./rules/qunit'))
-          });
+          return pipe(browserTS, (config) => merge(config, require('./rules/qunit')));
         }
       }
     },
