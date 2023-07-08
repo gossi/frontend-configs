@@ -1,11 +1,12 @@
-const plugin = 'decorator-position';
+'use strict';
+
+const plugin = 'qunit';
 
 /**
  * @type {import('../types').PartialConfig}
  */
 const rule = {
-  plugins: [plugin],
-  extends: ['plugin:decorator-position/ember']
+  extends: ['plugin:qunit/recommended']
 };
 
 module.exports = { rule, plugin };

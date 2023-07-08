@@ -1,5 +1,5 @@
 {
-  "name": "ember-addon-v2-ts",
+  "name": "ember-addon-v2-gts",
   "version": "0.4.0",
   "private": true,
   "description": "The default blueprint for Embroider v2 addons.",
@@ -54,7 +54,6 @@
     "eslint": "^8.44.0",
     "eslint-plugin-ember": "^11.9.0",
     "eslint-plugin-qunit": "^7.3.4",
-    "eslint-plugin-storybook": "^0.6.12",
     "prettier": "^2.8.8",
     "rollup": "^3.26.2",
     "rollup-plugin-glimmer-template-tag": "^0.4.1",
