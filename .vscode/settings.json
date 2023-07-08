@@ -11,7 +11,9 @@
     "packages/targets",
     "packages/template-lint",
     "testing/ember-addon-v2-gts",
+    "testing/ember-addon-v2-gts-stories",
     "testing/ember-addon-v2-ts",
+    "testing/ember-addon-v2-ts-stories",
     "testing/ember-app-gts",
     "testing/ember-app-ts"
   ]
