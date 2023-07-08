@@ -1,11 +1,13 @@
 'use strict';
 
+const plugin = 'import';
+
 /**
  *
  * @type {import('../types').PartialConfig}
  */
 const rule = {
-  plugins: ['import'],
+  plugins: [plugin],
   extends: ['plugin:import/recommended'],
   rules: {
     // ----------------------------
@@ -30,4 +32,4 @@ const rule = {
   }
 };
 
-module.exports = { rule };
+module.exports = { rule, plugin };

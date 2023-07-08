@@ -4,7 +4,7 @@ const plugin = 'decorator-position';
  * @type {import('../types').PartialConfig}
  */
 const rule = {
-  plugins: ['decorator-position'],
+  plugins: [plugin],
   extends: ['plugin:decorator-position/ember']
 };
 
