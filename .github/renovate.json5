@@ -1,6 +1,7 @@
 // Docs:
 // https://docs.renovatebot.com/configuration-options/
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
   ],
@@ -104,6 +105,13 @@
         "peerDependencies"
       ],
       "enabled": false
+    },
+    // lock release-it until the plugins update
+    {
+      "matchPackageNames": [
+        "release-it"
+      ],
+      "allowedVersions": "< 16"
     }
     // turn off for tests?
     // {
