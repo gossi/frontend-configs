@@ -11,7 +11,7 @@
     "release-it": "^15.11.0"
   },
   "volta": {
-    "node": "18.16.1"
+    "node": "18.17.0"
   },
   "release-it": {
     "plugins": {
