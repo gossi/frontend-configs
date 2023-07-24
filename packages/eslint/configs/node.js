@@ -44,7 +44,8 @@ const configBuilder = () => {
           {
             parserOptions: {
               sourceType: 'module',
-              ecmaVersion: 'latest'
+              ecmaVersion: 'latest',
+              project: true
             },
             env: {
               browser: false,
@@ -91,7 +92,8 @@ const configBuilder = () => {
           {
             parserOptions: {
               sourceType: 'script',
-              ecmaVersion: 'latest'
+              ecmaVersion: 'latest',
+              project: true
             },
             env: {
               browser: false,
