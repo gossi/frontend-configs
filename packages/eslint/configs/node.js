@@ -3,6 +3,7 @@
 const path = require('path');
 
 const { hasDep, configFor, pipe, merge, forFiles } = require('./-utils');
+const { typescriptParserOptions } = require('./parsers/typescript');
 
 /**
  *
@@ -42,11 +43,7 @@ const configBuilder = () => {
 
         return pipe(
           {
-            parserOptions: {
-              sourceType: 'module',
-              ecmaVersion: 'latest',
-              project: true
-            },
+            parserOptions: typescriptParserOptions,
             env: {
               browser: false,
               node: true,
@@ -90,11 +87,7 @@ const configBuilder = () => {
 
         return pipe(
           {
-            parserOptions: {
-              sourceType: 'script',
-              ecmaVersion: 'latest',
-              project: true
-            },
+            parserOptions: typescriptParserOptions,
             env: {
               browser: false,
               node: true,
