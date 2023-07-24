@@ -1,6 +1,7 @@
 'use strict';
 
 const { hasDep, configFor, pipe, merge, forFiles } = require('./-utils');
+const { typescriptParserOptions } = require('./parsers/typescript');
 
 /**
  * @param {import('./types').Options} options
@@ -39,11 +40,7 @@ const configBuilder = (options = {}) => {
 
         return pipe(
           {
-            parserOptions: {
-              sourceType: 'module',
-              ecmaVersion: 'latest',
-              project: true
-            },
+            parserOptions: typescriptParserOptions,
             env: {
               browser: false,
               node: true,
@@ -85,11 +82,7 @@ const configBuilder = (options = {}) => {
 
         return pipe(
           {
-            parserOptions: {
-              sourceType: 'script',
-              ecmaVersion: 'latest',
-              project: true
-            },
+            parserOptions: typescriptParserOptions,
             env: {
               browser: false,
               node: true,

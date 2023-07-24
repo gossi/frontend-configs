@@ -6,10 +6,6 @@
   "repository": "",
   "license": "MIT",
   "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "concurrently 'npm:lint:*(!fix)'",
@@ -20,8 +16,7 @@
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "start": "ember serve",
-    "test": "concurrently 'npm:test:*'",
-    "test:ember": "ember test -tp 0"
+    "test": "ember test"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -56,7 +51,6 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
     "ember-cli-typescript": "^5.3.0",
-    "ember-cli-typescript-blueprints": "^3.0.0",
     "ember-load-initializers": "^2.1.2",
     "ember-modifier": "^4.1.0",
     "ember-page-title": "^8.2.3",

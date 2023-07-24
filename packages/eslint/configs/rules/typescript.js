@@ -108,9 +108,6 @@ const rule = {
     // 'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
 
-    // 'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': 'error',
-
     // 'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
 
