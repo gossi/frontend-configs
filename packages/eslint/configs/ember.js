@@ -119,6 +119,9 @@ function configBuilder() {
             {
               env: {
                 browser: true
+              },
+              parserOptions: {
+                project: true
               }
             },
             (config) => merge(config, personalPreferences),
@@ -134,6 +137,9 @@ function configBuilder() {
             {
               env: {
                 browser: true
+              },
+              parserOptions: {
+                project: true
               }
             },
             (config) => merge(config, personalPreferences),
@@ -169,7 +175,8 @@ function configBuilder() {
             {
               parserOptions: {
                 sourceType: 'module',
-                ecmaVersion: 'latest'
+                ecmaVersion: 'latest',
+                project: true
               },
               env: {
                 browser: false,
@@ -206,6 +213,9 @@ function configBuilder() {
             {
               env: {
                 browser: true
+              },
+              parserOptions: {
+                project: true
               }
             },
             (config) => merge(config, personalPreferences),
