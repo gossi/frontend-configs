@@ -2,6 +2,20 @@
 
 
 
+
+## v0.5.0 (2023-07-26)
+
+#### :boom: Breaking Change
+* `eslint`, `prettier`
+  * [#312](https://github.com/gossi/frontend-configs/pull/312) Update to prettier@v3 ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* [#314](https://github.com/gossi/frontend-configs/pull/314) Run ember tests on CI ([@gossi](https://github.com/gossi))
+* [#313](https://github.com/gossi/frontend-configs/pull/313) Update release-it to v16 ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.4.1 (2023-07-08)
 
 #### :bug: Bug Fix
