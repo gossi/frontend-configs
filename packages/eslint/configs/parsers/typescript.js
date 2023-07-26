@@ -1,7 +1,7 @@
 const typescriptParserOptions = {
   ecmaVersion: 'latest',
-  project: true
-  // extraFileExtensions: ['.gts']
+  project: true,
+  extraFileExtensions: ['.gts']
 };
 
 module.exports = { typescriptParserOptions };
