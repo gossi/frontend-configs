@@ -3,10 +3,10 @@
   "version": "0.4.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "prettier-plugin-ember-template-tag": "^0.3.2"
+    "prettier-plugin-ember-template-tag": "^1.0.0"
   },
   "peerDependencies": {
-    "prettier": "^2.8.0"
+    "prettier": "^3.0.0"
   },
   "devDependencies": {
     "@gossi/config-eslint": "0.4.1",
