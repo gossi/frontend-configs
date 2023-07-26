@@ -21,7 +21,7 @@
     "lint:types": "tsc --noEmit",
     "start": "ember serve",
     "test": "concurrently 'npm:test:*'",
-    "test:ember": "ember test"
+    "test:ember": "ember test -tp 0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
