@@ -39,10 +39,10 @@ jobs:
         run: pnpm run -r --parallel --aggregate-output lint:hbs
 
   test:
-    name: 'Test'
+    name: Ember Tests
     runs-on: ubuntu-latest
     steps:
       - name: Setup
         uses: wyvox/action@v1
       - name: Run Tests
-        run: pnpm --filter ember-app run test:ember
+        run: pnpm run -r --parallel --aggregate-output test:ember
