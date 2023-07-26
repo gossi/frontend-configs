@@ -4,17 +4,22 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "eslint.workingDirectories": [
-    "packages/eslint",
-    "packages/postcss",
-    "packages/prettier",
-    "packages/stylelint",
-    "packages/targets",
-    "packages/template-lint",
-    "testing/ember-addon-v2-gts",
-    "testing/ember-addon-v2-gts-stories",
-    "testing/ember-addon-v2-ts",
-    "testing/ember-addon-v2-ts-stories",
-    "testing/ember-app-gts",
-    "testing/ember-app-ts"
+    {
+      "mode": "auto"
+    }
   ]
+  // "eslint.workingDirectories": [
+  //   "packages/eslint",
+  //   "packages/postcss",
+  //   "packages/prettier",
+  //   "packages/stylelint",
+  //   "packages/targets",
+  //   "packages/template-lint",
+  //   "testing/ember-addon-v2-gts",
+  //   "testing/ember-addon-v2-gts-stories",
+  //   "testing/ember-addon-v2-ts",
+  //   "testing/ember-addon-v2-ts-stories",
+  //   "testing/ember-app-gts",
+  //   "testing/ember-app-ts"
+  // ]
 }
