@@ -10,6 +10,6 @@ module('Rendering | <Button>', function (hooks) {
   test('it renders with defaults', async function (assert) {
     await render(<template><Greeting @hello="hi" @to="me"/></template>);
 
-    assert.dom().hasText('hi to me');
+    assert.dom().hasText('hi to Me');
   });
 });
