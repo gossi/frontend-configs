@@ -51,7 +51,7 @@
     "ember-source": "^5.0.0",
     "ember-template-lint": "^5.11.1",
     "ember-cli-htmlbars": "^6.2.0",
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "eslint-plugin-ember": "^11.10.0",
     "eslint-plugin-qunit": "^7.3.4",
     "prettier": "^3.0.0",
