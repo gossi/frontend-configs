@@ -55,7 +55,7 @@
     "eslint-plugin-ember": "^11.10.0",
     "eslint-plugin-qunit": "^7.3.4",
     "eslint-plugin-storybook": "^0.6.13",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "rollup": "^3.27.2",
     "rollup-plugin-glimmer-template-tag": "^0.4.1",
     "typescript": "^5.1.3",
