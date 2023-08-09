@@ -3,6 +3,16 @@
 
 
 
+
+## v0.5.1 (2023-08-09)
+
+#### :rocket: Enhancement
+* `prettier`, `template-lint`
+  * [#331](https://github.com/gossi/frontend-configs/pull/331) Update `ember-template-lint-plugin-prettier@5` ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.5.0 (2023-07-26)
 
 #### :boom: Breaking Change
