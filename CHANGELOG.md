@@ -4,6 +4,20 @@
 
 
 
+
+## v0.6.0 (2023-08-12)
+
+#### :rocket: Enhancement
+* `stylelint`
+  * [#334](https://github.com/gossi/frontend-configs/pull/334) Remove deprecated `stylelint-config-prettier` dependency ([@gossi](https://github.com/gossi))
+
+#### :bug: Bug Fix
+* `eslint`
+  * [#332](https://github.com/gossi/frontend-configs/pull/332) Fix n/no-missing-import for Typescript ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.5.1 (2023-08-09)
 
 #### :rocket: Enhancement
