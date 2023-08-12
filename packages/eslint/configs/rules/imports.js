@@ -1,6 +1,6 @@
 'use strict';
 
-const plugin = 'import';
+const plugin = 'i';
 
 /**
  *
@@ -8,7 +8,7 @@ const plugin = 'import';
  */
 const rule = {
   plugins: [plugin],
-  extends: ['plugin:import/recommended'],
+  extends: ['plugin:i/recommended'],
   rules: {
     // ----------------------------
     // Broken Rules

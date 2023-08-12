@@ -176,12 +176,12 @@ function configBuilder() {
                 node: true,
                 es6: true
               },
-              plugins: ['n'],
-              extends: ['plugin:import/typescript']
+              plugins: ['n']
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/imports')),
-            (config) => merge(config, require('./rules/typescript'))
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/typescript-imports'))
           );
         }
       },

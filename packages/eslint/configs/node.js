@@ -52,11 +52,13 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended', 'plugin:import/typescript']
+            extends: ['plugin:n/recommended'],
+            settings: {}
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports')),
-          (config) => merge(config, require('./rules/typescript'))
+          (config) => merge(config, require('./rules/typescript')),
+          (config) => merge(config, require('./rules/typescript-imports'))
         );
       }
     },
@@ -97,11 +99,13 @@ const configBuilder = () => {
               es6: true
             },
             plugins: ['n'],
-            extends: ['plugin:n/recommended', 'plugin:import/typescript']
+            extends: ['plugin:n/recommended'],
+            settings: {}
           },
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports')),
-          (config) => merge(config, require('./rules/typescript'))
+          (config) => merge(config, require('./rules/typescript')),
+          (config) => merge(config, require('./rules/typescript-imports'))
         );
       }
     },
