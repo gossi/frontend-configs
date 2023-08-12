@@ -91,11 +91,11 @@ function merge(source, override, options = { mandatory: true }) {
     rules: {
       ...obj(source.rules),
       ...obj(override.rules)
+    },
+    settings: {
+      ...obj(source.settings),
+      ...obj(override.settings)
     }
-    // settings: {
-    //   ...obj(source.settings),
-    //   ...obj(override.settings),
-    // }
   };
 }
 
