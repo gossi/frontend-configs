@@ -97,7 +97,7 @@ importers:
   packages/postcss:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../targets
       '@parcel/css':
         specifier: ^1.14.0
@@ -119,10 +119,10 @@ importers:
         version: 9.1.1(postcss@8.4.27)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../prettier
       eslint:
         specifier: ^8.46.0
@@ -141,7 +141,7 @@ importers:
         version: 1.0.2(prettier@3.0.1)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../eslint
       eslint:
         specifier: ^8.46.0
@@ -153,7 +153,7 @@ importers:
   packages/stylelint:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../targets
       stylelint-config-standard:
         specifier: ^33.0.0
@@ -166,10 +166,10 @@ importers:
         version: 6.0.3(stylelint@15.10.2)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../prettier
       eslint:
         specifier: ^8.46.0
@@ -184,10 +184,10 @@ importers:
   packages/targets:
     devDependencies:
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../prettier
       eslint:
         specifier: ^8.46.0
@@ -203,10 +203,10 @@ importers:
         version: 5.0.0(ember-template-lint@5.11.1)(prettier@3.0.1)
     devDependencies:
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../prettier
       ember-template-lint:
         specifier: ^5.11.1
@@ -221,13 +221,13 @@ importers:
   testing/blog-core-ts:
     devDependencies:
       '@gossi/config-eslint':
-        specifier: workspace:*
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: workspace:*
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: workspace:*
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@jest/globals':
         specifier: ^29.6.2
@@ -303,16 +303,16 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -403,16 +403,16 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -494,16 +494,16 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@babel/core@7.22.10)
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -576,16 +576,16 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@babel/core@7.22.10)
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^6.0.3
@@ -669,16 +669,16 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@tsconfig/ember':
         specifier: ^3.0.0
@@ -816,16 +816,16 @@ importers:
         specifier: ^0.84.3
         version: 0.84.3
       '@gossi/config-eslint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/eslint
       '@gossi/config-prettier':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/prettier
       '@gossi/config-targets':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/targets
       '@gossi/config-template-lint':
-        specifier: 0.5.1
+        specifier: 0.6.0
         version: link:../../packages/template-lint
       '@tsconfig/ember':
         specifier: ^3.0.0
