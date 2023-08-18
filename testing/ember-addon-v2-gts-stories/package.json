@@ -33,7 +33,7 @@
     "@babel/plugin-proposal-decorators": "^7.22.10",
     "@babel/plugin-syntax-decorators": "^7.22.10",
     "@embroider/addon-dev": "^4.1.0",
-    "@glint/core": "^1.0.2",
+    "@glint/core": "^1.1.0",
     "@glint/environment-ember-loose": "^1.0.2",
     "@glint/environment-ember-template-imports": "^1.0.2",
     "@glint/template": "^1.0.2",
