@@ -13,7 +13,7 @@
     "@gossi/config-prettier": "0.6.0",
     "eslint": "^8.47.0",
     "prettier": "2.8.8",
-    "stylelint": "^15.10.2"
+    "stylelint": "^15.10.3"
   },
   "peerDependencies": {
     "stylelint": "^15.0.0"
