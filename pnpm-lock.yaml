@@ -251,8 +251,8 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.47.0)(typescript@5.2.2)
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       eslint:
         specifier: ^8.47.0
         version: 8.47.0
@@ -327,8 +327,8 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.47.0)(typescript@5.2.2)
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -427,8 +427,8 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.47.0)(typescript@5.2.2)
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -518,8 +518,8 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.47.0)(typescript@5.2.2)
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -600,8 +600,8 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.47.0)(typescript@5.2.2)
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -702,8 +702,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-auto-import:
         specifier: ^2.6.3
         version: 2.6.3(@glint/template@1.1.0)(webpack@5.88.2)
@@ -849,8 +849,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.1
+        version: 8.2.1
       ember-auto-import:
         specifier: ^2.6.3
         version: 2.6.3(@glint/template@1.1.0)(webpack@5.88.2)
@@ -6734,8 +6734,8 @@ packages:
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  /concurrently@8.2.0:
-    resolution: {integrity: sha512-nnLMxO2LU492mTUj9qX/az/lESonSZu81UznYDoXtz1IQf996ixVqPAgHXwvHiHCAef/7S8HIK+fTFK7Ifk8YA==}
+  /concurrently@8.2.1:
+    resolution: {integrity: sha512-nVraf3aXOpIcNud5pB9M82p1tynmZkrSGQ1p6X/VY8cJ+2LMVqAgXsJxYYefACSHbTYlm92O1xuhdGTjwoEvbQ==}
     engines: {node: ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
