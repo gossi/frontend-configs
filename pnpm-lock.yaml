@@ -21,8 +21,8 @@ importers:
   packages/eslint:
     dependencies:
       cosmiconfig:
-        specifier: ^8.3.2
-        version: 8.3.2(typescript@5.2.2)
+        specifier: ^8.3.3
+        version: 8.3.3(typescript@5.2.2)
       eslint-config-prettier:
         specifier: ^8.10.0
         version: 8.10.0(eslint@8.47.0)
@@ -6964,9 +6964,9 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /cosmiconfig@8.3.2(typescript@5.2.2):
-    resolution: {integrity: sha512-/PvU3MjSLVKJMRHsL6GW+wHQ9RaJuMW6fnn56sXNy+kP1L8nI/SHk9F9giIA+dnfzjKNJAulRjOR/fi9kzGuNA==}
-    engines: {node: '>=18'}
+  /cosmiconfig@8.3.3(typescript@5.2.2):
+    resolution: {integrity: sha512-/VY+0IvFoE47hwgKHu8feeBFIb1Z1mcJFiLrNwaJpLoLa9qwLVquMGMr2OUwQmhpJDtsSQSasg/TMv1imec9xA==}
+    engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -15816,7 +15816,7 @@ packages:
       '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 8.3.2(typescript@5.2.2)
+      cosmiconfig: 8.3.3(typescript@5.2.2)
       css-functions-list: 3.2.0
       css-tree: 2.3.1
       debug: 4.3.4
