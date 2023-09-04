@@ -137,8 +137,8 @@ importers:
   packages/prettier:
     dependencies:
       prettier-plugin-ember-template-tag:
-        specifier: ^1.0.2
-        version: 1.0.2(prettier@3.0.3)
+        specifier: ^1.1.0
+        version: 1.1.0(prettier@3.0.3)
     devDependencies:
       '@gossi/config-eslint':
         specifier: 0.6.0
@@ -14193,8 +14193,8 @@ packages:
       fast-diff: 1.3.0
     dev: false
 
-  /prettier-plugin-ember-template-tag@1.0.2(prettier@3.0.3):
-    resolution: {integrity: sha512-skL3NH1ay/eTlrTSTtFxoHLBmZJIoTDrb2zOONClt01aKqs/8brh/9ZtnjjLHi9FUq5x/kJ8LCm+6BYmNp696Q==}
+  /prettier-plugin-ember-template-tag@1.1.0(prettier@3.0.3):
+    resolution: {integrity: sha512-zJTC+NhEU0kHNnVh7OtcvMmkJmYTgFTist76FP9q07m9+WCvcaunR1sTFIOlGE9TH/5UGm6rlF86Umt9ouorAg==}
     engines: {node: 16.* || 18.* || >= 20}
     peerDependencies:
       prettier: '>= 3.0.0'
