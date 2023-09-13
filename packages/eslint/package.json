@@ -50,7 +50,7 @@
     "@babel/core": "^7.22.17",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.22.15",
-    "@tsconfig/node18": "^18.2.1",
+    "@tsconfig/node18": "^18.2.2",
     "@tsconfig/strictest": "^2.0.2",
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
