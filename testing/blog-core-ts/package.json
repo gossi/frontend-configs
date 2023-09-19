@@ -29,7 +29,7 @@
     "typescript": "^5.2.2"
   },
   "engines": {
-    "node": ">= v18.17.1"
+    "node": ">= v18.18.0"
   },
   "version": "0.6.0"
 }
