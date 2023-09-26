@@ -294,11 +294,11 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typescript@5.2.2)
       '@glint/environment-ember-loose':
-        specifier: ^1.1.0
-        version: 1.1.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.2.0
+        version: 1.2.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.1.0
-        version: 1.1.0(@glint/environment-ember-loose@1.1.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
+        version: 1.1.0(@glint/environment-ember-loose@1.2.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
       '@glint/template':
         specifier: ^1.1.0
         version: 1.1.0
@@ -394,11 +394,11 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typescript@5.2.2)
       '@glint/environment-ember-loose':
-        specifier: ^1.1.0
-        version: 1.1.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.2.0
+        version: 1.2.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.1.0
-        version: 1.1.0(@glint/environment-ember-loose@1.1.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
+        version: 1.1.0(@glint/environment-ember-loose@1.2.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
       '@glint/template':
         specifier: ^1.1.0
         version: 1.1.0
@@ -660,11 +660,11 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typescript@5.2.2)
       '@glint/environment-ember-loose':
-        specifier: ^1.1.0
-        version: 1.1.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.2.0
+        version: 1.2.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.1.0
-        version: 1.1.0(@glint/environment-ember-loose@1.1.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
+        version: 1.1.0(@glint/environment-ember-loose@1.2.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2)
       '@glint/template':
         specifier: ^1.1.0
         version: 1.1.0
@@ -3135,11 +3135,11 @@ packages:
       - supports-color
     dev: true
 
-  /@glint/environment-ember-loose@1.1.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0):
-    resolution: {integrity: sha512-Qwr3OAptRZ8zqxaPvpVBdbSiiImYMRNu+0IPQGaDutqOV80GzWYeiMuEyPC0Nwy4mQ3991YxE24Q+a5/FTfTNw==}
+  /@glint/environment-ember-loose@1.2.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0):
+    resolution: {integrity: sha512-zj26Gh0cPY8FdT8X+UBUfgXB2Gt7T1RUn9jhlG1O7sZJTCmL8B/UNSZEB4KMAcs/dDv53u/pBl78+JF2B7F+7w==}
     peerDependencies:
       '@glimmer/component': ^1.1.2
-      '@glint/template': ^1.1.0
+      '@glint/template': ^1.2.0
       '@types/ember__array': ^4.0.2
       '@types/ember__component': ^4.0.10
       '@types/ember__controller': ^4.0.2
@@ -3169,7 +3169,7 @@ packages:
       ember-modifier: 4.1.0(ember-source@5.0.0)
     dev: true
 
-  /@glint/environment-ember-template-imports@1.1.0(@glint/environment-ember-loose@1.1.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2):
+  /@glint/environment-ember-template-imports@1.1.0(@glint/environment-ember-loose@1.2.0)(@glint/template@1.1.0)(ember-template-imports@3.4.2):
     resolution: {integrity: sha512-duNk2NzDilNctzz+XHecICfMMt8LjLEhaWPiBvFfFeLW35gqZo2XQpeBQI/pq2gH0ZbWOP7rr9Kde12v7ossZg==}
     peerDependencies:
       '@glint/environment-ember-loose': ^1.1.0
@@ -3189,7 +3189,7 @@ packages:
       '@types/ember__routing':
         optional: true
     dependencies:
-      '@glint/environment-ember-loose': 1.1.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+      '@glint/environment-ember-loose': 1.2.0(@glimmer/component@1.1.2)(@glint/template@1.1.0)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/template': 1.1.0
       ember-template-imports: 3.4.2
     dev: true
