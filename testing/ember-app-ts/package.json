@@ -35,7 +35,7 @@
     "@gossi/config-targets": "0.6.0",
     "@gossi/config-template-lint": "0.6.0",
     "@tsconfig/ember": "^3.0.1",
-    "@types/eslint": "^8.44.3",
+    "@types/eslint": "^8.44.4",
     "@types/qunit": "^2.19.6",
     "@types/rsvp": "^4.0.5",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
