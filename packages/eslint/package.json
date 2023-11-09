@@ -47,9 +47,9 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/eslint-parser": "^7.22.15",
-    "@babel/preset-env": "^7.23.2",
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@tsconfig/node18": "^18.2.2",
     "@tsconfig/strictest": "^2.0.2",
     "@types/node": "^20.8.10",
