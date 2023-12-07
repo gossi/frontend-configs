@@ -17,10 +17,17 @@ module.exports = () => {
     // Project Files
     forFiles(
       [
-        '{src,app,addon,addon-test-support,tests}/**/*.{gjs,js}',
+        '{src,app,addon,addon-test-support,tests}/**/*.js',
         'tests/dummy/config/deprecation-workflow.js'
       ],
       config.modules.browser.js
+    ),
+    forFiles(
+      [
+        '{src,app,addon,addon-test-support,tests}/**/*.gjs',
+        'tests/dummy/config/deprecation-workflow.js'
+      ],
+      config.modules.browser.gjs
     ),
     forFiles(
       'config/deprecation-workflow.js',
@@ -38,7 +45,7 @@ module.exports = () => {
     ),
     forFiles(
       '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
-      applyNamingConventions(config.modules.browser.ts, componentsConventions)
+      applyNamingConventions(config.modules.browser.gts, componentsConventions)
     ),
     forFiles('**/*.d.ts', config.modules.browser.declarations),
 
@@ -53,8 +60,10 @@ module.exports = () => {
     // ----------------------
     // Tests
 
-    forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
-    forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
+    forFiles('tests/**/*-test.js', config.modules.tests.js),
+    forFiles('tests/**/*-test.gjs', config.modules.tests.gjs),
+    forFiles('tests/**/*-test.ts', config.modules.tests.ts),
+    forFiles('tests/**/*-test.gts', config.modules.tests.gts),
 
     // ----------------------
     // Config files, usually
@@ -97,6 +106,14 @@ function configBuilder() {
     }
   };
 
+  const gtsParser = {
+    parser: 'eslint-plugin-ember/gjs-gts-parser',
+    parserOptions: {
+      project: true,
+      extraFileExtensions: ['.gts']
+    }
+  };
+
   const configBuilder = {
     modules: {
       browser: {
@@ -125,6 +142,26 @@ function configBuilder() {
             (config) => merge(config, require('./rules/ember')),
             (config) => merge(config, require('./rules/typescript')),
             (config) => applyNamingConventions(config, emberConventions)
+          );
+        },
+        get gjs() {
+          let browserJS = configBuilder.modules.browser.js;
+
+          return pipe(
+            browserJS,
+            (config) => merge(config, gtsParser),
+            (config) => merge(config, require('./rules/ember-gjs'))
+          );
+        },
+        get gts() {
+          if (!hasTypeScript) return;
+
+          let browserTS = configBuilder.modules.browser.ts;
+
+          return pipe(
+            browserTS,
+            (config) => merge(config, gtsParser),
+            (config) => merge(config, require('./rules/ember-gts'))
           );
         },
         get declarations() {
@@ -228,6 +265,18 @@ function configBuilder() {
           let browserTS = configBuilder.modules.browser.ts;
 
           return pipe(browserTS, (config) => merge(config, require('./rules/qunit')));
+        },
+        get gjs() {
+          let browserJS = configBuilder.modules.tests.js;
+
+          return pipe(browserJS, (config) => merge(config, gtsParser));
+        },
+        get gts() {
+          if (!hasTypeScript) return;
+
+          let browserTS = configBuilder.modules.tests.ts;
+
+          return pipe(browserTS, (config) => merge(config, gtsParser));
         }
       }
     },
