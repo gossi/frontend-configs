@@ -705,8 +705,8 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: ^2.7.1
-        version: 2.7.1(@glint/template@1.2.1)(webpack@5.89.0)
+        specifier: ^2.7.2
+        version: 2.7.2(@glint/template@1.2.1)(webpack@5.89.0)
       ember-cli:
         specifier: ~4.12.2
         version: 4.12.2
@@ -852,8 +852,8 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: ^2.7.1
-        version: 2.7.1(@glint/template@1.2.1)(webpack@5.89.0)
+        specifier: ^2.7.2
+        version: 2.7.2(@glint/template@1.2.1)(webpack@5.89.0)
       ember-cli:
         specifier: ~5.5.0
         version: 5.5.0
@@ -1349,7 +1349,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.6
-      '@babel/helper-create-class-features-plugin': 7.23.5(@babel/core@7.23.6)
+      '@babel/helper-create-class-features-plugin': 7.23.6(@babel/core@7.23.6)
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
@@ -2876,7 +2876,7 @@ packages:
       '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
-      ember-auto-import: 2.7.1(@glint/template@1.2.1)(webpack@5.89.0)
+      ember-auto-import: 2.7.2(@glint/template@1.2.1)(webpack@5.89.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-source: 5.0.0(@babel/core@7.23.6)(@glimmer/component@1.1.2)(@glint/template@1.2.1)(webpack@5.89.0)
@@ -7721,8 +7721,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-auto-import@2.7.1(@glint/template@1.2.1)(webpack@5.89.0):
-    resolution: {integrity: sha512-8i5pw9DAtIJ+h+iGbYD25GPTyF3gLurokT7b1HBvKkHdOQuqGaXB9aiWA72BnqwA3Kwd3nfgdOml3HEaeQmCKQ==}
+  /ember-auto-import@2.7.2(@glint/template@1.2.1)(webpack@5.89.0):
+    resolution: {integrity: sha512-pkWIljmJClYL17YBk8FjO7NrZPQoY9v0b+FooJvaHf/xlDQIBYVP7OaDHbNuNbpj7+wAwSDAnnwxjCoLsmm4cw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@babel/core': 7.23.6
@@ -8500,7 +8500,7 @@ packages:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
-      ember-auto-import: 2.7.1(@glint/template@1.2.1)(webpack@5.89.0)
+      ember-auto-import: 2.7.2(@glint/template@1.2.1)(webpack@5.89.0)
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.0.0
       ember-source: 5.0.0(@babel/core@7.23.6)(@glimmer/component@1.1.2)(@glint/template@1.2.1)(webpack@5.89.0)
