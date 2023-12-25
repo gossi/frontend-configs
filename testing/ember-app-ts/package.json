@@ -29,7 +29,7 @@
     "@ember/test-helpers": "^3.2.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
-    "@glimmer/validator": "^0.86.0",
+    "@glimmer/validator": "^0.87.1",
     "@gossi/config-eslint": "0.6.0",
     "@gossi/config-prettier": "0.6.0",
     "@gossi/config-targets": "0.6.0",
