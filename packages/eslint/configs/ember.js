@@ -5,6 +5,7 @@ const { applyNamingConventions } = require('./naming-conventions/-utils');
 const componentsConventions = require('./naming-conventions/components');
 const templateRegistryConventions = require('./naming-conventions/template-registry');
 const emberConventions = require('./naming-conventions/ember');
+const { typescriptParserOptions } = require('./parsers/typescript');
 
 /**
  * @returns {import('eslint').Linter.Config}
@@ -119,7 +120,8 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
@@ -134,7 +136,8 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/typescript-declarations')),
@@ -167,10 +170,7 @@ function configBuilder() {
 
           return pipe(
             {
-              parserOptions: {
-                sourceType: 'module',
-                ecmaVersion: 'latest'
-              },
+              parserOptions: typescriptParserOptions,
               env: {
                 browser: false,
                 node: true,
@@ -206,7 +206,8 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
