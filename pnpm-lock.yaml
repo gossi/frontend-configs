@@ -744,8 +744,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(ember-source@5.0.0)
       ember-page-title:
-        specifier: ^8.1.0
-        version: 8.1.0(ember-source@5.0.0)
+        specifier: ^8.2.0
+        version: 8.2.0(ember-source@5.0.0)
       ember-qunit:
         specifier: ^7.0.0
         version: 7.0.0(@ember/test-helpers@3.2.1)(@glint/template@1.2.2)(ember-source@5.0.0)(qunit@2.20.0)(webpack@5.89.0)
@@ -891,8 +891,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(ember-source@5.0.0)
       ember-page-title:
-        specifier: ^8.1.0
-        version: 8.1.0(ember-source@5.0.0)
+        specifier: ^8.2.0
+        version: 8.2.0(ember-source@5.0.0)
       ember-qunit:
         specifier: ^7.0.0
         version: 7.0.0(@ember/test-helpers@3.2.1)(@glint/template@1.2.2)(ember-source@5.0.0)(qunit@2.20.0)(webpack@5.89.0)
@@ -3990,6 +3990,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@simple-dom/document@1.4.0:
+    resolution: {integrity: sha512-/RUeVH4kuD3rzo5/91+h4Z1meLSLP66eXqpVAw/4aZmYozkeqUkMprq0znL4psX/adEed5cBgiNJcfMz/eKZLg==}
+    dependencies:
+      '@simple-dom/interface': 1.4.0
+    dev: true
 
   /@simple-dom/interface@1.4.0:
     resolution: {integrity: sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==}
@@ -8510,13 +8516,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-page-title@8.1.0(ember-source@5.0.0):
-    resolution: {integrity: sha512-c5V4sWu+OSRhN6Fsa0M71PkdNpKkV7Lg9FwqogK3iE++R43G6ySLV/Ls0cE5K+IWS1om7XSPqcUvkfhrfZ3y0g==}
+  /ember-page-title@8.2.0(ember-source@5.0.0):
+    resolution: {integrity: sha512-8t6kJ4V47BLccXH5I/0h86MG0TqwGi7UDxbLGn8yudg8Hit3iAkB3YrN2378uLUluYZM8KBxu1NsrMRsxhi48A==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
       ember-source: '>= 3.28.0'
     dependencies:
       '@embroider/addon-shim': 1.8.7
+      '@simple-dom/document': 1.4.0
       ember-source: 5.0.0(@babel/core@7.23.7)(@glimmer/component@1.1.2)(@glint/template@1.2.2)(webpack@5.89.0)
     transitivePeerDependencies:
       - supports-color
