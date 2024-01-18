@@ -294,11 +294,11 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(typescript@5.3.3)
       '@glint/environment-ember-loose':
-        specifier: ^1.2.2
-        version: 1.2.2(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.3.0
+        version: 1.3.0(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.2.2
-        version: 1.2.2(@glint/environment-ember-loose@1.2.2)(@glint/template@1.2.2)
+        version: 1.2.2(@glint/environment-ember-loose@1.3.0)(@glint/template@1.2.2)
       '@glint/template':
         specifier: ^1.2.2
         version: 1.2.2
@@ -394,11 +394,11 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(typescript@5.3.3)
       '@glint/environment-ember-loose':
-        specifier: ^1.2.2
-        version: 1.2.2(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.3.0
+        version: 1.3.0(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.2.2
-        version: 1.2.2(@glint/environment-ember-loose@1.2.2)(@glint/template@1.2.2)
+        version: 1.2.2(@glint/environment-ember-loose@1.3.0)(@glint/template@1.2.2)
       '@glint/template':
         specifier: ^1.2.2
         version: 1.2.2
@@ -660,11 +660,11 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(typescript@5.3.3)
       '@glint/environment-ember-loose':
-        specifier: ^1.2.2
-        version: 1.2.2(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+        specifier: ^1.3.0
+        version: 1.3.0(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/environment-ember-template-imports':
         specifier: ^1.2.2
-        version: 1.2.2(@glint/environment-ember-loose@1.2.2)(@glint/template@1.2.2)
+        version: 1.2.2(@glint/environment-ember-loose@1.3.0)(@glint/template@1.2.2)
       '@glint/template':
         specifier: ^1.2.2
         version: 1.2.2
@@ -3181,11 +3181,11 @@ packages:
       - supports-color
     dev: true
 
-  /@glint/environment-ember-loose@1.2.2(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0):
-    resolution: {integrity: sha512-qsKDBmn84eDv0wVVvYToxMat5kvG9zMygwmmOsdShZ5g/HgostOhnISAM+WG6bMNu30OjxLnCHX/e8pgWAfWAg==}
+  /@glint/environment-ember-loose@1.3.0(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0):
+    resolution: {integrity: sha512-kURIttax2zG1oYniJ4bd3rhJRuP588Ld4YAG5EFzjg4s01oLQKpfNskxwSwox07PUkygm2D+9v3Foo2TlYJSSg==}
     peerDependencies:
       '@glimmer/component': ^1.1.2
-      '@glint/template': ^1.2.2
+      '@glint/template': ^1.3.0
       '@types/ember__array': ^4.0.2
       '@types/ember__component': ^4.0.10
       '@types/ember__controller': ^4.0.2
@@ -3215,7 +3215,7 @@ packages:
       ember-modifier: 4.1.0(ember-source@5.0.0)
     dev: true
 
-  /@glint/environment-ember-template-imports@1.2.2(@glint/environment-ember-loose@1.2.2)(@glint/template@1.2.2):
+  /@glint/environment-ember-template-imports@1.2.2(@glint/environment-ember-loose@1.3.0)(@glint/template@1.2.2):
     resolution: {integrity: sha512-B02AmhCjPZk4ygrBi54TtdEe0Gjw8KkSFX0AIA3+PEWKemEJwgNHuCyAwEeDKvr3Z3zAsx9vNIKkJqYQXV3NQw==}
     peerDependencies:
       '@glint/environment-ember-loose': ^1.2.2
@@ -3234,7 +3234,7 @@ packages:
       '@types/ember__routing':
         optional: true
     dependencies:
-      '@glint/environment-ember-loose': 1.2.2(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
+      '@glint/environment-ember-loose': 1.3.0(@glimmer/component@1.1.2)(@glint/template@1.2.2)(ember-cli-htmlbars@6.3.0)(ember-modifier@4.1.0)
       '@glint/template': 1.2.2
       ember-template-imports: 3.4.2
     transitivePeerDependencies:
