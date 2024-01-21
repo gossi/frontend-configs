@@ -52,7 +52,7 @@
     "eslint-plugin-qunit": "^7.3.4",
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.2.2",
-    "rollup": "^4.9.5",
+    "rollup": "^4.9.6",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
