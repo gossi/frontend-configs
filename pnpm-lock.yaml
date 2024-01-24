@@ -233,8 +233,8 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       '@swc/cli':
-        specifier: ^0.1.65
-        version: 0.1.65(@swc/core@1.3.105)
+        specifier: ^0.3.0
+        version: 0.3.0(@swc/core@1.3.105)
       '@swc/core':
         specifier: ^1.3.105
         version: 1.3.105
@@ -4162,9 +4162,9 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /@swc/cli@0.1.65(@swc/core@1.3.105):
-    resolution: {integrity: sha512-4NcgsvJVHhA7trDnMmkGLLvWMHu2kSy+qHx6QwRhhJhdiYdNUrhdp+ERxen73sYtaeEOYeLJcWrQ60nzKi6rpg==}
-    engines: {node: '>= 12.13'}
+  /@swc/cli@0.3.0(@swc/core@1.3.105):
+    resolution: {integrity: sha512-5QdBitM+jW5KBkH4SEXqdZOC8vI3fWdQMU5crl0KXB9l5AHqJvz/VvBXHwcWV8KkteUztJMOLDYZ8TsLcquKAw==}
+    engines: {node: '>= 16.14.0'}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1.2.66
@@ -4178,6 +4178,7 @@ packages:
       commander: 7.2.0
       fast-glob: 3.3.1
       minimatch: 9.0.3
+      piscina: 4.3.0
       semver: 7.5.4
       slash: 3.0.0
       source-map: 0.7.4
@@ -13433,6 +13434,16 @@ packages:
       type-fest: 2.19.0
     dev: true
 
+  /nice-napi@1.0.2:
+    resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}
+    os: ['!win32']
+    requiresBuild: true
+    dependencies:
+      node-addon-api: 3.2.1
+      node-gyp-build: 4.8.0
+    dev: true
+    optional: true
+
   /nice-try@1.0.5:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
     dev: true
@@ -13442,6 +13453,12 @@ packages:
     dependencies:
       lower-case: 2.0.2
       tslib: 2.6.2
+
+  /node-addon-api@3.2.1:
+    resolution: {integrity: sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==}
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
@@ -13468,6 +13485,13 @@ packages:
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
     dev: true
+
+  /node-gyp-build@4.8.0:
+    resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
@@ -14110,6 +14134,12 @@ packages:
   /pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /piscina@4.3.0:
+    resolution: {integrity: sha512-vTQszGZj78p0BHFNO/cSvpzPUYa4tLXRe30aIYyQjqRS3fK/kPqdxvkTfGXQlEpWOI+mOOkda0iEY6NaanLWJA==}
+    optionalDependencies:
+      nice-napi: 1.0.2
     dev: true
 
   /pkg-dir@4.2.0:
