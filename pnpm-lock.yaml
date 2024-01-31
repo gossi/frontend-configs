@@ -31,7 +31,7 @@ importers:
         version: 3.6.1(@typescript-eslint/parser@5.62.0)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
       eslint-plugin-decorator-position:
         specifier: ^5.0.2
-        version: 5.0.2(@babel/eslint-parser@7.23.9)(eslint@8.56.0)
+        version: 5.0.2(@babel/eslint-parser@7.23.10)(eslint@8.56.0)
       eslint-plugin-i:
         specifier: ^2.29.1
         version: 2.29.1(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
@@ -52,8 +52,8 @@ importers:
         specifier: ^7.23.9
         version: 7.23.9
       '@babel/eslint-parser':
-        specifier: ^7.23.9
-        version: 7.23.9(@babel/core@7.23.9)(eslint@8.56.0)
+        specifier: ^7.23.10
+        version: 7.23.10(@babel/core@7.23.9)(eslint@8.56.0)
       '@babel/preset-env':
         specifier: ^7.23.9
         version: 7.23.9(@babel/core@7.23.9)
@@ -985,8 +985,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/eslint-parser@7.23.9(@babel/core@7.23.9)(eslint@8.56.0):
-    resolution: {integrity: sha512-xPndlO7qxiJbn0ATvfXQBjCS7qApc9xmKHArgI/FTEFxXas5dnjC/VqM37lfZun9dclRYcn+YQAr6uDFy0bB2g==}
+  /@babel/eslint-parser@7.23.10(@babel/core@7.23.9)(eslint@8.56.0):
+    resolution: {integrity: sha512-3wSYDPZVnhseRnxRJH6ZVTNknBz76AEnyC+AYYhasjP3Yy23qz0ERR7Fcd2SHmYuSFJ2kY9gaaDd3vyqU09eSw==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
@@ -9152,7 +9152,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /eslint-plugin-decorator-position@5.0.2(@babel/eslint-parser@7.23.9)(eslint@8.56.0):
+  /eslint-plugin-decorator-position@5.0.2(@babel/eslint-parser@7.23.10)(eslint@8.56.0):
     resolution: {integrity: sha512-wFcRfrB9zljOP1n5udg16h6ITX1jG8cnUvuFVtIqVxw5O9BTOXFHB9hvsTaqpb8JFX2dq19fH3i/ipUeFSF87w==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -9163,7 +9163,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.23.9
-      '@babel/eslint-parser': 7.23.9(@babel/core@7.23.9)(eslint@8.56.0)
+      '@babel/eslint-parser': 7.23.10(@babel/core@7.23.9)(eslint@8.56.0)
       '@babel/plugin-proposal-decorators': 7.22.5(@babel/core@7.23.9)
       '@ember-data/rfc395-data': 0.0.4
       ember-rfc176-data: 0.3.18
