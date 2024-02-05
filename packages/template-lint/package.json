@@ -13,7 +13,7 @@
     "@gossi/config-prettier": "0.6.0",
     "ember-template-lint": "^5.13.0",
     "eslint": "^8.56.0",
-    "prettier": "^3.2.4"
+    "prettier": "^3.2.5"
   },
   "engines": {
     "node": "16.* || >= 18.*"
