@@ -12,9 +12,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.6.0",
-    "@gossi/config-prettier": "0.6.0",
-    "@gossi/config-targets": "0.6.0",
+    "@gossi/config-eslint": "0.7.0",
+    "@gossi/config-prettier": "0.7.0",
+    "@gossi/config-targets": "0.7.0",
     "@jest/globals": "^29.7.0",
     "@swc/cli": "^0.3.9",
     "@swc/core": "^1.4.0",
@@ -31,5 +31,5 @@
   "engines": {
     "node": ">= 20.11.0"
   },
-  "version": "0.6.0"
+  "version": "0.7.0"
 }

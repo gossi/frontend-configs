@@ -1,16 +1,16 @@
 {
   "name": "@gossi/config-stylelint",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@gossi/config-targets": "0.6.0",
+    "@gossi/config-targets": "0.7.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.6.0",
-    "@gossi/config-prettier": "0.6.0",
+    "@gossi/config-eslint": "0.7.0",
+    "@gossi/config-prettier": "0.7.0",
     "eslint": "^8.56.0",
     "prettier": "2.8.8",
     "stylelint": "^15.11.0"

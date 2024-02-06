@@ -1,6 +1,6 @@
 {
   "name": "ember-addon-v2-gts",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": true,
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [
@@ -38,10 +38,10 @@
     "@glint/environment-ember-template-imports": "^1.3.0",
     "@glint/template": "^1.3.0",
     "@glimmer/component": "^1.1.2",
-    "@gossi/config-eslint": "0.6.0",
-    "@gossi/config-prettier": "0.6.0",
-    "@gossi/config-targets": "0.6.0",
-    "@gossi/config-template-lint": "0.6.0",
+    "@gossi/config-eslint": "0.7.0",
+    "@gossi/config-prettier": "0.7.0",
+    "@gossi/config-targets": "0.7.0",
+    "@gossi/config-template-lint": "0.7.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.3",
     "@typescript-eslint/eslint-plugin": "^5.62.0",

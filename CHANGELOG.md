@@ -5,6 +5,16 @@
 
 
 
+
+## v0.7.0 (2024-02-06)
+
+#### :rocket: Enhancement
+* `eslint`
+  * [#579](https://github.com/gossi/frontend-configs/pull/579) Extend Naming Conventions ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## v0.6.0 (2023-08-12)
 
 #### :rocket: Enhancement
