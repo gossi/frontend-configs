@@ -7,12 +7,21 @@
  * @returns {Selector[]}
  */
 module.exports = (rules) => [
-  ...rules,
+  ...rules.filter(
+    // let's filter out property as we are overwriting it below
+    // and anyway both options would be present but the first one would take precedence
+    (option) => option.selector !== 'property'
+  ),
+  {
+    selector: 'property',
+    format: ['camelCase', 'PascalCase']
+  },
+
   {
     selector: 'property',
     format: ['StrictPascalCase'],
     filter: {
-      regex: 'Resolver|Router',
+      regex: '^(Resolver|Router)$',
       match: true
     }
   },
@@ -35,7 +44,7 @@ module.exports = (rules) => [
     selector: 'property',
     format: ['StrictPascalCase'],
     filter: {
-      regex: 'Element|Args|Blocks|Return|Positional|Named',
+      regex: '^(Element|Args|Blocks|Return|Positional|Named)$',
       match: true
     }
   }

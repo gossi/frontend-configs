@@ -50,5 +50,10 @@ module.exports = [
     selector: 'parameter',
     modifiers: ['unused'],
     leadingUnderscore: 'allow'
+  },
+  {
+    selector: 'classProperty',
+    format: ['UPPER_CASE'],
+    modifiers: ['static']
   }
 ];
