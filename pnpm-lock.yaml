@@ -747,8 +747,8 @@ importers:
         specifier: ^8.2.1
         version: 8.2.1(ember-source@5.6.0)
       ember-qunit:
-        specifier: ^7.0.0
-        version: 7.0.0(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0)(webpack@5.90.1)
+        specifier: ^8.0.2
+        version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0)
       ember-resolver:
         specifier: ^11.0.1
         version: 11.0.1(ember-source@5.6.0)
@@ -786,8 +786,8 @@ importers:
         specifier: ^2.20.0
         version: 2.20.0
       qunit-dom:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.0.0
+        version: 3.0.0
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -894,8 +894,8 @@ importers:
         specifier: ^8.2.1
         version: 8.2.1(ember-source@5.6.0)
       ember-qunit:
-        specifier: ^7.0.0
-        version: 7.0.0(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0)(webpack@5.90.1)
+        specifier: ^8.0.2
+        version: 8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0)
       ember-resolver:
         specifier: ^11.0.1
         version: 11.0.1(ember-source@5.6.0)
@@ -930,8 +930,8 @@ importers:
         specifier: ^2.20.0
         version: 2.20.0
       qunit-dom:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.0.0
+        version: 3.0.0
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -6935,11 +6935,6 @@ packages:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
 
-  /common-tags@1.8.2:
-    resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
-    engines: {node: '>=4.0.0'}
-    dev: true
-
   /commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
     dev: true
@@ -8137,8 +8132,8 @@ packages:
       ember-cli-string-utils: 1.1.0
     dev: true
 
-  /ember-cli-test-loader@3.0.0:
-    resolution: {integrity: sha512-wfFRBrfO9gaKScYcdQxTfklx9yp1lWK6zv1rZRpkas9z2SHyJojF7NOQRWQgSB3ypm7vfpiF8VsFFVVr7VBzAQ==}
+  /ember-cli-test-loader@3.1.0:
+    resolution: {integrity: sha512-0aocZV9SIoOHiU3hrH3IuLR6busWhTX6UVXgd490hmJkIymmOXNH2+jJoC7Ebkeo3PiOfAdjqhb765QDlHSJOw==}
     engines: {node: 10.* || >= 12}
     dependencies:
       ember-cli-babel: 7.26.11
@@ -8633,30 +8628,22 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@7.0.0(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0)(webpack@5.90.1):
-    resolution: {integrity: sha512-KhrndHYEXsHnXvmsGyJLJQ6VCudXaRs5dzPZBsdttZJIhsB6PmYAvq2Q+mh3GRDT/59T/sRDrB3FD3/lATS8aA==}
-    engines: {node: 16.* || >= 18}
+  /ember-qunit@8.0.2(@ember/test-helpers@3.2.1)(@glint/template@1.3.0)(ember-source@5.6.0)(qunit@2.20.0):
+    resolution: {integrity: sha512-Rf60jeUTWNsF3Imf/FLujW/B/DFmKVXKmXO1lirTXjpertKfwRhp/3MnN8a/U/WyodTIsERkInGT1IqTtphCdQ==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
       ember-source: '>=4.0.0'
       qunit: ^2.13.0
     dependencies:
       '@ember/test-helpers': 3.2.1(@glint/template@1.3.0)(ember-source@5.6.0)(webpack@5.90.1)
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 3.0.2
-      common-tags: 1.8.2
-      ember-auto-import: 2.7.2(@glint/template@1.3.0)(webpack@5.90.1)
-      ember-cli-babel: 7.26.11
-      ember-cli-test-loader: 3.0.0
+      '@embroider/addon-shim': 1.8.7
+      '@embroider/macros': 1.13.5(@glint/template@1.3.0)
+      ember-cli-test-loader: 3.1.0
       ember-source: 5.6.0(@babel/core@7.23.9)(@glimmer/component@1.1.2)(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.90.1)
       qunit: 2.20.0
-      resolve-package-path: 4.0.3
-      silent-error: 1.1.1
-      validate-peer-dependencies: 2.2.0
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
-      - webpack
     dev: true
 
   /ember-resolver@11.0.1(ember-source@5.6.0):
@@ -14921,16 +14908,8 @@ packages:
       rimraf: 2.7.1
       underscore.string: 3.3.6
 
-  /qunit-dom@2.0.0:
-    resolution: {integrity: sha512-mElzLN99wYPOGekahqRA+mq7NcThXY9c+/tDkgJmT7W5LeZAFNyITr2rFKNnCbWLIhuLdFw88kCBMrJSfyBYpA==}
-    engines: {node: 12.* || 14.* || >= 16.*}
-    dependencies:
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 4.2.0
-      ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-    transitivePeerDependencies:
-      - supports-color
+  /qunit-dom@3.0.0:
+    resolution: {integrity: sha512-rqGZ9ZgOvtOY+Ph2ElCJ4pRIHouMZmI3DWK35Xr3x3c17/gIwOHHyKAQk6XetqhqepS6p+oXvK6Bx1uZu5jJuw==}
     dev: true
 
   /qunit@2.20.0:
