@@ -58,8 +58,8 @@ importers:
         specifier: ^7.24.3
         version: 7.24.3(@babel/core@7.24.3)
       '@tsconfig/node18':
-        specifier: ^18.2.2
-        version: 18.2.2
+        specifier: ^18.2.3
+        version: 18.2.3
       '@tsconfig/strictest':
         specifier: ^2.0.3
         version: 2.0.3
@@ -4491,8 +4491,8 @@ packages:
     resolution: {integrity: sha512-5fccd/42M+ejFxAqA8uN+ZlYPhIwZFM2f3xpkmvdyQVrgBkJnsWqnCEXCBfhi6d+fBVDNnRNWiUwczJyFzmK1Q==}
     dev: true
 
-  /@tsconfig/node18@18.2.2:
-    resolution: {integrity: sha512-d6McJeGsuoRlwWZmVIeE8CUA27lu6jLjvv1JzqmpsytOYYbVi1tHZEnwCNVOXnj4pyLvneZlFlpXUK+X9wBWyw==}
+  /@tsconfig/node18@18.2.3:
+    resolution: {integrity: sha512-5GKTU9bfn4L37G9IdK8wcHfvyMijzw1uKNCd2Rs75V7fZK/l2OjGJ8Aa2myqNnESjekm/udpCnFH9qR9yPCtmw==}
     dev: true
 
   /@tsconfig/strictest@2.0.3:
