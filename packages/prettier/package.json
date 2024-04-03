@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "prettier-plugin-ember-template-tag": "^2.0.1"
+    "prettier-plugin-ember-template-tag": "^2.0.2"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
