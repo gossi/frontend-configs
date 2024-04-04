@@ -58,7 +58,7 @@
     "prettier": "^3.2.5",
     "rollup": "^4.14.0",
     "rollup-plugin-glimmer-template-tag": "^0.4.1",
-    "typescript": "^5.4.3",
+    "typescript": "^5.4.4",
     "webpack": "^5.91.0"
   },
   "peerDependencies": {
