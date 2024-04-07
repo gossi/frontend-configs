@@ -1,6 +1,5 @@
 {
   "name": "ember-addon-v2-ts-stories",
-  "version": "0.7.0",
   "private": true,
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [
@@ -34,10 +33,10 @@
     "@babel/plugin-syntax-decorators": "^7.24.1",
     "@embroider/addon-dev": "^4.2.1",
     "@glimmer/component": "^1.1.2",
-    "@gossi/config-eslint": "0.7.0",
-    "@gossi/config-prettier": "0.7.0",
-    "@gossi/config-targets": "0.7.0",
-    "@gossi/config-template-lint": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-targets": "workspace:*",
+    "@gossi/config-template-lint": "workspace:*",
     "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.6",
     "@typescript-eslint/eslint-plugin": "^7.5.0",

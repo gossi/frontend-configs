@@ -12,9 +12,9 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.7.0",
-    "@gossi/config-prettier": "0.7.0",
-    "@gossi/config-targets": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-targets": "workspace:*",
     "@jest/globals": "^29.7.0",
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.12",

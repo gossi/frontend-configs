@@ -3,8 +3,8 @@
   "version": "0.7.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "devDependencies": {
-    "@gossi/config-eslint": "0.7.0",
-    "@gossi/config-prettier": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
     "eslint": "^8.57.0",
     "prettier": "2.8.8"
   },
