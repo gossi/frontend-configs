@@ -133,12 +133,16 @@
       ],
       "enabled": false
     },
-    // lock release-it until the plugins update
+    // lock eslint
     {
-      "matchPackageNames": [
-        "release-it"
-      ],
-      "allowedVersions": "< 16"
+      "packageRules": [
+        {
+          "matchPackageNames": [
+            "eslint"
+          ],
+          "allowedVersions": "<9"
+        }
+      ]
     }
     // turn off for tests?
     // {
