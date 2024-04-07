@@ -1,5 +1,125 @@
 # Changelog
 
+## Release (2024-04-07)
+
+@gossi/config-eslint 0.8.0 (minor)
+@gossi/config-postcss 0.8.0 (minor)
+@gossi/config-prettier 0.8.0 (minor)
+@gossi/config-stylelint 0.8.0 (minor)
+@gossi/config-targets 0.8.0 (minor)
+@gossi/config-template-lint 0.8.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-stylelint`
+  * [#662](https://github.com/gossi/frontend-configs/pull/662) Update stylelint ([@gossi](https://github.com/gossi))
+* `@gossi/config-template-lint`
+  * [#661](https://github.com/gossi/frontend-configs/pull/661) Update `ember-template-lint` to v6 ([@gossi](https://github.com/gossi))
+* `ember-app-gts`
+  * [#441](https://github.com/gossi/frontend-configs/pull/441) Update dependency ember-template-imports to v4 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`, `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#308](https://github.com/gossi/frontend-configs/pull/308) Find tsconfig for TS projects ([@gossi](https://github.com/gossi))
+  * [#657](https://github.com/gossi/frontend-configs/pull/657) Update dependency typescript to ^5.4.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#630](https://github.com/gossi/frontend-configs/pull/630) Update dependency typescript to ^5.4.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#612](https://github.com/gossi/frontend-configs/pull/612) Update dependency typescript to ^5.4.2 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`, `ember-addon-v2-ts`
+  * [#659](https://github.com/gossi/frontend-configs/pull/659) Update dependency rollup to ^4.14.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#652](https://github.com/gossi/frontend-configs/pull/652) Update dependency rollup to ^4.14.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#646](https://github.com/gossi/frontend-configs/pull/646) Update dependency rollup to ^4.13.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#645](https://github.com/gossi/frontend-configs/pull/645) Update dependency rollup to ^4.13.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#617](https://github.com/gossi/frontend-configs/pull/617) Update dependency rollup to ^4.13.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#609](https://github.com/gossi/frontend-configs/pull/609) Update dependency rollup to ^4.12.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#591](https://github.com/gossi/frontend-configs/pull/591) Update dependency rollup to ^4.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#588](https://github.com/gossi/frontend-configs/pull/588) Update dependency rollup to ^4.11.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#582](https://github.com/gossi/frontend-configs/pull/582) Update dependency rollup to ^4.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-app-gts`, `ember-app-ts`
+  * [#658](https://github.com/gossi/frontend-configs/pull/658) Update dependency @glimmer/validator to ^0.91.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#647](https://github.com/gossi/frontend-configs/pull/647) Update dependency @glimmer/validator to ^0.91.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#639](https://github.com/gossi/frontend-configs/pull/639) Update dependency @glimmer/validator to ^0.91.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#635](https://github.com/gossi/frontend-configs/pull/635) Update dependency @glimmer/validator to ^0.90.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#616](https://github.com/gossi/frontend-configs/pull/616) Update dependency ember-page-title to ^8.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#614](https://github.com/gossi/frontend-configs/pull/614) Update dependency @glimmer/validator to ^0.89.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#607](https://github.com/gossi/frontend-configs/pull/607) Update dependency ember-cli-typescript to ^5.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#597](https://github.com/gossi/frontend-configs/pull/597) Update dependency @ember/optional-features to ^2.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#593](https://github.com/gossi/frontend-configs/pull/593) Update dependency qunit to ^2.20.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#589](https://github.com/gossi/frontend-configs/pull/589) Update dependency ember-page-title to ^8.2.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#585](https://github.com/gossi/frontend-configs/pull/585) Update dependency @ember/test-helpers to ^3.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#584](https://github.com/gossi/frontend-configs/pull/584) Update Testing Dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+* `@my-blog/core`
+  * [#656](https://github.com/gossi/frontend-configs/pull/656) Update dependency @swc/core to ^1.4.12 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#650](https://github.com/gossi/frontend-configs/pull/650) Update dependency @swc/cli to ^0.3.12 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#640](https://github.com/gossi/frontend-configs/pull/640) Update dependency @swc/core to ^1.4.11 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#620](https://github.com/gossi/frontend-configs/pull/620) Update dependency @swc/core to ^1.4.8 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#618](https://github.com/gossi/frontend-configs/pull/618) Update dependency @swc/core to ^1.4.7 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#613](https://github.com/gossi/frontend-configs/pull/613) Update dependency @swc/core to ^1.4.6 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#610](https://github.com/gossi/frontend-configs/pull/610) Update dependency @swc/core to ^1.4.5 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#605](https://github.com/gossi/frontend-configs/pull/605) Update dependency @swc/core to ^1.4.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#601](https://github.com/gossi/frontend-configs/pull/601) Update dependency @swc/cli to ^0.3.10 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#594](https://github.com/gossi/frontend-configs/pull/594) Update dependency @swc/core to ^1.4.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#586](https://github.com/gossi/frontend-configs/pull/586) Update dependency @swc/core to ^1.4.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-prettier`
+  * [#655](https://github.com/gossi/frontend-configs/pull/655) Update dependency prettier-plugin-ember-template-tag to ^2.0.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#621](https://github.com/gossi/frontend-configs/pull/621) Update dependency prettier-plugin-ember-template-tag to ^2.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#654](https://github.com/gossi/frontend-configs/pull/654) Update babel monorepo to ^7.24.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#627](https://github.com/gossi/frontend-configs/pull/627) Update babel monorepo to ^7.24.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#625](https://github.com/gossi/frontend-configs/pull/625) Update babel monorepo to ^7.24.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#602](https://github.com/gossi/frontend-configs/pull/602) Update babel monorepo to ^7.24.0 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#653](https://github.com/gossi/frontend-configs/pull/653) Update Node.js to v20.12.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#641](https://github.com/gossi/frontend-configs/pull/641) Update Node.js to v20.12.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#587](https://github.com/gossi/frontend-configs/pull/587) Update Node.js to v20.11.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-postcss`
+  * [#651](https://github.com/gossi/frontend-configs/pull/651) Update dependency postcss-preset-env to ^9.5.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#648](https://github.com/gossi/frontend-configs/pull/648) Update dependency postcss-preset-env to ^9.5.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#629](https://github.com/gossi/frontend-configs/pull/629) Update dependency postcss to ^8.4.38 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#626](https://github.com/gossi/frontend-configs/pull/626) Update dependency postcss to ^8.4.37 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#624](https://github.com/gossi/frontend-configs/pull/624) Update dependency postcss to ^8.4.36 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#622](https://github.com/gossi/frontend-configs/pull/622) Update dependency postcss-preset-env to ^9.5.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#619](https://github.com/gossi/frontend-configs/pull/619) Update dependency postcss-preset-env to ^9.5.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#611](https://github.com/gossi/frontend-configs/pull/611) Update dependency postcss-preset-env to ^9.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#596](https://github.com/gossi/frontend-configs/pull/596) Update dependency postcss-preset-env to ^9.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#580](https://github.com/gossi/frontend-configs/pull/580) Update dependency postcss to ^8.4.35 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`
+  * [#649](https://github.com/gossi/frontend-configs/pull/649) Update dependency @types/node to ^20.12.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#644](https://github.com/gossi/frontend-configs/pull/644) Update dependency @tsconfig/strictest to ^2.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#643](https://github.com/gossi/frontend-configs/pull/643) Update dependency @tsconfig/node18 to ^18.2.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#637](https://github.com/gossi/frontend-configs/pull/637) Update dependency @tsconfig/strictest to ^2.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#636](https://github.com/gossi/frontend-configs/pull/636) Update dependency @tsconfig/node18 to ^18.2.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#623](https://github.com/gossi/frontend-configs/pull/623) Update dependency @types/node to ^20.11.28 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#615](https://github.com/gossi/frontend-configs/pull/615) Update dependency @types/node to ^20.11.25 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#592](https://github.com/gossi/frontend-configs/pull/592) Update dependency @types/node to ^20.11.19 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#583](https://github.com/gossi/frontend-configs/pull/583) Update dependency @types/node to ^20.11.17 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#581](https://github.com/gossi/frontend-configs/pull/581) Update dependency @tsconfig/strictest to ^2.0.3 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#642](https://github.com/gossi/frontend-configs/pull/642) Update dependency @tsconfig/ember to ^3.0.6 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#608](https://github.com/gossi/frontend-configs/pull/608) Update dependency @tsconfig/ember to ^3.0.5 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#604](https://github.com/gossi/frontend-configs/pull/604) Update dependency ember-source to v5.7.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#600](https://github.com/gossi/frontend-configs/pull/600) Update dependency @tsconfig/ember to ^3.0.4 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`, `ember-app-gts`, `ember-app-ts`
+  * [#638](https://github.com/gossi/frontend-configs/pull/638) Update Type Definitions ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#603](https://github.com/gossi/frontend-configs/pull/603) Update Type Definitions ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#598](https://github.com/gossi/frontend-configs/pull/598) Update Type Definitions ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`, `ember-app-gts`
+  * [#634](https://github.com/gossi/frontend-configs/pull/634) Update dependency @glint/template to ^1.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#633](https://github.com/gossi/frontend-configs/pull/633) Update dependency @glint/environment-ember-template-imports to ^1.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#632](https://github.com/gossi/frontend-configs/pull/632) Update dependency @glint/environment-ember-loose to ^1.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#631](https://github.com/gossi/frontend-configs/pull/631) Update dependency @glint/core to ^1.4.0 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`, `ember-app-gts`, `ember-app-ts`
+  * [#628](https://github.com/gossi/frontend-configs/pull/628) Update dependency webpack to ^5.91.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#595](https://github.com/gossi/frontend-configs/pull/595) Update dependency webpack to ^5.90.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#590](https://github.com/gossi/frontend-configs/pull/590) Update dependency webpack to ^5.90.2 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-app-ts`
+  * [#606](https://github.com/gossi/frontend-configs/pull/606) Update dependency ember-cli to ~5.7.0 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#599](https://github.com/gossi/frontend-configs/pull/599) Update Lint Dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#663](https://github.com/gossi/frontend-configs/pull/663) Install `release-plan` ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 
 
 
