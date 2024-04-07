@@ -91,7 +91,7 @@ importers:
   packages/postcss:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.7.0
+        specifier: 0.8.0
         version: link:../targets
       '@parcel/css':
         specifier: ^1.14.0
@@ -147,7 +147,7 @@ importers:
   packages/stylelint:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.7.0
+        specifier: 0.8.0
         version: link:../targets
       stylelint-config-standard:
         specifier: ^36.0.0

@@ -4,7 +4,7 @@
   "description": "postcss config",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@gossi/config-targets": "0.7.0",
+    "@gossi/config-targets": "0.8.0",
     "postcss-each": "^1.1.0",
     "postcss-nested": "^6.0.1",
     "postcss-parcel-css": "^0.5.1",
