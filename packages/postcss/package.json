@@ -12,8 +12,8 @@
     "postcss-preset-env": "^9.5.4"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.7.0",
-    "@gossi/config-prettier": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
     "postcss": "^8.4.38",
     "eslint": "^8.57.0",
     "prettier": "2.8.8"

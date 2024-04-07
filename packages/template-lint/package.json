@@ -9,8 +9,8 @@
     "ember-template-lint": "^6.0.0"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.7.0",
-    "@gossi/config-prettier": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
     "ember-template-lint": "^6.0.0",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5"

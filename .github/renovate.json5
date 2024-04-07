@@ -8,6 +8,9 @@
   "automerge": true,
   "masterIssue": true,
   "rangeStrategy": "bump",
+  "labels": [
+    "dependencies"
+  ],
   // From the docs:
   // https://docs.renovatebot.com/configuration-options/#packagerules
   // Important to know: Renovate will evaluate all packageRules and not stop once it gets a first match.
@@ -21,6 +24,30 @@
     //
     // This reduces overall PR count
     ////////////////////////////////////////
+    //
+    // Labels
+    //
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "addLabels": [
+        "internal"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
+        "optionalDependencies"
+      ],
+      "addLabels": [
+        "enhancement"
+      ]
+    },
+    //
+    // Dev Dependencies
+    //
     {
       "groupName": "Type Definitions",
       "packagePatterns": [

@@ -9,7 +9,7 @@
     "prettier": "^3.0.0"
   },
   "devDependencies": {
-    "@gossi/config-eslint": "0.7.0",
+    "@gossi/config-eslint": "workspace:*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5"
   },
