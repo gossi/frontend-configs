@@ -3,7 +3,9 @@
   "version": "0.7.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "scripts": {
+    "lint:hbs": "pnpm run -r --parallel --aggregate-output lint:hbs",
     "lint:js": "pnpm run -r --parallel --aggregate-output lint:js",
+    "lint:types": "pnpm run -r --parallel --aggregate-output lint:types",
     "release": "release-it",
     "clean": "concurrently 'npm:clean:*'",
     "clean:dist": "find . -not \\( -path './node_modules' -type d -prune \\) -name 'dist' -type d -exec rm -rf '{}' +",
