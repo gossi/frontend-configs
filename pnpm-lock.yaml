@@ -91,8 +91,8 @@ importers:
   packages/postcss:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: workspace:*
+        version: link:../targets
       '@parcel/css':
         specifier: ^1.14.0
         version: 1.14.0
@@ -147,8 +147,8 @@ importers:
   packages/stylelint:
     dependencies:
       '@gossi/config-targets':
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: workspace:*
+        version: link:../targets
       stylelint-config-standard:
         specifier: ^36.0.0
         version: 36.0.0(stylelint@16.3.1)
@@ -3646,11 +3646,6 @@ packages:
   /@glint/template@1.4.0:
     resolution: {integrity: sha512-yD271NhLei/HSQ6utm6hKgoU+B5D5DY+B1irPvgI4KsDEcZI7v/INf5HAMJfzCg92bP1sIxSOuXu5DU6VsY7Mw==}
     dev: true
-
-  /@gossi/config-targets@0.7.0:
-    resolution: {integrity: sha512-X5NKuc09aktU9t7mfQSCWFc80417OcXyN+hacbkSxv+SkYj8NhatOvtL7sFzS4qgrI3vjYcdbDqylXsrWNECkA==}
-    engines: {node: 16.* || >= 18.*}
-    dev: false
 
   /@handlebars/parser@2.0.0:
     resolution: {integrity: sha512-EP9uEDZv/L5Qh9IWuMUGJRfwhXJ4h1dqKTT4/3+tY0eu7sPis7xh23j61SYUnNF4vqCQvvUXpDo9Bh/+q1zASA==}
