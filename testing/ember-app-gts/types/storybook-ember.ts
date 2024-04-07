@@ -11,13 +11,13 @@ declare module '@storybook/ember' {
   export type { EmberRenderer };
 
   interface OptionsArgs {
-    template: any;
-    context?: any;
-    element?: any;
+    template: unknown;
+    context?: unknown;
+    element?: unknown;
   }
 
   interface EmberRenderer extends WebRenderer {
-    component: any;
+    component: unknown;
     storyResult: OptionsArgs;
   }
 
