@@ -762,8 +762,8 @@ importers:
         specifier: ~5.7.0
         version: 5.7.0(@babel/core@7.24.4)(@glimmer/component@1.1.2)(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.91.0)
       ember-template-imports:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^4.1.0
+        version: 4.1.0
       ember-template-lint:
         specifier: ^5.13.0
         version: 5.13.0
@@ -9180,6 +9180,17 @@ packages:
       validate-peer-dependencies: 1.2.0
     transitivePeerDependencies:
       - supports-color
+
+  /ember-template-imports@4.1.0:
+    resolution: {integrity: sha512-FMC13/FWPZBL4zMkFtspgGqc9zYfrUXf8/MV83Eke3ZYVR4oKb9CuB65BRmgCvFwv8R5PGkpUhks0i5kjYeAHw==}
+    engines: {node: 16.* || >= 18}
+    dependencies:
+      broccoli-stew: 3.0.0
+      content-tag: 2.0.1
+      ember-cli-version-checker: 5.1.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@5.13.0)(prettier@3.2.5):
     resolution: {integrity: sha512-aXUYM4yuIdPZ80+AsAU8QBwGSJJ/aAkRsNcQ5vI5HmXiBjzHlDc/ZhmP6iVcYuCmoA/3iKcssMAYwIDbuby4pg==}
