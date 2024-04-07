@@ -19,7 +19,6 @@
   },
   "include": [
     "app/**/*",
-    "app/**/*.gts",
     "tests/**/*",
     "types/**/*"
   ],
