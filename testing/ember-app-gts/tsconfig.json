@@ -23,9 +23,6 @@
     "tests/**/*",
     "types/**/*"
   ],
-  "exclude": [
-    "**/*.stories.ts"
-  ],
   "glint": {
     "environment": [
       "ember-loose",

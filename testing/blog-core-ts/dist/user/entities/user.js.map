@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../src/user/entities/user.ts"],"sourcesContent":["export interface User {\n  givenName: string;\n  familyName: string;\n\n  admin: boolean;\n}\n"],"names":[],"mappings":"AAAA,WAKC"}

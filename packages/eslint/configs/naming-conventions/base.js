@@ -35,6 +35,14 @@ module.exports = [
     format: ['PascalCase']
   },
   {
+    selector: 'import',
+    format: ['camelCase', 'PascalCase']
+  },
+  {
+    selector: 'typeAlias',
+    format: ['PascalCase']
+  },
+  {
     selector: 'interface',
     format: ['PascalCase'],
     custom: {

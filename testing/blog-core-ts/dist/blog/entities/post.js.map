@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../src/blog/entities/post.ts"],"sourcesContent":["import type { User } from '../../user/entities/user';\n\nexport interface Post {\n  id: string;\n  author: User;\n  title: string;\n  content: string;\n}\n"],"names":[],"mappings":"AAAA,WAOC"}
