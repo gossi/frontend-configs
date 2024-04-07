@@ -24,6 +24,30 @@
     //
     // This reduces overall PR count
     ////////////////////////////////////////
+    //
+    // Labels
+    //
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "addLabels": [
+        "internal"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
+        "optionalDependencies"
+      ],
+      "addLabels": [
+        "enhancement"
+      ]
+    },
+    //
+    // Dev Dependencies
+    //
     {
       "groupName": "Type Definitions",
       "packagePatterns": [
