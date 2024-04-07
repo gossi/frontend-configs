@@ -5,6 +5,7 @@ const { applyNamingConventions } = require('./naming-conventions/-utils');
 const componentsConventions = require('./naming-conventions/components');
 const templateRegistryConventions = require('./naming-conventions/template-registry');
 const emberConventions = require('./naming-conventions/ember');
+const { typescriptParserOptions } = require('./parsers/typescript');
 
 /**
  * @returns {import('eslint').Linter.Config}
@@ -15,9 +16,12 @@ module.exports = () => {
   return configFor([
     // ----------------------
     // Project Files
+    forFiles('**/*.gts', applyNamingConventions(config.modules.browser.gts, componentsConventions)),
+    forFiles('**/*.gjs', applyNamingConventions(config.modules.browser.gjs, componentsConventions)),
+
     forFiles(
       [
-        '{src,app,addon,addon-test-support,tests}/**/*.{gjs,js}',
+        '{src,app,addon,addon-test-support,tests}/**/*.js',
         'tests/dummy/config/deprecation-workflow.js'
       ],
       config.modules.browser.js
@@ -36,25 +40,26 @@ module.exports = () => {
         templateRegistryConventions
       )
     ),
-    forFiles(
-      '{src,app,addon,addon-test-support,tests,types}/**/*.gts',
-      applyNamingConventions(config.modules.browser.ts, componentsConventions)
-    ),
-    forFiles('**/*.d.ts', config.modules.browser.declarations),
 
     forFiles(
-      '{types,src}/template-registry.{d.ts,ts}',
-      applyNamingConventions(config.modules.browser.ts, templateRegistryConventions)
+      '**/*.d.ts',
+      applyNamingConventions(
+        config.modules.browser.declarations,
+        componentsConventions,
+        templateRegistryConventions
+      )
     ),
 
-    forFiles(['./**/stories.{js,gjs}', './**/*.stories.{js,gjs}'], config.modules.stories.js),
-    forFiles(['./**/stories.{ts,gts}', './**/*.stories.{ts,gts}'], config.modules.stories.ts),
+    forFiles(['./**/stories.js', './**/*.stories.js,'], config.modules.stories.js),
+    forFiles(['./**/stories.ts', './**/*.stories.ts,'], config.modules.stories.ts),
 
     // ----------------------
     // Tests
 
-    forFiles('tests/**/*-test.{gjs,js}', config.modules.tests.js),
-    forFiles('tests/**/*-test.{gts,ts}', config.modules.tests.ts),
+    forFiles('tests/**/*-test.js', config.modules.tests.js),
+    forFiles('tests/**/*-test.ts', config.modules.tests.ts),
+    forFiles('tests/**/*-test.gjs', config.modules.tests.gjs),
+    forFiles('tests/**/*-test.gts', config.modules.tests.gts),
 
     // ----------------------
     // Config files, usually
@@ -119,11 +124,41 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
             (config) => merge(config, require('./rules/typescript')),
+            (config) => applyNamingConventions(config, emberConventions)
+          );
+        },
+        get gjs() {
+          return pipe(
+            {
+              parser: 'ember-eslint-parser',
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/ember-gjs'))
+          );
+        },
+        get gts() {
+          if (!hasTypeScript) return;
+
+          return pipe(
+            {
+              parser: 'ember-eslint-parser',
+              env: {
+                browser: true
+              }
+            },
+            (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/ember-gts')),
             (config) => applyNamingConventions(config, emberConventions)
           );
         },
@@ -134,7 +169,8 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/typescript-declarations')),
@@ -167,10 +203,7 @@ function configBuilder() {
 
           return pipe(
             {
-              parserOptions: {
-                sourceType: 'module',
-                ecmaVersion: 'latest'
-              },
+              parserOptions: typescriptParserOptions,
               env: {
                 browser: false,
                 node: true,
@@ -206,7 +239,8 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              }
+              },
+              parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
@@ -226,6 +260,18 @@ function configBuilder() {
           if (!hasTypeScript) return;
 
           let browserTS = configBuilder.modules.browser.ts;
+
+          return pipe(browserTS, (config) => merge(config, require('./rules/qunit')));
+        },
+        get gjs() {
+          let browserJS = configBuilder.modules.browser.gjs;
+
+          return pipe(browserJS, (config) => merge(config, require('./rules/qunit')));
+        },
+        get gts() {
+          if (!hasTypeScript) return;
+
+          let browserTS = configBuilder.modules.browser.gts;
 
           return pipe(browserTS, (config) => merge(config, require('./rules/qunit')));
         }
