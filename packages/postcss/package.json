@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-postcss",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "postcss config",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {

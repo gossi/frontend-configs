@@ -1,5 +1,40 @@
 # Changelog
 
+## Release (2024-04-09)
+
+@gossi/config-eslint 0.9.0 (minor)
+@gossi/config-postcss 0.9.0 (minor)
+@gossi/config-stylelint 0.9.0 (minor)
+@gossi/config-targets 0.9.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-stylelint`
+  * [#674](https://github.com/gossi/frontend-configs/pull/674) Switch import notation to string ([@gossi](https://github.com/gossi))
+  * [#673](https://github.com/gossi/frontend-configs/pull/673) Using `stylelint-config-clean-order` for ordering CSS properties ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#672](https://github.com/gossi/frontend-configs/pull/672) Re-activate typescript rules ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-targets`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#566](https://github.com/gossi/frontend-configs/pull/566) Update Lint Dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `@my-blog/core`
+  * [#671](https://github.com/gossi/frontend-configs/pull/671) Update dependency @swc/core to ^1.4.13 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-app-gts`, `ember-app-ts`
+  * [#670](https://github.com/gossi/frontend-configs/pull/670) Update dependency @glimmer/validator to ^0.92.0 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`
+  * [#660](https://github.com/gossi/frontend-configs/pull/660) Update dependency rollup to ^4.14.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-app-gts`
+  * [#253](https://github.com/gossi/frontend-configs/pull/253) Update dependency ember-cli to v5 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-postcss`, `@gossi/config-stylelint`
+  * [#669](https://github.com/gossi/frontend-configs/pull/669) Use `workspace:*` protocol ([@gossi](https://github.com/gossi))
+* Other
+  * [#667](https://github.com/gossi/frontend-configs/pull/667) Lock `eslint` ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `ember-app-gts`, `ember-app-ts`
+  * [#666](https://github.com/gossi/frontend-configs/pull/666) Update Type Definitions ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-04-07)
 
 @gossi/config-eslint 0.8.0 (minor)
