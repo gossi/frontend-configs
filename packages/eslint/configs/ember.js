@@ -43,10 +43,13 @@ module.exports = () => {
 
     forFiles(
       '**/*.d.ts',
-      applyNamingConventions(
-        config.modules.browser.declarations,
-        componentsConventions,
-        templateRegistryConventions
+      pipe(
+        applyNamingConventions(
+          config.modules.browser.declarations,
+          componentsConventions,
+          templateRegistryConventions
+        ),
+        (config) => merge(config, require('./rules/ember-typescript'))
       )
     ),
 
@@ -130,6 +133,8 @@ function configBuilder() {
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
             (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/typescript-typed')),
+            (config) => merge(config, require('./rules/ember-typescript')),
             (config) => applyNamingConventions(config, emberConventions)
           );
         },
@@ -137,13 +142,13 @@ function configBuilder() {
           return pipe(
             {
               parser: 'ember-eslint-parser',
+              extends: ['plugin:ember/recommended-gjs'],
               env: {
                 browser: true
               }
             },
             (config) => merge(config, personalPreferences),
-            (config) => merge(config, require('./rules/ember')),
-            (config) => merge(config, require('./rules/ember-gjs'))
+            (config) => merge(config, require('./rules/ember'))
           );
         },
         get gts() {
@@ -152,13 +157,16 @@ function configBuilder() {
           return pipe(
             {
               parser: 'ember-eslint-parser',
+              extends: ['plugin:ember/recommended-gts'],
               env: {
                 browser: true
               }
+              // parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
-            (config) => merge(config, require('./rules/ember-gts')),
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/ember-typescript')),
             (config) => applyNamingConventions(config, emberConventions)
           );
         },
@@ -173,6 +181,8 @@ function configBuilder() {
               parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
+            (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/typescript-typed')),
             (config) => merge(config, require('./rules/typescript-declarations')),
             (config) => applyNamingConventions(config, emberConventions)
           );
@@ -214,6 +224,7 @@ function configBuilder() {
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/imports')),
             (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/typescript-typed')),
             (config) => merge(config, require('./rules/typescript-imports'))
           );
         }
@@ -245,6 +256,7 @@ function configBuilder() {
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
             (config) => merge(config, require('./rules/typescript')),
+            (config) => merge(config, require('./rules/typescript-typed')),
             (config) => merge(config, require('./rules/storybook')),
             (config) => applyNamingConventions(config, emberConventions, componentsConventions)
           );

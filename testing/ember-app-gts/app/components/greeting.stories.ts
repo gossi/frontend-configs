@@ -12,7 +12,6 @@ type Story = StoryObj<{ hello: string; to: string }>;
 export const Default: Story = {
   render: (args) => ({
     template: hbs`
-      {{!@glint-ignore}}
       <Greeting @hello={{this.hello}} @to={{this.to}} />
     `,
     context: args

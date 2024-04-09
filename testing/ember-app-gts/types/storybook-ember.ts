@@ -8,7 +8,6 @@ declare module '@storybook/ember' {
   } from '@storybook/types';
 
   export type { Args, ArgTypes, Parameters, StrictArgs } from '@storybook/types';
-  export type { EmberRenderer };
 
   interface OptionsArgs {
     template: unknown;
@@ -16,7 +15,7 @@ declare module '@storybook/ember' {
     element?: unknown;
   }
 
-  interface EmberRenderer extends WebRenderer {
+  export interface EmberRenderer extends WebRenderer {
     component: unknown;
     storyResult: OptionsArgs;
   }

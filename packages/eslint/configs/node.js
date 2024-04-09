@@ -101,6 +101,7 @@ const configBuilder = () => {
           (config) => merge(config, personalPreferences),
           (config) => merge(config, require('./rules/imports')),
           (config) => merge(config, require('./rules/typescript')),
+          (config) => merge(config, require('./rules/typescript-typed')),
           (config) => merge(config, require('./rules/typescript-imports'))
         );
       }
