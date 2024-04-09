@@ -19,6 +19,9 @@ module.exports = () => {
     forFiles('**/*.gts', applyNamingConventions(config.modules.browser.gts, componentsConventions)),
     forFiles('**/*.gjs', applyNamingConventions(config.modules.browser.gjs, componentsConventions)),
 
+    forFiles(['./**/stories.js', './**/*.stories.js'], config.modules.stories.js),
+    forFiles(['./**/stories.ts', './**/*.stories.ts'], config.modules.stories.ts),
+
     forFiles(
       [
         '{src,app,addon,addon-test-support,tests}/**/*.js',
@@ -33,7 +36,7 @@ module.exports = () => {
       })
     ),
     forFiles(
-      '{src,app,addon,addon-test-support,tests,types}/**/*.ts',
+      '{src,app,addon,addon-test-support,tests,types}/**/!(*.stories|stories).ts',
       applyNamingConventions(
         config.modules.browser.ts,
         componentsConventions,
@@ -52,9 +55,6 @@ module.exports = () => {
         (config) => merge(config, require('./rules/ember-typescript'))
       )
     ),
-
-    forFiles(['./**/stories.js', './**/*.stories.js,'], config.modules.stories.js),
-    forFiles(['./**/stories.ts', './**/*.stories.ts,'], config.modules.stories.ts),
 
     // ----------------------
     // Tests
@@ -250,13 +250,15 @@ function configBuilder() {
             {
               env: {
                 browser: true
-              },
-              parserOptions: typescriptParserOptions
+              }
+              // parserOptions: typescriptParserOptions
             },
             (config) => merge(config, personalPreferences),
             (config) => merge(config, require('./rules/ember')),
+            (config) => merge(config, require('./rules/imports')),
             (config) => merge(config, require('./rules/typescript')),
-            (config) => merge(config, require('./rules/typescript-typed')),
+            (config) => merge(config, require('./rules/typescript-imports')),
+            // (config) => merge(config, require('./rules/typescript-typed')),
             (config) => merge(config, require('./rules/storybook')),
             (config) => applyNamingConventions(config, emberConventions, componentsConventions)
           );

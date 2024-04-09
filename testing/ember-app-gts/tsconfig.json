@@ -23,7 +23,7 @@
     "types/**/*"
   ],
   "exclude": [
-    "src/**/*.stories.ts"
+    "app/**/*.stories.ts"
   ],
   "glint": {
     "environment": [
