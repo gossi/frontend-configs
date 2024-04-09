@@ -149,15 +149,15 @@ importers:
       '@gossi/config-targets':
         specifier: workspace:*
         version: link:../targets
+      stylelint-config-clean-order:
+        specifier: ^5.4.2
+        version: 5.4.2(stylelint@16.3.1)
       stylelint-config-standard:
         specifier: ^36.0.0
         version: 36.0.0(stylelint@16.3.1)
       stylelint-no-unsupported-browser-features:
         specifier: ^8.0.1
         version: 8.0.1(stylelint@16.3.1)
-      stylelint-order:
-        specifier: ^6.0.4
-        version: 6.0.4(stylelint@16.3.1)
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -15559,6 +15559,15 @@ packages:
   /styled_string@0.0.1:
     resolution: {integrity: sha512-DU2KZiB6VbPkO2tGSqQ9n96ZstUPjW7X4sGO6V2m1myIQluX0p1Ol8BrA/l6/EesqhMqXOIXs3cJNOy1UuU2BA==}
     dev: true
+
+  /stylelint-config-clean-order@5.4.2(stylelint@16.3.1):
+    resolution: {integrity: sha512-lhPnDUL1gQbZYqG9kQx5dfEfiD/EpyVbb6jOiR7YfKzkIVv7Rw4jSKzvxr4v5PZqmRyCSzM3goc93jqfF+OZbA==}
+    peerDependencies:
+      stylelint: '>=14'
+    dependencies:
+      stylelint: 16.3.1
+      stylelint-order: 6.0.4(stylelint@16.3.1)
+    dev: false
 
   /stylelint-config-recommended@14.0.0(stylelint@16.3.1):
     resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
