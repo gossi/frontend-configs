@@ -5,8 +5,9 @@
  */
 const rule = {
   rules: {
-    // not applicable due to how the runtime is
-    '@typescript-eslint/no-use-before-define': 'off'
+    // `void` is a valid type for `Return` signatures, yet TS doesn't recognize
+    // that as proper return types.
+    '@typescript-eslint/no-invalid-void-type': 'off'
   }
 };
 

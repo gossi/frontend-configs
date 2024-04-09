@@ -1,13 +1,14 @@
 'use strict';
 
-const baseNamingConventions = require('../naming-conventions/base');
-
 /**
  * @type {import('../types').PartialConfig}
  */
 const rule = {
-  // plugins: ['@typescript-eslint'],
-  extends: ['plugin:@typescript-eslint/recommended-type-checked']
+  extends: ['plugin:@typescript-eslint/strict-type-checked'],
+  rules: {
+    // much concise
+    '@typescript-eslint/prefer-optional-chain': 'error'
+  }
 };
 
 module.exports = { rule };
