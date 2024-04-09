@@ -1,23 +1,13 @@
 module.exports = function configure({ browsers }) {
   return {
-    extends: ['stylelint-config-standard'],
+    extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
 
-    plugins: ['stylelint-no-unsupported-browser-features', 'stylelint-order'],
+    plugins: ['stylelint-no-unsupported-browser-features'],
 
     rules: {
       /*
         Customize plugins
       */
-      'order/properties-order': [
-        [
-          // Defined by ember-css-modules
-          'composes'
-        ],
-        {
-          unspecified: 'bottomAlphabetical'
-        }
-      ],
-
       'plugin/no-unsupported-browser-features': [
         true,
         {
