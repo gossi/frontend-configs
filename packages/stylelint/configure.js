@@ -22,6 +22,8 @@ module.exports = function configure({ browsers }) {
       /*
         Customize rules
       */
+      'import-notation': 'string',
+
       'at-rule-empty-line-before': [
         'always',
         {
