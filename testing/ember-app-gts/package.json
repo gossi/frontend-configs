@@ -32,7 +32,7 @@
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
-    "@storybook/types": "^8.0.6",
+    "@storybook/types": "^8.0.8",
     "@tsconfig/ember": "^3.0.6",
     "@types/eslint": "^8.56.7",
     "@types/qunit": "^2.19.10",
