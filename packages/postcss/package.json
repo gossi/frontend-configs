@@ -9,7 +9,7 @@
     "postcss-nested": "^6.0.1",
     "postcss-parcel-css": "^0.5.1",
     "postcss-pow": "^1.0.1",
-    "postcss-preset-env": "^9.5.4"
+    "postcss-preset-env": "^9.5.5"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
