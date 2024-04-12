@@ -1,5 +1,30 @@
 # Changelog
 
+## Release (2024-04-12)
+
+@gossi/config-eslint 0.10.0 (minor)
+@gossi/config-postcss 0.10.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#682](https://github.com/gossi/frontend-configs/pull/682) Allow arrow shorthand functions ([@gossi](https://github.com/gossi))
+* `@gossi/config-postcss`
+  * [#680](https://github.com/gossi/frontend-configs/pull/680) Update dependency postcss-preset-env to ^9.5.5 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `ember-addon-v2-gts`, `ember-addon-v2-ts`
+  * [#681](https://github.com/gossi/frontend-configs/pull/681) Update dependency rollup to ^4.14.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#678](https://github.com/gossi/frontend-configs/pull/678) Update dependency @embroider/addon-dev to ^4.3.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `ember-addon-v2-gts`, `ember-app-gts`
+  * [#679](https://github.com/gossi/frontend-configs/pull/679) Update dependency @storybook/types to ^8.0.8 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#676](https://github.com/gossi/frontend-configs/pull/676) Update Node.js to v20.12.2 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@gossi/config-eslint`, `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#675](https://github.com/gossi/frontend-configs/pull/675) Update dependency typescript to ^5.4.5 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-04-09)
 
 @gossi/config-eslint 0.9.0 (minor)
