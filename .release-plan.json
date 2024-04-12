@@ -2,8 +2,8 @@
   "solution": {
     "@gossi/config-eslint": {
       "impact": "minor",
-      "oldVersion": "0.8.0",
-      "newVersion": "0.9.0",
+      "oldVersion": "0.9.0",
+      "newVersion": "0.10.0",
       "constraints": [
         {
           "impact": "minor",
@@ -18,20 +18,12 @@
     },
     "@gossi/config-postcss": {
       "impact": "minor",
-      "oldVersion": "0.8.0",
-      "newVersion": "0.9.0",
+      "oldVersion": "0.9.0",
+      "newVersion": "0.10.0",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./packages/postcss/package.json"
@@ -40,40 +32,14 @@
       "oldVersion": "0.8.0"
     },
     "@gossi/config-stylelint": {
-      "impact": "minor",
-      "oldVersion": "0.8.0",
-      "newVersion": "0.9.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./packages/stylelint/package.json"
+      "oldVersion": "0.9.0"
     },
     "@gossi/config-targets": {
-      "impact": "minor",
-      "oldVersion": "0.8.0",
-      "newVersion": "0.9.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/targets/package.json"
+      "oldVersion": "0.9.0"
     },
     "@gossi/config-template-lint": {
       "oldVersion": "0.8.0"
     }
   },
-  "description": "## Release (2024-04-09)\n\n@gossi/config-eslint 0.9.0 (minor)\n@gossi/config-postcss 0.9.0 (minor)\n@gossi/config-stylelint 0.9.0 (minor)\n@gossi/config-targets 0.9.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-stylelint`\n  * [#674](https://github.com/gossi/frontend-configs/pull/674) Switch import notation to string ([@gossi](https://github.com/gossi))\n  * [#673](https://github.com/gossi/frontend-configs/pull/673) Using `stylelint-config-clean-order` for ordering CSS properties ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#672](https://github.com/gossi/frontend-configs/pull/672) Re-activate typescript rules ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-targets`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#566](https://github.com/gossi/frontend-configs/pull/566) Update Lint Dependencies (major) ([@renovate[bot]](https://github.com/apps/renovate))\n\n#### :house: Internal\n* `@my-blog/core`\n  * [#671](https://github.com/gossi/frontend-configs/pull/671) Update dependency @swc/core to ^1.4.13 ([@renovate[bot]](https://github.com/apps/renovate))\n* `ember-app-gts`, `ember-app-ts`\n  * [#670](https://github.com/gossi/frontend-configs/pull/670) Update dependency @glimmer/validator to ^0.92.0 ([@renovate[bot]](https://github.com/apps/renovate))\n* `ember-addon-v2-gts`\n  * [#660](https://github.com/gossi/frontend-configs/pull/660) Update dependency rollup to ^4.14.1 ([@renovate[bot]](https://github.com/apps/renovate))\n* `ember-app-gts`\n  * [#253](https://github.com/gossi/frontend-configs/pull/253) Update dependency ember-cli to v5 ([@renovate[bot]](https://github.com/apps/renovate))\n* `@gossi/config-postcss`, `@gossi/config-stylelint`\n  * [#669](https://github.com/gossi/frontend-configs/pull/669) Use `workspace:*` protocol ([@gossi](https://github.com/gossi))\n* Other\n  * [#667](https://github.com/gossi/frontend-configs/pull/667) Lock `eslint` ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`, `ember-app-gts`, `ember-app-ts`\n  * [#666](https://github.com/gossi/frontend-configs/pull/666) Update Type Definitions ([@renovate[bot]](https://github.com/apps/renovate))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2024-04-12)\n\n@gossi/config-eslint 0.10.0 (minor)\n@gossi/config-postcss 0.10.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#682](https://github.com/gossi/frontend-configs/pull/682) Allow arrow shorthand functions ([@gossi](https://github.com/gossi))\n* `@gossi/config-postcss`\n  * [#680](https://github.com/gossi/frontend-configs/pull/680) Update dependency postcss-preset-env to ^9.5.5 ([@renovate[bot]](https://github.com/apps/renovate))\n\n#### :house: Internal\n* `ember-addon-v2-gts`, `ember-addon-v2-ts`\n  * [#681](https://github.com/gossi/frontend-configs/pull/681) Update dependency rollup to ^4.14.2 ([@renovate[bot]](https://github.com/apps/renovate))\n  * [#678](https://github.com/gossi/frontend-configs/pull/678) Update dependency @embroider/addon-dev to ^4.3.1 ([@renovate[bot]](https://github.com/apps/renovate))\n* `ember-addon-v2-gts`, `ember-app-gts`\n  * [#679](https://github.com/gossi/frontend-configs/pull/679) Update dependency @storybook/types to ^8.0.8 ([@renovate[bot]](https://github.com/apps/renovate))\n* `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#676](https://github.com/gossi/frontend-configs/pull/676) Update Node.js to v20.12.2 ([@renovate[bot]](https://github.com/apps/renovate))\n* `@gossi/config-eslint`, `@my-blog/core`, `ember-addon-v2-gts`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#675](https://github.com/gossi/frontend-configs/pull/675) Update dependency typescript to ^5.4.5 ([@renovate[bot]](https://github.com/apps/renovate))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
