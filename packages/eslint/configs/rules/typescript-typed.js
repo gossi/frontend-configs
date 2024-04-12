@@ -7,7 +7,14 @@ const rule = {
   extends: ['plugin:@typescript-eslint/strict-type-checked'],
   rules: {
     // much concise
-    '@typescript-eslint/prefer-optional-chain': 'error'
+    '@typescript-eslint/prefer-optional-chain': 'error',
+
+    '@typescript-eslint/no-confusing-void-expression': [
+      'error',
+      {
+        ignoreArrowShorthand: true
+      }
+    ]
   }
 };
 
