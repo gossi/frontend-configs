@@ -29,7 +29,7 @@
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
-    "@tsconfig/ember": "^3.0.7",
+    "@tsconfig/ember": "^3.0.8",
     "@types/eslint": "^8.56.10",
     "@types/qunit": "^2.19.10",
     "@types/rsvp": "^4.0.9",
