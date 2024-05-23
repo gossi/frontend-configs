@@ -38,7 +38,7 @@
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
     "@rollup/plugin-babel": "^6.0.4",
-    "@tsconfig/ember": "^3.0.7",
+    "@tsconfig/ember": "^3.0.8",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
     "concurrently": "^8.2.2",

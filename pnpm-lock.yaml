@@ -312,8 +312,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.24.5)(@types/babel__core@7.20.1)(rollup@4.18.0)
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.9.0
         version: 7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -412,8 +412,8 @@ importers:
         specifier: ^8.1.2
         version: 8.1.2
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@types/react':
         specifier: ^18.3.2
         version: 18.3.2
@@ -506,8 +506,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.24.5)(@types/babel__core@7.20.1)(rollup@4.18.0)
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.9.0
         version: 7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -588,8 +588,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.24.5)(@types/babel__core@7.20.1)(rollup@4.18.0)
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.9.0
         version: 7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -681,8 +681,8 @@ importers:
         specifier: ^8.1.2
         version: 8.1.2
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@types/eslint':
         specifier: ^8.56.10
         version: 8.56.10
@@ -828,8 +828,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@tsconfig/ember':
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^3.0.8
+        version: 3.0.8
       '@types/eslint':
         specifier: ^8.56.10
         version: 8.56.10
@@ -2763,8 +2763,8 @@ packages:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
 
-  '@tsconfig/ember@3.0.7':
-    resolution: {integrity: sha512-T9H3VNlino2mo3wpAd9EqRwJyERvUKnJnIyiYuL7b3UvV+yQAt7f9np81liHpmBeBQ5z5NzegA5vJGpvCOtYsQ==}
+  '@tsconfig/ember@3.0.8':
+    resolution: {integrity: sha512-OVnIsZIt/8q0VEtcdz3rRryNrm6gdJTxXlxefkGIrkZnME0wqslmwHlUEZ7mvh377df9FqBhNKrYNarhCW8zJA==}
 
   '@tsconfig/node18@18.2.4':
     resolution: {integrity: sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ==}
@@ -5784,6 +5784,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -11441,7 +11442,7 @@ snapshots:
 
   '@tootallnate/once@1.1.2': {}
 
-  '@tsconfig/ember@3.0.7': {}
+  '@tsconfig/ember@3.0.8': {}
 
   '@tsconfig/node18@18.2.4': {}
 
