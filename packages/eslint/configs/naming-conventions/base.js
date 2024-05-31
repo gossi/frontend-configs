@@ -59,6 +59,9 @@ module.exports = [
     modifiers: ['unused'],
     leadingUnderscore: 'allow'
   },
+  /**
+   * Java-like constants
+   */
   {
     selector: 'classProperty',
     format: ['UPPER_CASE'],
