@@ -2,8 +2,8 @@
   "solution": {
     "@gossi/config-eslint": {
       "impact": "minor",
-      "oldVersion": "0.10.0",
-      "newVersion": "0.11.0",
+      "oldVersion": "0.11.0",
+      "newVersion": "0.12.0",
       "constraints": [
         {
           "impact": "minor",
@@ -28,5 +28,5 @@
       "oldVersion": "0.8.0"
     }
   },
-  "description": "## Release (2024-05-31)\n\n@gossi/config-eslint 0.11.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#752](https://github.com/gossi/frontend-configs/pull/752) Update peer dep to include `eslint-plugin-ember@12` ([@gossi](https://github.com/gossi))\n* Other\n  * [#746](https://github.com/gossi/frontend-configs/pull/746) Renovate preset ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2024-05-31)\n\n@gossi/config-eslint 0.12.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#753](https://github.com/gossi/frontend-configs/pull/753) Update `eslint-plugin-n` to `v17` ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }

@@ -2,6 +2,17 @@
 
 ## Release (2024-05-31)
 
+@gossi/config-eslint 0.12.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#753](https://github.com/gossi/frontend-configs/pull/753) Update `eslint-plugin-n` to `v17` ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
+## Release (2024-05-31)
+
 @gossi/config-eslint 0.11.0 (minor)
 
 #### :rocket: Enhancement
