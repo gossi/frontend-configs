@@ -1,5 +1,18 @@
 # Changelog
 
+## Release (2024-05-31)
+
+@gossi/config-eslint 0.11.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#752](https://github.com/gossi/frontend-configs/pull/752) Update peer dep to include `eslint-plugin-ember@12` ([@gossi](https://github.com/gossi))
+* Other
+  * [#746](https://github.com/gossi/frontend-configs/pull/746) Renovate preset ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-04-12)
 
 @gossi/config-eslint 0.10.0 (minor)
