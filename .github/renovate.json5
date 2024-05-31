@@ -133,6 +133,17 @@
         "peerDependencies"
       ],
       "enabled": false
+    },
+    // lock pnpm
+    {
+      "packageRules": [
+        {
+          "matchPackageNames": [
+            "pnpm"
+          ],
+          "allowedVersions": "<9"
+        }
+      ]
     }
     // turn off for tests?
     // {
