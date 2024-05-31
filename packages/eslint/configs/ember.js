@@ -315,13 +315,6 @@ function configBuilder() {
                   {
                     version: EXPECTED_NODE_VERSION
                   }
-                ],
-                'n/no-unsupported-features': [
-                  'error',
-                  {
-                    version: EXPECTED_NODE_VERSION,
-                    ignores: []
-                  }
                 ]
               }
             },
