@@ -16,7 +16,7 @@
     "@gossi/config-prettier": "workspace:*",
     "postcss": "^8.4.38",
     "eslint": "^8.57.0",
-    "prettier": "3.2.5"
+    "prettier": "3.3.0"
   },
   "peerDependencies": {
     "@parcel/css": "^1.14.0",
