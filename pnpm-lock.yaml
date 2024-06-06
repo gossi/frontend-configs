@@ -711,8 +711,8 @@ importers:
         specifier: ^2.7.3
         version: 2.7.3(@glint/template@1.4.0)(webpack@5.91.0)
       ember-cli:
-        specifier: ~5.8.1
-        version: 5.8.1
+        specifier: ~5.9.0
+        version: 5.9.0
       ember-cli-app-version:
         specifier: ^6.0.1
         version: 6.0.1(ember-source@5.9.0)
@@ -721,7 +721,7 @@ importers:
         version: 8.2.0(@babel/core@7.24.7)
       ember-cli-dependency-checker:
         specifier: ^3.3.2
-        version: 3.3.2(ember-cli@5.8.1)
+        version: 3.3.2(ember-cli@5.9.0)
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -855,8 +855,8 @@ importers:
         specifier: ^2.7.3
         version: 2.7.3(@glint/template@1.4.0)(webpack@5.91.0)
       ember-cli:
-        specifier: ~5.8.1
-        version: 5.8.1
+        specifier: ~5.9.0
+        version: 5.9.0
       ember-cli-app-version:
         specifier: ^6.0.1
         version: 6.0.1(ember-source@5.9.0)
@@ -865,7 +865,7 @@ importers:
         version: 8.2.0(@babel/core@7.24.7)
       ember-cli-dependency-checker:
         specifier: ^3.3.2
-        version: 3.3.2(ember-cli@5.8.1)
+        version: 3.3.2(ember-cli@5.9.0)
       ember-cli-htmlbars:
         specifier: ^6.3.0
         version: 6.3.0
@@ -7951,14 +7951,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-dependency-checker@3.3.2(ember-cli@5.8.1):
+  /ember-cli-dependency-checker@3.3.2(ember-cli@5.9.0):
     resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.8.1
+      ember-cli: 5.9.0
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.8
@@ -8160,8 +8160,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /ember-cli@5.8.1:
-    resolution: {integrity: sha512-rW7NFCaC02Bj52ZaI22UM43YT7gaRNLkQzBfhZYVpWW1+SMrdQXCxuPs6kqKRxqk4xauUpfCzCDFH92icq+mKg==}
+  /ember-cli@5.9.0:
+    resolution: {integrity: sha512-3+4F9STw4yRttzMCCrbpAwwQLtUqIwVug/Ve6rvUFvcpK//n8Q6N7iaPBHhYOFGwwok8Nr0jfkINxLWTl6WrlA==}
     engines: {node: '>= 18'}
     hasBin: true
     dependencies:
