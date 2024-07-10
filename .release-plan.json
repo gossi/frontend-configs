@@ -1,22 +1,22 @@
 {
   "solution": {
     "@gossi/config-eslint": {
+      "oldVersion": "0.12.0"
+    },
+    "@gossi/config-postcss": {
+      "oldVersion": "0.10.0"
+    },
+    "@gossi/config-prettier": {
       "impact": "minor",
-      "oldVersion": "0.11.0",
-      "newVersion": "0.12.0",
+      "oldVersion": "0.8.0",
+      "newVersion": "0.9.0",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
-      "pkgJSONPath": "./packages/eslint/package.json"
-    },
-    "@gossi/config-postcss": {
-      "oldVersion": "0.10.0"
-    },
-    "@gossi/config-prettier": {
-      "oldVersion": "0.8.0"
+      "pkgJSONPath": "./packages/prettier/package.json"
     },
     "@gossi/config-stylelint": {
       "oldVersion": "0.9.0"
@@ -28,5 +28,5 @@
       "oldVersion": "0.8.0"
     }
   },
-  "description": "## Release (2024-05-31)\n\n@gossi/config-eslint 0.12.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#753](https://github.com/gossi/frontend-configs/pull/753) Update `eslint-plugin-n` to `v17` ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2024-07-10)\n\n@gossi/config-prettier 0.9.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-prettier`, `ember-addon-v2-gts`, `ember-app-gts`\n  * [#807](https://github.com/gossi/frontend-configs/pull/807) Use double quotes in `<template>` for glimmer js/ts files ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }

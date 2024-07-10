@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2024-07-10)
+
+@gossi/config-prettier 0.9.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-prettier`, `ember-addon-v2-gts`, `ember-app-gts`
+  * [#807](https://github.com/gossi/frontend-configs/pull/807) Use double quotes in `<template>` for glimmer js/ts files ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-05-31)
 
 @gossi/config-eslint 0.12.0 (minor)
