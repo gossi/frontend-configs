@@ -11,6 +11,14 @@ module.exports = {
       options: {
         singleQuote: false
       }
+    },
+    {
+      files: ['*.gjs', '*.gts'],
+      options: {
+        parser: 'ember-template-tag',
+        singleQuote: true,
+        templateSingleQuote: false
+      }
     }
   ]
 };
