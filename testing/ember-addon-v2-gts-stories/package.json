@@ -60,7 +60,7 @@
     "rollup": "^4.18.1",
     "rollup-plugin-glimmer-template-tag": "^0.4.1",
     "typescript": "^5.5.3",
-    "webpack": "^5.92.1"
+    "webpack": "^5.93.0"
   },
   "peerDependencies": {
     "@glimmer/component": "^1.1.2"
