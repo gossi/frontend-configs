@@ -409,8 +409,8 @@ importers:
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.24.9)(rollup@4.18.1)
       '@storybook/types':
-        specifier: ^8.2.4
-        version: 8.2.4(storybook@8.2.4)
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.5)
       '@tsconfig/ember':
         specifier: ^3.0.8
         version: 3.0.8
@@ -678,8 +678,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@storybook/types':
-        specifier: ^8.2.4
-        version: 8.2.4(storybook@8.2.4)
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.5)
       '@tsconfig/ember':
         specifier: ^3.0.8
         version: 3.0.8
@@ -4719,13 +4719,13 @@ packages:
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
     dev: true
 
-  /@storybook/codemod@8.2.4:
-    resolution: {integrity: sha512-QcZdqjX4NvkVcWR3yI9it3PfqmBOCR+3iY6j4PmG7p5IE0j9kXMKBbeFrBRprSijHKlwcjbc3bRx2SnKF6AFEg==}
+  /@storybook/codemod@8.2.5:
+    resolution: {integrity: sha512-bUCvOqW3LUjz6epmTfocWBm0S7Ae52xmHvhVqgAUsKp9bVw2CGt9uaPR8dVE4IfI1yJZKRjf3u7Y60OTfWew4g==}
     dependencies:
       '@babel/core': 7.24.9
       '@babel/preset-env': 7.24.8(@babel/core@7.24.9)
       '@babel/types': 7.24.9
-      '@storybook/core': 8.2.4
+      '@storybook/core': 8.2.5
       '@storybook/csf': 0.1.11
       '@types/cross-spawn': 6.0.6
       cross-spawn: 7.0.3
@@ -4741,8 +4741,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@storybook/core@8.2.4:
-    resolution: {integrity: sha512-jePmsGZT2hhUNQs8ED6+hFVt2m4hrMseO8kkN7Mcsve1MIujzHUS7Gjo4uguBwHJJOtiXB2fw4OSiQCmsXscZA==}
+  /@storybook/core@8.2.5:
+    resolution: {integrity: sha512-KjaeIkbdcog4Jmx3MoSjQZpfESin1qHEcFiLoOkICOpuKsj37xdMFcuSre8IbcVGCJPkt1RvEmfeu1N90jOgww==}
     dependencies:
       '@storybook/csf': 0.1.11
       '@types/express': 4.17.21
@@ -4773,12 +4773,12 @@ packages:
       type-fest: 2.19.0
     dev: true
 
-  /@storybook/types@8.2.4(storybook@8.2.4):
-    resolution: {integrity: sha512-ksY2/pLfFSMyRiPje1BGC8T3na0QPQUffGINXbnrloK/iyRmHkz+5bnX4e/O+nehevb/erBSCAahivJfhPlZMA==}
+  /@storybook/types@8.2.5(storybook@8.2.5):
+    resolution: {integrity: sha512-xrF/+uIFstsGEAM8B67XA/YdTm5uu/8g+7b96qU7WTEf7A+k8wxaB0RQhHvOwz3ZtNModsKX8heIDOMMQlZJew==}
     peerDependencies:
-      storybook: ^8.2.4
+      storybook: ^8.2.5
     dependencies:
-      storybook: 8.2.4
+      storybook: 8.2.5
     dev: true
 
   /@swc/cli@0.4.0(@swc/core@1.7.0):
@@ -15701,14 +15701,14 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /storybook@8.2.4:
-    resolution: {integrity: sha512-ASavW8vIHiWpFY+4M6ngeqK5oL4OkxqdpmQYxvRqH0gA1G1hfq/vmDw4YC4GnqKwyWPQh2kaV5JFurKZVaeaDQ==}
+  /storybook@8.2.5:
+    resolution: {integrity: sha512-nfcly5CY3D6KuHbsfhScPaGeraRA9EJhO9GF00/dnI0GXW4ILS8Kwket515IkKAuKcdjdZis6maEuosbG//Kbg==}
     hasBin: true
     dependencies:
       '@babel/core': 7.24.9
       '@babel/types': 7.24.9
-      '@storybook/codemod': 8.2.4
-      '@storybook/core': 8.2.4
+      '@storybook/codemod': 8.2.5
+      '@storybook/core': 8.2.5
       '@types/semver': 7.5.8
       '@yarnpkg/fslib': 2.10.3
       '@yarnpkg/libzip': 2.3.0
