@@ -15,18 +15,18 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
-    "@jest/globals": "^29.7.0",
-    "@swc/cli": "^0.4.0",
-    "@swc/core": "^1.7.5",
-    "@swc/jest": "^0.2.36",
+    "@jest/globals": "29.7.0",
+    "@swc/cli": "0.4.0",
+    "@swc/core": "1.7.5",
+    "@swc/jest": "0.2.36",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "@types/jest": "^29.5.12",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
-    "jest": "^29.7.0",
+    "jest": "29.7.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "typescript": "5.5.4"
   },
   "engines": {
     "node": ">= 20.16.0"
