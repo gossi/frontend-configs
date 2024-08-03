@@ -1,0 +1,17 @@
+{
+  // manage the runs of renovate
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekends",
+    ":automergeAll",
+    ":maintainLockFilesWeekly",
+    ":pinOnlyDevDependencies"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ]
+}

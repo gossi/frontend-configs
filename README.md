@@ -8,3 +8,4 @@ My collection of config files for various frontend tools:
 - [`stylelint`](./packages/stylelint)
 - [`targets`](./packages/targets)
 - [`ember-template-lint`](./packages/template-lint)
+- [renovate](./renovate)
