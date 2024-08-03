@@ -702,16 +702,16 @@ importers:
         specifier: ^7.16.1
         version: 7.16.1(eslint@8.57.0)(typescript@5.5.4)
       broccoli-asset-rev:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: ^2.7.4
+        specifier: 2.7.4
         version: 2.7.4(@glint/template@1.4.0)(webpack@5.93.0)
       ember-cli:
-        specifier: ~5.10.0
+        specifier: 5.10.0
         version: 5.10.0(handlebars@4.7.8)(underscore@1.13.6)
       ember-cli-app-version:
         specifier: 7.0.0
@@ -720,19 +720,19 @@ importers:
         specifier: 8.2.0
         version: 8.2.0(@babel/core@7.25.2)
       ember-cli-dependency-checker:
-        specifier: ^3.3.2
+        specifier: 3.3.2
         version: 3.3.2(ember-cli@5.10.0(handlebars@4.7.8)(underscore@1.13.6))
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
       ember-cli-inject-live-reload:
-        specifier: ^2.1.0
+        specifier: 2.1.0
         version: 2.1.0
       ember-cli-sri:
-        specifier: ^2.1.1
+        specifier: 2.1.1
         version: 2.1.1
       ember-cli-terser:
-        specifier: ^4.0.2
+        specifier: 4.0.2
         version: 4.0.2
       ember-cli-typescript:
         specifier: 5.3.0
@@ -846,16 +846,16 @@ importers:
         specifier: ^7.16.1
         version: 7.16.1(eslint@8.57.0)(typescript@5.5.4)
       broccoli-asset-rev:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: ^2.7.4
+        specifier: 2.7.4
         version: 2.7.4(@glint/template@1.4.0)(webpack@5.93.0)
       ember-cli:
-        specifier: ~5.10.0
+        specifier: 5.10.0
         version: 5.10.0(handlebars@4.7.8)(underscore@1.13.6)
       ember-cli-app-version:
         specifier: 7.0.0
@@ -864,19 +864,19 @@ importers:
         specifier: 8.2.0
         version: 8.2.0(@babel/core@7.25.2)
       ember-cli-dependency-checker:
-        specifier: ^3.3.2
+        specifier: 3.3.2
         version: 3.3.2(ember-cli@5.10.0(handlebars@4.7.8)(underscore@1.13.6))
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
       ember-cli-inject-live-reload:
-        specifier: ^2.1.0
+        specifier: 2.1.0
         version: 2.1.0
       ember-cli-sri:
-        specifier: ^2.1.1
+        specifier: 2.1.1
         version: 2.1.1
       ember-cli-terser:
-        specifier: ^4.0.2
+        specifier: 4.0.2
         version: 4.0.2
       ember-cli-typescript:
         specifier: 5.3.0
