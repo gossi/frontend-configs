@@ -1,0 +1,98 @@
+{
+  ////////////////////////////////////////
+  // Grouping namespaced packages together
+  //
+  // This reduces overall PR count
+  ////////////////////////////////////////
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "Type Definitions",
+      "packagePatterns": [
+        "^@types\/*"
+      ],
+      "schedule": [
+        "after 9pm on sunday"
+      ]
+    },
+    // This library needs to be bumped, because otherwise we would not
+    // receive blueprint updates whenever a release occurs
+    {
+      "packageNames": [
+        "ember-addon-automated-ci"
+      ],
+      "rangeStrategy": "bump"
+    },
+    {
+      "groupName": "Lint Dependencies",
+      "schedule": [
+        "after 9pm on sunday"
+      ],
+      "packageNames": [
+        "eslint",
+        "babel-eslint",
+        "ember-template-lint",
+        "prettier"
+      ],
+      "packagePatterns": [
+        "^@gossi/config-",
+        "eslint-plugin-.*",
+        "eslint-config-.*",
+        ".*typescript-eslint.*",
+        "^@commitlint\/*",
+        "^remark-*"
+      ]
+    },
+    // These are dependencies that come default when
+    // generating a new ember addon
+    {
+      "groupName": "Ember Framework Dependencies",
+      "packageNames": [
+        "@ember/optional-features",
+        "@glimmer/component",
+        "@glimmer/tracking",
+        "ember-disable-prototype-extensions",
+        "ember-load-initializers",
+        "ember-resolver",
+        "ember-source",
+        "ember-page-title"
+      ],
+      "packagePatterns": [
+        "^@embroider\/*"
+      ]
+    },
+    {
+      "groupName": "Ember CLI Dependencies",
+      "packageNames": [
+        "broccoli-asset-rev",
+        "ember-cli",
+        "ember-auto-import",
+        "ember-cli-dependency-checker",
+        "ember-cli-inject-live-reload",
+        "ember-cli-sri",
+        "ember-cli-terser"
+      ]
+    },
+    {
+      "groupName": "Ember Testing Dependencies",
+      "schedule": [
+        "after 9pm on sunday"
+      ],
+      "packageNames": [
+        "qunit-dom",
+        "ember-try",
+        "ember-source-channel-url",
+        "ember-qunit",
+        "qunit",
+        "concurrently"
+      ]
+    },
+    {
+      // Max Semver compatibility
+      "packagePatterns": [
+        "@ember/test-waiters"
+      ],
+      "rangeStrategy": "widen"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  // label to add to certain types of dependencies
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "addLabels": [
+        "internal"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
+        "optionalDependencies"
+      ],
+      "addLabels": [
+        "enhancement"
+      ]
+    }
+  ]
+}
