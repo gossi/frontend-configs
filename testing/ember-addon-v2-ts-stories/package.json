@@ -57,14 +57,8 @@
   "peerDependencies": {
     "@glimmer/component": "^1.1.2"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "engines": {
     "node": ">= 20.16.0"
-  },
-  "volta": {
-    "extends": "../../package.json"
   },
   "ember": {
     "edition": "octane"

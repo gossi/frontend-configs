@@ -16,28 +16,5 @@
     "concurrently": "^8.2.2",
     "release-plan": "^0.9.2"
   },
-  "volta": {
-    "node": "20.16.0",
-    "pnpm": "8.15.9"
-  },
-  "release-it": {
-    "plugins": {
-      "@release-it-plugins/workspaces": true,
-      "@release-it-plugins/lerna-changelog": {
-        "infile": "CHANGELOG.md"
-      }
-    },
-    "git": {
-      "tagName": "v${version}",
-      "commitMessage": "release v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    },
-    "npm": false,
-    "hooks": {
-      "before:git:release": "pnpm install"
-    }
-  }
+  "packageManager": "pnpm@9.6.0"
 }

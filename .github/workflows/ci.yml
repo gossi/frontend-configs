@@ -15,8 +15,9 @@ jobs:
     name: 'Lint: JS'
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
+        uses: ./.github/actions/setup
       - name: Lint
         run: pnpm run -r --parallel --aggregate-output lint:js
 
@@ -24,8 +25,9 @@ jobs:
     name: 'Lint: Types'
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
+        uses: ./.github/actions/setup
       - name: Lint
         run: pnpm run -r --parallel --aggregate-output lint:types
 
@@ -33,8 +35,9 @@ jobs:
     name: 'Lint: Handlebars'
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
+        uses: ./.github/actions/setup
       - name: Lint
         run: pnpm run -r --parallel --aggregate-output lint:hbs
 
@@ -42,7 +45,8 @@ jobs:
     name: Ember Tests
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup
-        uses: wyvox/action@v1
+        uses: ./.github/actions/setup
       - name: Run Tests
         run: pnpm run -r --parallel --aggregate-output test:ember
