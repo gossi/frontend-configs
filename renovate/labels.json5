@@ -19,6 +19,14 @@
       "addLabels": [
         "enhancement"
       ]
+    },
+    {
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "addLabels": [
+        "enhancement"
+      ]
     }
   ]
 }
