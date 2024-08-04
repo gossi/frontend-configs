@@ -6,12 +6,26 @@
     "schedule:weekends",
     ":automergeAll",
     ":maintainLockFilesWeekly",
-    ":pinOnlyDevDependencies"
+    ":widenPeerDependencies"
   ],
   "labels": [
     "dependencies"
   ],
   "postUpdateOptions": [
     "pnpmDedupe"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "*"
+      ],
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "rangeStrategy": "bump"
+    }
   ]
 }
