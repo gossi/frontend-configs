@@ -76,8 +76,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -342,8 +342,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -445,8 +445,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -536,8 +536,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -618,8 +618,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -771,8 +771,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -912,8 +912,8 @@ importers:
         specifier: ^12.2.0
         version: 12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
       eslint-plugin-qunit:
-        specifier: ^8.1.1
-        version: 8.1.1(eslint@8.57.0)
+        specifier: ^8.1.2
+        version: 8.1.2(eslint@8.57.0)
       eslint-plugin-storybook:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.5.4)
@@ -4974,8 +4974,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-qunit@8.1.1:
-    resolution: {integrity: sha512-j3xhiAf2Wvr8Dfwl5T6tlJ+F55vqYE9ZdAHUOTzq1lGerYrXzOS46RvK4SSWug2D8sl3ZYr2lA4/hgVXgLloxw==}
+  eslint-plugin-qunit@8.1.2:
+    resolution: {integrity: sha512-2gDQdHlQW8GVXD7YYkO8vbm9Ldc60JeGMuQN5QlD48OeZ8znBvvoHWZZMeXjvoDPReGaLEvyuWrDtrI8bDbcqw==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
 
   eslint-plugin-simple-import-sort@12.1.1:
@@ -14589,7 +14589,7 @@ snapshots:
       '@types/eslint': 8.56.11
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
-  eslint-plugin-qunit@8.1.1(eslint@8.57.0):
+  eslint-plugin-qunit@8.1.2(eslint@8.57.0):
     dependencies:
       eslint-utils: 3.0.0(eslint@8.57.0)
       requireindex: 1.2.0
