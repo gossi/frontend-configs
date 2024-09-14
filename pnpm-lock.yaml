@@ -409,8 +409,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.25.2)(@types/babel__core@7.20.5)(rollup@4.21.3)
       '@storybook/types':
-        specifier: 8.2.9
-        version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
+        specifier: 8.3.0
+        version: 8.3.0(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -678,8 +678,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@storybook/types':
-        specifier: 8.2.9
-        version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
+        specifier: 8.3.0
+        version: 8.3.0(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -2681,10 +2681,10 @@ packages:
   '@storybook/csf@0.1.11':
     resolution: {integrity: sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==}
 
-  '@storybook/types@8.2.9':
-    resolution: {integrity: sha512-FlrnZiI9lzvfA2k+VHxZ5P9JHXIbNUKIV6/469FwKlPiMhZrt9094O1lSKOfGo409mwBKDBm5X0hThbNc9ZnoQ==}
+  '@storybook/types@8.3.0':
+    resolution: {integrity: sha512-2lF3pac9ktjUD85uPQBAxfNwbch4Vr56HB1Vnq7mLDIkV+OiLn9jEZ4Oabpq/y8jWYmGY5giRru0dIlZ+iPQuQ==}
     peerDependencies:
-      storybook: ^8.2.9
+      storybook: ^8.3.0
 
   '@swc/cli@0.4.0':
     resolution: {integrity: sha512-4JdVrPtF/4rCMXp6Q1h5I6YkYZrCCcqod7Wk97ZQq7K8vNGzJUryBv4eHCvqx5sJOJBrbYm9fcswe1B0TygNoA==}
@@ -11411,7 +11411,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  '@storybook/types@8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))':
+  '@storybook/types@8.3.0(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))':
     dependencies:
       storybook: 8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2))
 
