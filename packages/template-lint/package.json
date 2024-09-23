@@ -12,7 +12,7 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "ember-template-lint": "^6.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "prettier": "^3.3.3"
   },
   "engines": {
