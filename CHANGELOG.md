@@ -1,5 +1,27 @@
 # Changelog
 
+## Release (2024-10-20)
+
+@gossi/config-eslint 0.13.0 (minor)
+@gossi/config-postcss 0.10.1 (patch)
+@gossi/config-prettier 0.9.1 (patch)
+@gossi/config-stylelint 0.9.1 (patch)
+@gossi/config-targets 0.9.1 (patch)
+@gossi/config-template-lint 0.8.1 (patch)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#956](https://github.com/gossi/frontend-configs/pull/956) Upgrade to `@typescript-eslint` v8 ([@gossi](https://github.com/gossi))
+* Other
+  * [#848](https://github.com/gossi/frontend-configs/pull/848) Shared renovate configs ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#846](https://github.com/gossi/frontend-configs/pull/846) From volta to corepack ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-07-10)
 
 @gossi/config-prettier 0.9.0 (minor)
