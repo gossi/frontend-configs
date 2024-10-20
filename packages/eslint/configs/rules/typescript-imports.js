@@ -5,7 +5,7 @@
  * @type {import('../types').PartialConfig}
  */
 const rule = {
-  extends: ['plugin:i/typescript'],
+  extends: ['plugin:eslint-plugin-import-x/typescript'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.gts', '.tsx']
