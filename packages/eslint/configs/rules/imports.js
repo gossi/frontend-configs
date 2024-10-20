@@ -1,6 +1,6 @@
 'use strict';
 
-const plugin = 'i';
+const plugin = 'eslint-plugin-import-x';
 
 /**
  *
@@ -8,27 +8,27 @@ const plugin = 'i';
  */
 const rule = {
   plugins: [plugin],
-  extends: ['plugin:i/recommended'],
+  extends: ['plugin:eslint-plugin-import-x/recommended'],
   rules: {
     // ----------------------------
     // Broken Rules
     // ----------------------------
 
     // Does not respect package.json#exports
-    'import/no-unresolved': 'off',
+    'import-x/no-unresolved': 'off',
 
     // Anti-foot-gun
-    'import/no-cycle': ['error'],
+    'import-x/no-cycle': ['error'],
 
     // Not useful, only stylistic
-    'import/exports-last': 'off',
+    'import-x/exports-last': 'off',
 
     // Anti-noise
-    'import/no-unassigned-import': ['error'],
+    'import-x/no-unassigned-import': ['error'],
 
     // Style
-    'import/no-duplicates': ['error'],
-    'import/newline-after-import': ['error']
+    'import-x/no-duplicates': ['error'],
+    'import-x/newline-after-import': ['error']
   }
 };
 
