@@ -27,6 +27,16 @@
       "addLabels": [
         "internal"
       ]
+    },
+    {
+      "matchDatasources": [
+        "github-tags",
+        "github-runners",
+        "node-version"
+      ],
+      "addLabels": [
+        "internal"
+      ]
     }
   ]
 }
