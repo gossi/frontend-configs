@@ -15,8 +15,9 @@ const config = [
  * @type {import('../types').PartialConfig}
  */
 const rule = {
+  plugins: ['@stylistic'],
   rules: {
-    'padding-line-between-statements': ['error', ...config]
+    '@stylistic/padding-line-between-statements': ['error', ...config]
   }
 };
 

@@ -7,12 +7,12 @@ const baseNamingConventions = require('../naming-conventions/base');
  */
 const rule = {
   // parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', '@stylistic'],
   extends: ['plugin:@typescript-eslint/strict'],
   rules: {
     // Having an empty interface is plausable when iterating on types,
     // extending from an existing type and "planning" to update.
-    '@typescript-eslint/no-empty-interface': 'off',
+    // '@typescript-eslint/no-empty-interface': 'off',
 
     // type imports are removed in builds
     '@typescript-eslint/consistent-type-imports': 'error',
@@ -49,12 +49,8 @@ const rule = {
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
 
-    'lines-between-class-members': 'off',
-    '@typescript-eslint/lines-between-class-members': [
-      'error',
-      'always',
-      { exceptAfterSingleLine: true }
-    ],
+    // '@stylistic/lines-between-class-members': 'off',
+    '@stylistic/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     /**
      * This allows short-circuit idioms, like:
