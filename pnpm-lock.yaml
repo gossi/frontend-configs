@@ -412,8 +412,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.26.0)(@types/babel__core@7.20.5)(rollup@4.24.3)
       '@storybook/types':
-        specifier: 8.3.6
-        version: 8.3.6(storybook@8.3.6)
+        specifier: 8.4.1
+        version: 8.4.1(storybook@8.3.6)
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -681,8 +681,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@storybook/types':
-        specifier: 8.3.6
-        version: 8.3.6(storybook@8.3.6)
+        specifier: 8.4.1
+        version: 8.4.1(storybook@8.3.6)
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -2746,10 +2746,10 @@ packages:
   '@storybook/csf@0.1.11':
     resolution: {integrity: sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==}
 
-  '@storybook/types@8.3.6':
-    resolution: {integrity: sha512-EY+bjIxxmKkFrL7CyDQb3EXbmy0+Y9OieaPrNNM7QXTfGgp81lXhfqMX3HLMMjplk+rcxVJLyzXSBx0nIn91fQ==}
+  '@storybook/types@8.4.1':
+    resolution: {integrity: sha512-/otNBgXImx0EjGY8VVXlvrzHnYKLoFumA4689okTcIymu3Ol0YYZ/ViK7fb7hmrRHWiirgJLlHZvLkTSH+J1Pw==}
     peerDependencies:
-      storybook: ^8.3.6
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
   '@stylistic/eslint-plugin@2.9.0':
     resolution: {integrity: sha512-OrDyFAYjBT61122MIY1a3SfEgy3YCMgt2vL4eoPmvTwDBwyQhAXurxNQznlRD/jESNfYWfID8Ej+31LljvF7Xg==}
@@ -11140,7 +11140,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  '@storybook/types@8.3.6(storybook@8.3.6)':
+  '@storybook/types@8.4.1(storybook@8.3.6)':
     dependencies:
       storybook: 8.3.6
 
