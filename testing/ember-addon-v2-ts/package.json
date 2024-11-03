@@ -32,7 +32,7 @@
     "@babel/plugin-proposal-decorators": "7.25.9",
     "@babel/plugin-syntax-decorators": "7.25.9",
     "@embroider/addon-dev": "6.0.1",
-    "@glimmer/component": "1.1.2",
+    "@glimmer/component": "2.0.0",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
@@ -54,7 +54,7 @@
     "typescript": "5.6.3"
   },
   "peerDependencies": {
-    "@glimmer/component": "^1.1.2"
+    "@glimmer/component": "^2.0.0"
   },
   "engines": {
     "node": ">= 20.16.0"
