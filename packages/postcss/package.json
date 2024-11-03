@@ -6,7 +6,7 @@
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
     "postcss-each": "^1.1.0",
-    "postcss-nested": "^6.2.0",
+    "postcss-nested": "^7.0.0",
     "postcss-parcel-css": "^0.5.1",
     "postcss-pow": "^1.0.1",
     "postcss-preset-env": "^10.0.0"
