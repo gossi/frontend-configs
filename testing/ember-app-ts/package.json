@@ -31,7 +31,7 @@
     "@gossi/config-template-lint": "workspace:*",
     "@tsconfig/ember": "3.0.8",
     "@types/eslint": "^9.6.1",
-    "@types/qunit": "^2.19.11",
+    "@types/qunit": "^2.19.12",
     "@types/rsvp": "^4.0.9",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
