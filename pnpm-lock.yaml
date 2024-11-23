@@ -412,8 +412,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.26.0)(@types/babel__core@7.20.5)(rollup@4.27.2)
       '@storybook/types':
-        specifier: 8.4.4
-        version: 8.4.4(storybook@8.4.2(prettier@3.3.3))
+        specifier: 8.4.5
+        version: 8.4.5(storybook@8.4.2(prettier@3.3.3))
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -681,8 +681,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@storybook/types':
-        specifier: 8.4.4
-        version: 8.4.4(storybook@8.4.2(prettier@3.3.3))
+        specifier: 8.4.5
+        version: 8.4.5(storybook@8.4.2(prettier@3.3.3))
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -2740,8 +2740,8 @@ packages:
   '@storybook/csf@0.1.11':
     resolution: {integrity: sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==}
 
-  '@storybook/types@8.4.4':
-    resolution: {integrity: sha512-NUeIhecJ+i2ul/u/ftV+f9gBT2cUOuLjgy1a+l0UbJd7n3wwN17vX2zrrDkrGG3dp3edr8bWMGjAN3WERJje1A==}
+  '@storybook/types@8.4.5':
+    resolution: {integrity: sha512-1hlSq7sPYyU9QT++7qytxtY53ARtKGq2cYEr92pOPt6uinCbStmtQ5BoKOFB6vyHoXWgIbhZJKAXZq+tGTz7Qw==}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
@@ -11081,7 +11081,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  '@storybook/types@8.4.4(storybook@8.4.2(prettier@3.3.3))':
+  '@storybook/types@8.4.5(storybook@8.4.2(prettier@3.3.3))':
     dependencies:
       storybook: 8.4.2(prettier@3.3.3)
 
