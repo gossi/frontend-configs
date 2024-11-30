@@ -12,8 +12,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0
       release-plan:
-        specifier: 0.10.0
-        version: 0.10.0(encoding@0.1.13)
+        specifier: 0.11.0
+        version: 0.11.0(encoding@0.1.13)
 
   packages/eslint:
     dependencies:
@@ -7701,8 +7701,8 @@ packages:
     resolution: {integrity: sha512-cnE+y8bz4NhMjISKbgeVJtqNbtf5QpjZP+Bslo+UqkIt9QPnX9q095eiRRASJG1/tz6dlNr6Z5NsBiWYokp6EQ==}
     hasBin: true
 
-  release-plan@0.10.0:
-    resolution: {integrity: sha512-q5aZ/ED/VB2udzIFVaj9Kfsj/wLZluw7kZV7eiYp5zHX/LJrofFl7bOX7u6nQV14O9UjHDYcdQEE/NRXVK68ZA==}
+  release-plan@0.11.0:
+    resolution: {integrity: sha512-241SKOFD87J4mAE8mbXR6xDaqTYIvB8O1itH1bTWvY6q5X/xP4wNlhmx7NGXrzq3z9tCP3OcjzoOi19RC9yTsA==}
     hasBin: true
 
   remove-trailing-separator@1.1.0:
@@ -17472,7 +17472,7 @@ snapshots:
     dependencies:
       jsesc: 3.0.2
 
-  release-plan@0.10.0(encoding@0.1.13):
+  release-plan@0.11.0(encoding@0.1.13):
     dependencies:
       '@manypkg/get-packages': 2.2.2
       '@npmcli/package-json': 5.2.1
