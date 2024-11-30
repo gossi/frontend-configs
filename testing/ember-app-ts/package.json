@@ -24,7 +24,7 @@
     "@ember/test-helpers": "4.0.4",
     "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
-    "@glimmer/validator": "0.93.0",
+    "@glimmer/validator": "0.93.1",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
