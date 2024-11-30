@@ -654,8 +654,8 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       '@glimmer/validator':
-        specifier: 0.93.0
-        version: 0.93.0
+        specifier: 0.93.1
+        version: 0.93.1
       '@glint/core':
         specifier: 1.5.0
         version: 1.5.0(typescript@5.7.2)
@@ -816,8 +816,8 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       '@glimmer/validator':
-        specifier: 0.93.0
-        version: 0.93.0
+        specifier: 0.93.1
+        version: 0.93.1
       '@gossi/config-eslint':
         specifier: workspace:*
         version: link:../../packages/eslint
@@ -2150,8 +2150,8 @@ packages:
   '@glimmer/util@0.92.3':
     resolution: {integrity: sha512-K1oH93gGU36slycxJ9CcFpUTsdOc4XQ6RuZFu5oRsxFYtEF5PSu7ik11h58fyeoaWOr1ebfkyAMawbeI2AJ5GA==}
 
-  '@glimmer/util@0.93.0':
-    resolution: {integrity: sha512-C0kJlyG2NKoBYC97xkrvR+imhxKEG4Pki6HdpaYvKk6h2EuOxw6fgBBW45DAPcEkjmNKeVuMGXPzd5nAJih0YQ==}
+  '@glimmer/util@0.93.1':
+    resolution: {integrity: sha512-EFLxpoGY+cEyi/GVyO5acBpyAlf0CLSvGjURbuWcKcOMtESO72KPJvJuLaAcRssHDqKtWKPO/Fs7nNl8wfn7Lg==}
 
   '@glimmer/validator@0.44.0':
     resolution: {integrity: sha512-i01plR0EgFVz69GDrEuFgq1NheIjZcyTy3c7q+w7d096ddPVeVcRzU3LKaqCfovvLJ+6lJx40j45ecycASUUyw==}
@@ -2162,8 +2162,8 @@ packages:
   '@glimmer/validator@0.92.3':
     resolution: {integrity: sha512-HKrMYeW0YhiksSeKYqX2chUR/rz82j12DcY7p2dORQlTV3qlAfiE5zRTJH1KRA1X3ZMf7DI2/GOzkXwYp0o+3Q==}
 
-  '@glimmer/validator@0.93.0':
-    resolution: {integrity: sha512-bRxTAXS5iTpMxH2hqkkAs4GU/+KbHANz9bglpb0ZnO7DdYJOZCl+XlE1s/5fNk6KQ5x3EtKD0Ekn7dw62yLvLA==}
+  '@glimmer/validator@0.93.1':
+    resolution: {integrity: sha512-PmqlpVODtLq+bKDyJxtgVyKuC0u9IHf6vEYwWe4N1vEEWPkktslqQrqOwRBsKYQvxF8ZSC9SzWFWV4bCdiMS1Q==}
 
   '@glimmer/vm-babel-plugins@0.92.3':
     resolution: {integrity: sha512-VpkKsHc3oiq9ruiwT7sN4RuOIc5n10PCeWX7tYSNZ85S1bETcAFn0XbyNjI+G3uFshQGEK0T8Fn3+/8VTNIQIg==}
@@ -10502,7 +10502,7 @@ snapshots:
       '@glimmer/env': 0.1.7
       '@glimmer/interfaces': 0.92.3
 
-  '@glimmer/util@0.93.0':
+  '@glimmer/util@0.93.1':
     dependencies:
       '@glimmer/env': 0.1.7
       '@glimmer/interfaces': 0.93.0
@@ -10521,12 +10521,12 @@ snapshots:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/util': 0.92.3
 
-  '@glimmer/validator@0.93.0':
+  '@glimmer/validator@0.93.1':
     dependencies:
       '@glimmer/env': 0.1.7
       '@glimmer/global-context': 0.92.4
       '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
+      '@glimmer/util': 0.93.1
 
   '@glimmer/vm-babel-plugins@0.92.3(@babel/core@7.26.0)':
     dependencies:
