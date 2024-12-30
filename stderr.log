@@ -14,3 +14,5 @@ Warning: unknown package "ember-addon-v2-ts-stories"
 Warning: unknown package "ember-addon-v2-ts"
 Warning: unknown package "ember-app-gts"
 Warning: unknown package "ember-app-ts"
+(node:1990) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)

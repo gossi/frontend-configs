@@ -1,5 +1,19 @@
 # Changelog
 
+## Release (2024-12-30)
+
+@gossi/config-eslint 0.14.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#958](https://github.com/gossi/frontend-configs/pull/958) Migrate from `eslint-plugin-i` to `eslint-plugin-import-x` ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* [#959](https://github.com/gossi/frontend-configs/pull/959) Enhance renovate config ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-10-20)
 
 @gossi/config-eslint 0.13.0 (minor)
