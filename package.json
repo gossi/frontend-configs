@@ -13,7 +13,7 @@
     "release:publish": "release-plan publish"
   },
   "devDependencies": {
-    "concurrently": "^9.1.1",
+    "concurrently": "^9.1.2",
     "release-plan": "0.11.0"
   },
   "packageManager": "pnpm@9.15.2"
