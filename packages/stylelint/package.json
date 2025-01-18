@@ -1,12 +1,23 @@
 {
   "name": "@gossi/config-stylelint",
   "version": "0.9.1",
+  "type": "module",
   "repository": "https://github.com/gossi/frontend-configs",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "concurrently 'npm:lint:*(!fix)'",
+    "lint:fix": "concurrently 'npm:lint:*:fix'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  },
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
     "stylelint-config-clean-order": "^7.0.0",
     "stylelint-config-standard": "^37.0.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.1"
+    "stylelint-no-unsupported-browser-features": "^8.0.2"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",

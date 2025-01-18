@@ -1,4 +1,4 @@
-module.exports = function configure({ browsers }) {
+export function configure({ browsers }) {
   return {
     extends: ['stylelint-config-standard', 'stylelint-config-clean-order'],
 
@@ -35,7 +35,7 @@ module.exports = function configure({ browsers }) {
       'at-rule-no-unknown': [
         true,
         {
-          ignoreAtRules: ['custom-selector', 'value']
+          ignoreAtRules: ['custom-selector', 'value', 'text-wrap']
         }
       ],
 
@@ -78,4 +78,4 @@ module.exports = function configure({ browsers }) {
       ]
     }
   };
-};
+}

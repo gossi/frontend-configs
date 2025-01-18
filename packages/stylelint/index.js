@@ -1,6 +1,7 @@
-'use strict';
+import { browsers } from '@gossi/config-targets';
 
-const { browsers } = require('@gossi/config-targets');
-const configure = require('./configure');
+import { configure } from './configure.js';
 
-module.exports = configure({ browsers });
+export { configure };
+
+export default configure({ browsers });
