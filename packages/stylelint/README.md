@@ -10,13 +10,14 @@ Adds stylelint to your packages.
     pnpm add -D @gossi/config-stylelint stylelint
     ```
 
-2) Create a `.stylelintrc.js` file with these contents:
+2) Create `stylelint.config.(m)js` config file with these contents:
 
     ```js
-    'use strict';
-
-    module.exports = require('@gossi/config-stylelint');
+    export { default } from '@gossi/config-stylelint';
     ```
+
+    Note: The `.mjs` extension is for CJS packages, the `.js` extension for
+    packages with `"type": "module"`.
 
 3) Add scripts to execute linting
 
