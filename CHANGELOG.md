@@ -1,5 +1,30 @@
 # Changelog
 
+## Release (2025-01-18)
+
+@gossi/config-eslint 0.14.0 (minor)
+@gossi/config-postcss 0.11.0 (minor)
+@gossi/config-prettier 0.10.0 (minor)
+@gossi/config-stylelint 1.0.0 (major)
+@gossi/config-targets 0.10.0 (minor)
+@gossi/config-template-lint 0.9.0 (minor)
+
+#### :boom: Breaking Change
+* `@gossi/config-stylelint`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#1075](https://github.com/gossi/frontend-configs/pull/1075) Switch `stylelint` to ESM config ([@gossi](https://github.com/gossi))
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`
+  * [#1074](https://github.com/gossi/frontend-configs/pull/1074) upgrade node to v20.* ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`
+  * [#958](https://github.com/gossi/frontend-configs/pull/958) Migrate from `eslint-plugin-i` to `eslint-plugin-import-x` ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* [#959](https://github.com/gossi/frontend-configs/pull/959) Enhance renovate config ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2024-10-20)
 
 @gossi/config-eslint 0.13.0 (minor)

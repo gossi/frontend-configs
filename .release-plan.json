@@ -2,28 +2,24 @@
   "solution": {
     "@gossi/config-eslint": {
       "impact": "minor",
-      "oldVersion": "0.12.0",
-      "newVersion": "0.13.0",
+      "oldVersion": "0.13.0",
+      "newVersion": "0.14.0",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./packages/eslint/package.json"
     },
     "@gossi/config-postcss": {
-      "impact": "patch",
-      "oldVersion": "0.10.0",
-      "newVersion": "0.10.1",
+      "impact": "minor",
+      "oldVersion": "0.10.1",
+      "newVersion": "0.11.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         },
         {
           "impact": "patch",
@@ -33,25 +29,29 @@
       "pkgJSONPath": "./packages/postcss/package.json"
     },
     "@gossi/config-prettier": {
-      "impact": "patch",
-      "oldVersion": "0.9.0",
-      "newVersion": "0.9.1",
+      "impact": "minor",
+      "oldVersion": "0.9.1",
+      "newVersion": "0.10.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./packages/prettier/package.json"
     },
     "@gossi/config-stylelint": {
-      "impact": "patch",
-      "oldVersion": "0.9.0",
-      "newVersion": "0.9.1",
+      "impact": "major",
+      "oldVersion": "0.9.1",
+      "newVersion": "1.0.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         },
         {
           "impact": "patch",
@@ -61,29 +61,29 @@
       "pkgJSONPath": "./packages/stylelint/package.json"
     },
     "@gossi/config-targets": {
-      "impact": "patch",
-      "oldVersion": "0.9.0",
-      "newVersion": "0.9.1",
+      "impact": "minor",
+      "oldVersion": "0.9.1",
+      "newVersion": "0.10.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./packages/targets/package.json"
     },
     "@gossi/config-template-lint": {
-      "impact": "patch",
-      "oldVersion": "0.8.0",
-      "newVersion": "0.8.1",
+      "impact": "minor",
+      "oldVersion": "0.8.1",
+      "newVersion": "0.9.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./packages/template-lint/package.json"
     }
   },
-  "description": "## Release (2024-10-20)\n\n@gossi/config-eslint 0.13.0 (minor)\n@gossi/config-postcss 0.10.1 (patch)\n@gossi/config-prettier 0.9.1 (patch)\n@gossi/config-stylelint 0.9.1 (patch)\n@gossi/config-targets 0.9.1 (patch)\n@gossi/config-template-lint 0.8.1 (patch)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#956](https://github.com/gossi/frontend-configs/pull/956) Upgrade to `@typescript-eslint` v8 ([@gossi](https://github.com/gossi))\n* Other\n  * [#848](https://github.com/gossi/frontend-configs/pull/848) Shared renovate configs ([@gossi](https://github.com/gossi))\n\n#### :house: Internal\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#846](https://github.com/gossi/frontend-configs/pull/846) From volta to corepack ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-01-18)\n\n@gossi/config-eslint 0.14.0 (minor)\n@gossi/config-postcss 0.11.0 (minor)\n@gossi/config-prettier 0.10.0 (minor)\n@gossi/config-stylelint 1.0.0 (major)\n@gossi/config-targets 0.10.0 (minor)\n@gossi/config-template-lint 0.9.0 (minor)\n\n#### :boom: Breaking Change\n* `@gossi/config-stylelint`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#1075](https://github.com/gossi/frontend-configs/pull/1075) Switch `stylelint` to ESM config ([@gossi](https://github.com/gossi))\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`, `@my-blog/core`, `ember-addon-v2-gts-stories`, `ember-addon-v2-gts`, `ember-addon-v2-ts-stories`, `ember-addon-v2-ts`, `ember-app-gts`, `ember-app-ts`\n  * [#1074](https://github.com/gossi/frontend-configs/pull/1074) upgrade node to v20.* ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`\n  * [#958](https://github.com/gossi/frontend-configs/pull/958) Migrate from `eslint-plugin-i` to `eslint-plugin-import-x` ([@gossi](https://github.com/gossi))\n\n#### :house: Internal\n* [#959](https://github.com/gossi/frontend-configs/pull/959) Enhance renovate config ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }

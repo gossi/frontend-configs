@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-targets",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
