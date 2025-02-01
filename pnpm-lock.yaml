@@ -318,8 +318,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.26.7)(@types/babel__core@7.20.5)(rollup@4.31.0)
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.20.0
         version: 8.20.0(@typescript-eslint/parser@8.20.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
@@ -424,8 +424,8 @@ importers:
         specifier: 8.5.2
         version: 8.5.2(storybook@8.5.0(prettier@3.4.2))
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
@@ -524,8 +524,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.26.7)(@types/babel__core@7.20.5)(rollup@4.31.0)
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.20.0
         version: 8.20.0(@typescript-eslint/parser@8.20.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
@@ -612,8 +612,8 @@ importers:
         specifier: 6.0.4
         version: 6.0.4(@babel/core@7.26.7)(@types/babel__core@7.20.5)(rollup@4.31.0)
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.20.0
         version: 8.20.0(@typescript-eslint/parser@8.20.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
@@ -711,8 +711,8 @@ importers:
         specifier: 8.5.2
         version: 8.5.2(storybook@8.5.0(prettier@3.4.2))
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@types/eslint':
         specifier: ^9.6.1
         version: 9.6.1
@@ -864,8 +864,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@tsconfig/ember':
-        specifier: 3.0.8
-        version: 3.0.8
+        specifier: 3.0.9
+        version: 3.0.9
       '@types/eslint':
         specifier: ^9.6.1
         version: 9.6.1
@@ -2912,8 +2912,8 @@ packages:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
 
-  '@tsconfig/ember@3.0.8':
-    resolution: {integrity: sha512-OVnIsZIt/8q0VEtcdz3rRryNrm6gdJTxXlxefkGIrkZnME0wqslmwHlUEZ7mvh377df9FqBhNKrYNarhCW8zJA==}
+  '@tsconfig/ember@3.0.9':
+    resolution: {integrity: sha512-0B44GyEafxJLAZSixH9VBnm9kDFCpaLXu86httaJSDEm1nfl3WWI/XfY4diPsOyOg+pc9N1/YfqH7uKM2dF0lA==}
 
   '@tsconfig/node18@18.2.4':
     resolution: {integrity: sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ==}
@@ -11377,7 +11377,7 @@ snapshots:
 
   '@tootallnate/once@1.1.2': {}
 
-  '@tsconfig/ember@3.0.8': {}
+  '@tsconfig/ember@3.0.9': {}
 
   '@tsconfig/node18@18.2.4': {}
 
