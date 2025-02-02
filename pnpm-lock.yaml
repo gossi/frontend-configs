@@ -154,13 +154,13 @@ importers:
         version: link:../targets
       stylelint-config-clean-order:
         specifier: ^7.0.0
-        version: 7.0.0(stylelint@16.13.2(typescript@5.7.3))
+        version: 7.0.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-standard:
         specifier: ^37.0.0
-        version: 37.0.0(stylelint@16.13.2(typescript@5.7.3))
+        version: 37.0.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-no-unsupported-browser-features:
         specifier: ^8.0.2
-        version: 8.0.2(stylelint@16.13.2(typescript@5.7.3))
+        version: 8.0.2(stylelint@16.14.1(typescript@5.7.3))
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -175,8 +175,8 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
 
   packages/targets:
     devDependencies:
@@ -357,8 +357,8 @@ importers:
         specifier: 4.34.0
         version: 4.34.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -472,8 +472,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1(@babel/core@7.26.7)(ember-source@6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.97.1(esbuild@0.24.2)))(ember-template-imports@4.3.0)
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -563,8 +563,8 @@ importers:
         specifier: 4.34.0
         version: 4.34.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -654,8 +654,8 @@ importers:
         specifier: 4.34.0
         version: 4.34.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -819,8 +819,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -966,8 +966,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.1
+        version: 16.14.1(typescript@5.7.3)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -8409,8 +8409,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint@16.13.2:
-    resolution: {integrity: sha512-wDlgh0mRO9RtSa3TdidqHd0nOG8MmUyVKl+dxA6C1j8aZRzpNeEgdhFmU5y4sZx4Fc6r46p0fI7p1vR5O2DZqA==}
+  stylelint@16.14.1:
+    resolution: {integrity: sha512-oqCL7AC3786oTax35T/nuLL8p2C3k/8rHKAooezrPGRvUX0wX+qqs5kMWh5YYT4PHQgVDobHT4tw55WgpYG6Sw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -18345,33 +18345,33 @@ snapshots:
 
   styled_string@0.0.1: {}
 
-  stylelint-config-clean-order@7.0.0(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-clean-order@7.0.0(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-order: 6.0.4(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.1(typescript@5.7.3)
+      stylelint-order: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
 
-  stylelint-config-recommended@15.0.0(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-recommended@15.0.0(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.1(typescript@5.7.3)
 
-  stylelint-config-standard@37.0.0(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-standard@37.0.0(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-config-recommended: 15.0.0(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.1(typescript@5.7.3)
+      stylelint-config-recommended: 15.0.0(stylelint@16.14.1(typescript@5.7.3))
 
-  stylelint-no-unsupported-browser-features@8.0.2(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-no-unsupported-browser-features@8.0.2(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       doiuse: 6.0.5
       postcss: 8.5.1
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.1(typescript@5.7.3)
 
-  stylelint-order@6.0.4(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-order@6.0.4(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       postcss: 8.5.1
       postcss-sorting: 8.0.2(postcss@8.5.1)
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.1(typescript@5.7.3)
 
-  stylelint@16.13.2(typescript@5.7.3):
+  stylelint@16.14.1(typescript@5.7.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
