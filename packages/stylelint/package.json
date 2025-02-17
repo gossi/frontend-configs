@@ -23,7 +23,7 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "eslint": "^8.57.1",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.1",
     "stylelint": "16.14.1"
   },
   "peerDependencies": {
