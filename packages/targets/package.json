@@ -6,7 +6,7 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "eslint": "^8.57.1",
-    "prettier": "3.5.1"
+    "prettier": "3.5.2"
   },
   "engines": {
     "node": ">= 20.*"
