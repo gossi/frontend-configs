@@ -19,7 +19,7 @@ importers:
     dependencies:
       '@stylistic/eslint-plugin':
         specifier: ^3.0.0
-        version: 3.0.1(eslint@8.57.1)(typescript@5.7.3)
+        version: 3.1.0(eslint@8.57.1)(typescript@5.7.3)
       cosmiconfig:
         specifier: ^9.0.0
         version: 9.0.0(typescript@5.7.3)
@@ -2795,8 +2795,8 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
-  '@stylistic/eslint-plugin@3.0.1':
-    resolution: {integrity: sha512-rQ3tcT5N2cynofJfbjUsnL4seoewTaOVBLyUEwtNldo7iNMPo3h/GUQk+Cl3iHEWwRxjq2wuH6q0FufQrbVL1A==}
+  '@stylistic/eslint-plugin@3.1.0':
+    resolution: {integrity: sha512-pA6VOrOqk0+S8toJYhQGv2MWpQQR0QpeUo9AhNkC49Y26nxBQ/nH1rta9bUU1rPw2fJ1zZEMV5oCX5AazT7J2g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -11227,7 +11227,7 @@ snapshots:
     dependencies:
       storybook: 8.5.0(prettier@3.5.2)
 
-  '@stylistic/eslint-plugin@3.0.1(eslint@8.57.1)(typescript@5.7.3)':
+  '@stylistic/eslint-plugin@3.1.0(eslint@8.57.1)(typescript@5.7.3)':
     dependencies:
       '@typescript-eslint/utils': 8.24.1(eslint@8.57.1)(typescript@5.7.3)
       eslint: 8.57.1
