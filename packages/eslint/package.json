@@ -3,7 +3,7 @@
   "version": "0.14.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "dependencies": {
-    "@stylistic/eslint-plugin": "^3.0.0",
+    "@stylistic/eslint-plugin": "^4.0.0",
     "cosmiconfig": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-decorator-position": "^5.0.2",
