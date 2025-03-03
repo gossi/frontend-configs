@@ -54,13 +54,13 @@
     "@tsconfig/node18": "18.2.4",
     "@tsconfig/strictest": "2.0.5",
     "@types/node": "^22.13.8",
-    "@typescript-eslint/eslint-plugin": "^8.24.1",
-    "@typescript-eslint/parser": "^8.24.1",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
     "eslint": "^8.57.1",
     "eslint-plugin-ember": "^12.5.0",
     "eslint-plugin-qunit": "^8.1.2",
     "eslint-plugin-storybook": "^0.11.3",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "typescript": "5.8.2"
   },
   "engines": {
