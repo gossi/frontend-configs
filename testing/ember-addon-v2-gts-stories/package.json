@@ -62,7 +62,7 @@
     "prettier": "^3.5.3",
     "rollup": "4.35.0",
     "rollup-plugin-glimmer-template-tag": "0.4.1",
-    "stylelint": "16.15.0",
+    "stylelint": "16.16.0",
     "typescript": "5.8.2",
     "webpack": "5.98.0"
   },
