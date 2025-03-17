@@ -24,14 +24,14 @@ importers:
         specifier: ^9.0.0
         version: 9.0.0(typescript@5.8.2)
       eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.1)
+        specifier: ^10.0.0
+        version: 10.1.1(eslint@8.57.1)
       eslint-import-resolver-typescript:
         specifier: ^3.6.1
         version: 3.8.3(eslint-plugin-import-x@4.6.1(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)
       eslint-plugin-decorator-position:
-        specifier: ^5.0.2
-        version: 5.0.2(@babel/eslint-parser@7.26.10(@babel/core@7.26.10)(eslint@8.57.1))(eslint@8.57.1)
+        specifier: ^6.0.0
+        version: 6.0.0(@babel/eslint-parser@7.26.10(@babel/core@7.26.10)(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-import-x:
         specifier: ^4.3.1
         version: 4.6.1(eslint@8.57.1)(typescript@5.8.2)
@@ -43,7 +43,7 @@ importers:
         version: 17.16.2(eslint@8.57.1)
       eslint-plugin-prettier:
         specifier: ^5.2.1
-        version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.5.3)
+        version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@10.1.1(eslint@8.57.1))(eslint@8.57.1)(prettier@3.5.3)
       eslint-plugin-simple-import-sort:
         specifier: ^12.1.1
         version: 12.1.1(eslint@8.57.1)
@@ -197,7 +197,7 @@ importers:
     dependencies:
       ember-template-lint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(ember-template-lint@6.1.0)(prettier@3.5.3)
+        version: 5.0.0(ember-template-lint@7.0.1(@babel/core@7.26.10))(prettier@3.5.3)
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -206,8 +206,8 @@ importers:
         specifier: workspace:*
         version: link:../prettier
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -339,8 +339,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -448,8 +448,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0(esbuild@0.25.1))
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -545,8 +545,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0(esbuild@0.25.1))
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -633,8 +633,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0(esbuild@0.25.1))
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -789,8 +789,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       ember-welcome-page:
         specifier: 7.0.2
         version: 7.0.2
@@ -936,8 +936,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)
       ember-template-lint:
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/core@7.26.10)
       ember-welcome-page:
         specifier: 7.0.2
         version: 7.0.2
@@ -3451,10 +3451,6 @@ packages:
   b4a@1.6.7:
     resolution: {integrity: sha512-OnAYlL5b7LEkALw87fUVafQw5rVR9RjwGd4KUwNQ6DrrNmaVaUCgLipfVlzrPQ4tWOR9P0IXGNOx50jYCCdSJg==}
 
-  babel-import-util@0.2.0:
-    resolution: {integrity: sha512-CtWYYHU/MgK88rxMrLfkD356dApswtR/kWZ/c6JifG1m10e7tBBrs/366dFzWMAoqYmG5/JSh+94tUSpIwh+ag==}
-    engines: {node: '>= 12.*'}
-
   babel-import-util@2.1.1:
     resolution: {integrity: sha512-3qBQWRjzP9NreSH/YrOEU1Lj5F60+pWSLP0kIdCWxjFHH7pX2YPHIxQ67el4gnMNfYoDxSDGcT0zpVlZ+gVtQA==}
     engines: {node: '>= 12.*'}
@@ -4246,6 +4242,10 @@ packages:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
     engines: {node: '>= 0.6'}
 
+  content-tag-utils@0.3.1:
+    resolution: {integrity: sha512-uBAmklAxqmem7WX/F7YA4eWBTegGLJ93MOPSJaJliAuzTNgF3u/H9YLlJ6Nae9/FwV+037OuXc75hvcmub1qww==}
+    engines: {node: '>= 18'}
+
   content-tag@2.0.3:
     resolution: {integrity: sha512-htLIdtfhhKW2fHlFLnZH7GFzHSdSpHhDLrWVswkNiiPMZ5uXq5JfrGboQKFhNQuAAFF8VNB2EYUj3MsdJrKKpg==}
 
@@ -4744,10 +4744,6 @@ packages:
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
 
-  ember-template-imports@3.4.2:
-    resolution: {integrity: sha512-OS8TUVG2kQYYwP3netunLVfeijPoOKIs1SvPQRTNOQX4Pu8xGGBEZmrv0U1YTnQn12Eg+p6w/0UdGbUnITjyzw==}
-    engines: {node: 12.* || >= 14}
-
   ember-template-imports@4.3.0:
     resolution: {integrity: sha512-jZ5D6KLKU8up/AynZltmKh4lkXBPgTGSPgomprI/55XvIVqn42UNUpEz7ra/mO3QiGODDZOUesbggPe49i38sQ==}
     engines: {node: 16.* || >= 18}
@@ -4759,8 +4755,8 @@ packages:
       ember-template-lint: '>= 4.0.0'
       prettier: '>= 3.0.0'
 
-  ember-template-lint@6.1.0:
-    resolution: {integrity: sha512-UyzLPcyneG3mnbBfewyYIlV7fy6JKHQVAJy5a9+URdJKkZKN+3vQkQzIIlsz6dP/GpoXVB+datns5HlfMfliSA==}
+  ember-template-lint@7.0.1:
+    resolution: {integrity: sha512-rFGrioqtoHyWGig6PsURQYL797Hj1u9Wbn8ZyTO3H0NUNrRgPOX+2Gu9uTrmnf+KWry/2GB+yok6OY7mVSygIA==}
     engines: {node: ^18.18.0 || >= 20.9.0}
     hasBin: true
 
@@ -4906,8 +4902,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-prettier@9.1.0:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+  eslint-config-prettier@10.1.1:
+    resolution: {integrity: sha512-4EQQr6wXwS+ZJSzaR5ZCrYgLxqvUjdXctaEtBqHcbkW944B1NQyO4qpdHQbXBONfwxXdkAY81HH4+LUfrg+zPw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4931,12 +4927,12 @@ packages:
       eslint-plugin-import-x:
         optional: true
 
-  eslint-plugin-decorator-position@5.0.2:
-    resolution: {integrity: sha512-wFcRfrB9zljOP1n5udg16h6ITX1jG8cnUvuFVtIqVxw5O9BTOXFHB9hvsTaqpb8JFX2dq19fH3i/ipUeFSF87w==}
+  eslint-plugin-decorator-position@6.0.0:
+    resolution: {integrity: sha512-AUbZbt3JXnmP7Typfba4BIEFkSCc2rA6BkutsYiywIcEoX/yRL7jzqAp4UMpSDNhCMUUAfGt48k3141PhKC07w==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/eslint-parser': ^7.18.2
-      eslint: ^6.0.0 || ^7.31.0 || ^8.0.0
+      eslint: ^7.31.0 || ^8.0.0 || ^9.0.0
     peerDependenciesMeta:
       '@babel/eslint-parser':
         optional: true
@@ -8840,9 +8836,6 @@ packages:
     resolution: {integrity: sha512-d7KLgL1LD3U3fgnvWEY1cQXoO/q6EQ1BSz48Sa149V/5zVTAbgmZIpyI8TRi6U9/JNyeYLlTKsEMPtLC27RFUg==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  validate-peer-dependencies@1.2.0:
-    resolution: {integrity: sha512-nd2HUpKc6RWblPZQ2GDuI65sxJ2n/UqZwSBVtj64xlWjMx0m7ZB2m9b2JS3v1f+n9VWH/dd1CMhkHfP6pIdckA==}
-
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
@@ -12000,8 +11993,6 @@ snapshots:
 
   b4a@1.6.7: {}
 
-  babel-import-util@0.2.0: {}
-
   babel-import-util@2.1.1: {}
 
   babel-import-util@3.0.1: {}
@@ -13008,6 +12999,10 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
+  content-tag-utils@0.3.1:
+    dependencies:
+      content-tag: 3.1.1
+
   content-tag@2.0.3: {}
 
   content-tag@3.1.1: {}
@@ -13951,20 +13946,6 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-template-imports@3.4.2:
-    dependencies:
-      babel-import-util: 0.2.0
-      broccoli-stew: 3.0.0
-      ember-cli-babel-plugin-helpers: 1.1.1
-      ember-cli-version-checker: 5.1.2
-      line-column: 1.0.2
-      magic-string: 0.25.9
-      parse-static-imports: 1.1.0
-      string.prototype.matchall: 4.0.12
-      validate-peer-dependencies: 1.2.0
-    transitivePeerDependencies:
-      - supports-color
-
   ember-template-imports@4.3.0:
     dependencies:
       broccoli-stew: 3.0.0
@@ -13973,21 +13954,27 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@6.1.0)(prettier@3.5.3):
+  ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@7.0.1(@babel/core@7.26.10))(prettier@3.5.3):
     dependencies:
       '@prettier/sync': 0.2.1(prettier@3.5.3)
-      ember-template-lint: 6.1.0
+      ember-template-lint: 7.0.1(@babel/core@7.26.10)
       prettier: 3.5.3
       prettier-linter-helpers: 1.0.0
 
-  ember-template-lint@6.1.0:
+  ember-template-lint@7.0.1(@babel/core@7.26.10):
     dependencies:
+      '@babel/generator': 7.26.10
+      '@babel/parser': 7.26.10
+      '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.10)
+      '@babel/plugin-transform-typescript': 7.26.8(@babel/core@7.26.10)
+      '@babel/traverse': 7.26.10
       '@lint-todo/utils': 13.1.1
       aria-query: 5.3.2
       chalk: 5.4.1
       ci-info: 4.2.0
+      content-tag: 3.1.1
+      content-tag-utils: 0.3.1
       date-fns: 3.6.0
-      ember-template-imports: 3.4.2
       ember-template-recast: 6.1.5
       eslint-formatter-kakoune: 1.0.0
       find-up: 7.0.0
@@ -14001,6 +13988,7 @@ snapshots:
       v8-compile-cache: 2.4.0
       yargs: 17.7.2
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   ember-template-recast@6.1.5:
@@ -14218,7 +14206,7 @@ snapshots:
       eslint: 8.57.1
       semver: 7.7.1
 
-  eslint-config-prettier@9.1.0(eslint@8.57.1):
+  eslint-config-prettier@10.1.1(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
 
@@ -14247,7 +14235,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-decorator-position@5.0.2(@babel/eslint-parser@7.26.10(@babel/core@7.26.10)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-plugin-decorator-position@6.0.0(@babel/eslint-parser@7.26.10(@babel/core@7.26.10)(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.10)
@@ -14322,7 +14310,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.1
 
-  eslint-plugin-prettier@5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint@8.57.1)(prettier@3.5.3):
+  eslint-plugin-prettier@5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@10.1.1(eslint@8.57.1))(eslint@8.57.1)(prettier@3.5.3):
     dependencies:
       eslint: 8.57.1
       prettier: 3.5.3
@@ -14330,7 +14318,7 @@ snapshots:
       synckit: 0.9.2
     optionalDependencies:
       '@types/eslint': 9.6.1
-      eslint-config-prettier: 9.1.0(eslint@8.57.1)
+      eslint-config-prettier: 10.1.1(eslint@8.57.1)
 
   eslint-plugin-qunit@8.1.2(eslint@8.57.1):
     dependencies:
@@ -18943,11 +18931,6 @@ snapshots:
       spdx-expression-parse: 3.0.1
 
   validate-npm-package-name@6.0.0: {}
-
-  validate-peer-dependencies@1.2.0:
-    dependencies:
-      resolve-package-path: 3.1.0
-      semver: 7.7.1
 
   vary@1.1.2: {}
 
