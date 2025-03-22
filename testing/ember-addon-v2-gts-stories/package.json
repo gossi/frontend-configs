@@ -45,7 +45,7 @@
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
     "@rollup/plugin-babel": "6.0.4",
-    "@storybook/types": "8.6.6",
+    "@storybook/types": "8.6.8",
     "@tsconfig/ember": "3.0.9",
     "@types/react": "^18.3.18",
     "@typescript-eslint/eslint-plugin": "^8.26.1",

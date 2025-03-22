@@ -35,7 +35,7 @@
     "@gossi/config-stylelint": "workspace:*",
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
-    "@storybook/types": "8.6.6",
+    "@storybook/types": "8.6.8",
     "@tsconfig/ember": "3.0.9",
     "@types/eslint": "^9.6.1",
     "@types/qunit": "^2.19.12",
