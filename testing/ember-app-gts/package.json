@@ -36,7 +36,7 @@
     "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
     "@storybook/types": "8.6.11",
-    "@tsconfig/ember": "3.0.9",
+    "@tsconfig/ember": "3.0.10",
     "@types/eslint": "^9.6.1",
     "@types/qunit": "^2.19.12",
     "@types/react": "^18.3.19",
