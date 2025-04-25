@@ -93,6 +93,12 @@
         "@ember/test-waiters"
       ],
       "rangeStrategy": "widen"
+    },
+    {
+      "groupName": "Typedoc",
+      "matchPackageNames": [
+        "*typedoc*"
+      ]
     }
   ]
 }
