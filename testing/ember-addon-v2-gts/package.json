@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "^8.31.1",
     "concurrently": "^9.1.2",
     "ember-modifier": "4.2.0",
-    "ember-source": "6.3.0",
+    "ember-source": "6.4.0",
     "ember-template-lint": "^7.2.0",
     "ember-cli-htmlbars": "6.3.0",
     "eslint": "^8.57.1",
