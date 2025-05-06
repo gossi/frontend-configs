@@ -11,7 +11,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "ember-template-lint": "^7.2.0",
+    "ember-template-lint": "^7.6.0",
     "eslint": "^8.57.1",
     "prettier": "^3.5.3"
   },
