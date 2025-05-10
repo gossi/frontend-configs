@@ -64,7 +64,7 @@
     "rollup-plugin-glimmer-template-tag": "0.4.1",
     "stylelint": "16.19.1",
     "typescript": "5.8.3",
-    "webpack": "5.99.7"
+    "webpack": "5.99.8"
   },
   "peerDependencies": {
     "@glimmer/component": "^2.0.0"
