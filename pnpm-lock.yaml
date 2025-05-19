@@ -67,10 +67,10 @@ importers:
         specifier: ^22.15.19
         version: 22.15.19
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       eslint:
         specifier: ^8.57.1
@@ -206,7 +206,7 @@ importers:
         specifier: workspace:*
         version: link:../prettier
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       eslint:
         specifier: ^8.57.1
@@ -242,10 +242,10 @@ importers:
         specifier: ^29.5.14
         version: 29.5.14
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       concurrently:
         specifier: ^9.1.2
@@ -321,10 +321,10 @@ importers:
         specifier: 3.0.10
         version: 3.0.10
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       concurrently:
         specifier: ^9.1.2
@@ -339,7 +339,7 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       eslint:
         specifier: ^8.57.1
@@ -430,10 +430,10 @@ importers:
         specifier: ^19.1.4
         version: 19.1.4
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       concurrently:
         specifier: ^9.1.2
@@ -448,7 +448,7 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       eslint:
         specifier: ^8.57.1
@@ -527,10 +527,10 @@ importers:
         specifier: 3.0.10
         version: 3.0.10
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       concurrently:
         specifier: ^9.1.2
@@ -545,7 +545,7 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       eslint:
         specifier: ^8.57.1
@@ -615,10 +615,10 @@ importers:
         specifier: 3.0.10
         version: 3.0.10
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       concurrently:
         specifier: ^9.1.2
@@ -633,7 +633,7 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       eslint:
         specifier: ^8.57.1
@@ -726,10 +726,10 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       broccoli-asset-rev:
         specifier: 3.0.0
@@ -789,7 +789,7 @@ importers:
         specifier: 4.3.0
         version: 4.3.0
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       ember-welcome-page:
         specifier: 7.0.2
@@ -876,10 +876,10 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.0
+        specifier: ^8.32.1
         version: 8.32.1(eslint@8.57.1)(typescript@5.8.3)
       broccoli-asset-rev:
         specifier: 3.0.0
@@ -936,7 +936,7 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.6.0
+        specifier: ^7.7.0
         version: 7.7.0(@babel/core@7.27.1)
       ember-welcome-page:
         specifier: 7.0.2
