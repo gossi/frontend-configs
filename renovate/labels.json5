@@ -2,14 +2,19 @@
   // label to add to certain types of dependencies
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
+    // breaking
     {
+      "matchUpdateTypes": [
+        "major"
+      ],
       "matchDepTypes": [
-        "devDependencies"
+        "engines"
       ],
       "addLabels": [
-        "internal"
+        "breaking"
       ]
     },
+    // enhancement
     {
       "matchDepTypes": [
         "dependencies",
@@ -18,6 +23,20 @@
       ],
       "addLabels": [
         "enhancement"
+      ]
+    },
+    // internal
+    {
+      "matchDepTypes": [
+        "devDependencies",
+        "overrides",
+        "resolutions",
+        "pnpm.overrides",
+        "engines",
+        "packageManager"
+      ],
+      "addLabels": [
+        "internal"
       ]
     },
     {
