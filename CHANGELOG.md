@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-01-18)
 
 @gossi/config-eslint 0.14.0 (minor)
