@@ -39,7 +39,7 @@
     "@tsconfig/ember": "3.0.10",
     "@types/eslint": "^9.6.1",
     "@types/qunit": "^2.19.12",
-    "@types/react": "^19.1.4",
+    "@types/react": "^19.1.6",
     "@types/rsvp": "^4.0.9",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
