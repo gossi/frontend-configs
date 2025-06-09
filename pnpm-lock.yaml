@@ -197,7 +197,7 @@ importers:
     dependencies:
       ember-template-lint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(ember-template-lint@7.8.1)(prettier@3.5.3)
+        version: 5.0.0(ember-template-lint@7.9.0)(prettier@3.5.3)
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -206,8 +206,8 @@ importers:
         specifier: workspace:*
         version: link:../prettier
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -339,8 +339,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -448,8 +448,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -545,8 +545,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -633,8 +633,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -789,8 +789,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       ember-welcome-page:
         specifier: 7.0.2
         version: 7.0.2
@@ -936,8 +936,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: ^7.8.1
-        version: 7.8.1
+        specifier: ^7.9.0
+        version: 7.9.0
       ember-welcome-page:
         specifier: 7.0.2
         version: 7.0.2
@@ -4833,8 +4833,8 @@ packages:
       ember-template-lint: '>= 4.0.0'
       prettier: '>= 3.0.0'
 
-  ember-template-lint@7.8.1:
-    resolution: {integrity: sha512-SFVTR6YdxvldbBL3ArphAbDhYOXyD8Tt9rTKEWKYpQTilq7Hl9mTrKP59q3GOcnDaR/rNk0cg4rJHYAg6/SCGw==}
+  ember-template-lint@7.9.0:
+    resolution: {integrity: sha512-J2/d9S5mnNVoE2ZjWmbeCd3Dk6y0e5DyK4/z4BoY8XlyBkkA1Jg4wttlN15Jd2dQhPQZK7KMMLj9ZxLY4U7jZQ==}
     engines: {node: ^18.18.0 || >= 20.9.0}
     hasBin: true
 
@@ -13916,14 +13916,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@7.8.1)(prettier@3.5.3):
+  ember-template-lint-plugin-prettier@5.0.0(ember-template-lint@7.9.0)(prettier@3.5.3):
     dependencies:
       '@prettier/sync': 0.2.1(prettier@3.5.3)
-      ember-template-lint: 7.8.1
+      ember-template-lint: 7.9.0
       prettier: 3.5.3
       prettier-linter-helpers: 1.0.0
 
-  ember-template-lint@7.8.1:
+  ember-template-lint@7.9.0:
     dependencies:
       '@lint-todo/utils': 13.1.1
       content-tag: 3.1.3
