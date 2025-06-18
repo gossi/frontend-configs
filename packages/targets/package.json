@@ -2,13 +2,20 @@
   "name": "@gossi/config-targets",
   "version": "0.10.0",
   "repository": "https://github.com/gossi/frontend-configs",
+  "scripts": {
+    "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
+    "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.5",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "eslint": "^8.57.1",
+    "eslint": "^9.29.0",
     "prettier": "3.5.3"
   },
   "engines": {
-    "node": ">= 20.*"
+    "node": ">= 20.11.*"
   }
 }

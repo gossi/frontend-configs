@@ -1,3 +1,5 @@
+// eslint-disable-next-line import-x/default
+import babelParser from '@babel/eslint-parser';
 import ember from 'eslint-plugin-ember/recommended';
 import n from 'eslint-plugin-n';
 import qunit from 'eslint-plugin-qunit';
@@ -27,6 +29,14 @@ export function config(root) {
       ember.configs.gjs,
       ember.configs.gts,
       {
+        name: 'gossi/ember/babel-parser',
+        files: ['**/*.js'],
+        languageOptions: {
+          parser: babelParser
+        }
+      },
+      {
+        name: 'gossi/ember/javascript',
         files: ['**/*.{js,gjs}'],
         languageOptions: {
           parserOptions: esm.js,
@@ -38,6 +48,7 @@ export function config(root) {
       },
       hasTS
         ? {
+            name: 'gossi/ember/typescript',
             files: ['**/*.{ts,gts}'],
             languageOptions: {
               // eslint-disable-next-line import-x/no-named-as-default-member
@@ -55,12 +66,14 @@ export function config(root) {
         : null,
       hasTS
         ? {
+            name: 'gossi/ember/tests/typescript',
             files: ['tests/**/*-test.{js,gjs,ts,gts}'],
             plugins: {
               qunit
             }
           }
         : {
+            name: 'gossi/ember/tests',
             files: ['tests/**/*-test.{js,gjs}'],
             plugins: {
               qunit
@@ -70,6 +83,7 @@ export function config(root) {
        * CJS node files
        */
       {
+        name: 'gossi/ember/node/cjs',
         files: [
           '**/*.cjs',
           ...(isTypeModule
@@ -110,6 +124,7 @@ export function config(root) {
        * NOTE: the app/src directory is browser-land (typically)
        */
       {
+        name: 'gossi/ember/node/esm',
         files: ['**/*.mjs', 'config/**/*', '.template-lintrc.js', '*.js'],
         plugins: {
           n

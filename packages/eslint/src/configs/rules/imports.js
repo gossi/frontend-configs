@@ -4,6 +4,7 @@ export default [
   importX.flatConfigs.recommended,
   importX.flatConfigs.typescript,
   {
+    name: 'gossi/rules/imports',
     rules: {
       // ----------------------------
       // Broken Rules

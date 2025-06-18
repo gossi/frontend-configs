@@ -9,6 +9,12 @@
   "exports": {
     ".": "./src/index.js"
   },
+  "scripts": {
+    "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
+    "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  },
   "dependencies": {
     "@eslint/js": "^9.29.0",
     "@stylistic/eslint-plugin": "^4.0.0",

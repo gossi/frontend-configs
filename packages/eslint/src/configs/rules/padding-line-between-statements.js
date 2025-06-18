@@ -12,6 +12,7 @@ const config = [
 ];
 
 export default {
+  name: 'gossi/rules/padding-line-between-statements',
   plugins: {
     '@stylistic': stylistic
   },

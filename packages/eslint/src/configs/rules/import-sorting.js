@@ -42,6 +42,7 @@ const config = {
 };
 
 export default {
+  name: 'gossi/rules/import-sort',
   plugins: {
     'simple-import-sort': simpleImportSort
   },

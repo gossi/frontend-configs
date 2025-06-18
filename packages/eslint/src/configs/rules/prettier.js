@@ -8,6 +8,7 @@ export function resolvePrettier() {
   return [
     eslintPluginPrettierRecommended,
     {
+      name: 'gossi/rules/prettier',
       rules: {
         'prettier/prettier': prettierResult?.config
           ? ['error', prettierResult.config]

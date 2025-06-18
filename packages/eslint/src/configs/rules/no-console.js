@@ -3,6 +3,7 @@ const config = {
 };
 
 export default {
+  name: 'gossi/rules/no-console',
   rules: {
     'no-console': ['error', config]
   }

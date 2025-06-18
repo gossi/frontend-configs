@@ -23,6 +23,7 @@ export function config(root) {
        * Global configuration for node
        */
       {
+        name: 'gossi/node',
         plugins: {
           n
         }
@@ -32,6 +33,7 @@ export function config(root) {
        * ESM node files
        */
       {
+        name: 'gossi/node/esm',
         files: ['**/*.mjs', ...(isTypeModule ? ['**/*.js'] : [])],
         languageOptions: {
           sourceType: 'module',
@@ -47,6 +49,7 @@ export function config(root) {
        * CJS node files
        */
       {
+        name: 'gossi/node/cjs',
         files: ['**/*.cjs', ...(!isTypeModule ? ['**/*.js'] : [])],
         languageOptions: {
           sourceType: 'script',
@@ -62,6 +65,7 @@ export function config(root) {
        */
       hasTS
         ? {
+            name: 'gossi/node/typescript',
             files: ['**/*.ts'],
             languageOptions: {
               parserOptions: esm.ts

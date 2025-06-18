@@ -2,6 +2,7 @@ import ts from 'typescript-eslint';
 
 // eslint-disable-next-line import-x/no-named-as-default-member
 export default ts.config(ts.configs.strict, ts.configs.stylistic, {
+  name: 'gossi/rules/typescript',
   rules: {
     // Having an empty interface is plausable when iterating on types,
     // extending from an existing type and "planning" to update.

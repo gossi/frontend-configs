@@ -1,7 +1,4 @@
-const process = require('process');
 const { browsers } = require('@gossi/config-targets');
-
-const cwd = process.cwd();
 
 function plugins({ minify }) {
   return [
