@@ -1,4 +1,3 @@
-// eslint-disable-next-line import-x/default
 import babelParser from '@babel/eslint-parser';
 import ember from 'eslint-plugin-ember/recommended';
 import n from 'eslint-plugin-n';
