@@ -52,11 +52,11 @@ jobs:
         run: pnpm run -r --parallel --aggregate-output lint:hbs
 
   test:
-    name: Ember Tests
+    name: Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Setup
         uses: ./.github/actions/setup
       - name: Run Tests
-        run: pnpm run -r --parallel --aggregate-output test:ember
+        run: pnpm run -r --parallel --aggregate-output test

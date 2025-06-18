@@ -1,0 +1,32 @@
+{
+  "name": "@my-blog/core",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "lint": "concurrently 'npm:lint:*(!fix)'",
+    "lint:fix": "concurrently 'npm:lint:*:fix'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:types": "tsc --noEmit",
+    "start": "tsdown --watch",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.5",
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
+    "@gossi/config-targets": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3",
+    "tsdown": "^0.12.8",
+    "typescript": "5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">= 20.11.*"
+  }
+}
