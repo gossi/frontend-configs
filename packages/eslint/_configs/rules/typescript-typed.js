@@ -9,6 +9,8 @@ const rule = {
     // much concise
     '@typescript-eslint/prefer-optional-chain': 'error',
 
+    '@typescript-eslint/restrict-template-expressions': 'off',
+
     '@typescript-eslint/no-confusing-void-expression': [
       'error',
       {
