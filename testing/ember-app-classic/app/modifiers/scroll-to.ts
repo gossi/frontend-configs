@@ -22,9 +22,3 @@ export default class ScrollPositionModifier extends Modifier<ScrollPositionSigna
     }
   }
 }
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    'scroll-to': typeof ScrollPositionModifier;
-  }
-}

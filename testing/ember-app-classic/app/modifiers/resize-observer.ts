@@ -19,9 +19,3 @@ const resizeObserver = modifier<ResizeObserverSignature>((element, [callback], o
 });
 
 export default resizeObserver;
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    'resize-observer': typeof resizeObserver;
-  }
-}
