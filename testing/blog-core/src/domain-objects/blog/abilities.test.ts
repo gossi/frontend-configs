@@ -1,9 +1,9 @@
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, test } from 'vitest';
 
-import { ADMIN, GOSSI, ISAAC } from '../../../fixtures/aggregates/users';
-import { canEdit } from './post';
+import { ADMIN, GOSSI, ISAAC } from '../../fixtures';
+import { canEdit } from './abilities';
 
-import type { Post } from '../entities/post';
+import type { Post } from './post';
 
 describe('canEdit', () => {
   test('can edit your own post', () => {

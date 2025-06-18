@@ -14,7 +14,6 @@
     "module": "ESNext",
     "target": "ESNext",
     // Features
-    "experimentalDecorators": true,
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     // Strictness / Correctness
@@ -30,13 +29,8 @@
     "noImplicitReturns": true,
     "baseUrl": "./src",
     "paths": {
-      "*": [
-        "types/*"
-      ]
+      "*": ["types/*"]
     }
   },
-  "include": [
-    "src/**/*",
-    "types/**/*"
-  ]
+  "include": ["src/**/*", "types/**/*"]
 }

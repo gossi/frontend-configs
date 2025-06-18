@@ -1,4 +1,4 @@
-import type { User } from '../../aggregates/user/entities/user';
+import type { User } from '../domain-objects/user';
 
 export const GOSSI: User = Object.freeze({
   givenName: 'Thomas',
