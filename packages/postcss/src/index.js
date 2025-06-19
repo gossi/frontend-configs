@@ -1,23 +1,29 @@
+import each from 'postcss-each';
+import lightning from 'postcss-lightningcss';
+import nested from 'postcss-nested';
+import pow from 'postcss-pow';
+import presetEnv from 'postcss-preset-env';
+
 import { browsers } from '@gossi/config-targets';
 
 function plugins({ minify }) {
   return [
     // https://github.com/postcss/postcss-nested
     // Nest rules and reference the parent via &
-    require('postcss-nested'),
+    nested,
 
     // https://github.com/limitlessloop/postcss-pow
     // Adds pow() function
-    require('postcss-pow'),
+    pow,
 
     // https://www.npmjs.com/package/postcss-each
     // adds @each construct
-    require('postcss-each'),
+    each,
 
     // https://github.com/csstools/postcss-preset-env
     // Adds vendor prefixes based on Can I Use and polyfills new features
     // Inspired by https://github.com/moxystudio/postcss-preset-moxy/blob/master/index.js
-    require('postcss-preset-env')({
+    presetEnv({
       browsers,
 
       // https://cssdb.org/
@@ -46,34 +52,10 @@ function plugins({ minify }) {
         remove: false
       }
     }),
-    require('postcss-parcel-css')({
+    lightning({
       minify
     })
   ];
 }
 
-export {
-  // example for custom module resolving resolving algorithm
-  // rollup(options) {
-  //   return {
-  //     autoModules: false,
-  //     modules: {
-  //       resolve(file) {
-  //         if (file.startsWith('@gossi')) {
-  //           const parts = file.split('/');
-  //           const packageName = `${parts.shift()}/${parts.shift()}`;
-  //           const path = `${cwd}/node_modules/${packageName}/src/${parts.join('/')}`;
-
-  //           return path;
-  //         }
-
-  //         return file;
-  //       }
-  //     },
-  //     // namedExports: true,
-  //     extract: 'styles.css',
-  //     plugins: plugins(options)
-  //   };
-  // },
-  plugins
-};
+export { plugins };

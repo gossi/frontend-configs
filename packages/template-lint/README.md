@@ -10,12 +10,10 @@ Add template-lint to your packages.
     pnpm add -D @gossi/config-template-lint ember-template-lint
     ```
 
-2) Create a `.template-lintrc.js` file with these contents:
+2) Create a `.template-lintrc.(m)js` file with these contents:
 
     ```js
-    'use strict';
-
-    module.exports = require('@gossi/config-template-lint');
+    export { default } from '@gossi/config-template-lint';
     ```
 
 3) Add scripts to execute linting

@@ -10,10 +10,8 @@ Add prettier to your packages.
     pnpm add -D @gossi/config-prettier prettier
     ```
 
-2) Create a `.prettierrc.js` file with these contents:
+2) Create a `prettier.config.(m)js` file with these contents:
 
     ```js
-    'use strict';
-
-    module.exports = require('@gossi/config-prettier');
+    export { default } from '@gossi/config-prettier';
     ```
