@@ -33,28 +33,24 @@ Adds stylelint to your packages.
 ## Configuration
 
 `@gossi/config-stylelint` provides a little configuration option (for target
-browsers), change your `.stylelintrc.js` to use this:
+browsers), change your `stylelint.config.(m)js` to use this:
 
 ```js
-'use strict';
+import { browsers } from 'path/to/your/browsers/config';
+import { configure } from '@gossi/config-stylelint';
 
-const { browsers } = require('path/to/your/browsers/config');
-const configure = require('@gossi/config-stylelint/configure');
-
-module.exports = configure({ browsers });
+export default configure({ browsers });
 ```
 
 ## Extension
 
 To extend your configuration with more rules, here is how to do that in your
-`.stylelintrc.js`:
+`stylelint.config.(m)js`:
 
 ```js
-'use strict';
+import config from '@gossi/config-stylelint';
 
-const config = require('@gossi/config-stylelint');
-
-module.exports = {
+export default {
   ...config,
   rules: {
     ...config.rules,
@@ -71,13 +67,12 @@ module.exports = {
 this also works with configuring `@gossi/config-stylelint`:
 
 ```js
-'use strict';
+import { browsers } from 'path/to/your/browsers/config';
+import { configure } from '@gossi/config-stylelint';
 
-const { browsers } = require('path/to/your/browsers/config');
-const configure = require('@gossi/config-stylelint/configure');
 const config = configure({ browsers });
 
-module.exports = {
+export default {
   ...config,
   rules: {
     ...config.rules,
@@ -97,13 +92,13 @@ Recommend the [official stylelint
 extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 (refer for more options).
 
-If the extension can't find `.stylelintrc.js` on its own,
+If the extension can't find `stylelint.config.(m)js` on its own,
 configure it per repo, create or edit `.vscode/settings.json` (if this is a
 monorepo, then in the root is fine enough for all packages):
 
 ```json
 {
-  "stylelint.configFile": "path/to/.stylelintrc.js",
+  "stylelint.configFile": "path/to/stylelint.config.(m)js",
   "stylelint.configBasedir": "path/to/",
   "stylelint.packageManager": "pnpm"
 }

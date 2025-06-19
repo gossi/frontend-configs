@@ -1,7 +1,4 @@
-/* eslint-disable unicorn/prefer-module */
-'use strict';
-
-module.exports = {
+export default {
   singleQuote: true,
   trailingComma: 'none',
   printWidth: 100,

@@ -2,6 +2,13 @@
   "name": "@gossi/config-template-lint",
   "version": "0.9.0",
   "repository": "https://github.com/gossi/frontend-configs",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
     "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",

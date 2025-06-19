@@ -12,14 +12,8 @@ Provides compilation targets
 
 ## Usage
 
-Import from ESM
+Import browsers
 
 ```js
 import { browsers } from '@gossi/config-targets';
-```
-
-Import from CJS
-
-```js
-const { browsers } = require('@gossi/config-targets');
 ```
