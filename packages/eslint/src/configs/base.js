@@ -3,9 +3,8 @@ import js from '@eslint/js';
 import base from './rules/base.js';
 import importSorting from './rules/import-sorting.js';
 import imports from './rules/imports.js';
-import noConsole from './rules/no-console.js';
-import paddingLineBetweenStatements from './rules/padding-line-between-statements.js';
 import { resolvePrettier } from './rules/prettier.js';
+import stylistic from './rules/stylistic.js';
 
 export function config(root) {
   return [
@@ -29,13 +28,12 @@ export function config(root) {
     /**
      * Configs
      */
-    ...resolvePrettier(root),
     js.configs.recommended,
-    noConsole,
-    paddingLineBetweenStatements,
-    importSorting,
-    base,
-    ...imports
+    ...base,
+    ...stylistic,
+    ...importSorting,
+    ...imports,
+    ...resolvePrettier(root)
     // {
     //   // name: 'gossi/base/imports',
     //   files: ['**/*.js', '**/*.mjs', '**/*.cjs', '**/*.ts'],

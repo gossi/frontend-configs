@@ -62,7 +62,7 @@ export function config(root) {
               emberTypescript
             ]
           }
-        : null,
+        : undefined,
       hasTS
         ? {
             name: 'gossi/ember/tests/typescript',

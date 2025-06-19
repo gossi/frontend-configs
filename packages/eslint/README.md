@@ -27,6 +27,17 @@ Create a `eslint.config.js` file with your desired config (see below)
 
 ## Configs
 
+### Base
+
+The shared common configs. It's good way to start your own config.
+
+```js
+// eslint.config.js
+import { configs } from '@gossi/config-eslint';
+
+export default configs.base(import.meta.dirname);
+```
+
 ### Node
 
 For all node projects.
@@ -63,10 +74,65 @@ export default [
 ];
 ```
 
+### JSON
+
+If you wish, use it for json.
+
+```js
+// eslint.config.js
+import { configs } from '@gossi/config-eslint';
+
+export default configs.json();
+```
+
 ## Debugging
 
 To see what the resolved config looks like for a file
 
 ```sh
 ppx @eslint/config-inspector
+```
+
+## Utils
+
+Some utilities to help you writing/customizing rules.
+
+### `hasBabelConfig()`
+
+Find out, if a babel config is used:
+
+```js
+import { utils } from '@gossi/config-eslint';
+
+const usesBabelWithAConfig = utils.hasBabelConfig(import.meta.dirname);
+```
+
+### `hasTypescript()`
+
+Find out, if typescript is being used.
+
+```js
+import { utils } from '@gossi/config-eslint';
+
+const usesTypescript = utils.hasTypescript(import.meta.dirname);
+```
+
+### `hasTypeModule()`
+
+Find out, if package is using [`"type": "module"`](https://nodejs.org/api/packages.html#type).
+
+```js
+import { utils } from '@gossi/config-eslint';
+
+const usesESM = utils.hasTypeModule(import.meta.dirname);
+```
+
+### `hasDep()`
+
+Figure, if a given dependency is present
+
+```js
+import { utils } from '@gossi/config-eslint';
+
+const usesStorybook = utils.hasDep(import.meta.dirname, 'storybook');
 ```
