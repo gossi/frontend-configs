@@ -4,7 +4,7 @@ import { setupRenderingTest } from 'ember-qunit';
 
 import Greeting from 'ember-app-classic/components/greeting';
 
-module('Rendering | <Button>', (hooks) => {
+module('Rendering | <Greeting>', (hooks) => {
   setupRenderingTest(hooks);
 
   test('it renders with defaults', async (assert) => {
