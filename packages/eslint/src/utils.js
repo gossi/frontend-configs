@@ -25,7 +25,10 @@ export function hasTypeModule(root) {
 export function hasDep(root, dependency) {
   const manifest = loadPkgJson(root);
 
-  const deps = [...Object.keys(manifest.dependencies), Object.keys(manifest.devDependencies)];
+  const deps = [
+    ...Object.keys(manifest.dependencies ?? {}),
+    Object.keys(manifest.devDependencies ?? {})
+  ];
 
   return deps.includes(dependency);
 }

@@ -1,7 +1,8 @@
-import { hasBabelConfig } from './utils.js';
+import { hasBabelConfig, hasDep } from './utils.js';
 
 export function esm(root) {
-  let isBabelConfigPresent = hasBabelConfig(root);
+  const isBabelConfigPresent = hasBabelConfig(root);
+  const babelDecoratorsPluginPresent = hasDep(root, '@babel/plugin-proposal-decorators');
 
   return {
     js: isBabelConfigPresent
@@ -13,9 +14,11 @@ export function esm(root) {
           ecmaFeatures: { modules: true },
           ecmaVersion: 'latest',
           requireConfigFile: false,
-          babelOptions: {
-            plugins: [['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }]]
-          }
+          babelOptions: babelDecoratorsPluginPresent
+            ? {
+                plugins: [['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }]]
+              }
+            : {}
         },
     ts: {
       projectService: true,

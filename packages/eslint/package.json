@@ -31,26 +31,17 @@
     "typescript-eslint": "^8.34.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.22.5",
     "@babel/eslint-parser": "^7.22.5",
     "@babel/plugin-proposal-decorators": "^7.22.5",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.0.0 ",
     "eslint-plugin-ember": "^12.0.0",
     "eslint-plugin-qunit": "^8.0.0"
   },
   "peerDependenciesMeta": {
-    "@babel/core": {
-      "optional": true
-    },
     "@babel/eslint-parser": {
       "optional": true
     },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
-    "@typescript-eslint/eslint-plugin": {
+    "@babel/plugin-proposal-decorators": {
       "optional": true
     },
     "eslint-plugin-ember": {
@@ -61,15 +52,12 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "7.27.4",
     "@babel/eslint-parser": "7.27.5",
     "@babel/plugin-proposal-decorators": "^7.27.1",
     "@babel/preset-env": "7.27.2",
     "@tsconfig/node18": "18.2.4",
     "@tsconfig/strictest": "2.0.5",
     "@types/node": "^22.15.32",
-    "@typescript-eslint/eslint-plugin": "^8.34.1",
-    "@typescript-eslint/parser": "^8.34.1",
     "eslint": "^9.29.0",
     "eslint-plugin-ember": "^12.5.0",
     "eslint-plugin-qunit": "^8.1.2",

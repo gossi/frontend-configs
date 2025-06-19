@@ -22,7 +22,6 @@
     "stylelint-no-unsupported-browser-features": "^8.0.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.22.5",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "eslint": "^9.29.0",

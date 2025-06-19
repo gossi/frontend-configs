@@ -17,9 +17,3 @@ export default class Greeting extends Component<GreetingSignature> {
     <span ...attributes>{{@hello}} to {{this.to}}</span>
   </template>
 }
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    Greeting: typeof Greeting;
-  }
-}
