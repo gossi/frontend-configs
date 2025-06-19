@@ -1,0 +1,10 @@
+.greeting {
+  display: block;
+
+  padding: 1em;
+
+  color: rebeccapurple;
+  text-wrap: balance;
+
+  background-color: lightyellow;
+}
