@@ -1,3 +1,1 @@
-import Greeting from './components/greeting';
-
-export { Greeting };
+export { default as Greeting } from './components/greeting.gts';

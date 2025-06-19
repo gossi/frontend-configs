@@ -6,7 +6,7 @@ const macros = buildMacros();
 // For scenario testing
 const isCompat = Boolean(process.env.ENABLE_COMPAT_BUILD);
 
-module.exports = {
+export default {
   plugins: [
     [
       '@babel/plugin-transform-typescript',
@@ -26,7 +26,7 @@ module.exports = {
       'module:decorator-transforms',
       {
         runtime: {
-          import: require.resolve('decorator-transforms/runtime-esm')
+          import: import.meta.resolve('decorator-transforms/runtime-esm')
         }
       }
     ],
