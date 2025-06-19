@@ -9,10 +9,7 @@
     "clean:node-modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "lint:hbs": "pnpm run -r --parallel --aggregate-output lint:hbs",
     "lint:js": "pnpm run -r --parallel --aggregate-output lint:js",
-    "lint:types": "pnpm run -r --parallel --aggregate-output lint:types",
-    "release:explain": "release-plan explain-plan",
-    "release:prepare": "release-plan prepare",
-    "release:publish": "release-plan publish"
+    "lint:types": "pnpm run -r --parallel --aggregate-output lint:types"
   },
   "devDependencies": {
     "release-plan": "0.17.0"
