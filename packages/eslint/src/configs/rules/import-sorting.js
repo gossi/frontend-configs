@@ -4,7 +4,7 @@ const config = {
   // This notation is bonkers
   groups: [
     // Side effect imports.
-    ['^\\u0000'],
+    [String.raw`^\u0000`],
 
     // framework imports
     [
@@ -20,7 +20,7 @@ const config = {
 
     // Packages.
     // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-    ['^@?\\w'],
+    [String.raw`^@?\w`],
 
     // Absolute imports and other imports such as Vue-style `@/foo`.
     // Anything not matched in another group.
@@ -34,20 +34,22 @@ const config = {
 
     // Relative imports.
     // Anything that starts with a dot.
-    ['^\\.'],
+    [String.raw`^\.`],
 
     // Type imports
-    ['^.+\\u0000$']
+    [String.raw`^.+\u0000$`]
   ]
 };
 
-export default {
-  name: 'gossi/rules/import-sort',
-  plugins: {
-    'simple-import-sort': simpleImportSort
-  },
-  rules: {
-    'simple-import-sort/imports': ['error', config],
-    'simple-import-sort/exports': 'error'
+export default [
+  {
+    name: 'gossi/rules/import-sort',
+    plugins: {
+      'simple-import-sort': simpleImportSort
+    },
+    rules: {
+      'simple-import-sort/imports': ['error', config],
+      'simple-import-sort/exports': 'error'
+    }
   }
-};
+];

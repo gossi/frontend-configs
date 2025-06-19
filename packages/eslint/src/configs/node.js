@@ -50,7 +50,7 @@ export function config(root) {
        */
       {
         name: 'gossi/node/cjs',
-        files: ['**/*.cjs', ...(!isTypeModule ? ['**/*.js'] : [])],
+        files: ['**/*.cjs', ...(isTypeModule ? [] : ['**/*.js'])],
         languageOptions: {
           sourceType: 'script',
           ecmaVersion: 'latest',
@@ -72,7 +72,7 @@ export function config(root) {
             },
             extends: [...typescript, ...typescriptTyped]
           }
-        : null
+        : undefined
 
       /**
        * Since this config is dynamically created, we create null entries when a situation doesn't apply.

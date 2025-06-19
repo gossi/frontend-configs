@@ -9,7 +9,7 @@ export interface SumSignature {
 }
 
 const sum = helper<SumSignature>((positional, { andThenMultiplyBy }) => {
-  let total = positional.reduce((acc, next) => acc * next, 0);
+  let total = positional.reduce((accumulator, next) => accumulator * next, 0);
 
   if (typeof andThenMultiplyBy === 'number') {
     total *= andThenMultiplyBy;

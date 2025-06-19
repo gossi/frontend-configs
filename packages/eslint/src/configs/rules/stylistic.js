@@ -11,12 +11,15 @@ const config = [
   { blankLine: 'any', prev: ['*'], next: ['case'] }
 ];
 
-export default {
-  name: 'gossi/rules/padding-line-between-statements',
-  plugins: {
-    '@stylistic': stylistic
-  },
-  rules: {
-    '@stylistic/padding-line-between-statements': ['error', ...config]
+export default [
+  stylistic.configs.recommended,
+  {
+    name: 'gossi/rules/stylistic',
+    plugins: {
+      '@stylistic': stylistic
+    },
+    rules: {
+      '@stylistic/padding-line-between-statements': ['error', ...config]
+    }
   }
-};
+];

@@ -2,6 +2,7 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
+// eslint-disable-next-line unicorn/no-anonymous-default-export
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
