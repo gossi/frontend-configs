@@ -17,7 +17,7 @@
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "start": "ember serve",
-    "test": "ember test --port 0"
+    "test": "ember test"
   },
   "devDependencies": {
     "@babel/core": "7.27.4",
