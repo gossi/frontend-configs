@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "tsdown",
-    "lint": "concurrently 'npm:lint:*(!fix)'",
-    "lint:fix": "concurrently 'npm:lint:*:fix'",
+    "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
+    "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "tsc --noEmit",
@@ -16,7 +16,6 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
-    "concurrently": "^9.1.2",
     "eslint": "^9.29.0",
     "prettier": "^3.5.3",
     "tsdown": "^0.12.8",
