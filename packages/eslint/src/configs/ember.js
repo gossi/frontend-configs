@@ -1,7 +1,7 @@
 import babelParser from '@babel/eslint-parser';
 import ember from 'eslint-plugin-ember/recommended';
 import n from 'eslint-plugin-n';
-import qunit from 'eslint-plugin-qunit';
+import qunit from 'eslint-plugin-qunit/configs/recommended';
 import globals from 'globals';
 import ts from 'typescript-eslint';
 
@@ -67,16 +67,12 @@ export function config(root) {
         ? {
             name: 'gossi/ember/tests/typescript',
             files: ['tests/**/*-test.{js,gjs,ts,gts}'],
-            plugins: {
-              qunit
-            }
+            ...qunit
           }
         : {
             name: 'gossi/ember/tests',
             files: ['tests/**/*-test.{js,gjs}'],
-            plugins: {
-              qunit
-            }
+            ...qunit
           },
       /**
        * CJS node files
@@ -106,9 +102,7 @@ export function config(root) {
                 'ember-cli-build.js'
               ])
         ],
-        plugins: {
-          n
-        },
+        ...n.configs['flat/recommended-script'],
 
         languageOptions: {
           sourceType: 'script',
@@ -125,9 +119,7 @@ export function config(root) {
       {
         name: 'gossi/ember/node/esm',
         files: ['**/*.mjs', 'config/**/*', '.template-lintrc.js', '*.js'],
-        plugins: {
-          n
-        },
+        ...n.configs['flat/recommended-module'],
 
         languageOptions: {
           sourceType: 'module',
