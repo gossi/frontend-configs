@@ -94,7 +94,7 @@
     "vite": "^6.3.5"
   },
   "engines": {
-    "node": ">= 20.11.*"
+    "node": "^20.11.0 || >=22"
   },
   "ember": {
     "edition": "octane"

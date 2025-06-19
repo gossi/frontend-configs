@@ -32,7 +32,7 @@
     "stylelint": "^16.3.1"
   },
   "engines": {
-    "node": ">= 20.11.*"
+    "node": "^20.11.0 || >=22"
   },
   "release-plan": {
     "semverIncrementAs": {

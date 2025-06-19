@@ -20,21 +20,13 @@ export function config(root) {
     [
       ...base(root),
       /**
-       * Global configuration for node
-       */
-      {
-        name: 'gossi/node',
-        plugins: {
-          n
-        }
-      },
-
-      /**
        * ESM node files
        */
       {
         name: 'gossi/node/esm',
         files: ['**/*.mjs', ...(isTypeModule ? ['**/*.js'] : [])],
+        ...n.configs['flat/recommended-module'],
+
         languageOptions: {
           sourceType: 'module',
           ecmaVersion: 'latest',
@@ -51,6 +43,8 @@ export function config(root) {
       {
         name: 'gossi/node/cjs',
         files: ['**/*.cjs', ...(isTypeModule ? [] : ['**/*.js'])],
+        ...n.configs['flat/recommended-script'],
+
         languageOptions: {
           sourceType: 'script',
           ecmaVersion: 'latest',
