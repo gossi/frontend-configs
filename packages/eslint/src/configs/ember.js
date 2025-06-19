@@ -7,7 +7,7 @@ import ts from 'typescript-eslint';
 
 import * as parserOptions from '../parser-options.js';
 import { hasTypeModule, hasTypescript } from '../utils.js';
-import base from './base.js';
+import { config as base } from './base.js';
 import emberRules from './rules/ember.js';
 import emberTypescript from './rules/ember-typescript.js';
 import typescript from './rules/typescript.js';
@@ -23,7 +23,7 @@ export function config(root) {
 
   return ts.config(
     [
-      ...base,
+      ...base(root),
       ember.configs.base,
       ember.configs.gjs,
       ember.configs.gts,

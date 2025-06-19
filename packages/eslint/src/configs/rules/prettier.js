@@ -1,9 +1,9 @@
-import { cosmiconfigSync } from 'cosmiconfig';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { lilconfigSync } from 'lilconfig';
 
-export function resolvePrettier() {
-  const prettier = cosmiconfigSync('prettier');
-  const prettierResult = prettier.search();
+export function resolvePrettier(root) {
+  const prettierConfigFinder = lilconfigSync('prettier');
+  const prettierResult = prettierConfigFinder.search(root);
 
   return [
     eslintPluginPrettierRecommended,
