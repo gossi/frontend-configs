@@ -1,5 +1,51 @@
 # Changelog
 
+## Release (2025-06-19)
+
+* @gossi/config-eslint 1.0.0 (major)
+* @gossi/config-postcss 1.0.0 (major)
+* @gossi/config-prettier 1.0.0 (major)
+* @gossi/config-stylelint 1.0.1 (major)
+* @gossi/config-targets 1.0.0 (major)
+* @gossi/config-template-lint 1.0.0 (major)
+
+#### :boom: Breaking Change
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1272](https://github.com/gossi/frontend-configs/pull/1272) Convert configs to ESM ([@gossi](https://github.com/gossi))
+  * [#1268](https://github.com/gossi/frontend-configs/pull/1268) Upgrade to eslint v9 ([@gossi](https://github.com/gossi))
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1281](https://github.com/gossi/frontend-configs/pull/1281) Recommended configs from `eslint-plugin-n` and `eslint-plugin-qunit` ([@gossi](https://github.com/gossi))
+  * [#1275](https://github.com/gossi/frontend-configs/pull/1275) Remove unused peer deps ([@gossi](https://github.com/gossi))
+  * [#1271](https://github.com/gossi/frontend-configs/pull/1271) Extend and export base config ([@gossi](https://github.com/gossi))
+  * [#1268](https://github.com/gossi/frontend-configs/pull/1268) Upgrade to eslint v9 ([@gossi](https://github.com/gossi))
+* `@gossi/config-postcss`
+  * [#1278](https://github.com/gossi/frontend-configs/pull/1278) Remove `@parcel/css` ([@gossi](https://github.com/gossi))
+  * [#1273](https://github.com/gossi/frontend-configs/pull/1273) Remove unused postcss plugins ([@gossi](https://github.com/gossi))
+
+#### :bug: Bug Fix
+* `@gossi/config-eslint`
+  * [#1270](https://github.com/gossi/frontend-configs/pull/1270) Switch to `lilconfig` ([@gossi](https://github.com/gossi))
+
+#### :memo: Documentation
+* `@gossi/config-eslint`
+  * [#1269](https://github.com/gossi/frontend-configs/pull/1269) Eslint readme ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* `@gossi/config-stylelint`
+  * [#1280](https://github.com/gossi/frontend-configs/pull/1280) Update release-plan configs ([@gossi](https://github.com/gossi))
+* Other
+  * [#1279](https://github.com/gossi/frontend-configs/pull/1279) Add ember vite app as test ([@gossi](https://github.com/gossi))
+  * [#1277](https://github.com/gossi/frontend-configs/pull/1277) Remove `concurrently` ([@gossi](https://github.com/gossi))
+  * [#1276](https://github.com/gossi/frontend-configs/pull/1276) Update to `ember-qunit@9` ([@gossi](https://github.com/gossi))
+  * [#1274](https://github.com/gossi/frontend-configs/pull/1274) Testing: Ember Addon with vite + tests ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`
+  * [#1270](https://github.com/gossi/frontend-configs/pull/1270) Switch to `lilconfig` ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-01-18)
 
 @gossi/config-eslint 0.14.0 (minor)

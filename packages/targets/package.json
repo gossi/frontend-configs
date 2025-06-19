@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-targets",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "type": "module",
   "files": [

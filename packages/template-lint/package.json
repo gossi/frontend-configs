@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-template-lint",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "type": "module",
   "files": [
