@@ -24,7 +24,7 @@
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "dev": "vite",
-    "test": "vite build --mode test && testem ci"
+    "test": "vite build --mode test && testem ci --port 0"
   },
   "exports": {
     "./tests/*": "./tests/*",
