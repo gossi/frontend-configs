@@ -14,7 +14,7 @@ export function config(root) {
      */
     {
       name: 'gossi/base/ignores',
-      ignores: ['dist/', 'tmp/', 'declarations/', 'coverage/', '!**/.*']
+      ignores: ['dist/', 'dist-tests/', 'tmp/', 'declarations/', 'coverage/', '!**/.*']
     },
     /**
      * https://eslint.org/docs/latest/use/configure/configuration-files#configuring-linter-options

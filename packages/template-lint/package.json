@@ -22,7 +22,6 @@
     "ember-template-lint": "^7.0.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.22.5",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "ember-template-lint": "^7.9.1",

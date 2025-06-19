@@ -23,7 +23,6 @@
     "postcss-preset-env": "^10.0.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.22.5",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "postcss": "8.5.6",
