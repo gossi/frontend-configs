@@ -53,9 +53,9 @@ export function configure({ browsers }) {
         }
       ],
 
-      'function-calc-no-unspaced-operator': null,
+      'function-calc-no-unspaced-operator': undefined,
 
-      'no-empty-source': null,
+      'no-empty-source': undefined,
 
       'property-no-unknown': [
         true,

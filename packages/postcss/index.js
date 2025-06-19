@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-module */
 const { browsers } = require('@gossi/config-targets');
 
 function plugins({ minify }) {
