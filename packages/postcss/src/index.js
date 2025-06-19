@@ -1,5 +1,4 @@
-/* eslint-disable unicorn/prefer-module */
-const { browsers } = require('@gossi/config-targets');
+import { browsers } from '@gossi/config-targets';
 
 function plugins({ minify }) {
   return [
@@ -53,7 +52,7 @@ function plugins({ minify }) {
   ];
 }
 
-module.exports = {
+export {
   // example for custom module resolving resolving algorithm
   // rollup(options) {
   //   return {
