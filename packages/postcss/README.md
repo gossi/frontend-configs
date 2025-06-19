@@ -5,7 +5,7 @@ Add postcss to your packages.
 ## Installation
 
 ```sh
-pnpm add -D @gossi/config-postcss postcss @parcel/css
+pnpm add -D @gossi/config-postcss postcss
 ```
 
 ## Usage

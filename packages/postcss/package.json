@@ -30,7 +30,6 @@
     "prettier": "3.5.3"
   },
   "peerDependencies": {
-    "@parcel/css": "^1.14.0",
     "postcss": "^8.4.24"
   },
   "engines": {
