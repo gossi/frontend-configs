@@ -1,21 +1,11 @@
 import each from 'postcss-each';
 import lightning from 'postcss-lightningcss';
-import nested from 'postcss-nested';
-import pow from 'postcss-pow';
 import presetEnv from 'postcss-preset-env';
 
 import { browsers } from '@gossi/config-targets';
 
 function plugins({ minify }) {
   return [
-    // https://github.com/postcss/postcss-nested
-    // Nest rules and reference the parent via &
-    nested,
-
-    // https://github.com/limitlessloop/postcss-pow
-    // Adds pow() function
-    pow,
-
     // https://www.npmjs.com/package/postcss-each
     // adds @each construct
     each,

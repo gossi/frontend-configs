@@ -20,8 +20,6 @@
     "@gossi/config-targets": "workspace:*",
     "postcss-each": "^1.1.0",
     "postcss-lightningcss": "^1.0.1",
-    "postcss-nested": "^7.0.0",
-    "postcss-pow": "^1.0.1",
     "postcss-preset-env": "^10.0.0"
   },
   "devDependencies": {
