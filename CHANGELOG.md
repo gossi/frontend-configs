@@ -1,5 +1,23 @@
 # Changelog
 
+## Release (2025-06-21)
+
+* @gossi/config-eslint 1.1.0 (minor)
+* @gossi/config-prettier 1.0.1 (patch)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))
+
+#### :bug: Bug Fix
+* `@gossi/config-prettier`
+  * [#1290](https://github.com/gossi/frontend-configs/pull/1290) Import Plugins for proper resolving ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`
+  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-19)
 
 * @gossi/config-eslint 1.0.0 (major)

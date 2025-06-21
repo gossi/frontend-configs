@@ -1,15 +1,11 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "major",
-      "oldVersion": "0.14.0",
-      "newVersion": "1.0.0",
+      "impact": "minor",
+      "oldVersion": "1.0.0",
+      "newVersion": "1.1.0",
       "tagName": "latest",
       "constraints": [
-        {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
@@ -17,115 +13,35 @@
         {
           "impact": "patch",
           "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./packages/eslint/package.json"
     },
     "@gossi/config-postcss": {
-      "impact": "major",
-      "oldVersion": "0.11.0",
-      "newVersion": "1.0.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        },
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/postcss/package.json"
+      "oldVersion": "1.0.0"
     },
     "@gossi/config-prettier": {
-      "impact": "major",
-      "oldVersion": "0.10.0",
-      "newVersion": "1.0.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/prettier/package.json"
-    },
-    "@gossi/config-stylelint": {
-      "impact": "major",
+      "impact": "patch",
       "oldVersion": "1.0.0",
       "newVersion": "1.0.1",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
           "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        },
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
-      "pkgJSONPath": "./packages/stylelint/package.json"
+      "pkgJSONPath": "./packages/prettier/package.json"
+    },
+    "@gossi/config-stylelint": {
+      "oldVersion": "1.0.1"
     },
     "@gossi/config-targets": {
-      "impact": "major",
-      "oldVersion": "0.10.0",
-      "newVersion": "1.0.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/targets/package.json"
+      "oldVersion": "1.0.0"
     },
     "@gossi/config-template-lint": {
-      "impact": "major",
-      "oldVersion": "0.9.0",
-      "newVersion": "1.0.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
-        },
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/template-lint/package.json"
+      "oldVersion": "1.0.0"
     }
   },
-  "description": "## Release (2025-06-19)\n\n* @gossi/config-eslint 1.0.0 (major)\n* @gossi/config-postcss 1.0.0 (major)\n* @gossi/config-prettier 1.0.0 (major)\n* @gossi/config-stylelint 1.0.1 (major)\n* @gossi/config-targets 1.0.0 (major)\n* @gossi/config-template-lint 1.0.0 (major)\n\n#### :boom: Breaking Change\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`\n  * [#1272](https://github.com/gossi/frontend-configs/pull/1272) Convert configs to ESM ([@gossi](https://github.com/gossi))\n  * [#1268](https://github.com/gossi/frontend-configs/pull/1268) Upgrade to eslint v9 ([@gossi](https://github.com/gossi))\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`\n  * [#1281](https://github.com/gossi/frontend-configs/pull/1281) Recommended configs from `eslint-plugin-n` and `eslint-plugin-qunit` ([@gossi](https://github.com/gossi))\n  * [#1275](https://github.com/gossi/frontend-configs/pull/1275) Remove unused peer deps ([@gossi](https://github.com/gossi))\n  * [#1271](https://github.com/gossi/frontend-configs/pull/1271) Extend and export base config ([@gossi](https://github.com/gossi))\n  * [#1268](https://github.com/gossi/frontend-configs/pull/1268) Upgrade to eslint v9 ([@gossi](https://github.com/gossi))\n* `@gossi/config-postcss`\n  * [#1278](https://github.com/gossi/frontend-configs/pull/1278) Remove `@parcel/css` ([@gossi](https://github.com/gossi))\n  * [#1273](https://github.com/gossi/frontend-configs/pull/1273) Remove unused postcss plugins ([@gossi](https://github.com/gossi))\n\n#### :bug: Bug Fix\n* `@gossi/config-eslint`\n  * [#1270](https://github.com/gossi/frontend-configs/pull/1270) Switch to `lilconfig` ([@gossi](https://github.com/gossi))\n\n#### :memo: Documentation\n* `@gossi/config-eslint`\n  * [#1269](https://github.com/gossi/frontend-configs/pull/1269) Eslint readme ([@gossi](https://github.com/gossi))\n\n#### :house: Internal\n* `@gossi/config-stylelint`\n  * [#1280](https://github.com/gossi/frontend-configs/pull/1280) Update release-plan configs ([@gossi](https://github.com/gossi))\n* Other\n  * [#1279](https://github.com/gossi/frontend-configs/pull/1279) Add ember vite app as test ([@gossi](https://github.com/gossi))\n  * [#1277](https://github.com/gossi/frontend-configs/pull/1277) Remove `concurrently` ([@gossi](https://github.com/gossi))\n  * [#1276](https://github.com/gossi/frontend-configs/pull/1276) Update to `ember-qunit@9` ([@gossi](https://github.com/gossi))\n  * [#1274](https://github.com/gossi/frontend-configs/pull/1274) Testing: Ember Addon with vite + tests ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`\n  * [#1270](https://github.com/gossi/frontend-configs/pull/1270) Switch to `lilconfig` ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-06-21)\n\n* @gossi/config-eslint 1.1.0 (minor)\n* @gossi/config-prettier 1.0.1 (patch)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))\n\n#### :bug: Bug Fix\n* `@gossi/config-prettier`\n  * [#1290](https://github.com/gossi/frontend-configs/pull/1290) Import Plugins for proper resolving ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`\n  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
