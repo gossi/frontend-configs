@@ -1,8 +1,10 @@
+import emberTemplateTag from 'prettier-plugin-ember-template-tag';
+
 export default {
   singleQuote: true,
   trailingComma: 'none',
   printWidth: 100,
-  plugins: ['prettier-plugin-ember-template-tag'],
+  plugins: [emberTemplateTag],
   overrides: [
     {
       files: ['*.md', '*.hbs'],
