@@ -534,19 +534,19 @@ importers:
   testing/ember-app-vite:
     devDependencies:
       '@babel/core':
-        specifier: ^7.27.1
+        specifier: ^7.27.4
         version: 7.27.4
       '@babel/eslint-parser':
-        specifier: ^7.27.1
+        specifier: ^7.27.5
         version: 7.27.5(@babel/core@7.27.4)(eslint@9.29.0(jiti@2.4.2))
       '@babel/plugin-transform-runtime':
-        specifier: ^7.27.1
+        specifier: ^7.27.4
         version: 7.27.4(@babel/core@7.27.4)
       '@babel/plugin-transform-typescript':
         specifier: ^7.27.1
         version: 7.27.1(@babel/core@7.27.4)
       '@babel/runtime':
-        specifier: ^7.27.1
+        specifier: ^7.27.6
         version: 7.27.6
       '@ember/app-tsconfig':
         specifier: ^1.0.3
