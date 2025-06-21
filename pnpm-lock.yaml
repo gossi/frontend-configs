@@ -243,7 +243,7 @@ importers:
         specifier: ^7.27.6
         version: 7.27.6
       '@ember/app-tsconfig':
-        specifier: ^1.0.0
+        specifier: ^1.0.3
         version: 1.0.3
       '@ember/library-tsconfig':
         specifier: ^1.0.0
