@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-prettier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "type": "module",
   "files": [
