@@ -1,37 +1,13 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "minor",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./packages/eslint/package.json"
+      "oldVersion": "1.1.0"
     },
     "@gossi/config-postcss": {
       "oldVersion": "1.0.0"
     },
     "@gossi/config-prettier": {
-      "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./packages/prettier/package.json"
+      "oldVersion": "1.0.1"
     },
     "@gossi/config-stylelint": {
       "oldVersion": "1.0.1"
@@ -43,5 +19,5 @@
       "oldVersion": "1.0.0"
     }
   },
-  "description": "## Release (2025-06-21)\n\n* @gossi/config-eslint 1.1.0 (minor)\n* @gossi/config-prettier 1.0.1 (patch)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))\n\n#### :bug: Bug Fix\n* `@gossi/config-prettier`\n  * [#1290](https://github.com/gossi/frontend-configs/pull/1290) Import Plugins for proper resolving ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`\n  * [#1286](https://github.com/gossi/frontend-configs/pull/1286) Update deps ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "\n\n\n\n"
 }
