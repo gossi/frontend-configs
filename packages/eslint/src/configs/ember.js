@@ -24,26 +24,20 @@ export function config(root) {
   return ts.config(
     [
       ...base(root),
-      ember.configs.base,
-      ember.configs.gjs,
-      ember.configs.gts,
-      {
-        name: 'gossi/ember/babel-parser',
-        files: ['**/*.js'],
-        languageOptions: {
-          parser: babelParser
-        }
-      },
+      /**
+       * Ember source files
+       */
       {
         name: 'gossi/ember/javascript',
-        files: ['**/*.{js,gjs}'],
+        files: ['{src/app/tests}/**/*.{js,gjs}'],
         languageOptions: {
+          parser: babelParser,
           parserOptions: esm.js,
           globals: {
             ...globals.browser
           }
         },
-        extends: [emberRules]
+        extends: [ember.configs.base, ember.configs.gjs, emberRules]
       },
       hasTS
         ? {
@@ -57,6 +51,7 @@ export function config(root) {
             extends: [
               ...typescript,
               ...typescriptTyped,
+              ember.configs.base,
               ember.configs.gts,
               emberRules,
               emberTypescript
@@ -82,35 +77,10 @@ export function config(root) {
         files: [
           '**/*.cjs',
           ...(isTypeModule
-            ? [
-                'config/**/*.cjs',
-                'testem.cjs',
-                'testem*.cjs',
-                '.prettierrc.cjs',
-                '.stylelintrc.cjs',
-                '.template-lintrc.cjs',
-                'ember-cli-build.cjs'
-              ]
-            : [
-                'config/**/*.js',
-                'tests/dummy/config/**/*.js',
-                'testem.js',
-                'testem*.js',
-                '.prettierrc.js',
-                '.stylelintrc.js',
-                '.template-lintrc.js',
-                'ember-cli-build.js'
-              ])
+            ? ['config/**/*.js', 'tests/dummy/config/**/*.js', '*.cjs']
+            : ['config/**/*.js', 'tests/dummy/config/**/*.js', '*.js'])
         ],
-        ...n.configs['flat/recommended-script'],
-
-        languageOptions: {
-          sourceType: 'script',
-          ecmaVersion: 'latest',
-          globals: {
-            ...globals.node
-          }
-        }
+        extends: [n.configs['flat/recommended-script']]
       },
       /**
        * ESM node files
@@ -118,16 +88,10 @@ export function config(root) {
        */
       {
         name: 'gossi/ember/node/esm',
-        files: ['**/*.mjs', 'config/**/*', '.template-lintrc.js', '*.js'],
-        ...n.configs['flat/recommended-module'],
-
+        files: ['**/*.mjs', ...(isTypeModule ? ['*.js'] : [])],
+        extends: [n.configs['flat/recommended-module']],
         languageOptions: {
-          sourceType: 'module',
-          ecmaVersion: 'latest',
-          parserOptions: esm.js,
-          globals: {
-            ...globals.node
-          }
+          parserOptions: esm.js
         }
       }
       /**

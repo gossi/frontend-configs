@@ -1,7 +1,7 @@
 {
   "extends": "@ember/app-tsconfig",
   "include": [
-    "app", "tests", "types"
+    "src", "tests", "types"
   ],
   "glint": {
     "environment": [
@@ -12,11 +12,11 @@
   "compilerOptions": {
     "allowJs": true,
     "paths": {
-      "ember-app-vite/tests/*": [
-        "./tests/*"
-      ],
-      "ember-app-vite/*": [
-        "./app/*"
+      // "ember-app-vite/tests/*": [
+      //   "./tests/*"
+      // ],
+      "#/*": [
+        "./src/*"
       ],
       "*": [
         "./types/*"
