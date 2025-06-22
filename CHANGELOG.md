@@ -1,5 +1,19 @@
 # Changelog
 
+## Release (2025-06-22)
+
+* @gossi/config-eslint 1.1.1 (patch)
+* @gossi/config-postcss 1.0.1 (patch)
+* @gossi/config-stylelint 1.0.2 (patch)
+* @gossi/config-targets 1.0.1 (patch)
+
+#### :bug: Bug Fix
+* `@gossi/config-eslint`, `@gossi/config-targets`
+  * [#1301](https://github.com/gossi/frontend-configs/pull/1301) Fix ESM and CJS configs for ember ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-21)
 
 * @gossi/config-eslint 1.1.0 (minor)
