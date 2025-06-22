@@ -608,9 +608,6 @@ importers:
       '@gossi/config-stylelint':
         specifier: workspace:*
         version: link:../../packages/stylelint
-      '@gossi/config-targets':
-        specifier: workspace:*
-        version: link:../../packages/targets
       '@gossi/config-template-lint':
         specifier: workspace:*
         version: link:../../packages/template-lint

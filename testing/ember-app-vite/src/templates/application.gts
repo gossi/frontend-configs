@@ -1,7 +1,7 @@
 import { pageTitle } from 'ember-page-title';
 import { WelcomePage } from 'ember-welcome-page';
 
-import Greeting from '../components/greeting.gts';
+import Greeting from '#components/greeting.gts';
 
 <template>
   {{pageTitle "EmberAppVite"}}

@@ -7,25 +7,29 @@
   "license": "MIT",
   "author": "",
   "type": "module",
+  "imports": {
+    "#/*": "./src/*",
+    "#config": "./src/config.ts",
+    "#components/*": "./src/components/*",
+    "#tests/*": "./tests/*"
+  },
+  "exports": {
+    "./tests/*": "./tests/*",
+    "./*": "./app/*"
+  },
   "scripts": {
     "build": "vite build",
-    "format": "prettier . --cache --write",
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
     "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"pnpm:lint:css -- --fix\"",
-    "lint:format": "prettier . --cache --check",
     "lint:hbs": "ember-template-lint .",
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "dev": "vite",
-    "test": "vite build --mode test && testem ci --port 0"
-  },
-  "exports": {
-    "./tests/*": "./tests/*",
-    "./*": "./app/*"
+    "test": "NODE_ENV=development vite build --mode test && testem ci --port 0"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
@@ -53,7 +57,6 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-stylelint": "workspace:*",
-    "@gossi/config-targets": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
     "@rollup/plugin-babel": "^6.0.4",
     "@storybook/types": "^8.6.14",

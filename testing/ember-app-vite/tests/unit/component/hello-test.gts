@@ -1,8 +1,8 @@
 import { render } from '@ember/test-helpers';
 import { module, test } from 'qunit';
 
-import Hello from 'ember-app-vite/components/hello';
-import { setupRenderingTest } from 'ember-app-vite/tests/helpers';
+import Hello from '#components/hello.gts';
+import { setupRenderingTest } from '#tests/helpers.ts';
 
 module('Unit | Component | <Hello>', (hooks) => {
   setupRenderingTest(hooks);
