@@ -351,7 +351,7 @@ importers:
         specifier: 4.43.0
         version: 4.43.0
       storybook:
-        specifier: ^9.0.11
+        specifier: ^9.0.12
         version: 9.0.12(@testing-library/dom@10.4.0)(prettier@3.5.3)
       stylelint:
         specifier: 16.20.0
