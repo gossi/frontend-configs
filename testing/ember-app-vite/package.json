@@ -6,10 +6,7 @@
   "repository": "",
   "license": "MIT",
   "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "format": "prettier . --cache --write",

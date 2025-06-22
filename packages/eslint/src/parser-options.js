@@ -7,12 +7,10 @@ export function esm(root) {
   return {
     js: isBabelConfigPresent
       ? {
-          ecmaFeatures: { modules: true },
-          ecmaVersion: 'latest'
+          ecmaFeatures: { modules: true }
         }
       : {
           ecmaFeatures: { modules: true },
-          ecmaVersion: 'latest',
           requireConfigFile: false,
           babelOptions: babelDecoratorsPluginPresent
             ? {

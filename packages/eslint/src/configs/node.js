@@ -1,5 +1,4 @@
 import n from 'eslint-plugin-n';
-import globals from 'globals';
 import ts from 'typescript-eslint';
 
 import * as parserOptions from '../parser-options.js';
@@ -25,15 +24,9 @@ export function config(root) {
       {
         name: 'gossi/node/esm',
         files: ['**/*.mjs', ...(isTypeModule ? ['**/*.js'] : [])],
-        ...n.configs['flat/recommended-module'],
-
+        extends: [n.configs['flat/recommended-module']],
         languageOptions: {
-          sourceType: 'module',
-          ecmaVersion: 'latest',
-          parserOptions: esm.js,
-          globals: {
-            ...globals.node
-          }
+          parserOptions: esm.js
         }
       },
 
@@ -43,15 +36,7 @@ export function config(root) {
       {
         name: 'gossi/node/cjs',
         files: ['**/*.cjs', ...(isTypeModule ? [] : ['**/*.js'])],
-        ...n.configs['flat/recommended-script'],
-
-        languageOptions: {
-          sourceType: 'script',
-          ecmaVersion: 'latest',
-          globals: {
-            ...globals.node
-          }
-        }
+        extends: [n.configs['flat/recommended-script']]
       },
 
       /**
