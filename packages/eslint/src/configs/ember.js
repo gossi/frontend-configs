@@ -88,7 +88,7 @@ export function config(root) {
        */
       {
         name: 'gossi/ember/node/esm',
-        files: ['**/*.mjs', isTypeModule ? ['*.js'] : []],
+        files: ['**/*.mjs', ...(isTypeModule ? ['*.js'] : [])],
         extends: [n.configs['flat/recommended-module']],
         languageOptions: {
           parserOptions: esm.js
