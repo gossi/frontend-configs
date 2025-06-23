@@ -1,48 +1,21 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "patch",
-      "oldVersion": "1.1.0",
-      "newVersion": "1.1.1",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./packages/eslint/package.json"
+      "oldVersion": "1.1.1"
     },
     "@gossi/config-postcss": {
-      "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        }
-      ],
-      "pkgJSONPath": "./packages/postcss/package.json"
+      "oldVersion": "1.0.1"
     },
     "@gossi/config-prettier": {
       "oldVersion": "1.0.1"
     },
     "@gossi/config-stylelint": {
-      "impact": "patch",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.0.2",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        }
-      ],
-      "pkgJSONPath": "./packages/stylelint/package.json"
+      "oldVersion": "1.0.2"
     },
     "@gossi/config-targets": {
+      "oldVersion": "1.0.1"
+    },
+    "@gossi/config-template-lint": {
       "impact": "patch",
       "oldVersion": "1.0.0",
       "newVersion": "1.0.1",
@@ -53,11 +26,8 @@
           "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
-      "pkgJSONPath": "./packages/targets/package.json"
-    },
-    "@gossi/config-template-lint": {
-      "oldVersion": "1.0.0"
+      "pkgJSONPath": "./packages/template-lint/package.json"
     }
   },
-  "description": "## Release (2025-06-22)\n\n* @gossi/config-eslint 1.1.1 (patch)\n* @gossi/config-postcss 1.0.1 (patch)\n* @gossi/config-stylelint 1.0.2 (patch)\n* @gossi/config-targets 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `@gossi/config-eslint`, `@gossi/config-targets`\n  * [#1301](https://github.com/gossi/frontend-configs/pull/1301) Fix ESM and CJS configs for ember ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-06-23)\n\n* @gossi/config-template-lint 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `@gossi/config-template-lint`\n  * [#1304](https://github.com/gossi/frontend-configs/pull/1304) Import plugins ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
