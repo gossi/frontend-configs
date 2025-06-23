@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-06-23)
+
+* @gossi/config-template-lint 1.0.1 (patch)
+
+#### :bug: Bug Fix
+* `@gossi/config-template-lint`
+  * [#1304](https://github.com/gossi/frontend-configs/pull/1304) Import plugins ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-22)
 
 * @gossi/config-eslint 1.1.1 (patch)
