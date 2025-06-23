@@ -71,7 +71,7 @@
     "qunit": "^2.24.1",
     "qunit-dom": "^3.4.0",
     "storybook": "^9.0.12",
-    "stylelint": "16.20.0",
+    "stylelint": "16.21.0",
     "typescript": "5.8.3",
     "webpack": "5.99.9"
   },
