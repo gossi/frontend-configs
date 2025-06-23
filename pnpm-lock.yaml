@@ -306,8 +306,8 @@ importers:
         specifier: ^2.19.12
         version: 2.19.12
       babel-plugin-ember-template-compilation:
-        specifier: ^2.4.1
-        version: 2.4.1
+        specifier: ^3.0.0
+        version: 3.0.0
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
@@ -624,8 +624,8 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9
       babel-plugin-ember-template-compilation:
-        specifier: ^2.4.1
-        version: 2.4.1
+        specifier: ^3.0.0
+        version: 3.0.0
       decorator-transforms:
         specifier: ^2.3.0
         version: 2.3.0(@babel/core@7.27.4)
