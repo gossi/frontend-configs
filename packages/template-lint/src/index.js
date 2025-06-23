@@ -1,5 +1,7 @@
+import prettierPlugin from 'ember-template-lint-plugin-prettier';
+
 export default {
-  plugins: ['ember-template-lint-plugin-prettier'],
+  plugins: [prettierPlugin],
   extends: ['recommended', 'ember-template-lint-plugin-prettier:recommended'],
   overrides: [
     {
