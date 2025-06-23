@@ -26,7 +26,7 @@
     "@gossi/config-prettier": "workspace:*",
     "ember-template-lint": "^7.9.1",
     "eslint": "^9.29.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.0"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
