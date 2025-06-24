@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-06-24)
+
+* @gossi/config-eslint 1.1.2 (patch)
+
+#### :bug: Bug Fix
+* `@gossi/config-eslint`
+  * [#1306](https://github.com/gossi/frontend-configs/pull/1306) Ignore private files (starting with `-`) from being checked for filename-case ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-23)
 
 * @gossi/config-template-lint 1.0.1 (patch)
