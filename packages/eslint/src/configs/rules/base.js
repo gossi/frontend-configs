@@ -23,7 +23,15 @@ export default [
         }
       ],
 
-      'unicorn/prevent-abbreviations': 'off'
+      'unicorn/prevent-abbreviations': 'off',
+
+      'unicorn/filename-case': [
+        'error',
+        {
+          case: 'kebabCase',
+          ignore: ['^-*']
+        }
+      ]
     }
   }
 ];
