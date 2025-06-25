@@ -1,7 +1,17 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "oldVersion": "1.1.1"
+      "impact": "patch",
+      "oldVersion": "1.1.1",
+      "newVersion": "1.1.2",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        }
+      ],
+      "pkgJSONPath": "./packages/eslint/package.json"
     },
     "@gossi/config-postcss": {
       "oldVersion": "1.0.1"
@@ -16,18 +26,8 @@
       "oldVersion": "1.0.1"
     },
     "@gossi/config-template-lint": {
-      "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./packages/template-lint/package.json"
+      "oldVersion": "1.0.1"
     }
   },
-  "description": "## Release (2025-06-23)\n\n* @gossi/config-template-lint 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `@gossi/config-template-lint`\n  * [#1304](https://github.com/gossi/frontend-configs/pull/1304) Import plugins ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-06-24)\n\n* @gossi/config-eslint 1.1.2 (patch)\n\n#### :bug: Bug Fix\n* `@gossi/config-eslint`\n  * [#1306](https://github.com/gossi/frontend-configs/pull/1306) Ignore private files (starting with `-`) from being checked for filename-case ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
