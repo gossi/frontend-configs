@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-06-24)
 
 * @gossi/config-eslint 1.1.2 (patch)
