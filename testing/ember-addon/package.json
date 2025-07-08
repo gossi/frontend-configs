@@ -71,7 +71,7 @@
     "prettier": "^3.6.0",
     "qunit": "^2.24.1",
     "qunit-dom": "^3.4.0",
-    "rollup": "4.44.1",
+    "rollup": "4.44.2",
     "storybook": "^9.0.16",
     "stylelint": "16.21.0",
     "testem": "^3.16.0",
