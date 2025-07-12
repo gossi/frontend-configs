@@ -1,9 +1,9 @@
 import storybook from 'eslint-plugin-storybook';
 
-import { configs } from '@gossi/config-eslint';
+import ember from '@gossi/config-eslint/ember';
 
 export default [
-  ...configs.ember(import.meta.dirname),
+  ...ember(import.meta.dirname),
   ...storybook.configs['flat/recommended'],
   ...storybook.configs['flat/csf']
 ];

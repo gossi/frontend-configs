@@ -7,7 +7,11 @@
     "src"
   ],
   "exports": {
-    ".": "./src/index.js"
+    ".": "./src/index.js",
+    "./base": "./src/configs/base.js",
+    "./ember": "./src/configs/ember.js",
+    "./json": "./src/configs/json.js",
+    "./node": "./src/configs/node.js"
   },
   "scripts": {
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",

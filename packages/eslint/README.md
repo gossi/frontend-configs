@@ -33,7 +33,7 @@ The shared common configs. It's good way to start your own config.
 
 ```js
 // eslint.config.js
-import { configs } from '@gossi/config-eslint';
+import base from '@gossi/config-eslint/base';
 
 export default configs.base(import.meta.dirname);
 ```
@@ -44,9 +44,9 @@ For all node projects.
 
 ```js
 // eslint.config.js
-import { configs } from '@gossi/config-eslint';
+import node from '@gossi/config-eslint/node';
 
-export default configs.node(import.meta.dirname);
+export default node(import.meta.dirname);
 ```
 
 ### Ember
@@ -55,9 +55,9 @@ For all ember projects.
 
 ```js
 // eslint.config.js
-import { configs } from '@gossi/config-eslint';
+import ember from '@gossi/config-eslint/ember';
 
-export default configs.ember(import.meta.dirname);
+export default ember(import.meta.dirname);
 ```
 
 overriding with storybook (install `eslint-plugin-storybook`):
@@ -65,10 +65,10 @@ overriding with storybook (install `eslint-plugin-storybook`):
 ```js
 import storybook from 'eslint-plugin-storybook';
 
-import { configs } from '@gossi/config-eslint';
+import ember from '@gossi/config-eslint/ember';
 
 export default [
-  ...configs.ember(import.meta.dirname),
+  ...ember(import.meta.dirname),
   ...storybook.configs['flat/recommended'],
   ...storybook.configs['flat/csf']
 ];
@@ -80,9 +80,9 @@ If you wish, use it for json.
 
 ```js
 // eslint.config.js
-import { configs } from '@gossi/config-eslint';
+import json from '@gossi/config-eslint/json';
 
-export default configs.json();
+export default json();
 ```
 
 ## Debugging
