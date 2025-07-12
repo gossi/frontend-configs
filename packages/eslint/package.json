@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-eslint",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "type": "module",
   "files": [
