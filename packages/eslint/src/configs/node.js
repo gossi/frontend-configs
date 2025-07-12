@@ -3,14 +3,14 @@ import ts from 'typescript-eslint';
 
 import * as parserOptions from '../parser-options.js';
 import { hasTypeModule, hasTypescript } from '../utils.js';
-import { config as base } from './base.js';
+import base from './base.js';
 import typescript from './rules/typescript.js';
 import typescriptTyped from './rules/typescript-typed.js';
 
 /**
  * @param {string} root the directory of the eslint config file. can be import.meta.dirname
  */
-export function config(root) {
+export default function config(root) {
   let hasTS = hasTypescript(root);
   let esm = parserOptions.esm(root);
   let isTypeModule = hasTypeModule(root);

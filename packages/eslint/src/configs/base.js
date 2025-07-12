@@ -6,7 +6,7 @@ import imports from './rules/imports.js';
 import { resolvePrettier } from './rules/prettier.js';
 import stylistic from './rules/stylistic.js';
 
-export function config(root) {
+export default function config(root) {
   return [
     /**
      * Ignores must be in their own object

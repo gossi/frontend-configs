@@ -1,6 +1,6 @@
 import json from 'eslint-plugin-json';
 
-export function config() {
+export default function config() {
   return [
     {
       files: ['**/tsconfig.json', '**/tsconfig*.json', '**/*.json5', '**/*.jsonc'],

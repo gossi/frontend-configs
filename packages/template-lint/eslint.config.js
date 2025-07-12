@@ -1,3 +1,3 @@
-import { configs } from '@gossi/config-eslint';
+import node from '@gossi/config-eslint/node';
 
-export default configs.node(import.meta.dirname);
+export default node(import.meta.dirname);
