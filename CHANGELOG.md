@@ -1,5 +1,25 @@
 # Changelog
 
+## Release (2025-07-12)
+
+* @gossi/config-eslint 1.2.0 (minor)
+* @gossi/config-postcss 1.1.0 (minor)
+* @gossi/config-prettier 1.1.0 (minor)
+* @gossi/config-stylelint 1.0.3 (minor)
+* @gossi/config-targets 1.1.0 (minor)
+* @gossi/config-template-lint 1.1.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1333](https://github.com/gossi/frontend-configs/pull/1333) Separate entries per config ([@gossi](https://github.com/gossi))
+
+#### :bug: Bug Fix
+* `@gossi/config-prettier`
+  * [#1334](https://github.com/gossi/frontend-configs/pull/1334) Preserve Quotes for json5 ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-06-24)
 
 * @gossi/config-eslint 1.1.2 (patch)
