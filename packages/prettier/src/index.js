@@ -19,6 +19,13 @@ export default {
         singleQuote: true,
         templateSingleQuote: false
       }
+    },
+    {
+      files: ['*.json5'],
+      options: {
+        quoteProps: 'preserve',
+        singleQuote: false
+      }
     }
   ]
 };
