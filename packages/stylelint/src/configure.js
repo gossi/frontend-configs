@@ -12,10 +12,7 @@ export function configure({ browsers }) {
         true,
         {
           browsers,
-          ignore: [
-            // grid-template-columns falsely identified as multicolumn
-            'multicolumn'
-          ]
+          severity: 'warning'
         }
       ],
 
