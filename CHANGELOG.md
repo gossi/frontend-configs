@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2025-07-13)
+
+* @gossi/config-stylelint 1.1.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-stylelint`
+  * [#1336](https://github.com/gossi/frontend-configs/pull/1336) Make `no-unsupported-browser-features` a warning as recommended ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* `@gossi/config-stylelint`
+  * [#1338](https://github.com/gossi/frontend-configs/pull/1338) Revert manual release-plan versioning ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-07-12)
 
 * @gossi/config-eslint 1.2.0 (minor)
