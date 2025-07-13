@@ -1,56 +1,18 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "minor",
-      "oldVersion": "1.1.2",
-      "newVersion": "1.2.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/eslint/package.json"
+      "oldVersion": "1.2.0"
     },
     "@gossi/config-postcss": {
-      "impact": "minor",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        }
-      ],
-      "pkgJSONPath": "./packages/postcss/package.json"
+      "oldVersion": "1.1.0"
     },
     "@gossi/config-prettier": {
-      "impact": "minor",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./packages/prettier/package.json"
+      "oldVersion": "1.1.0"
     },
     "@gossi/config-stylelint": {
       "impact": "minor",
-      "oldVersion": "1.0.2",
-      "newVersion": "1.0.3",
+      "oldVersion": "1.0.3",
+      "newVersion": "1.1.0",
       "tagName": "latest",
       "constraints": [
         {
@@ -59,37 +21,17 @@
         },
         {
           "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./packages/stylelint/package.json"
     },
     "@gossi/config-targets": {
-      "impact": "minor",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/targets/package.json"
+      "oldVersion": "1.1.0"
     },
     "@gossi/config-template-lint": {
-      "impact": "minor",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/template-lint/package.json"
+      "oldVersion": "1.1.0"
     }
   },
-  "description": "## Release (2025-07-12)\n\n* @gossi/config-eslint 1.2.0 (minor)\n* @gossi/config-postcss 1.1.0 (minor)\n* @gossi/config-prettier 1.1.0 (minor)\n* @gossi/config-stylelint 1.0.3 (minor)\n* @gossi/config-targets 1.1.0 (minor)\n* @gossi/config-template-lint 1.1.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`\n  * [#1333](https://github.com/gossi/frontend-configs/pull/1333) Separate entries per config ([@gossi](https://github.com/gossi))\n\n#### :bug: Bug Fix\n* `@gossi/config-prettier`\n  * [#1334](https://github.com/gossi/frontend-configs/pull/1334) Preserve Quotes for json5 ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-07-13)\n\n* @gossi/config-stylelint 1.1.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-stylelint`\n  * [#1336](https://github.com/gossi/frontend-configs/pull/1336) Make `no-unsupported-browser-features` a warning as recommended ([@gossi](https://github.com/gossi))\n\n#### :house: Internal\n* `@gossi/config-stylelint`\n  * [#1338](https://github.com/gossi/frontend-configs/pull/1338) Revert manual release-plan versioning ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
