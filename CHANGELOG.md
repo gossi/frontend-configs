@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-07-14)
+
+* @gossi/config-eslint 1.3.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-eslint`
+  * [#1339](https://github.com/gossi/frontend-configs/pull/1339) Turn off non-nullable assertion style ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-07-13)
 
 * @gossi/config-stylelint 1.1.0 (minor)
