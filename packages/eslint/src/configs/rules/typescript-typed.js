@@ -6,6 +6,8 @@ export default ts.config(ts.configs.strictTypeChecked, ts.configs.stylisticTypeC
   rules: {
     '@typescript-eslint/consistent-type-definitions': 'off',
 
+    '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+
     '@typescript-eslint/no-empty-object-type': [
       'error',
       {
