@@ -2,11 +2,6 @@
   // use these rules with `@gossi/config-*` packages
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
-    {
-      "matchPackageNames": [
-        "eslint"
-      ],
-      "allowedVersions": "<9"
-    }
+    // add rules to be used with these config packs
   ]
 }
