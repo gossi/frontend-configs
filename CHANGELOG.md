@@ -1,15 +1,5 @@
 # Changelog
 
-## Release (2025-10-13)
-
-
-
-#### :house: Internal
-* [#1342](https://github.com/gossi/frontend-configs/pull/1342) Support trusted publishing ([@gossi](https://github.com/gossi))
-
-#### Committers: 1
-- Thomas Gossmann ([@gossi](https://github.com/gossi))
-
 ## Release (2025-07-14)
 
 * @gossi/config-eslint 1.3.0 (minor)
