@@ -4,6 +4,6 @@
     "github>gossi/frontend-configs//renovate/manage.json5",
     "github>gossi/frontend-configs//renovate/labels.json5",
     "github>gossi/frontend-configs//renovate/packages.json5",
-    "github>gossi/frontend-configs//renovate/frontend-configs.json"
+    "github>gossi/frontend-configs//renovate/frontend-configs.json5"
   ]
 }
