@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-stylelint",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": "https://github.com/gossi/frontend-configs",
   "type": "module",
   "files": [
