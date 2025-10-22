@@ -1,6 +1,7 @@
 import babelParser from '@babel/eslint-parser';
 import ember from 'eslint-plugin-ember/recommended';
 import n from 'eslint-plugin-n';
+// eslint-disable-next-line import-x/default
 import qunit from 'eslint-plugin-qunit/configs/recommended';
 import globals from 'globals';
 import ts from 'typescript-eslint';
