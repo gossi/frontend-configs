@@ -1,5 +1,26 @@
 # Changelog
 
+## Release (2025-10-22)
+
+* @gossi/config-eslint 1.3.1 (patch)
+* @gossi/config-postcss 1.1.1 (patch)
+* @gossi/config-prettier 1.1.1 (patch)
+* @gossi/config-stylelint 1.1.1 (patch)
+* @gossi/config-targets 1.1.1 (patch)
+* @gossi/config-template-lint 1.1.1 (patch)
+
+#### :house: Internal
+* Other
+  * [#1345](https://github.com/gossi/frontend-configs/pull/1345) Fix renovate ([@gossi](https://github.com/gossi))
+  * [#1341](https://github.com/gossi/frontend-configs/pull/1341) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#1342](https://github.com/gossi/frontend-configs/pull/1342) Support trusted publishing ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1343](https://github.com/gossi/frontend-configs/pull/1343) Update Lint Dependencies ([@gossi](https://github.com/gossi))
+
+#### Committers: 2
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+- [@github-actions[bot]](https://github.com/apps/github-actions)
+
 ## Release (2025-07-14)
 
 * @gossi/config-eslint 1.3.0 (minor)

@@ -1,33 +1,91 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "minor",
-      "oldVersion": "1.2.0",
-      "newVersion": "1.3.0",
+      "impact": "patch",
+      "oldVersion": "1.3.0",
+      "newVersion": "1.3.1",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./packages/eslint/package.json"
     },
     "@gossi/config-postcss": {
-      "oldVersion": "1.1.0"
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        },
+        {
+          "impact": "patch",
+          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
+        }
+      ],
+      "pkgJSONPath": "./packages/postcss/package.json"
     },
     "@gossi/config-prettier": {
-      "oldVersion": "1.1.0"
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./packages/prettier/package.json"
     },
     "@gossi/config-stylelint": {
-      "oldVersion": "1.1.0"
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        },
+        {
+          "impact": "patch",
+          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
+        }
+      ],
+      "pkgJSONPath": "./packages/stylelint/package.json"
     },
     "@gossi/config-targets": {
-      "oldVersion": "1.1.0"
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./packages/targets/package.json"
     },
     "@gossi/config-template-lint": {
-      "oldVersion": "1.1.0"
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./packages/template-lint/package.json"
     }
   },
-  "description": "## Release (2025-07-14)\n\n* @gossi/config-eslint 1.3.0 (minor)\n\n#### :rocket: Enhancement\n* `@gossi/config-eslint`\n  * [#1339](https://github.com/gossi/frontend-configs/pull/1339) Turn off non-nullable assertion style ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2025-10-22)\n\n* @gossi/config-eslint 1.3.1 (patch)\n* @gossi/config-postcss 1.1.1 (patch)\n* @gossi/config-prettier 1.1.1 (patch)\n* @gossi/config-stylelint 1.1.1 (patch)\n* @gossi/config-targets 1.1.1 (patch)\n* @gossi/config-template-lint 1.1.1 (patch)\n\n#### :house: Internal\n* Other\n  * [#1345](https://github.com/gossi/frontend-configs/pull/1345) Fix renovate ([@gossi](https://github.com/gossi))\n  * [#1341](https://github.com/gossi/frontend-configs/pull/1341) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n  * [#1342](https://github.com/gossi/frontend-configs/pull/1342) Support trusted publishing ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`\n  * [#1343](https://github.com/gossi/frontend-configs/pull/1343) Update Lint Dependencies ([@gossi](https://github.com/gossi))\n\n#### Committers: 2\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
 }
