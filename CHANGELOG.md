@@ -2,6 +2,17 @@
 
 ## Release (2025-10-22)
 
+* @gossi/config-template-lint 1.2.0 (minor)
+
+#### :rocket: Enhancement
+* `@gossi/config-template-lint`
+  * [#1346](https://github.com/gossi/frontend-configs/pull/1346) Update Template Lint Rules ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
+## Release (2025-10-22)
+
 * @gossi/config-eslint 1.3.1 (patch)
 * @gossi/config-postcss 1.1.1 (patch)
 * @gossi/config-prettier 1.1.1 (patch)
