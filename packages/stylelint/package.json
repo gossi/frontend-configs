@@ -24,7 +24,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "eslint": "^9.29.0",
+    "eslint": "^9.38.0",
     "prettier": "^3.6.2",
     "stylelint": "16.21.1"
   },
