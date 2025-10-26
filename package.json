@@ -11,7 +11,7 @@
     "lint:types": "pnpm run -r --parallel --aggregate-output lint:types"
   },
   "devDependencies": {
-    "release-plan": "0.17.0"
+    "release-plan": "0.17.2"
   },
   "packageManager": "pnpm@10.13.1"
 }
