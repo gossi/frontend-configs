@@ -27,7 +27,7 @@
     "@ember/test-helpers": "5.4.0",
     "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
-    "@glimmer/validator": "0.94.8",
+    "@glimmer/validator": "0.95.0",
     "@glint/core": "^2.0.0-alpha.2",
     "@glint/environment-ember-loose": "^2.0.0-alpha.3",
     "@glint/environment-ember-template-imports": "^2.0.0-alpha.3",
