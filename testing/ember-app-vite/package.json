@@ -58,7 +58,7 @@
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-stylelint": "workspace:*",
     "@gossi/config-template-lint": "workspace:*",
-    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-babel": "^6.1.0",
     "@storybook/types": "^8.6.14",
     "@types/qunit": "^2.19.13",
     "@types/rsvp": "^4.0.9",
