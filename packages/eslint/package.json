@@ -63,7 +63,7 @@
     "eslint-plugin-ember": "^12.7.4",
     "eslint-plugin-qunit": "^8.2.5",
     "prettier": "^3.6.2",
-    "typescript": "5.8.3"
+    "typescript": "5.9.3"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
