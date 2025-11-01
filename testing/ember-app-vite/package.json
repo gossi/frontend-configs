@@ -48,7 +48,7 @@
     "@embroider/compat": "^4.1.8",
     "@embroider/router": "^3.0.4",
     "@embroider/config-meta-loader": "^1.0.0",
-    "@eslint/js": "^9.38.0",
+    "@eslint/js": "^9.39.0",
     "@glimmer/component": "^2.0.0",
     "@glint/core": "^2.0.0-alpha.2",
     "@glint/environment-ember-loose": "^2.0.0-alpha.3",
