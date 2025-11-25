@@ -31,7 +31,7 @@
     "@glint/core": "^2.0.0-alpha.2",
     "@glint/environment-ember-loose": "^2.0.0-alpha.3",
     "@glint/environment-ember-template-imports": "^2.0.0-alpha.3",
-    "@glint/template": "^1.7.2",
+    "@glint/template": "^1.7.3",
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-stylelint": "workspace:*",
