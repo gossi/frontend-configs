@@ -18,7 +18,7 @@
     "@gossi/config-targets": "workspace:*",
     "eslint": "^9.39.1",
     "prettier": "^3.6.2",
-    "tsdown": "^0.16.5",
+    "tsdown": "^0.16.7",
     "typescript": "5.9.3",
     "vitest": "^4.0.10"
   },
