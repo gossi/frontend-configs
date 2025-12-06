@@ -265,7 +265,7 @@ importers:
         version: 1.19.5(@glint/template@1.7.3)
       '@embroider/vite':
         specifier: ^1.4.3
-        version: 1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
+        version: 1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
       '@glimmer/component':
         specifier: ^2.0.0
         version: 2.0.0
@@ -363,8 +363,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: ^7.2.4
-        version: 7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
 
   testing/ember-app-classic:
     devDependencies:
@@ -580,7 +580,7 @@ importers:
         version: 3.0.6(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)
       '@embroider/vite':
         specifier: ^1.4.3
-        version: 1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
+        version: 1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
       '@eslint/js':
         specifier: ^9.39.1
         version: 9.39.1
@@ -711,8 +711,8 @@ importers:
         specifier: ^8.47.0
         version: 8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vite:
-        specifier: ^7.2.4
-        version: 7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
 
 packages:
 
@@ -8278,8 +8278,8 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vite@7.2.4:
-    resolution: {integrity: sha512-NL8jTlbo0Tn4dUEXEsUg8KeyG/Lkmc4Fnzb8JXN/Ykm9G4HNImjtABMJgkQoVjOBN/j2WAwDTRytdqJbZsah7w==}
+  vite@7.2.6:
+    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -9940,7 +9940,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))':
+  '@embroider/vite@1.4.3(@embroider/core@4.3.0(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.53.3)(vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))':
     dependencies:
       '@babel/core': 7.28.5
       '@embroider/core': 4.3.0(@glint/template@1.7.3)
@@ -9959,7 +9959,7 @@ snapshots:
       send: 0.18.0
       source-map-url: 0.4.1
       terser: 5.40.0
-      vite: 7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
+      vite: 7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
     transitivePeerDependencies:
       - '@glint/template'
       - bufferutil
@@ -11073,13 +11073,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.14(vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))':
+  '@vitest/mocker@4.0.14(vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))':
     dependencies:
       '@vitest/spy': 4.0.14
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
+      vite: 7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -17798,7 +17798,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0):
+  vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0):
     dependencies:
       esbuild: 0.25.5
       fdir: 6.5.0(picomatch@4.0.3)
@@ -17816,7 +17816,7 @@ snapshots:
   vitest@4.0.14(@types/node@22.15.32)(jiti@2.6.1)(jsdom@26.1.0)(lightningcss@1.30.1)(terser@5.40.0):
     dependencies:
       '@vitest/expect': 4.0.14
-      '@vitest/mocker': 4.0.14(vite@7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
+      '@vitest/mocker': 4.0.14(vite@7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
       '@vitest/pretty-format': 4.0.14
       '@vitest/runner': 4.0.14
       '@vitest/snapshot': 4.0.14
@@ -17833,7 +17833,7 @@ snapshots:
       tinyexec: 0.3.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.4(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
+      vite: 7.2.6(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.15.32
