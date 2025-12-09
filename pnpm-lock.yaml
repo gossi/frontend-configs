@@ -492,8 +492,8 @@ importers:
         specifier: ^7.9.3
         version: 7.9.3
       ember-welcome-page:
-        specifier: 7.0.2
-        version: 7.0.2
+        specifier: 8.0.4
+        version: 8.0.4(@babel/core@7.28.5)
       eslint:
         specifier: ^9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -666,8 +666,8 @@ importers:
         specifier: ^7.9.3
         version: 7.9.3
       ember-welcome-page:
-        specifier: ^7.0.2
-        version: 7.0.2
+        specifier: ^8.0.4
+        version: 8.0.4(@babel/core@7.28.5)
       eslint:
         specifier: ^9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -4389,9 +4389,8 @@ packages:
     resolution: {integrity: sha512-eL7lZat68E6P/D7b9UoTB5bB5Oh/0aju0Z7PCMi3aTwhaydRaxloE7TGrTRYU+NdJuyNVZXeGyxFxn2frvd3TA==}
     engines: {node: 12.* || >= 14}
 
-  ember-welcome-page@7.0.2:
-    resolution: {integrity: sha512-TyaKxFIRXhODW5BTbqD/by0Gu8Z9B9AA1ki3Bzzm6fOj2b30Qlprtt+XUG52kS0zVNmxYj/WWoT0TsKiU61VOw==}
-    engines: {node: 14.* || 16.* || >= 18}
+  ember-welcome-page@8.0.4:
+    resolution: {integrity: sha512-vA7waJJj88RV42/USvlwVMZX2yj1/6n9ekJulxlohI7PU8QWSZfSCFOK6kNONs3dShryuyyO54S8IFh60wEq0Q==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -8335,16 +8334,16 @@ packages:
       jsdom:
         optional: true
 
-  volar-service-html@0.0.67:
-    resolution: {integrity: sha512-ljREMF79JbcjNvObiv69HK2HCl5UT7WTD10zi6CRFUHMbPfiF2UZ42HGLsEGSzaHGZz6H4IFjSS/qfENRLUviQ==}
+  volar-service-html@0.0.68:
+    resolution: {integrity: sha512-fru9gsLJxy33xAltXOh4TEdi312HP80hpuKhpYQD4O5hDnkNPEBdcQkpB+gcX0oK0VxRv1UOzcGQEUzWCVHLfA==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
       '@volar/language-service':
         optional: true
 
-  volar-service-typescript@0.0.67:
-    resolution: {integrity: sha512-rfQBy36Rm1PU9vLWHk8BYJ4r2j/CI024vocJcH4Nb6K2RTc2Irmw6UOVY5DdGiPRV5r+e10wLMK5njj/EcL8sA==}
+  volar-service-typescript@0.0.68:
+    resolution: {integrity: sha512-z7B/7CnJ0+TWWFp/gh2r5/QwMObHNDiQiv4C9pTBNI2Wxuwymd4bjEORzrJ/hJ5Yd5+OzeYK+nFCKevoGEEeKw==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
@@ -10256,8 +10255,8 @@ snapshots:
       silent-error: 1.1.1
       typescript: 5.9.3
       uuid: 8.3.2
-      volar-service-html: 0.0.67(@volar/language-service@2.4.12)
-      volar-service-typescript: 0.0.67(@volar/language-service@2.4.12)
+      volar-service-html: 0.0.68(@volar/language-service@2.4.12)
+      volar-service-typescript: 0.0.68(@volar/language-service@2.4.12)
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
@@ -13216,10 +13215,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-welcome-page@7.0.2:
+  ember-welcome-page@8.0.4(@babel/core@7.28.5):
     dependencies:
       '@embroider/addon-shim': 1.10.2
+      decorator-transforms: 2.3.0(@babel/core@7.28.5)
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   emoji-regex@8.0.0: {}
@@ -17821,7 +17822,7 @@ snapshots:
       - tsx
       - yaml
 
-  volar-service-html@0.0.67(@volar/language-service@2.4.12):
+  volar-service-html@0.0.68(@volar/language-service@2.4.12):
     dependencies:
       vscode-html-languageservice: 5.5.0
       vscode-languageserver-textdocument: 1.0.12
@@ -17829,7 +17830,7 @@ snapshots:
     optionalDependencies:
       '@volar/language-service': 2.4.12
 
-  volar-service-typescript@0.0.67(@volar/language-service@2.4.12):
+  volar-service-typescript@0.0.68(@volar/language-service@2.4.12):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.3
