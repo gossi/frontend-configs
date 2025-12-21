@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-10-22)
 
 * @gossi/config-template-lint 1.2.0 (minor)
