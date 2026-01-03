@@ -68,7 +68,7 @@
     "eslint-plugin-storybook": "^10.0.8",
     "loader.js": "4.7.0",
     "prettier": "^3.6.2",
-    "qunit": "^2.24.3",
+    "qunit": "^2.25.0",
     "qunit-dom": "^3.5.0",
     "storybook": "^10.1.10",
     "stylelint": "16.26.1",
