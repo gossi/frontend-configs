@@ -8,8 +8,14 @@ catalogs:
     "@babel/plugin-transform-runtime": ^7.28.5
     "@babel/plugin-transform-typescript": ^7.28.5
     "@babel/eslint-parser": ^7.28.5
+    "@babel/plugin-proposal-decorators": ^7.28.0
+    "@babel/preset-env": 7.28.5
+    babel-plugin-ember-template-compilation: ^3.0.1
+    rollup: 4.54.0
+    tsdown: ^0.18.4
     typescript: ^5.9.3
     vite: ^7.3.0
+    webpack: 5.104.1
   lint:
     "@eslint/js": ^9.29.0
     "@stylistic/eslint-plugin": ^5.0.0
@@ -27,67 +33,58 @@ catalogs:
     eslint-plugin-storybook: ^10.0.8
     eslint-plugin-unicorn: ^62.0.0
     prettier: ^3.6.2
+    prettier-plugin-ember-template-tag: ^2.0.2
+    postcss: 8.5.6
+    postcss-each: ^1.1.0
+    postcss-lightningcss: ^1.0.1
+    postcss-preset-env: ^10.0.0
     stylelint: 16.26.1
+    stylelint-config-clean-order: ^8.0.0
+    stylelint-config-standard: ^39.0.0
+    stylelint-no-unsupported-browser-features: ^8.0.2
     typescript-eslint: ^8.34.0
-catalog:
-  "@babel/plugin-proposal-decorators": ^7.28.0
-  "@babel/plugin-transform-runtime": ^7.28.5
-  "@babel/plugin-transform-typescript": ^7.28.5
-  "@babel/preset-env": 7.28.5
-  "@babel/runtime": ^7.28.4
-  "@ember/app-tsconfig": ^2.0.0
-  "@ember/library-tsconfig": ^2.0.0
-  "@ember/string": ^4.0.1
-  "@ember/test-waiters": ^4.1.0
-  "@embroider/addon-dev": 8.2.0
-  "@embroider/addon-shim": ^1.8.9
-  "@embroider/compat": ^4.1.12
-  "@embroider/config-meta-loader": ^1.0.0
-  "@embroider/core": ^4.4.2
-  "@embroider/macros": ^1.19.6
-  "@embroider/router": ^3.0.6
-  "@embroider/vite": ^1.5.0
-  "@eslint/js": ^9.39.2
-  "@glimmer/tracking": 1.1.2
-  "@glimmer/validator": 0.95.0
-  "@glint/core": ^2.0.0-alpha.2
-  "@glint/environment-ember-loose": ^2.0.0-alpha.3
-  "@glint/environment-ember-template-imports": ^2.0.0-alpha.3
-  "@glint/template": ^1.7.3
-  "@types/qunit": ^2.19.13
-  "@types/rsvp": ^4.0.9
-  "@typescript-eslint/eslint-plugin": ^8.47.0
-  "@typescript-eslint/parser": ^8.47.0
-  babel-plugin-ember-template-compilation: ^3.0.1
-  broccoli-asset-rev: 3.0.0
-  ember-cli-app-version: 7.0.0
-  ember-cli-dependency-checker: 3.3.3
-  ember-cli-deprecation-workflow: ^4.0.0
-  ember-cli-inject-live-reload: 2.1.0
-  ember-cli-sri: 2.1.1
-  ember-cli-terser: 4.0.2
-  ember-cli-typescript: 5.3.0
-  ember-qunit: ^9.0.4
-  ember-template-imports: 4.4.0
-  ember-template-lint: ^7.9.3
-  ember-template-lint-plugin-prettier: ^5.0.0
-  loader.js: 4.7.0
-  postcss: 8.5.6
-  postcss-each: ^1.1.0
-  postcss-lightningcss: ^1.0.1
-  postcss-preset-env: ^10.0.0
-  prettier-plugin-ember-template-tag: ^2.0.2
-  qunit: ^2.24.3
-  qunit-dom: ^3.5.0
-  release-plan: 0.17.2
-  rollup: 4.54.0
-  storybook: ^10.1.10
-  stylelint-config-clean-order: ^8.0.0
-  stylelint-config-standard: ^39.0.0
-  stylelint-no-unsupported-browser-features: ^8.0.2
-  testem: ^3.17.0
-  tracked-built-ins: ^4.1.0
-  tsdown: ^0.18.4
-  vite: ^7.3.0
-  vitest: ^4.0.16
-  webpack: 5.104.1
+    "@typescript-eslint/eslint-plugin": ^8.47.0
+    "@typescript-eslint/parser": ^8.47.0
+  ember:
+    "@ember/app-tsconfig": ^2.0.0
+    "@ember/library-tsconfig": ^2.0.0
+    "@ember/string": ^4.0.1
+    "@ember/test-waiters": ^4.1.0
+    "@embroider/addon-dev": 8.2.0
+    "@embroider/addon-shim": ^1.8.9
+    "@embroider/compat": ^4.1.12
+    "@embroider/config-meta-loader": ^1.0.0
+    "@embroider/core": ^4.4.2
+    "@embroider/macros": ^1.19.6
+    "@embroider/router": ^3.0.6
+    "@embroider/vite": ^1.5.0
+    "@glimmer/tracking": 1.1.2
+    "@glimmer/validator": 0.95.0
+    "@glint/core": ^2.0.0-alpha.2
+    "@glint/environment-ember-loose": ^2.0.0-alpha.3
+    "@glint/environment-ember-template-imports": ^2.0.0-alpha.3
+    "@glint/template": ^1.7.3
+    broccoli-asset-rev: 3.0.0
+    ember-cli-app-version: 7.0.0
+    ember-cli-dependency-checker: 3.3.3
+    ember-cli-deprecation-workflow: ^4.0.0
+    ember-cli-inject-live-reload: 2.1.0
+    ember-cli-sri: 2.1.1
+    ember-cli-terser: 4.0.2
+    ember-cli-typescript: 5.3.0
+    ember-template-imports: 4.4.0
+    ember-template-lint: ^7.9.3
+    ember-template-lint-plugin-prettier: ^5.0.0
+    loader.js: 4.7.0
+    tracked-built-ins: ^4.1.0
+  types:
+    "@types/qunit": ^2.19.13
+    "@types/rsvp": ^4.0.9
+  test:
+    ember-qunit: ^9.0.4
+    qunit: ^2.24.3
+    qunit-dom: ^3.5.0
+    testem: ^3.17.0
+    vitest: ^4.0.16
+  lib:
+    storybook: ^10.1.10
