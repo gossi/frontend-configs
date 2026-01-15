@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2"
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint"
   },
   "engines": {
     "node": "^20.11.0 || >=22"

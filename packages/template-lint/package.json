@@ -24,9 +24,9 @@
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "ember-template-lint": "^7.9.3",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2"
+    "ember-template-lint": "^catalog:lint",
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
