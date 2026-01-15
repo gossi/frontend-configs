@@ -18,9 +18,9 @@
     "@gossi/config-targets": "workspace:*",
     "eslint": "catalog:lint",
     "prettier": "catalog:lint",
-    "tsdown": "^0.18.4",
+    "tsdown": "catalog:",
     "typescript": "5.9.3",
-    "vitest": "^4.0.16"
+    "vitest": "catalog:"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
