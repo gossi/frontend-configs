@@ -16,7 +16,7 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
-    "ember-template-lint-plugin-prettier": "catalog:"
+    "ember-template-lint-plugin-prettier": "catalog:ember"
   },
   "peerDependencies": {
     "ember-template-lint": "^7.0.0"
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "ember-template-lint": "catalog:",
+    "ember-template-lint": "catalog:ember",
     "eslint": "catalog:lint",
     "prettier": "catalog:lint"
   },

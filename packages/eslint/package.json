@@ -20,7 +20,7 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@eslint/js": "catalog:",
+    "@eslint/js": "catalog:lint",
     "@stylistic/eslint-plugin": "catalog:lint",
     "eslint-config-prettier": "catalog:lint",
     "eslint-plugin-decorator-position": "catalog:lint",
@@ -31,7 +31,7 @@
     "eslint-plugin-prettier": "catalog:lint",
     "eslint-plugin-simple-import-sort": "catalog:lint",
     "eslint-plugin-unicorn": "catalog:lint",
-    "globals": "^16.2.0",
+    "globals": "catalog:lib",
     "typescript-eslint": "catalog:lint"
   },
   "peerDependencies": {
@@ -56,14 +56,14 @@
     }
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.28.5",
-    "@babel/plugin-proposal-decorators": "catalog:",
-    "@babel/preset-env": "catalog:",
+    "@babel/eslint-parser": "catalog:build",
+    "@babel/plugin-proposal-decorators": "catalog:build",
+    "@babel/preset-env": "catalog:build",
     "eslint": "catalog:lint",
     "eslint-plugin-ember": "catalog:lint",
     "eslint-plugin-qunit": "catalog:lint",
     "prettier": "catalog:lint",
-    "typescript": "5.9.3"
+    "typescript": "catalog:build"
   },
   "engines": {
     "node": "^20.11.0 || >=22"

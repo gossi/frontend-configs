@@ -5,7 +5,13 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
-  default:
+  build:
+    '@babel/core':
+      specifier: ^7.28.5
+      version: 7.28.5
+    '@babel/eslint-parser':
+      specifier: ^7.28.5
+      version: 7.28.5
     '@babel/plugin-proposal-decorators':
       specifier: ^7.28.0
       version: 7.28.0
@@ -21,12 +27,40 @@ catalogs:
     '@babel/runtime':
       specifier: ^7.28.4
       version: 7.28.4
+    '@rollup/plugin-babel':
+      specifier: 6.1.0
+      version: 6.1.0
+    babel-plugin-ember-template-compilation:
+      specifier: ^3.0.1
+      version: 3.0.1
+    decorator-transforms:
+      specifier: ^2.3.0
+      version: 2.3.0
+    rollup:
+      specifier: 4.54.0
+      version: 4.54.0
+    tsdown:
+      specifier: ^0.18.4
+      version: 0.18.4
+    typescript:
+      specifier: ^5.9.3
+      version: 5.9.3
+    vite:
+      specifier: ^7.3.0
+      version: 7.3.0
+    webpack:
+      specifier: 5.104.1
+      version: 5.104.1
+  ember:
     '@ember/app-tsconfig':
       specifier: ^2.0.0
       version: 2.0.0
     '@ember/library-tsconfig':
       specifier: ^2.0.0
       version: 2.0.0
+    '@ember/optional-features':
+      specifier: 2.3.0
+      version: 2.3.0
     '@ember/string':
       specifier: ^4.0.1
       version: 4.0.1
@@ -57,9 +91,9 @@ catalogs:
     '@embroider/vite':
       specifier: ^1.5.0
       version: 1.5.0
-    '@eslint/js':
-      specifier: ^9.39.2
-      version: 9.39.2
+    '@glimmer/component':
+      specifier: ^2.0.0
+      version: 2.0.0
     '@glimmer/tracking':
       specifier: 1.1.2
       version: 1.1.2
@@ -78,33 +112,30 @@ catalogs:
     '@glint/template':
       specifier: ^1.7.3
       version: 1.7.3
-    '@types/qunit':
-      specifier: ^2.19.13
-      version: 2.19.13
-    '@types/rsvp':
-      specifier: ^4.0.9
-      version: 4.0.9
-    '@typescript-eslint/eslint-plugin':
-      specifier: ^8.47.0
-      version: 8.47.0
-    '@typescript-eslint/parser':
-      specifier: ^8.47.0
-      version: 8.47.0
-    babel-plugin-ember-template-compilation:
-      specifier: ^3.0.1
-      version: 3.0.1
     broccoli-asset-rev:
       specifier: 3.0.0
       version: 3.0.0
+    ember-auto-import:
+      specifier: 2.12.0
+      version: 2.12.0
+    ember-cli:
+      specifier: 6.9.1
+      version: 6.9.1
     ember-cli-app-version:
       specifier: 7.0.0
       version: 7.0.0
+    ember-cli-babel:
+      specifier: 8.2.0
+      version: 8.2.0
     ember-cli-dependency-checker:
       specifier: 3.3.3
       version: 3.3.3
     ember-cli-deprecation-workflow:
       specifier: ^4.0.0
       version: 4.0.0
+    ember-cli-htmlbars:
+      specifier: ^7.0.0
+      version: 7.0.0
     ember-cli-inject-live-reload:
       specifier: 2.1.0
       version: 2.1.0
@@ -117,9 +148,21 @@ catalogs:
     ember-cli-typescript:
       specifier: 5.3.0
       version: 5.3.0
-    ember-qunit:
-      specifier: ^9.0.4
-      version: 9.0.4
+    ember-load-initializers:
+      specifier: ^3.0.1
+      version: 3.0.1
+    ember-modifier:
+      specifier: 4.2.2
+      version: 4.2.2
+    ember-page-title:
+      specifier: 9.0.3
+      version: 9.0.3
+    ember-resolver:
+      specifier: 13.1.1
+      version: 13.1.1
+    ember-source:
+      specifier: 6.9.0
+      version: 6.9.0
     ember-template-imports:
       specifier: 4.4.0
       version: 4.4.0
@@ -132,67 +175,32 @@ catalogs:
     loader.js:
       specifier: 4.7.0
       version: 4.7.0
-    postcss:
-      specifier: 8.5.6
-      version: 8.5.6
-    postcss-each:
-      specifier: ^1.1.0
-      version: 1.1.0
-    postcss-lightningcss:
-      specifier: ^1.0.1
-      version: 1.0.1
-    postcss-preset-env:
-      specifier: ^10.0.0
-      version: 10.2.0
-    prettier-plugin-ember-template-tag:
-      specifier: ^2.0.2
-      version: 2.0.5
-    qunit:
-      specifier: ^2.24.3
-      version: 2.24.3
-    qunit-dom:
-      specifier: ^3.5.0
-      version: 3.5.0
-    release-plan:
-      specifier: 0.17.2
-      version: 0.17.2
-    rollup:
-      specifier: 4.54.0
-      version: 4.54.0
-    storybook:
-      specifier: ^10.1.10
-      version: 10.1.10
-    stylelint-config-clean-order:
-      specifier: ^8.0.0
-      version: 8.0.0
-    stylelint-config-standard:
-      specifier: ^39.0.0
-      version: 39.0.1
-    stylelint-no-unsupported-browser-features:
-      specifier: ^8.0.2
-      version: 8.0.4
-    testem:
-      specifier: ^3.17.0
-      version: 3.17.0
     tracked-built-ins:
       specifier: ^4.1.0
       version: 4.1.0
-    tsdown:
-      specifier: ^0.18.4
-      version: 0.18.4
-    vite:
-      specifier: ^7.3.0
-      version: 7.3.0
-    vitest:
-      specifier: ^4.0.16
-      version: 4.0.16
-    webpack:
-      specifier: 5.104.1
-      version: 5.104.1
+  lib:
+    '@storybook/types':
+      specifier: ^8.6.14
+      version: 8.6.14
+    globals:
+      specifier: ^16.5.0
+      version: 16.5.0
+    storybook:
+      specifier: ^10.1.10
+      version: 10.1.10
   lint:
+    '@eslint/js':
+      specifier: ^9.29.0
+      version: 9.39.2
     '@stylistic/eslint-plugin':
       specifier: ^5.0.0
       version: 5.1.0
+    '@typescript-eslint/eslint-plugin':
+      specifier: ^8.47.0
+      version: 8.47.0
+    '@typescript-eslint/parser':
+      specifier: ^8.47.0
+      version: 8.47.0
     eslint:
       specifier: ^9.39.1
       version: 9.39.1
@@ -232,28 +240,78 @@ catalogs:
     eslint-plugin-unicorn:
       specifier: ^62.0.0
       version: 62.0.0
+    postcss:
+      specifier: 8.5.6
+      version: 8.5.6
+    postcss-each:
+      specifier: ^1.1.0
+      version: 1.1.0
+    postcss-lightningcss:
+      specifier: ^1.0.1
+      version: 1.0.1
+    postcss-preset-env:
+      specifier: ^10.0.0
+      version: 10.2.0
     prettier:
       specifier: ^3.6.2
       version: 3.6.2
+    prettier-plugin-ember-template-tag:
+      specifier: ^2.0.2
+      version: 2.0.5
     stylelint:
       specifier: 16.26.1
       version: 16.26.1
+    stylelint-config-clean-order:
+      specifier: ^8.0.0
+      version: 8.0.0
+    stylelint-config-standard:
+      specifier: ^39.0.0
+      version: 39.0.1
+    stylelint-no-unsupported-browser-features:
+      specifier: ^8.0.2
+      version: 8.0.4
     typescript-eslint:
       specifier: ^8.34.0
       version: 8.47.0
+  test:
+    '@ember/test-helpers':
+      specifier: 5.4.1
+      version: 5.4.1
+    ember-qunit:
+      specifier: ^9.0.4
+      version: 9.0.4
+    qunit:
+      specifier: ^2.24.3
+      version: 2.24.3
+    qunit-dom:
+      specifier: ^3.5.0
+      version: 3.5.0
+    testem:
+      specifier: ^3.17.0
+      version: 3.17.0
+    vitest:
+      specifier: ^4.0.16
+      version: 4.0.16
+  types:
+    '@types/qunit':
+      specifier: ^2.19.13
+      version: 2.19.13
+    '@types/rsvp':
+      specifier: ^4.0.9
+      version: 4.0.9
 
 importers:
 
   .:
     devDependencies:
       release-plan:
-        specifier: 'catalog:'
-        version: 0.17.2
+        specifier: ^0.17.4
+        version: 0.17.4
 
   packages/eslint:
     dependencies:
       '@eslint/js':
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 9.39.2
       '@stylistic/eslint-plugin':
         specifier: catalog:lint
@@ -286,20 +344,20 @@ importers:
         specifier: catalog:lint
         version: 62.0.0(eslint@9.39.1(jiti@2.6.1))
       globals:
-        specifier: ^16.2.0
+        specifier: catalog:lib
         version: 16.5.0
       typescript-eslint:
         specifier: catalog:lint
         version: 8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
     devDependencies:
       '@babel/eslint-parser':
-        specifier: 7.28.5
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@2.6.1))
       '@babel/plugin-proposal-decorators':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.0(@babel/core@7.28.5)
       '@babel/preset-env':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)
       eslint:
         specifier: catalog:lint
@@ -314,7 +372,7 @@ importers:
         specifier: catalog:lint
         version: 3.6.2
       typescript:
-        specifier: 5.9.3
+        specifier: catalog:build
         version: 5.9.3
 
   packages/postcss:
@@ -323,13 +381,13 @@ importers:
         specifier: workspace:*
         version: link:../targets
       postcss-each:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 1.1.0(postcss@8.5.6)
       postcss-lightningcss:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 1.0.1(postcss@8.5.6)
       postcss-preset-env:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 10.2.0(postcss@8.5.6)
     devDependencies:
       '@gossi/config-eslint':
@@ -342,7 +400,7 @@ importers:
         specifier: catalog:lint
         version: 9.39.1(jiti@2.6.1)
       postcss:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 8.5.6
       prettier:
         specifier: catalog:lint
@@ -351,7 +409,7 @@ importers:
   packages/prettier:
     dependencies:
       prettier-plugin-ember-template-tag:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 2.0.5(prettier@3.6.2)
     devDependencies:
       '@gossi/config-eslint':
@@ -370,13 +428,13 @@ importers:
         specifier: workspace:*
         version: link:../targets
       stylelint-config-clean-order:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 8.0.0(stylelint-order@6.0.4(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-standard:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 39.0.1(stylelint@16.26.1(typescript@5.9.3))
       stylelint-no-unsupported-browser-features:
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 8.0.4(stylelint@16.26.1(typescript@5.9.3))
     devDependencies:
       '@gossi/config-eslint':
@@ -413,7 +471,7 @@ importers:
   packages/template-lint:
     dependencies:
       ember-template-lint-plugin-prettier:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 5.0.0(ember-template-lint@7.9.3)(prettier@3.6.2)
     devDependencies:
       '@gossi/config-eslint':
@@ -423,7 +481,7 @@ importers:
         specifier: workspace:*
         version: link:../prettier
       ember-template-lint:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 7.9.3
       eslint:
         specifier: catalog:lint
@@ -450,74 +508,74 @@ importers:
         specifier: catalog:lint
         version: 3.6.2
       tsdown:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 0.18.4(synckit@0.11.11)(typescript@5.9.3)
       typescript:
-        specifier: 5.9.3
+        specifier: catalog:build
         version: 5.9.3
       vitest:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 4.0.16(@types/node@22.15.32)(jiti@2.6.1)(jsdom@26.1.0)(lightningcss@1.30.1)(terser@5.40.0)
 
   testing/ember-addon:
     dependencies:
       '@embroider/addon-shim':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.10.2
       decorator-transforms:
-        specifier: ^2.2.2
+        specifier: catalog:build
         version: 2.3.0(@babel/core@7.28.5)
     devDependencies:
       '@babel/core':
-        specifier: 7.28.5
+        specifier: catalog:build
         version: 7.28.5
       '@babel/eslint-parser':
-        specifier: ^7.28.5
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@2.6.1))
       '@babel/plugin-transform-typescript':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)
       '@babel/runtime':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.4
       '@ember/app-tsconfig':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0
       '@ember/library-tsconfig':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0
       '@ember/test-helpers':
-        specifier: ^5.4.1
+        specifier: catalog:test
         version: 5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3)
       '@embroider/addon-dev':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 8.2.0(@glint/template@1.7.3)(rollup@4.54.0)
       '@embroider/compat':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.1.12(@embroider/core@4.4.2(@glint/template@1.7.3))(@glint/template@1.7.3)
       '@embroider/core':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.4.2(@glint/template@1.7.3)
       '@embroider/macros':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.19.6(@glint/template@1.7.3)
       '@embroider/vite':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.5.0(@embroider/core@4.4.2(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.54.0)(vite@7.3.0(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
       '@glimmer/component':
-        specifier: ^2.0.0
+        specifier: catalog:ember
         version: 2.0.0
       '@glint/core':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.2(typescript@5.9.3)
       '@glint/environment-ember-loose':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5))
       '@glint/environment-ember-template-imports':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/environment-ember-loose@2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5)))(@glint/template@1.7.3)
       '@glint/template':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.7.3
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -535,34 +593,34 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@rollup/plugin-babel':
-        specifier: 6.1.0
+        specifier: catalog:build
         version: 6.1.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(rollup@4.54.0)
       '@storybook/types':
-        specifier: ^8.6.14
+        specifier: catalog:lib
         version: 8.6.14(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@types/qunit':
-        specifier: 'catalog:'
+        specifier: catalog:types
         version: 2.19.13
       babel-plugin-ember-template-compilation:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 3.0.1
       ember-cli-htmlbars:
-        specifier: 7.0.0
+        specifier: catalog:ember
         version: 7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
-        specifier: 4.2.2
+        specifier: catalog:ember
         version: 4.2.2(@babel/core@7.28.5)
       ember-qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3))(@glint/template@1.7.3)(qunit@2.24.3)
       ember-resolver:
-        specifier: ^13.1.1
+        specifier: catalog:ember
         version: 13.1.1
       ember-source:
-        specifier: 6.9.0
+        specifier: catalog:ember
         version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 7.9.3
       eslint:
         specifier: catalog:lint
@@ -580,67 +638,67 @@ importers:
         specifier: catalog:lint
         version: 3.6.2
       qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 2.24.3
       qunit-dom:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 3.5.0
       rollup:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 4.54.0
       storybook:
-        specifier: 'catalog:'
+        specifier: catalog:lib
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
         version: 16.26.1(typescript@5.9.3)
       testem:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 3.17.0(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       typescript:
-        specifier: 5.9.3
+        specifier: catalog:build
         version: 5.9.3
       vite:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.3.0(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
 
   testing/ember-app-classic:
     devDependencies:
       '@babel/core':
-        specifier: 7.28.5
+        specifier: catalog:build
         version: 7.28.5
       '@babel/plugin-proposal-decorators':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.0(@babel/core@7.28.5)
       '@ember/app-tsconfig':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0
       '@ember/optional-features':
-        specifier: 2.3.0
+        specifier: catalog:ember
         version: 2.3.0
       '@ember/test-helpers':
-        specifier: 5.4.1
+        specifier: catalog:test
         version: 5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3)
       '@glimmer/component':
-        specifier: 2.0.0
+        specifier: catalog:ember
         version: 2.0.0
       '@glimmer/tracking':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.1.2
       '@glimmer/validator':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 0.95.0
       '@glint/core':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.2(typescript@5.9.3)
       '@glint/environment-ember-loose':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5))
       '@glint/environment-ember-template-imports':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/environment-ember-loose@2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5)))(@glint/template@1.7.3)
       '@glint/template':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.7.3
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -658,76 +716,76 @@ importers:
         specifier: workspace:*
         version: link:../../packages/template-lint
       '@storybook/types':
-        specifier: 8.6.14
+        specifier: catalog:lib
         version: 8.6.14(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@types/qunit':
-        specifier: 'catalog:'
+        specifier: catalog:types
         version: 2.19.13
       '@types/rsvp':
-        specifier: 'catalog:'
+        specifier: catalog:types
         version: 4.0.9
       '@typescript-eslint/eslint-plugin':
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 8.47.0(@typescript-eslint/parser@8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       broccoli-asset-rev:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 3.0.0
       ember-auto-import:
-        specifier: 2.12.0
+        specifier: catalog:ember
         version: 2.12.0(@glint/template@1.7.3)(webpack@5.104.1)
       ember-cli:
-        specifier: 6.9.1
+        specifier: catalog:ember
         version: 6.9.1(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       ember-cli-app-version:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 7.0.0(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-babel:
-        specifier: 8.2.0
+        specifier: catalog:ember
         version: 8.2.0(@babel/core@7.28.5)
       ember-cli-dependency-checker:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 3.3.3(ember-cli@6.9.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       ember-cli-htmlbars:
-        specifier: 7.0.0
+        specifier: catalog:ember
         version: 7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-inject-live-reload:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.1.0
       ember-cli-sri:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.1.1
       ember-cli-terser:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.0.2
       ember-cli-typescript:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 5.3.0
       ember-load-initializers:
-        specifier: 3.0.1
+        specifier: catalog:ember
         version: 3.0.1(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
-        specifier: 4.2.2
+        specifier: catalog:ember
         version: 4.2.2(@babel/core@7.28.5)
       ember-page-title:
-        specifier: 9.0.3
+        specifier: catalog:ember
         version: 9.0.3
       ember-qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3))(@glint/template@1.7.3)(qunit@2.24.3)
       ember-resolver:
-        specifier: 13.1.1
+        specifier: catalog:ember
         version: 13.1.1
       ember-source:
-        specifier: 6.9.0
+        specifier: catalog:ember
         version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-imports:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.4.0
       ember-template-lint:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 7.9.3
       ember-welcome-page:
         specifier: 8.0.4
@@ -745,97 +803,97 @@ importers:
         specifier: catalog:lint
         version: 10.0.8(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
       loader.js:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.7.0
       prettier:
         specifier: catalog:lint
         version: 3.6.2
       qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 2.24.3
       qunit-dom:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 3.5.0
       storybook:
-        specifier: 'catalog:'
+        specifier: catalog:lib
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
         version: 16.26.1(typescript@5.9.3)
       typescript:
-        specifier: 5.9.3
+        specifier: catalog:build
         version: 5.9.3
       webpack:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 5.104.1
 
   testing/ember-app-vite:
     devDependencies:
       '@babel/core':
-        specifier: ^7.28.5
+        specifier: catalog:build
         version: 7.28.5
       '@babel/eslint-parser':
-        specifier: ^7.28.5
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@2.6.1))
       '@babel/plugin-transform-runtime':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)
       '@babel/plugin-transform-typescript':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.5(@babel/core@7.28.5)
       '@babel/runtime':
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.28.4
       '@ember/app-tsconfig':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0
       '@ember/optional-features':
-        specifier: ^2.3.0
+        specifier: catalog:ember
         version: 2.3.0
       '@ember/string':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.0.1
       '@ember/test-helpers':
-        specifier: ^5.4.1
+        specifier: catalog:test
         version: 5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3)
       '@ember/test-waiters':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.1.0(@glint/template@1.7.3)
       '@embroider/compat':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.1.12(@embroider/core@4.4.2(@glint/template@1.7.3))(@glint/template@1.7.3)
       '@embroider/config-meta-loader':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.0.0
       '@embroider/core':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.4.2(@glint/template@1.7.3)
       '@embroider/macros':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.19.6(@glint/template@1.7.3)
       '@embroider/router':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 3.0.6(@embroider/core@4.4.2(@glint/template@1.7.3))(@glint/template@1.7.3)
       '@embroider/vite':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.5.0(@embroider/core@4.4.2(@glint/template@1.7.3))(@glint/template@1.7.3)(rollup@4.54.0)(vite@7.3.0(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0))
       '@eslint/js':
-        specifier: 'catalog:'
+        specifier: catalog:lint
         version: 9.39.2
       '@glimmer/component':
-        specifier: ^2.0.0
+        specifier: catalog:ember
         version: 2.0.0
       '@glint/core':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.2(typescript@5.9.3)
       '@glint/environment-ember-loose':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5))
       '@glint/environment-ember-template-imports':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 2.0.0-alpha.3(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/environment-ember-loose@2.0.0-alpha.3(@glimmer/component@2.0.0)(@glint/core@2.0.0-alpha.2(typescript@5.9.3))(@glint/template@1.7.3)(ember-cli-htmlbars@7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-modifier@4.2.2(@babel/core@7.28.5)))(@glint/template@1.7.3)
       '@glint/template':
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 1.7.3
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -853,55 +911,55 @@ importers:
         specifier: ^6.1.0
         version: 6.1.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(rollup@4.54.0)
       '@storybook/types':
-        specifier: ^8.6.14
+        specifier: catalog:lib
         version: 8.6.14(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@types/qunit':
-        specifier: 'catalog:'
+        specifier: catalog:types
         version: 2.19.13
       '@types/rsvp':
-        specifier: 'catalog:'
+        specifier: catalog:types
         version: 4.0.9
       babel-plugin-ember-template-compilation:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 3.0.1
       decorator-transforms:
-        specifier: ^2.3.0
+        specifier: catalog:build
         version: 2.3.0(@babel/core@7.28.5)
       ember-auto-import:
-        specifier: ^2.12.0
+        specifier: catalog:ember
         version: 2.12.0(@glint/template@1.7.3)(webpack@5.104.1)
       ember-cli:
-        specifier: ~6.9.1
+        specifier: catalog:ember
         version: 6.9.1(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       ember-cli-babel:
-        specifier: ^8.2.0
+        specifier: catalog:ember
         version: 8.2.0(@babel/core@7.28.5)
       ember-cli-deprecation-workflow:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.0.0(@babel/core@7.28.5)
       ember-cli-htmlbars:
-        specifier: ^7.0.0
+        specifier: catalog:ember
         version: 7.0.0(@babel/core@7.28.5)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-load-initializers:
-        specifier: ^3.0.1
+        specifier: catalog:ember
         version: 3.0.1(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
-        specifier: ^4.2.2
+        specifier: catalog:ember
         version: 4.2.2(@babel/core@7.28.5)
       ember-page-title:
-        specifier: ^9.0.3
+        specifier: catalog:ember
         version: 9.0.3
       ember-qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.28.5)(@glint/template@1.7.3))(@glint/template@1.7.3)(qunit@2.24.3)
       ember-resolver:
-        specifier: ^13.1.1
+        specifier: catalog:ember
         version: 13.1.1
       ember-source:
-        specifier: ~6.9.0
+        specifier: catalog:ember
         version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 7.9.3
       ember-welcome-page:
         specifier: ^8.0.4
@@ -919,37 +977,37 @@ importers:
         specifier: catalog:lint
         version: 10.0.8(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
       globals:
-        specifier: ^16.5.0
+        specifier: catalog:lib
         version: 16.5.0
       prettier:
         specifier: catalog:lint
         version: 3.6.2
       qunit:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 2.24.3
       qunit-dom:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 3.5.0
       storybook:
-        specifier: 'catalog:'
+        specifier: catalog:lib
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
         version: 16.26.1(typescript@5.9.3)
       testem:
-        specifier: 'catalog:'
+        specifier: catalog:test
         version: 3.17.0(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       tracked-built-ins:
-        specifier: 'catalog:'
+        specifier: catalog:ember
         version: 4.1.0(@babel/core@7.28.5)
       typescript:
-        specifier: ^5.9.3
+        specifier: catalog:build
         version: 5.9.3
       typescript-eslint:
         specifier: catalog:lint
         version: 8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vite:
-        specifier: 'catalog:'
+        specifier: catalog:build
         version: 7.3.0(@types/node@22.15.32)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.40.0)
 
 packages:
@@ -5392,8 +5450,8 @@ packages:
     resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
     engines: {node: '>= 4.0'}
 
-  github-changelog@2.1.2:
-    resolution: {integrity: sha512-psDEGxwD5fWDLOW+BOORg1JgZOnbCuMhNLevsD/nP7QVXEVExUGnXBP6MmrFm0hAao9LgBLSBKfcNzGuwecRDA==}
+  github-changelog@2.1.4:
+    resolution: {integrity: sha512-mZQF/YC9OR8XMGpYlLQqG66RiKwlaQZ7rXTZug28oOYkzOXd0acszuvYHVzPlYmns1aDDSwQkbzFxNOYpWhmig==}
     engines: {node: 18.* || 20.* || >= 22}
     hasBin: true
 
@@ -7472,8 +7530,8 @@ packages:
     resolution: {integrity: sha512-NZQZdC5wOE/H3UT28fVGL+ikOZcEzfMGk/c3iN9UGxzWHMa1op7274oyiUVrAG4B2EuFhus8SvkaYnhvW92p9Q==}
     hasBin: true
 
-  release-plan@0.17.2:
-    resolution: {integrity: sha512-LgE/3CU8sFZt28uJR886xvWdw/CL0g5g5YSFTAJUvUy5qdERZdcc1pu317nKpYFs/yEDjiUasLj3rxnXBJf1zA==}
+  release-plan@0.17.4:
+    resolution: {integrity: sha512-CK+RrsvP6JXysgFuqUoOvprAT95J5x8usHzAQh3M1RMQqFScnAyfY6lb1LBsjqW/HUsvLjkLfSp8dJseRHEpEw==}
     hasBin: true
 
   remove-trailing-separator@1.1.0:
@@ -14616,7 +14674,7 @@ snapshots:
 
   git-repo-info@2.1.1: {}
 
-  github-changelog@2.1.2:
+  github-changelog@2.1.4:
     dependencies:
       '@manypkg/get-packages': 2.2.2
       chalk: 4.1.2
@@ -16798,7 +16856,7 @@ snapshots:
     dependencies:
       jsesc: 3.1.0
 
-  release-plan@0.17.2:
+  release-plan@0.17.4:
     dependencies:
       '@manypkg/get-packages': 2.2.2
       '@npmcli/package-json': 6.2.0
@@ -16808,7 +16866,7 @@ snapshots:
       cli-highlight: 2.1.11
       execa: 9.6.0
       fs-extra: 11.3.0
-      github-changelog: 2.1.2
+      github-changelog: 2.1.4
       js-yaml: 4.1.0
       latest-version: 9.0.0
       parse-github-repo-url: 1.4.1

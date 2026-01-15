@@ -18,14 +18,14 @@
   },
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
-    "postcss-each": "catalog:",
-    "postcss-lightningcss": "catalog:",
-    "postcss-preset-env": "catalog:"
+    "postcss-each": "catalog:lint",
+    "postcss-lightningcss": "catalog:lint",
+    "postcss-preset-env": "catalog:lint"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "postcss": "catalog:",
+    "postcss": "catalog:lint",
     "eslint": "catalog:lint",
     "prettier": "catalog:lint"
   },
