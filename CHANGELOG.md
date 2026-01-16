@@ -1,5 +1,28 @@
 # Changelog
 
+## Release (2026-01-16)
+
+* @gossi/config-eslint 1.3.2 (patch)
+* @gossi/config-postcss 1.1.2 (patch)
+* @gossi/config-prettier 1.2.0 (minor)
+* @gossi/config-stylelint 1.1.2 (patch)
+* @gossi/config-targets 1.1.2 (patch)
+* @gossi/config-template-lint 1.2.1 (patch)
+
+#### :rocket: Enhancement
+* `@gossi/config-prettier`
+  * [#1468](https://github.com/gossi/frontend-configs/pull/1468) Update ember plugin for prettier ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* Other
+  * [#1467](https://github.com/gossi/frontend-configs/pull/1467) Set node env for ember testing on vite ([@gossi](https://github.com/gossi))
+  * [#1466](https://github.com/gossi/frontend-configs/pull/1466) Update to glint v2 ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1465](https://github.com/gossi/frontend-configs/pull/1465) Use pnpm catalog ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2025-10-22)
 
 * @gossi/config-template-lint 1.2.0 (minor)
