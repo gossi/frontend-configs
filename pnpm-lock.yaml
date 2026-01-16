@@ -115,9 +115,6 @@ catalogs:
     broccoli-asset-rev:
       specifier: 3.0.0
       version: 3.0.0
-    ember-auto-import:
-      specifier: 2.12.0
-      version: 2.12.0
     ember-cli:
       specifier: 6.9.1
       version: 6.9.1
@@ -734,7 +731,7 @@ importers:
         specifier: catalog:ember
         version: 3.0.0
       ember-auto-import:
-        specifier: catalog:ember
+        specifier: ^2.12.0
         version: 2.12.0(@glint/template@1.7.3)(webpack@5.104.1)
       ember-cli:
         specifier: catalog:ember
@@ -926,7 +923,7 @@ importers:
         specifier: catalog:build
         version: 2.3.0(@babel/core@7.28.5)
       ember-auto-import:
-        specifier: catalog:ember
+        specifier: ^2.12.0
         version: 2.12.0(@glint/template@1.7.3)(webpack@5.104.1)
       ember-cli:
         specifier: catalog:ember

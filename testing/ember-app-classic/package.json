@@ -43,7 +43,7 @@
     "@typescript-eslint/eslint-plugin": "catalog:lint",
     "@typescript-eslint/parser": "catalog:lint",
     "broccoli-asset-rev": "catalog:ember",
-    "ember-auto-import": "catalog:ember",
+    "ember-auto-import": "^2.12.0",
     "ember-cli": "catalog:ember",
     "ember-cli-app-version": "catalog:ember",
     "ember-cli-babel": "catalog:ember",

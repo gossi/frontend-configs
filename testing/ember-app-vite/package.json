@@ -64,7 +64,7 @@
     "@types/rsvp": "catalog:types",
     "babel-plugin-ember-template-compilation": "catalog:build",
     "decorator-transforms": "catalog:build",
-    "ember-auto-import": "catalog:ember",
+    "ember-auto-import": "^2.12.0",
     "ember-cli": "catalog:ember",
     "ember-cli-babel": "catalog:ember",
     "ember-cli-deprecation-workflow": "catalog:ember",
