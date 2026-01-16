@@ -16,15 +16,15 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
-    "prettier-plugin-ember-template-tag": "^2.0.2"
+    "prettier-plugin-ember-template-tag": "catalog:lint"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2"
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint"
   },
   "engines": {
     "node": "^20.11.0 || >=22"

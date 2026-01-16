@@ -17,16 +17,16 @@
   },
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
-    "stylelint-config-clean-order": "^8.0.0",
-    "stylelint-config-standard": "^39.0.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.2"
+    "stylelint-config-clean-order": "catalog:lint",
+    "stylelint-config-standard": "catalog:lint",
+    "stylelint-no-unsupported-browser-features": "catalog:lint"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
-    "stylelint": "16.26.1"
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint",
+    "stylelint": "catalog:lint"
   },
   "peerDependencies": {
     "stylelint": "^16.3.1"

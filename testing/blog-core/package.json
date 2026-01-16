@@ -16,11 +16,11 @@
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",
     "@gossi/config-targets": "workspace:*",
-    "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
-    "tsdown": "^0.18.4",
-    "typescript": "5.9.3",
-    "vitest": "^4.0.16"
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint",
+    "tsdown": "catalog:build",
+    "typescript": "catalog:build",
+    "vitest": "catalog:test"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
