@@ -246,9 +246,6 @@ catalogs:
     prettier:
       specifier: ^3.8.0
       version: 3.8.0
-    prettier-plugin-ember-template-tag:
-      specifier: ^2.1.2
-      version: 2.1.2
     stylelint:
       specifier: 16.26.1
       version: 16.26.1
@@ -400,7 +397,7 @@ importers:
   packages/prettier:
     dependencies:
       prettier-plugin-ember-template-tag:
-        specifier: catalog:lint
+        specifier: ^2.1.2
         version: 2.1.2(prettier@3.8.0)
     devDependencies:
       '@gossi/config-eslint':
