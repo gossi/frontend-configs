@@ -16,7 +16,7 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
-    "prettier-plugin-ember-template-tag": "catalog:lint"
+    "prettier-plugin-ember-template-tag": "^2.1.2"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
