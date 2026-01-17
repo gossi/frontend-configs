@@ -59,7 +59,7 @@
     "ember-source": "catalog:ember",
     "ember-template-imports": "catalog:ember",
     "ember-template-lint": "catalog:ember",
-    "ember-welcome-page": "8.0.4",
+    "ember-welcome-page": "8.0.5",
     "eslint": "catalog:lint",
     "eslint-plugin-ember": "catalog:lint",
     "eslint-plugin-qunit": "catalog:lint",
