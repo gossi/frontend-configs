@@ -63,7 +63,7 @@ catalogs:
     "@glimmer/tracking": 1.1.2
     "@glimmer/validator": 0.95.0
     "@glimmer/component": "^2.0.0"
-    "@glint/ember-tsc": "1.0.9"
+    "@glint/ember-tsc": "1.1.0"
     "@glint/template": ^1.7.3
     broccoli-asset-rev: 3.0.0
     # ember-auto-import can't be in a catalog, it doesn't resolve then
