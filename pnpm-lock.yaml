@@ -143,8 +143,8 @@ catalogs:
       specifier: ^3.0.1
       version: 3.0.1
     ember-modifier:
-      specifier: 4.2.2
-      version: 4.2.2
+      specifier: 4.3.0
+      version: 4.3.0
     ember-page-title:
       specifier: 9.0.3
       version: 9.0.3
@@ -591,7 +591,7 @@ importers:
         version: 7.0.0(@babel/core@7.28.5)(ember-source@6.10.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
         specifier: catalog:ember
-        version: 4.2.2(@babel/core@7.28.5)
+        version: 4.3.0(@babel/core@7.28.5)
       ember-qunit:
         specifier: catalog:test
         version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.28.5)(@glint/template@1.7.4))(@glint/template@1.7.4)(qunit@2.24.3)
@@ -744,7 +744,7 @@ importers:
         version: 3.0.1(ember-source@6.10.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
         specifier: catalog:ember
-        version: 4.2.2(@babel/core@7.28.5)
+        version: 4.3.0(@babel/core@7.28.5)
       ember-page-title:
         specifier: catalog:ember
         version: 9.0.3
@@ -915,7 +915,7 @@ importers:
         version: 3.0.1(ember-source@6.10.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-modifier:
         specifier: catalog:ember
-        version: 4.2.2(@babel/core@7.28.5)
+        version: 4.3.0(@babel/core@7.28.5)
       ember-page-title:
         specifier: catalog:ember
         version: 9.0.3
@@ -4914,8 +4914,8 @@ packages:
     peerDependencies:
       ember-source: '>= 5'
 
-  ember-modifier@4.2.2:
-    resolution: {integrity: sha512-pPYBAGyczX0hedGWQFQOEiL9s45KS9efKxJxUQkMLjQyh+1Uef1mcmAGsdw2KmvNupITkE/nXxmVO1kZ9tt3ag==}
+  ember-modifier@4.3.0:
+    resolution: {integrity: sha512-O0rirSLQbGg0VJ/NqoQ4uN1bh2iAekZC/Ykma+FkjCM2ofrO38u+d8n3+AK6uVWeMJmogGX2KL+Is5fofoInJg==}
 
   ember-page-title@9.0.3:
     resolution: {integrity: sha512-fedRHUsvq8tIZgOii8jTrfAyeq+la/9H5eAzhNNwEyzo7nDMmqK2SxsyBUGXprd8fOacsPabLlzlucMi/4mUpA==}
@@ -14140,12 +14140,10 @@ snapshots:
     dependencies:
       ember-source: 6.10.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
 
-  ember-modifier@4.2.2(@babel/core@7.28.5):
+  ember-modifier@4.3.0(@babel/core@7.28.5):
     dependencies:
       '@embroider/addon-shim': 1.10.2
       decorator-transforms: 2.3.0(@babel/core@7.28.5)
-      ember-cli-normalize-entity-name: 1.0.0
-      ember-cli-string-utils: 1.1.0
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
