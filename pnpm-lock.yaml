@@ -110,8 +110,8 @@ catalogs:
       specifier: 3.0.0
       version: 3.0.0
     ember-cli:
-      specifier: 6.10.0
-      version: 6.10.0
+      specifier: 6.11.0
+      version: 6.11.0
     ember-cli-app-version:
       specifier: 7.0.0
       version: 7.0.0
@@ -714,7 +714,7 @@ importers:
         version: 2.12.0(@glint/template@1.7.4)(webpack@5.105.0)
       ember-cli:
         specifier: catalog:ember
-        version: 6.10.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
+        version: 6.11.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       ember-cli-app-version:
         specifier: catalog:ember
         version: 7.0.0(ember-source@6.10.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -723,7 +723,7 @@ importers:
         version: 8.3.1(@babel/core@7.28.5)
       ember-cli-dependency-checker:
         specifier: catalog:ember
-        version: 3.3.3(ember-cli@6.10.0(@types/node@22.15.32)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
+        version: 3.3.3(ember-cli@6.11.0(@types/node@22.15.32)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       ember-cli-htmlbars:
         specifier: catalog:ember
         version: 7.0.0(@babel/core@7.28.5)(ember-source@6.10.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -900,7 +900,7 @@ importers:
         version: 2.12.0(@glint/template@1.7.4)(webpack@5.105.0)
       ember-cli:
         specifier: catalog:ember
-        version: 6.10.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
+        version: 6.11.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       ember-cli-babel:
         specifier: catalog:ember
         version: 8.3.1(@babel/core@7.28.5)
@@ -1938,14 +1938,14 @@ packages:
   '@ember-tooling/blueprint-model@0.5.0':
     resolution: {integrity: sha512-2zAebSmmzpUO2wt6EyfX5TlcmvB9cTkteuZ3QhPmXLMthUpU5nUifcz3hlYcXPK7WM0HdO9qL4GdGQCoxhzaGg==}
 
-  '@ember-tooling/classic-build-addon-blueprint@6.10.0':
-    resolution: {integrity: sha512-pxXtpcU2VAHNow6L3x7Fqz8XShB6MyvivFl87meDQmHIKNQVUTOH1KltyQekfDTwnEzM8pmtoAU/FqOe0TkFVw==}
+  '@ember-tooling/classic-build-addon-blueprint@6.11.0':
+    resolution: {integrity: sha512-YDZlXLg+nzp2wDGEA7eJKTxF7d9d6WEjgALQkoOnardWQCS0Trr3Ce2itVySsadB8CX1Sqrze4qCQjw1XMAjqg==}
 
-  '@ember-tooling/classic-build-app-blueprint@6.10.0':
-    resolution: {integrity: sha512-lTyYGTnsq4FFeTAJ7ZxGwmwF0T6fuiZeqdMp34IHoiUC2lMV0yFLFpSChiaxiWgz1yTaagz8pJ9Kv+XbUZZVmA==}
+  '@ember-tooling/classic-build-app-blueprint@6.11.0':
+    resolution: {integrity: sha512-ZqwAC+3X3HFcBcmbyyBRh0KXkQSuW+L6Rry9Q7vmGFoQ+wQQnDQ9MS+TXz72VqP47+MGfZRJXWfCeqEUTpuSRg==}
 
-  '@ember/app-blueprint@6.10.3':
-    resolution: {integrity: sha512-W/JJI9u2aDmX1Eef9WlpovY2luJoP8AHG5GqKWHsqtPCxKa3PhlzVRQDY3nRuuBYqA2fQFQYksffyalhWHCuDw==}
+  '@ember/app-blueprint@6.11.0':
+    resolution: {integrity: sha512-zsY7HqSktkVH9vRup8g0jC8+lvRk0bvEeQ22zUVej5H1WHRZzN70N9nGH3Oibgo/d4qZIZT7WNqktm1ctxDYYQ==}
 
   '@ember/app-tsconfig@2.0.0':
     resolution: {integrity: sha512-NmD1OZFtCF49k4WDaPdhGP4OKoRbPaXpTBO3AsJe0okIJeCVUiEiC8YUpfTJmld9EJOEa9mW/p0tJQS70GktOA==}
@@ -3071,9 +3071,6 @@ packages:
 
   '@types/fs-extra@5.1.0':
     resolution: {integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==}
-
-  '@types/fs-extra@8.1.5':
-    resolution: {integrity: sha512-0dzKcwO+S8s2kuF5Z9oUWatQJj5Uq/iqphEtE3GQJVRRYm/tD1LglU2UnXi2A8jLq5umkGouOXOR9y0n613ZwQ==}
 
   '@types/glob@8.1.0':
     resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
@@ -4895,8 +4892,8 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-cli@6.10.0:
-    resolution: {integrity: sha512-jts9ucisVeJ9aYoBnV+BH/z38DbyGvYEw+68+WpZZFuGelMknstlG5WhUvn/W6mwReCRGi/Hfh2XsEbdrMEsQQ==}
+  ember-cli@6.11.0:
+    resolution: {integrity: sha512-c+5m4KgPr1hi7+64+SAfphIeCFZMuKTR+QSM0PPmEJhXibtCJd+8Ag5IrBMJ5urhX4jUtZ3skc0/Zln67CiGjQ==}
     engines: {node: '>= 20.19.0'}
     hasBin: true
 
@@ -5521,17 +5518,9 @@ packages:
   fixturify-project@1.10.0:
     resolution: {integrity: sha512-L1k9uiBQuN0Yr8tA9Noy2VSQ0dfg0B8qMdvT7Wb5WQKc7f3dn3bzCbSrqlb+etLW+KDV4cBC7R1OvcMg3kcxmA==}
 
-  fixturify-project@2.1.1:
-    resolution: {integrity: sha512-sP0gGMTr4iQ8Kdq5Ez0CVJOZOGWqzP5dv/veOTdFNywioKjkNWCHBi1q65DMpcNGUGeoOUWehyji274Q2wRgxA==}
-    engines: {node: 10.* || >= 12.*}
-
   fixturify@1.3.0:
     resolution: {integrity: sha512-tL0svlOy56pIMMUQ4bU1xRe6NZbFSa/ABTWMxW2mH38lFGc9TrNAKWcMBQ7eIjo3wqSS8f2ICabFaatFyFmrVQ==}
     engines: {node: 6.* || 8.* || >= 10.*}
-
-  fixturify@2.1.1:
-    resolution: {integrity: sha512-SRgwIMXlxkb6AUgaVjIX+jCEqdhyXu9hah7mcK+lWynjKtX73Ux1TDv71B7XyaQ+LJxkYRHl5yCL8IycAvQRUw==}
-    engines: {node: 10.* || >= 12.*}
 
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
@@ -6347,10 +6336,6 @@ packages:
   isbinaryfile@5.0.4:
     resolution: {integrity: sha512-YKBKVkKhty7s8rxddb40oOkuP0NbaeXrQvLin6QMHL7Ypiy2RW9LwOVrVgZRyOrhQlayMd9t+D8yDy8MKFTSDQ==}
     engines: {node: '>= 18.0.0'}
-
-  isbinaryfile@6.0.0:
-    resolution: {integrity: sha512-2FN2B8MAqKv6d5TaKsLvMrwMcghxwHTpcKy0L5mhNbRqjNqo2++SpCqN6eG1lCC1GmTQgvrYJYXv2+Chvyevag==}
-    engines: {node: '>= 24.0.0'}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
@@ -8801,10 +8786,6 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  type-fest@0.11.0:
-    resolution: {integrity: sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==}
-    engines: {node: '>=8'}
-
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
@@ -10506,7 +10487,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-addon-blueprint@6.10.0':
+  '@ember-tooling/classic-build-addon-blueprint@6.11.0':
     dependencies:
       '@ember-tooling/blueprint-model': 0.5.0
       chalk: 5.6.2
@@ -10520,7 +10501,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-app-blueprint@6.10.0':
+  '@ember-tooling/classic-build-app-blueprint@6.11.0':
     dependencies:
       '@ember-tooling/blueprint-model': 0.5.0
       chalk: 5.6.2
@@ -10528,7 +10509,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/app-blueprint@6.10.3':
+  '@ember/app-blueprint@6.11.0':
     dependencies:
       chalk: 4.1.2
       ejs: 3.1.10
@@ -11802,10 +11783,6 @@ snapshots:
       '@types/serve-static': 1.15.7
 
   '@types/fs-extra@5.1.0':
-    dependencies:
-      '@types/node': 22.15.32
-
-  '@types/fs-extra@8.1.5':
     dependencies:
       '@types/node': 22.15.32
 
@@ -13835,10 +13812,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-dependency-checker@3.3.3(ember-cli@6.10.0(@types/node@22.15.32)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)):
+  ember-cli-dependency-checker@3.3.3(ember-cli@6.11.0(@types/node@22.15.32)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)):
     dependencies:
       chalk: 2.4.2
-      ember-cli: 6.10.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
+      ember-cli: 6.11.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
       find-yarn-workspace-root: 2.0.0
       is-git-url: 1.0.0
       resolve: 1.22.11
@@ -13971,13 +13948,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@6.10.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7):
+  ember-cli@6.11.0(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7):
     dependencies:
       '@ember-tooling/blueprint-blueprint': 0.2.1
       '@ember-tooling/blueprint-model': 0.5.0
-      '@ember-tooling/classic-build-addon-blueprint': 6.10.0
-      '@ember-tooling/classic-build-app-blueprint': 6.10.0
-      '@ember/app-blueprint': 6.10.3
+      '@ember-tooling/classic-build-addon-blueprint': 6.11.0
+      '@ember-tooling/classic-build-app-blueprint': 6.11.0
+      '@ember/app-blueprint': 6.11.0
       '@pnpm/find-workspace-dir': 1000.1.3
       babel-remove-types: 1.1.0
       broccoli: 4.0.0
@@ -14015,7 +13992,6 @@ snapshots:
       filesize: 11.0.13
       find-up: 8.0.0
       find-yarn-workspace-root: 2.0.0
-      fixturify-project: 2.1.1
       fs-extra: 11.3.3
       fs-tree-diff: 2.0.1
       get-caller-file: 2.0.5
@@ -14030,7 +14006,6 @@ snapshots:
       inquirer: 13.2.2(@types/node@22.15.32)
       is-git-url: 1.0.0
       is-language-code: 5.1.3
-      isbinaryfile: 6.0.0
       lodash: 4.17.21
       markdown-it: 14.1.0
       markdown-it-terminal: 0.4.0(markdown-it@14.1.0)
@@ -15081,12 +15056,6 @@ snapshots:
       fixturify: 1.3.0
       tmp: 0.0.33
 
-  fixturify-project@2.1.1:
-    dependencies:
-      fixturify: 2.1.1
-      tmp: 0.0.33
-      type-fest: 0.11.0
-
   fixturify@1.3.0:
     dependencies:
       '@types/fs-extra': 5.1.0
@@ -15094,15 +15063,6 @@ snapshots:
       '@types/rimraf': 2.0.5
       fs-extra: 7.0.1
       matcher-collection: 2.0.1
-
-  fixturify@2.1.1:
-    dependencies:
-      '@types/fs-extra': 8.1.5
-      '@types/minimatch': 3.0.5
-      '@types/rimraf': 2.0.5
-      fs-extra: 8.1.0
-      matcher-collection: 2.0.1
-      walk-sync: 2.2.0
 
   flat-cache@4.0.1:
     dependencies:
@@ -15971,8 +15931,6 @@ snapshots:
   isarray@2.0.5: {}
 
   isbinaryfile@5.0.4: {}
-
-  isbinaryfile@6.0.0: {}
 
   isexe@2.0.0: {}
 
@@ -18788,8 +18746,6 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
-
-  type-fest@0.11.0: {}
 
   type-fest@4.41.0: {}
 
