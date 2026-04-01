@@ -1,5 +1,23 @@
 # Changelog
 
+## Release (2026-04-01)
+
+* @gossi/config-eslint 1.3.3 (patch)
+* @gossi/config-postcss 1.1.3 (patch)
+* @gossi/config-prettier 1.2.1 (patch)
+* @gossi/config-stylelint 1.1.3 (patch)
+* @gossi/config-template-lint 1.2.2 (patch)
+
+#### :rocket: Enhancement
+* [#1532](https://github.com/gossi/frontend-configs/pull/1532) Update `typescript-eslint` ([@gossi](https://github.com/gossi))
+
+#### :house: Internal
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-template-lint`
+  * [#1542](https://github.com/gossi/frontend-configs/pull/1542) Use version strings to trigger releases in package.json deps ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2026-01-16)
 
 * @gossi/config-eslint 1.3.2 (patch)
