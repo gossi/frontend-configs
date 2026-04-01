@@ -659,8 +659,8 @@ importers:
         specifier: catalog:ember
         version: 3.0.0
       ember-auto-import:
-        specifier: ^2.13.0
-        version: 2.13.0(@glint/template@1.7.7)(webpack@5.105.4)
+        specifier: ^2.13.1
+        version: 2.13.1(@glint/template@1.7.7)(webpack@5.105.4)
       ember-cli:
         specifier: catalog:ember
         version: 6.11.2(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -845,8 +845,8 @@ importers:
         specifier: catalog:build
         version: 2.3.0(@babel/core@7.28.5)
       ember-auto-import:
-        specifier: ^2.13.0
-        version: 2.13.0(@glint/template@1.7.7)(webpack@5.105.4(esbuild@0.27.1))
+        specifier: ^2.13.1
+        version: 2.13.1(@glint/template@1.7.7)(webpack@5.105.4(esbuild@0.27.1))
       ember-cli:
         specifier: catalog:ember
         version: 6.11.2(@types/node@22.15.32)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -3458,6 +3458,7 @@ packages:
   '@xmldom/xmldom@0.8.10':
     resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -4863,8 +4864,8 @@ packages:
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
-  ember-auto-import@2.13.0:
-    resolution: {integrity: sha512-P6COSWDDC6qpgNdc33PyAubhTHUkKc1gUfP2oR4BZoHhUVoEMHiSOECHISd5a2J8DaNrcpFcZmjgb1vJ2ydkjw==}
+  ember-auto-import@2.13.1:
+    resolution: {integrity: sha512-MjxJK2nfCJmmQI/rju2TrycmAa1AxmTarfvygbcrrgW0s4WeZHtbGXCO2z1lW9wfrShqeTo/o+3Mgk+9xcDTWg==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-cli-app-version@7.0.0:
@@ -13881,7 +13882,7 @@ snapshots:
 
   electron-to-chromium@1.5.267: {}
 
-  ember-auto-import@2.13.0(@glint/template@1.7.7)(webpack@5.105.4(esbuild@0.27.1)):
+  ember-auto-import@2.13.1(@glint/template@1.7.7)(webpack@5.105.4(esbuild@0.27.1)):
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.28.5)
@@ -13925,7 +13926,7 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-auto-import@2.13.0(@glint/template@1.7.7)(webpack@5.105.4):
+  ember-auto-import@2.13.1(@glint/template@1.7.7)(webpack@5.105.4):
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.28.5)
