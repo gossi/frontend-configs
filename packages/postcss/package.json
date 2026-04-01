@@ -18,9 +18,12 @@
   },
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
-    "postcss-each": "catalog:lint",
-    "postcss-lightningcss": "catalog:lint",
-    "postcss-preset-env": "catalog:lint"
+    "postcss-each": "^1.1.0",
+    "postcss-lightningcss": "^1.0.1",
+    "postcss-preset-env": "^11.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.24"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
@@ -28,9 +31,6 @@
     "postcss": "catalog:lint",
     "eslint": "catalog:lint",
     "prettier": "catalog:lint"
-  },
-  "peerDependencies": {
-    "postcss": "^8.4.24"
   },
   "engines": {
     "node": "^20.11.0 || >=22"
