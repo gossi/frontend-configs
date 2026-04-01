@@ -160,9 +160,6 @@ catalogs:
     ember-template-lint:
       specifier: ^7.9.3
       version: 7.9.3
-    ember-template-lint-plugin-prettier:
-      specifier: ^5.0.0
-      version: 5.0.0
     loader.js:
       specifier: 4.7.0
       version: 4.7.0
@@ -183,9 +180,6 @@ catalogs:
     '@eslint/js':
       specifier: ^10.0.0
       version: 10.0.1
-    '@stylistic/eslint-plugin':
-      specifier: ^5.0.0
-      version: 5.1.0
     '@typescript-eslint/eslint-plugin':
       specifier: ^8.57.1
       version: 8.57.1
@@ -195,69 +189,24 @@ catalogs:
     eslint:
       specifier: ^9.39.1
       version: 9.39.4
-    eslint-config-prettier:
-      specifier: ^10.1.5
-      version: 10.1.5
-    eslint-import-resolver-typescript:
-      specifier: ^4.4.3
-      version: 4.4.3
-    eslint-plugin-decorator-position:
-      specifier: ^6.0.0
-      version: 6.0.0
     eslint-plugin-ember:
       specifier: ^12.7.4
       version: 12.7.4
-    eslint-plugin-import-x:
-      specifier: ^4.15.2
-      version: 4.15.2
-    eslint-plugin-json:
-      specifier: ^4.0.1
-      version: 4.0.1
-    eslint-plugin-n:
-      specifier: ^17.20.0
-      version: 17.20.0
-    eslint-plugin-prettier:
-      specifier: ^5.5.0
-      version: 5.5.0
     eslint-plugin-qunit:
       specifier: ^8.2.5
       version: 8.2.5
-    eslint-plugin-simple-import-sort:
-      specifier: ^12.1.1
-      version: 12.1.1
     eslint-plugin-storybook:
       specifier: ^10.0.8
       version: 10.0.8
-    eslint-plugin-unicorn:
-      specifier: ^62.0.0
-      version: 62.0.0
     postcss:
       specifier: 8.5.8
       version: 8.5.8
-    postcss-each:
-      specifier: ^1.1.0
-      version: 1.1.0
-    postcss-lightningcss:
-      specifier: ^1.0.1
-      version: 1.0.1
-    postcss-preset-env:
-      specifier: ^11.0.0
-      version: 11.1.1
     prettier:
       specifier: ^3.8.0
       version: 3.8.0
     stylelint:
       specifier: 17.6.0
       version: 17.6.0
-    stylelint-config-clean-order:
-      specifier: ^8.0.0
-      version: 8.0.0
-    stylelint-config-standard:
-      specifier: ^40.0.0
-      version: 40.0.0
-    stylelint-no-unsupported-browser-features:
-      specifier: ^8.0.2
-      version: 8.0.4
     typescript-eslint:
       specifier: ^8.57.1
       version: 8.57.1
@@ -299,43 +248,43 @@ importers:
   packages/eslint:
     dependencies:
       '@eslint/js':
-        specifier: catalog:lint
+        specifier: ^10.0.0
         version: 10.0.1(eslint@9.39.4(jiti@2.6.1))
       '@stylistic/eslint-plugin':
-        specifier: catalog:lint
+        specifier: ^5.0.0
         version: 5.1.0(eslint@9.39.4(jiti@2.6.1))
       eslint-config-prettier:
-        specifier: catalog:lint
+        specifier: ^10.1.5
         version: 10.1.5(eslint@9.39.4(jiti@2.6.1))
       eslint-import-resolver-typescript:
-        specifier: catalog:lint
+        specifier: ^4.4.3
         version: 4.4.3(eslint-plugin-import-x@4.15.2(@typescript-eslint/utils@8.57.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-decorator-position:
-        specifier: catalog:lint
+        specifier: ^6.0.0
         version: 6.0.0(@babel/eslint-parser@7.28.5(@babel/core@7.28.5)(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-import-x:
-        specifier: catalog:lint
+        specifier: ^4.15.2
         version: 4.15.2(@typescript-eslint/utils@8.57.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-json:
-        specifier: catalog:lint
+        specifier: ^4.0.1
         version: 4.0.1
       eslint-plugin-n:
-        specifier: catalog:lint
+        specifier: ^17.20.0
         version: 17.20.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-prettier:
-        specifier: catalog:lint
+        specifier: ^5.5.0
         version: 5.5.0(@types/eslint@9.6.1)(eslint-config-prettier@10.1.5(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))(prettier@3.8.0)
       eslint-plugin-simple-import-sort:
-        specifier: catalog:lint
+        specifier: ^12.1.1
         version: 12.1.1(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-unicorn:
-        specifier: catalog:lint
+        specifier: ^62.0.0
         version: 62.0.0(eslint@9.39.4(jiti@2.6.1))
       globals:
-        specifier: catalog:lib
+        specifier: ^17.0.0
         version: 17.4.0
       typescript-eslint:
-        specifier: catalog:lint
+        specifier: ^8.57.1
         version: 8.57.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
     devDependencies:
       '@babel/eslint-parser':
@@ -369,13 +318,13 @@ importers:
         specifier: workspace:*
         version: link:../targets
       postcss-each:
-        specifier: catalog:lint
+        specifier: ^1.1.0
         version: 1.1.0(postcss@8.5.8)
       postcss-lightningcss:
-        specifier: catalog:lint
+        specifier: ^1.0.1
         version: 1.0.1(postcss@8.5.8)
       postcss-preset-env:
-        specifier: catalog:lint
+        specifier: ^11.0.0
         version: 11.1.1(postcss@8.5.8)
     devDependencies:
       '@gossi/config-eslint':
@@ -397,8 +346,8 @@ importers:
   packages/prettier:
     dependencies:
       prettier-plugin-ember-template-tag:
-        specifier: ^2.1.2
-        version: 2.1.2(prettier@3.8.0)
+        specifier: ^2.1.3
+        version: 2.1.3(prettier@3.8.0)
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -416,13 +365,13 @@ importers:
         specifier: workspace:*
         version: link:../targets
       stylelint-config-clean-order:
-        specifier: catalog:lint
+        specifier: ^8.0.0
         version: 8.0.0(stylelint-order@6.0.4(stylelint@17.6.0(typescript@5.9.3)))(stylelint@17.6.0(typescript@5.9.3))
       stylelint-config-standard:
-        specifier: catalog:lint
+        specifier: ^40.0.0
         version: 40.0.0(stylelint@17.6.0(typescript@5.9.3))
       stylelint-no-unsupported-browser-features:
-        specifier: catalog:lint
+        specifier: ^8.0.2
         version: 8.0.4(stylelint@17.6.0(typescript@5.9.3))
     devDependencies:
       '@gossi/config-eslint':
@@ -459,7 +408,7 @@ importers:
   packages/template-lint:
     dependencies:
       ember-template-lint-plugin-prettier:
-        specifier: catalog:ember
+        specifier: ^5.0.0
         version: 5.0.0(ember-template-lint@7.9.3)(prettier@3.8.0)
     devDependencies:
       '@gossi/config-eslint':
@@ -7712,8 +7661,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier-plugin-ember-template-tag@2.1.2:
-    resolution: {integrity: sha512-SZqbv8qfqJ7AnAaNhyeHOzsq1kvlkHdVrCAZDVBjUeWuW8xF2AK7LfKRkn9MPEUsbEO7BSkLsjkb5++eoWjtGw==}
+  prettier-plugin-ember-template-tag@2.1.3:
+    resolution: {integrity: sha512-FfAvkU+fqDC3Zs8+qGhBHYuwq1DED+UTPMH33QXxivZxRekkItBNXfi1Y+YkIbhCnu6UeTE2aYdbQSLlkOC2bA==}
     engines: {node: 18.* || >= 20}
     peerDependencies:
       prettier: '>= 3.0.0'
@@ -17520,9 +17469,9 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-ember-template-tag@2.1.2(prettier@3.8.0):
+  prettier-plugin-ember-template-tag@2.1.3(prettier@3.8.0):
     dependencies:
-      '@babel/core': 7.28.5
+      '@babel/traverse': 7.29.0
       content-tag: 4.1.1
       prettier: 3.8.0
     transitivePeerDependencies:
