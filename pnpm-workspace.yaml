@@ -92,7 +92,7 @@ catalogs:
     "@types/qunit": ^2.19.13
     "@types/rsvp": ^4.0.9
   test:
-    "@ember/test-helpers": "5.4.1"
+    "@ember/test-helpers": "5.4.2"
     ember-qunit: ^9.0.4
     qunit: ^2.24.3
     qunit-dom: ^3.5.0
