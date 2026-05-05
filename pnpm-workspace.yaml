@@ -21,19 +21,19 @@ catalogs:
   lint:
     "@eslint/js": ^10.0.0
     "@stylistic/eslint-plugin": ^5.0.0
-    eslint: ^9.39.1
+    eslint: ^10.0.0
     eslint-config-prettier: ^10.1.5
     eslint-plugin-decorator-position: ^6.0.0
-    eslint-plugin-ember: ^12.7.4
+    eslint-plugin-ember: ^13.0.0
     eslint-plugin-import-x: ^4.15.2
     eslint-import-resolver-typescript: ^4.4.3
     eslint-plugin-json: ^4.0.1
-    eslint-plugin-n: ^17.20.0
+    eslint-plugin-n: ^18.0.0
     eslint-plugin-prettier: ^5.5.0
     eslint-plugin-qunit: ^8.2.5
-    eslint-plugin-simple-import-sort: ^12.1.1
+    eslint-plugin-simple-import-sort: ^13.0.0
     eslint-plugin-storybook: ^10.0.8
-    eslint-plugin-unicorn: ^62.0.0
+    eslint-plugin-unicorn: ^64.0.0
     prettier: ^3.8.0
     postcss: 8.5.13
     postcss-each: ^1.1.0
