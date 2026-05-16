@@ -205,8 +205,8 @@ catalogs:
       specifier: ^3.8.0
       version: 3.8.0
     stylelint:
-      specifier: 17.11.0
-      version: 17.11.0
+      specifier: 17.11.1
+      version: 17.11.1
     typescript-eslint:
       specifier: ^8.57.1
       version: 8.57.1
@@ -366,13 +366,13 @@ importers:
         version: link:../targets
       stylelint-config-clean-order:
         specifier: ^8.0.0
-        version: 8.0.0(stylelint-order@6.0.4(stylelint@17.11.0(typescript@5.9.3)))(stylelint@17.11.0(typescript@5.9.3))
+        version: 8.0.0(stylelint-order@6.0.4(stylelint@17.11.1(typescript@5.9.3)))(stylelint@17.11.1(typescript@5.9.3))
       stylelint-config-standard:
         specifier: ^40.0.0
-        version: 40.0.0(stylelint@17.11.0(typescript@5.9.3))
+        version: 40.0.0(stylelint@17.11.1(typescript@5.9.3))
       stylelint-no-unsupported-browser-features:
         specifier: ^8.0.2
-        version: 8.0.4(stylelint@17.11.0(typescript@5.9.3))
+        version: 8.0.4(stylelint@17.11.1(typescript@5.9.3))
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -388,7 +388,7 @@ importers:
         version: 3.8.0
       stylelint:
         specifier: catalog:lint
-        version: 17.11.0(typescript@5.9.3)
+        version: 17.11.1(typescript@5.9.3)
 
   packages/targets:
     devDependencies:
@@ -582,7 +582,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.11.0(typescript@5.9.3)
+        version: 17.11.1(typescript@5.9.3)
       testem:
         specifier: catalog:test
         version: 3.20.0(@babel/core@7.28.5)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -744,7 +744,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.11.0(typescript@5.9.3)
+        version: 17.11.1(typescript@5.9.3)
       typescript:
         specifier: catalog:build
         version: 5.9.3
@@ -912,7 +912,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.11.0(typescript@5.9.3)
+        version: 17.11.1(typescript@5.9.3)
       testem:
         specifier: catalog:test
         version: 3.20.0(@babel/core@7.28.5)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -6320,10 +6320,6 @@ packages:
     resolution: {integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==}
     engines: {node: '>=0.10.0'}
 
-  is-plain-object@5.0.0:
-    resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
-    engines: {node: '>=0.10.0'}
-
   is-potential-custom-element-name@1.0.1:
     resolution: {integrity: sha512-bCYeRA2rVibKZd+s2625gGnGF/t7DSqDs4dP7CrLA1m7jKWz6pps0LpYLJN8Q64HtmPKJ1hrN3nzPNKFEKOUiQ==}
 
@@ -8527,8 +8523,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint@17.11.0:
-    resolution: {integrity: sha512-/3czzmbF9XdGWvReDF3Ex4R23Ajolo7j8RB2bFNEqk6Ht356nlpVV+G5bG2Qt8AW1ofJzXztBRDnAtd7cgowWA==}
+  stylelint@17.11.1:
+    resolution: {integrity: sha512-+smN/HqVTggUx3iuAzOi9fPh8SrH+cJWlZrYVldXoJ06orWBhZ4Ue/QEp64oei6pVrAh4w3tG+Y12Vw7MbCFRQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -15896,8 +15892,6 @@ snapshots:
     dependencies:
       isobject: 3.0.1
 
-  is-plain-object@5.0.0: {}
-
   is-potential-custom-element-name@1.0.1: {}
 
   is-promise@4.0.0: {}
@@ -18315,33 +18309,33 @@ snapshots:
 
   styled_string@0.0.1: {}
 
-  stylelint-config-clean-order@8.0.0(stylelint-order@6.0.4(stylelint@17.11.0(typescript@5.9.3)))(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-clean-order@8.0.0(stylelint-order@6.0.4(stylelint@17.11.1(typescript@5.9.3)))(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
-      stylelint-order: 6.0.4(stylelint@17.11.0(typescript@5.9.3))
+      stylelint: 17.11.1(typescript@5.9.3)
+      stylelint-order: 6.0.4(stylelint@17.11.1(typescript@5.9.3))
 
-  stylelint-config-recommended@18.0.0(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
+      stylelint: 17.11.1(typescript@5.9.3)
 
-  stylelint-config-standard@40.0.0(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.11.0(typescript@5.9.3))
+      stylelint: 17.11.1(typescript@5.9.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.11.1(typescript@5.9.3))
 
-  stylelint-no-unsupported-browser-features@8.0.4(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-no-unsupported-browser-features@8.0.4(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
       doiuse: 6.0.5
       postcss: 8.5.14
-      stylelint: 17.11.0(typescript@5.9.3)
+      stylelint: 17.11.1(typescript@5.9.3)
 
-  stylelint-order@6.0.4(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-order@6.0.4(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
       postcss: 8.5.14
       postcss-sorting: 8.0.2(postcss@8.5.14)
-      stylelint: 17.11.0(typescript@5.9.3)
+      stylelint: 17.11.1(typescript@5.9.3)
 
-  stylelint@17.11.0(typescript@5.9.3):
+  stylelint@17.11.1(typescript@5.9.3):
     dependencies:
       '@csstools/css-calc': 3.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
@@ -18364,7 +18358,6 @@ snapshots:
       html-tags: 5.1.0
       ignore: 7.0.5
       import-meta-resolve: 4.2.0
-      is-plain-object: 5.0.0
       mathml-tag-names: 4.0.0
       meow: 14.1.0
       micromatch: 4.0.8
