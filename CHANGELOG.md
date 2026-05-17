@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2026-04-01)
 
 * @gossi/config-eslint 1.3.3 (patch)
