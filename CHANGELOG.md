@@ -1,5 +1,23 @@
 # Changelog
 
+## Release (2026-06-15)
+
+* @gossi/config-eslint 1.3.4 (patch)
+* @gossi/config-postcss 1.1.4 (patch)
+* @gossi/config-prettier 1.2.2 (patch)
+* @gossi/config-stylelint 1.1.4 (patch)
+* @gossi/config-targets 1.1.3 (patch)
+* @gossi/config-template-lint 1.2.3 (patch)
+
+#### :house: Internal
+* Other
+  * [#1597](https://github.com/gossi/frontend-configs/pull/1597) Update pnpm to v11 with security options ([@gossi](https://github.com/gossi))
+* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
+  * [#1596](https://github.com/gossi/frontend-configs/pull/1596) update to node 24 ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2026-04-01)
 
 * @gossi/config-eslint 1.3.3 (patch)
