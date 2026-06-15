@@ -8,16 +8,15 @@
   "compilerOptions": {
     "declaration": false,
     "declarationMap": false,
-    "baseUrl": ".",
     "paths": {
       "ember-app-classic/tests/*": [
-        "tests/*"
+        "./tests/*"
       ],
       "ember-app-classic/*": [
-        "app/*"
+        "./app/*"
       ],
       "*": [
-        "types/*"
+        "./types/*"
       ]
     },
     "types": [
