@@ -55,7 +55,7 @@ export default ts.config(ts.configs.strict, ts.configs.stylistic, {
      * this.someAction ? this.someAction() : this.fallback();
      * ```
      *
-     * It disabled the eslint version and instead enables the TS version, to
+     * It disabled the ESLint version and instead enables the TS version, to
      * properly support optional chaining.
      */
     'no-unused-expressions': 'off',

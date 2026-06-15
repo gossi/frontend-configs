@@ -8,7 +8,7 @@ import typescript from './rules/typescript.js';
 import typescriptTyped from './rules/typescript-typed.js';
 
 /**
- * @param {string} root the directory of the eslint config file. can be import.meta.dirname
+ * @param {string} root the directory of the ESLint config file. can be import.meta.dirname
  */
 export default function config(root) {
   let hasTS = hasTypescript(root);

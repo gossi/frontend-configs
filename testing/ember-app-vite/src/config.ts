@@ -1,9 +1,9 @@
-type Config = {
+type Config = Record<string, unknown> & {
   modulePrefix: string;
   locationType: string;
   rootURL: string;
   APP: Record<string, unknown>;
-} & Record<string, unknown>;
+};
 
 const ENV: Config = {
   modulePrefix: 'ember-app-vite',
@@ -11,7 +11,7 @@ const ENV: Config = {
   rootURL: '/',
   locationType: 'history',
   APP: {
-    // Here you can pass flags/options to your application instance
+    // Here you can pass flags/options to your app instance
     // when it is created
   }
 };

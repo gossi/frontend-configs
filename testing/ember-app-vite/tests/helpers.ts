@@ -12,10 +12,10 @@ import {
 function setupApplicationTest(hooks: NestedHooks, options?: SetupTestOptions) {
   upstreamSetupApplicationTest(hooks, options);
 
-  // Additional setup for application tests can be done here.
+  // Additional setup for app tests can be done here.
   //
   // For example, if you need an authenticated session for each
-  // application test, you could do:
+  // app test, you could do:
   //
   // hooks.beforeEach(async function () {
   //   await authenticateSession(); // ember-simple-auth

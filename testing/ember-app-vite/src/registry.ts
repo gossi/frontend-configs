@@ -9,6 +9,7 @@ const appName = `ember-app-vite`;
 function formatAsResolverEntries(imports: ReturnType<ImportGlobFunction>) {
   return Object.fromEntries(
     Object.entries(imports).map(([k, v]) => [
+      // eslint-disable-next-line unicorn/no-unsafe-string-replacement
       k.replace(/\.g?(j|t)s$/, '').replace(/^\.\//, `${appName}/`),
       v
     ])
@@ -26,8 +27,6 @@ const resolverRegistry = {
   ...formatAsResolverEntries(import.meta.glob('./routes/**/*.{js,ts}', { eager: true })),
   [`${appName}/router`]: Router
 };
-
-console.log(resolverRegistry);
 
 export const registry = {
   ...resolverRegistry,
