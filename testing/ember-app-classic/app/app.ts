@@ -10,4 +10,5 @@ export default class App extends Application {
   Resolver = Resolver;
 }
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 loadInitializers(App, config.modulePrefix);

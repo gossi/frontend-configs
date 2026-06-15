@@ -1,5 +1,5 @@
 import { Addon } from '@embroider/addon-dev/rollup';
-import { resolve } from 'node:path';
+import path from 'node:path';
 
 import { babel } from '@rollup/plugin-babel';
 
@@ -9,8 +9,8 @@ const addon = new Addon({
 });
 
 const configs = {
-  babel: resolve(import.meta.dirname, './babel.publish.config.mjs'),
-  ts: resolve(import.meta.dirname, './tsconfig.publish.json')
+  babel: path.resolve(import.meta.dirname, './babel.publish.config.mjs'),
+  ts: path.resolve(import.meta.dirname, './tsconfig.publish.json')
 };
 
 export default {
@@ -45,16 +45,16 @@ export default {
       configFile: configs.babel
     }),
 
-    // // Ensure that standalone .hbs files are properly integrated as Javascript.
+    // // Ensure that standalone .hbs files are properly integrated as JavaScript.
     // addon.hbs(),
 
-    // Ensure that .gjs files are properly integrated as Javascript
+    // Ensure that .gjs files are properly integrated as JavaScript
     addon.gjs(),
 
     // Emit .d.ts declaration files
     addon.declarations('declarations', `ember-tsc --declaration --project ${configs.ts}`),
 
-    // addons are allowed to contain imports of .css files, which we want rollup
+    // addons are allowed to contain imports of `.css` files, which we want rollup
     // to leave alone and keep in the published output.
     // addon.keepAssets(['**/*.css']),
 

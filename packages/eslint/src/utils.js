@@ -1,19 +1,19 @@
 import { existsSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import path from 'node:path';
 
 function loadPkgJson(root) {
-  let manifestPath = join(root, 'package.json');
+  let manifestPath = path.join(root, 'package.json');
   let buffer = readFileSync(manifestPath);
 
   return JSON.parse(buffer.toString());
 }
 
 export function hasBabelConfig(root) {
-  return existsSync(join(root, 'babel.config.cjs'));
+  return existsSync(path.join(root, 'babel.config.cjs'));
 }
 
 export function hasTypescript(root) {
-  return existsSync(join(root, 'tsconfig.json'));
+  return existsSync(path.join(root, 'tsconfig.json'));
 }
 
 export function hasTypeModule(root) {

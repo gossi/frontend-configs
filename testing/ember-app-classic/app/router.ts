@@ -7,6 +7,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 Router.map(function () {
   // define routes here
 });

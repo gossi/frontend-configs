@@ -10,7 +10,7 @@ export interface GreetingSignature {
 
 export default class Greeting extends Component<GreetingSignature> {
   get to() {
-    return `${this.args.to[0]?.toUpperCase()}${this.args.to.slice(1).toLowerCase()}`;
+    return `${this.args.to.at(0)?.toUpperCase()}${this.args.to.slice(1).toLowerCase()}`;
   }
 
   <template>

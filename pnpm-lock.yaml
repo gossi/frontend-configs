@@ -193,8 +193,8 @@ catalogs:
       specifier: ^13.0.0
       version: 13.3.2
     eslint-plugin-qunit:
-      specifier: ^8.2.5
-      version: 8.2.5
+      specifier: ^8.2.6
+      version: 8.2.6
     eslint-plugin-storybook:
       specifier: ^10.0.8
       version: 10.0.8
@@ -304,7 +304,7 @@ importers:
         version: 13.3.2(@babel/eslint-parser@7.28.5(@babel/core@7.28.5)(eslint@10.5.0(jiti@2.6.1)))(@typescript-eslint/parser@8.57.1(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-qunit:
         specifier: catalog:lint
-        version: 8.2.5(eslint@10.5.0(jiti@2.6.1))
+        version: 8.2.6(eslint@10.5.0(jiti@2.6.1))
       prettier:
         specifier: catalog:lint
         version: 3.8.0
@@ -561,7 +561,7 @@ importers:
         version: 13.3.2(@babel/eslint-parser@7.28.5(@babel/core@7.28.5)(eslint@10.5.0(jiti@2.6.1)))(@typescript-eslint/parser@8.57.1(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-qunit:
         specifier: catalog:lint
-        version: 8.2.5(eslint@10.5.0(jiti@2.6.1))
+        version: 8.2.6(eslint@10.5.0(jiti@2.6.1))
       eslint-plugin-storybook:
         specifier: catalog:lint
         version: 10.0.8(eslint@10.5.0(jiti@2.6.1))(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
@@ -723,7 +723,7 @@ importers:
         version: 13.3.2(@babel/eslint-parser@7.28.5(@babel/core@7.28.5)(eslint@10.5.0(jiti@2.6.1)))(@typescript-eslint/parser@8.57.1(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-qunit:
         specifier: catalog:lint
-        version: 8.2.5(eslint@10.5.0(jiti@2.6.1))
+        version: 8.2.6(eslint@10.5.0(jiti@2.6.1))
       eslint-plugin-storybook:
         specifier: catalog:lint
         version: 10.0.8(eslint@10.5.0(jiti@2.6.1))(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
@@ -891,7 +891,7 @@ importers:
         version: 13.3.2(@babel/eslint-parser@7.28.5(@babel/core@7.28.5)(eslint@10.5.0(jiti@2.6.1)))(@typescript-eslint/parser@8.57.1(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.5.0(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-qunit:
         specifier: catalog:lint
-        version: 8.2.5(eslint@10.5.0(jiti@2.6.1))
+        version: 8.2.6(eslint@10.5.0(jiti@2.6.1))
       eslint-plugin-storybook:
         specifier: catalog:lint
         version: 10.0.8(eslint@10.5.0(jiti@2.6.1))(storybook@10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(typescript@5.9.3)
@@ -5397,9 +5397,11 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-qunit@8.2.5:
-    resolution: {integrity: sha512-qr7RJCYImKQjB+39q4q46i1l7p1V3joHzBE5CAYfxn5tfVFjrnjn/tw7q/kDyweU9kAIcLul0Dx/KWVUCb3BgA==}
+  eslint-plugin-qunit@8.2.6:
+    resolution: {integrity: sha512-S1jC/DIW9J8VtNX4uG1vlf5FZVrfQFlcuiYmvTHR2IICUhubHqpWA5o+qS1tujh+81Gs39omKV2D4OXfbSJE5g==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      eslint: '>=8.38.0'
 
   eslint-plugin-simple-import-sort@13.0.0:
     resolution: {integrity: sha512-McAc+/Nlvcg4byY/CABGH8kqnefWBj8s3JA2okEtz8ixbECQgU46p0HkTUKa4YS7wvgGceimlc34p1nXqbWqtA==}
@@ -14836,12 +14838,11 @@ snapshots:
       '@types/eslint': 9.6.1
       eslint-config-prettier: 10.1.5(eslint@10.5.0(jiti@2.6.1))
 
-  eslint-plugin-qunit@8.2.5(eslint@10.5.0(jiti@2.6.1)):
+  eslint-plugin-qunit@8.2.6(eslint@10.5.0(jiti@2.6.1)):
     dependencies:
-      eslint-utils: 3.0.0(eslint@10.5.0(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.5.0(jiti@2.6.1))
+      eslint: 10.5.0(jiti@2.6.1)
       requireindex: 1.2.0
-    transitivePeerDependencies:
-      - eslint
 
   eslint-plugin-simple-import-sort@13.0.0(eslint@10.5.0(jiti@2.6.1)):
     dependencies:
