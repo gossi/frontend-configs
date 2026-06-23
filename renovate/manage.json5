@@ -11,7 +11,7 @@
   "labels": [
     "dependencies"
   ],
-  "minimumReleaseAge": "1 week"
+  "minimumReleaseAge": "1 week",
   "postUpdateOptions": [
     "pnpmDedupe"
   ],
