@@ -1,5 +1,15 @@
 # Changelog
 
+## Release (2026-06-26)
+
+
+
+#### :house: Internal
+* [#1605](https://github.com/gossi/frontend-configs/pull/1605) Minimum Release Age for Renovate ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2026-06-15)
 
 * @gossi/config-eslint 1.3.4 (patch)
