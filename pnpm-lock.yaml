@@ -205,8 +205,8 @@ catalogs:
       specifier: ^3.8.0
       version: 3.8.0
     stylelint:
-      specifier: 17.13.0
-      version: 17.13.0
+      specifier: 17.14.0
+      version: 17.14.0
     typescript-eslint:
       specifier: ^8.57.1
       version: 8.57.1
@@ -366,13 +366,13 @@ importers:
         version: link:../targets
       stylelint-config-clean-order:
         specifier: ^10.0.0
-        version: 10.0.0(stylelint-order@6.0.4(stylelint@17.13.0(typescript@6.0.3)))(stylelint@17.13.0(typescript@6.0.3))
+        version: 10.0.0(stylelint-order@6.0.4(stylelint@17.14.0(typescript@6.0.3)))(stylelint@17.14.0(typescript@6.0.3))
       stylelint-config-standard:
         specifier: ^40.0.0
-        version: 40.0.0(stylelint@17.13.0(typescript@6.0.3))
+        version: 40.0.0(stylelint@17.14.0(typescript@6.0.3))
       stylelint-no-unsupported-browser-features:
         specifier: ^8.0.2
-        version: 8.0.4(stylelint@17.13.0(typescript@6.0.3))
+        version: 8.0.4(stylelint@17.14.0(typescript@6.0.3))
     devDependencies:
       '@gossi/config-eslint':
         specifier: workspace:*
@@ -388,7 +388,7 @@ importers:
         version: 3.8.0
       stylelint:
         specifier: catalog:lint
-        version: 17.13.0(typescript@6.0.3)
+        version: 17.14.0(typescript@6.0.3)
 
   packages/targets:
     devDependencies:
@@ -582,7 +582,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.13.0(typescript@6.0.3)
+        version: 17.14.0(typescript@6.0.3)
       testem:
         specifier: catalog:test
         version: 3.20.0(@babel/core@7.28.5)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -744,7 +744,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.13.0(typescript@6.0.3)
+        version: 17.14.0(typescript@6.0.3)
       typescript:
         specifier: catalog:build
         version: 6.0.3
@@ -912,7 +912,7 @@ importers:
         version: 10.1.10(@testing-library/dom@10.4.0)(prettier@3.8.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       stylelint:
         specifier: catalog:lint
-        version: 17.13.0(typescript@6.0.3)
+        version: 17.14.0(typescript@6.0.3)
       testem:
         specifier: catalog:test
         version: 3.20.0(@babel/core@7.28.5)(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(underscore@1.13.7)
@@ -4712,8 +4712,8 @@ packages:
     resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
     engines: {node: '>= 0.10'}
 
-  cosmiconfig@9.0.1:
-    resolution: {integrity: sha512-hr4ihw+DBqcvrsEDioRO31Z17x71pUYoNe/4h6Z0wB72p7MU7/9gH8Q3s12NFhHPfYBBOV3qyfUxmr/Yn3shnQ==}
+  cosmiconfig@9.0.2:
+    resolution: {integrity: sha512-gtTZxTDau1wL7Y7zifc2dd8jHSK/k6BTx/2Xp/BpdlAdnlYWFVt7qhJqgwi7637yRwRQ3qL4ZidbB4I8tA5VOg==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=4.9.5'
@@ -7712,8 +7712,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-selector-parser@7.1.1:
-    resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
+  postcss-selector-parser@7.1.4:
+    resolution: {integrity: sha512-HeP7D2wyhkR+XaK6v4W8oRF62Dsz4flyuczALJp61GckGm42u1saSSJ/0auvcBqxs3jMRFEcPK34At/0JBKdOg==}
     engines: {node: '>=4'}
 
   postcss-simple-vars@6.0.3:
@@ -8645,8 +8645,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint@17.13.0:
-    resolution: {integrity: sha512-G1WYzMerp7ihOaIe9VJCHLt12MoAD2QLf1AFerYP37+BCRBUK5UCpq8e/mN+zCIaJPKQcaxhE4WlPmqdiOx/gw==}
+  stylelint@17.14.0:
+    resolution: {integrity: sha512-8xkHPpdqYryeIsOgfsYTmr6cIeC4nLYWk5S8BPxpodq8mIuepggkMljsHewWfuAjj/+qpRKou2QerhjMH3iasg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -10410,9 +10410,9 @@ snapshots:
 
   '@csstools/postcss-cascade-layers@6.0.0(postcss@8.5.15)':
     dependencies:
-      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
+      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.4)
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   '@csstools/postcss-color-function-display-p3-linear@2.0.0(postcss@8.5.15)':
     dependencies:
@@ -10518,9 +10518,9 @@ snapshots:
 
   '@csstools/postcss-is-pseudo-class@6.0.0(postcss@8.5.15)':
     dependencies:
-      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
+      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.4)
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   '@csstools/postcss-light-dark-function@3.0.0(postcss@8.5.15)':
     dependencies:
@@ -10628,7 +10628,7 @@ snapshots:
   '@csstools/postcss-scope-pseudo-class@5.0.0(postcss@8.5.15)':
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   '@csstools/postcss-sign-functions@2.0.0(postcss@8.5.15)':
     dependencies:
@@ -10672,13 +10672,13 @@ snapshots:
     dependencies:
       postcss: 8.5.15
 
-  '@csstools/selector-resolve-nested@4.0.0(postcss-selector-parser@7.1.1)':
+  '@csstools/selector-resolve-nested@4.0.0(postcss-selector-parser@7.1.4)':
     dependencies:
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
-  '@csstools/selector-specificity@6.0.0(postcss-selector-parser@7.1.1)':
+  '@csstools/selector-specificity@6.0.0(postcss-selector-parser@7.1.4)':
     dependencies:
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   '@csstools/utilities@3.0.0(postcss@8.5.15)':
     dependencies:
@@ -13680,7 +13680,7 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig@9.0.1(typescript@6.0.3):
+  cosmiconfig@9.0.2(typescript@6.0.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
@@ -13706,15 +13706,15 @@ snapshots:
   css-blank-pseudo@8.0.1(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   css-functions-list@3.3.3: {}
 
   css-has-pseudo@8.0.0(postcss@8.5.15):
     dependencies:
-      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
+      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.4)
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
       postcss-value-parser: 4.2.0
 
   css-loader@5.2.7(webpack@5.107.2(esbuild@0.27.1)):
@@ -17161,7 +17161,7 @@ snapshots:
   postcss-attribute-case-insensitive@8.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-clamp@4.1.0(postcss@8.5.15):
     dependencies:
@@ -17212,12 +17212,12 @@ snapshots:
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-tokenizer': 4.0.0
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-dir-pseudo-class@10.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-double-position-gradients@7.0.0(postcss@8.5.15):
     dependencies:
@@ -17234,12 +17234,12 @@ snapshots:
   postcss-focus-visible@11.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-focus-within@10.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-font-variant@5.0.0(postcss@8.5.15):
     dependencies:
@@ -17283,13 +17283,13 @@ snapshots:
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.15)
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
       postcss-value-parser: 4.2.0
 
   postcss-modules-scope@3.2.1(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-modules-values@4.0.0(postcss@8.5.15):
     dependencies:
@@ -17298,10 +17298,10 @@ snapshots:
 
   postcss-nesting@14.0.0(postcss@8.5.15):
     dependencies:
-      '@csstools/selector-resolve-nested': 4.0.0(postcss-selector-parser@7.1.1)
-      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
+      '@csstools/selector-resolve-nested': 4.0.0(postcss-selector-parser@7.1.4)
+      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.4)
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-opacity-percentage@3.0.0(postcss@8.5.15):
     dependencies:
@@ -17400,7 +17400,7 @@ snapshots:
   postcss-pseudo-class-any-link@11.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
   postcss-replace-overflow-wrap@4.0.0(postcss@8.5.15):
     dependencies:
@@ -17413,9 +17413,9 @@ snapshots:
   postcss-selector-not@9.0.0(postcss@8.5.15):
     dependencies:
       postcss: 8.5.15
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
 
-  postcss-selector-parser@7.1.1:
+  postcss-selector-parser@7.1.4:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -18527,43 +18527,43 @@ snapshots:
 
   styled_string@0.0.1: {}
 
-  stylelint-config-clean-order@10.0.0(stylelint-order@6.0.4(stylelint@17.13.0(typescript@6.0.3)))(stylelint@17.13.0(typescript@6.0.3)):
+  stylelint-config-clean-order@10.0.0(stylelint-order@6.0.4(stylelint@17.14.0(typescript@6.0.3)))(stylelint@17.14.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.13.0(typescript@6.0.3)
-      stylelint-order: 6.0.4(stylelint@17.13.0(typescript@6.0.3))
+      stylelint: 17.14.0(typescript@6.0.3)
+      stylelint-order: 6.0.4(stylelint@17.14.0(typescript@6.0.3))
 
-  stylelint-config-recommended@18.0.0(stylelint@17.13.0(typescript@6.0.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.14.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.13.0(typescript@6.0.3)
+      stylelint: 17.14.0(typescript@6.0.3)
 
-  stylelint-config-standard@40.0.0(stylelint@17.13.0(typescript@6.0.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.14.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.13.0(typescript@6.0.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.13.0(typescript@6.0.3))
+      stylelint: 17.14.0(typescript@6.0.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.14.0(typescript@6.0.3))
 
-  stylelint-no-unsupported-browser-features@8.0.4(stylelint@17.13.0(typescript@6.0.3)):
+  stylelint-no-unsupported-browser-features@8.0.4(stylelint@17.14.0(typescript@6.0.3)):
     dependencies:
       doiuse: 6.0.5
       postcss: 8.5.15
-      stylelint: 17.13.0(typescript@6.0.3)
+      stylelint: 17.14.0(typescript@6.0.3)
 
-  stylelint-order@6.0.4(stylelint@17.13.0(typescript@6.0.3)):
+  stylelint-order@6.0.4(stylelint@17.14.0(typescript@6.0.3)):
     dependencies:
       postcss: 8.5.15
       postcss-sorting: 8.0.2(postcss@8.5.15)
-      stylelint: 17.13.0(typescript@6.0.3)
+      stylelint: 17.14.0(typescript@6.0.3)
 
-  stylelint@17.13.0(typescript@6.0.3):
+  stylelint@17.14.0(typescript@6.0.3):
     dependencies:
       '@csstools/css-calc': 3.2.1(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-syntax-patches-for-csstree': 1.1.5(css-tree@3.2.1)
       '@csstools/css-tokenizer': 4.0.0
       '@csstools/media-query-list-parser': 5.0.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
-      '@csstools/selector-resolve-nested': 4.0.0(postcss-selector-parser@7.1.1)
-      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
+      '@csstools/selector-resolve-nested': 4.0.0(postcss-selector-parser@7.1.4)
+      '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.4)
       colord: 2.9.3
-      cosmiconfig: 9.0.1(typescript@6.0.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
       css-functions-list: 3.3.3
       css-tree: 3.2.1
       debug: 4.4.3
@@ -18583,7 +18583,7 @@ snapshots:
       picocolors: 1.1.1
       postcss: 8.5.15
       postcss-safe-parser: 7.0.1(postcss@8.5.15)
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.4
       postcss-value-parser: 4.2.0
       string-width: 8.2.1
       supports-hyperlinks: 4.4.0
