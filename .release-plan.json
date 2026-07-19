@@ -1,91 +1,23 @@
 {
   "solution": {
     "@gossi/config-eslint": {
-      "impact": "patch",
-      "oldVersion": "1.3.3",
-      "newVersion": "1.3.4",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./packages/eslint/package.json"
+      "oldVersion": "1.3.4"
     },
     "@gossi/config-postcss": {
-      "impact": "patch",
-      "oldVersion": "1.1.3",
-      "newVersion": "1.1.4",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        }
-      ],
-      "pkgJSONPath": "./packages/postcss/package.json"
+      "oldVersion": "1.1.4"
     },
     "@gossi/config-prettier": {
-      "impact": "patch",
-      "oldVersion": "1.2.1",
-      "newVersion": "1.2.2",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./packages/prettier/package.json"
+      "oldVersion": "1.2.2"
     },
     "@gossi/config-stylelint": {
-      "impact": "patch",
-      "oldVersion": "1.1.3",
-      "newVersion": "1.1.4",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        },
-        {
-          "impact": "patch",
-          "reason": "Has dependency `workspace:*` on @gossi/config-targets"
-        }
-      ],
-      "pkgJSONPath": "./packages/stylelint/package.json"
+      "oldVersion": "1.1.4"
     },
     "@gossi/config-targets": {
-      "impact": "patch",
-      "oldVersion": "1.1.2",
-      "newVersion": "1.1.3",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./packages/targets/package.json"
+      "oldVersion": "1.1.3"
     },
     "@gossi/config-template-lint": {
-      "impact": "patch",
-      "oldVersion": "1.2.2",
-      "newVersion": "1.2.3",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./packages/template-lint/package.json"
+      "oldVersion": "1.2.3"
     }
   },
-  "description": "## Release (2026-06-15)\n\n* @gossi/config-eslint 1.3.4 (patch)\n* @gossi/config-postcss 1.1.4 (patch)\n* @gossi/config-prettier 1.2.2 (patch)\n* @gossi/config-stylelint 1.1.4 (patch)\n* @gossi/config-targets 1.1.3 (patch)\n* @gossi/config-template-lint 1.2.3 (patch)\n\n#### :house: Internal\n* Other\n  * [#1597](https://github.com/gossi/frontend-configs/pull/1597) Update pnpm to v11 with security options ([@gossi](https://github.com/gossi))\n* `@gossi/config-eslint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`\n  * [#1596](https://github.com/gossi/frontend-configs/pull/1596) update to node 24 ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
+  "description": "## Release (2026-07-19)\n\n\n\n#### :house: Internal\n* [#1605](https://github.com/gossi/frontend-configs/pull/1605) Minimum Release Age for Renovate ([@gossi](https://github.com/gossi))\n\n#### Committers: 1\n- Thomas Gossmann ([@gossi](https://github.com/gossi))\n"
 }
