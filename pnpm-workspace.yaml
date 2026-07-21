@@ -60,7 +60,7 @@ catalogs:
     "decorator-transforms": "^2.3.0"
     rollup: 4.62.2
     tsdown: ^0.22.0
-    typescript: ^6.0.0
+    typescript: ^7.0.0
     vite: ^8.0.0
     webpack: 5.108.4
   lint:
