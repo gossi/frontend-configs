@@ -76,9 +76,9 @@ catalogs:
     eslint-plugin-n: ^18.0.0
     eslint-plugin-prettier: ^5.5.0
     eslint-plugin-qunit: ^8.2.6
-    eslint-plugin-simple-import-sort: ^13.0.0
+    eslint-plugin-simple-import-sort: ^14.0.0
     eslint-plugin-storybook: ^10.0.8
-    eslint-plugin-unicorn: ^66.0.0
+    eslint-plugin-unicorn: ^72.0.0
     prettier: ^3.8.0
     postcss: 8.5.17
     postcss-each: ^1.1.0
