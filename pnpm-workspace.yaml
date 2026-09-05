@@ -72,13 +72,13 @@ catalogs:
     eslint-plugin-ember: ^13.0.0
     eslint-plugin-import-x: ^4.15.2
     eslint-import-resolver-typescript: ^4.4.3
-    eslint-plugin-json: ^4.0.1
+    eslint-plugin-json: ^5.0.0
     eslint-plugin-n: ^18.0.0
     eslint-plugin-prettier: ^5.5.0
     eslint-plugin-qunit: ^8.2.6
-    eslint-plugin-simple-import-sort: ^13.0.0
+    eslint-plugin-simple-import-sort: ^14.0.0
     eslint-plugin-storybook: ^10.0.8
-    eslint-plugin-unicorn: ^66.0.0
+    eslint-plugin-unicorn: ^74.0.0
     prettier: ^3.8.0
     postcss: 8.5.26
     postcss-each: ^1.1.0
