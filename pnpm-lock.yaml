@@ -150,8 +150,8 @@ catalogs:
       specifier: ^8.0.0
       version: 8.0.0
     webpack:
-      specifier: 5.110.2
-      version: 5.110.2
+      specifier: 5.110.3
+      version: 5.110.3
   ember:
     '@ember/app-tsconfig':
       specifier: ^2.0.0
@@ -761,7 +761,7 @@ importers:
         version: 3.0.0(supports-color@10.2.2)
       ember-auto-import:
         specifier: ^2.13.1
-        version: 2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+        version: 2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       ember-cli:
         specifier: catalog:ember
         version: 7.2.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.15.32)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(supports-color@10.2.2)(underscore@1.13.7)
@@ -851,7 +851,7 @@ importers:
         version: 6.0.3
       webpack:
         specifier: catalog:build
-        version: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+        version: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
 
   testing/ember-app-vite:
     devDependencies:
@@ -947,7 +947,7 @@ importers:
         version: 2.3.0(@babel/core@7.29.7(supports-color@10.2.2))
       ember-auto-import:
         specifier: ^2.13.1
-        version: 2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+        version: 2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       ember-cli:
         specifier: catalog:ember
         version: 7.2.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@22.15.32)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.8)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(supports-color@10.2.2)(underscore@1.13.7)
@@ -9425,8 +9425,8 @@ packages:
     resolution: {integrity: sha512-jyuiGJdtvY434z5bUZrjz67v76/ePNvFZTp9Mdz29IlH4+GPsgyGjiv0fKI+M7BdkU6ADjulUcKAd3tUK3WlEw==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.110.2:
-    resolution: {integrity: sha512-TciLrfM7zgEjqGdY851HkirDsSPQgTFsWQpl9oHqMAMYsHhEC0bKjscvjpnz+pzx10hLC8qISApGrsnrCP4UtQ==}
+  webpack@5.110.3:
+    resolution: {integrity: sha512-GuizBzRvo9YPpyoNMf3ag7AzxbaW85qrRSqTha345KyJbAFPt3/cMzBM0h+RWg7SK/7DdzRLINP3LvQ0hvr4hg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -12823,23 +12823,23 @@ snapshots:
 
   babel-import-util@3.0.1: {}
 
-  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
 
-  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
 
   babel-plugin-debug-macros@0.3.4(@babel/core@7.29.7(supports-color@10.2.2)):
     dependencies:
@@ -13830,7 +13830,7 @@ snapshots:
       postcss-selector-parser: 7.1.4
       postcss-value-parser: 4.2.0
 
-  css-loader@5.2.7(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  css-loader@5.2.7(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.28)
       loader-utils: 2.0.4
@@ -13842,9 +13842,9 @@ snapshots:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.8.5
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
 
-  css-loader@5.2.7(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  css-loader@5.2.7(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.28)
       loader-utils: 2.0.4
@@ -13856,7 +13856,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.8.5
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
 
   css-prefers-color-scheme@11.0.0(postcss@8.5.28):
     dependencies:
@@ -14074,7 +14074,7 @@ snapshots:
 
   electron-to-chromium@1.5.372: {}
 
-  ember-auto-import@2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  ember-auto-import@2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -14085,7 +14085,7 @@ snapshots:
       '@embroider/macros': 1.20.5(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.9.0)(supports-color@10.2.2)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 2.9.0(supports-color@10.2.2)
-      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.4.1
       babel-plugin-htmlbars-inline-precompile: 5.3.1
@@ -14095,7 +14095,7 @@ snapshots:
       broccoli-merge-trees: 4.2.0(supports-color@10.2.2)
       broccoli-plugin: 4.0.7(supports-color@10.2.2)
       broccoli-source: 3.0.1
-      css-loader: 5.2.7(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+      css-loader: 5.2.7(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       debug: 4.4.3(supports-color@10.2.2)
       fs-extra: 10.1.0
       fs-tree-diff: 2.0.1(supports-color@10.2.2)
@@ -14103,14 +14103,14 @@ snapshots:
       is-subdir: 1.2.0
       js-string-escape: 1.0.1
       lodash: 4.18.1
-      mini-css-extract-plugin: 2.9.2(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+      mini-css-extract-plugin: 2.9.2(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       minimatch: 3.1.5
       parse5: 6.0.1
       pkg-entry-points: 1.1.1
       resolve: 1.22.12
       resolve-package-path: 4.0.3
       semver: 7.8.5
-      style-loader: 2.0.0(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+      style-loader: 2.0.0(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       typescript-memoize: 1.1.1
       walk-sync: 3.0.0
     transitivePeerDependencies:
@@ -14118,7 +14118,7 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-auto-import@2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  ember-auto-import@2.13.1(@glint/template@1.9.0)(supports-color@10.2.2)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -14129,7 +14129,7 @@ snapshots:
       '@embroider/macros': 1.20.5(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.9.0)(supports-color@10.2.2)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 2.9.0(supports-color@10.2.2)
-      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.4.1
       babel-plugin-htmlbars-inline-precompile: 5.3.1
@@ -14139,7 +14139,7 @@ snapshots:
       broccoli-merge-trees: 4.2.0(supports-color@10.2.2)
       broccoli-plugin: 4.0.7(supports-color@10.2.2)
       broccoli-source: 3.0.1
-      css-loader: 5.2.7(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+      css-loader: 5.2.7(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       debug: 4.4.3(supports-color@10.2.2)
       fs-extra: 10.1.0
       fs-tree-diff: 2.0.1(supports-color@10.2.2)
@@ -14147,14 +14147,14 @@ snapshots:
       is-subdir: 1.2.0
       js-string-escape: 1.0.1
       lodash: 4.18.1
-      mini-css-extract-plugin: 2.9.2(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+      mini-css-extract-plugin: 2.9.2(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       minimatch: 3.1.5
       parse5: 6.0.1
       pkg-entry-points: 1.1.1
       resolve: 1.22.12
       resolve-package-path: 4.0.3
       semver: 7.8.5
-      style-loader: 2.0.0(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+      style-loader: 2.0.0(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       typescript-memoize: 1.1.1
       walk-sync: 3.0.0
     transitivePeerDependencies:
@@ -16734,17 +16734,17 @@ snapshots:
 
   min-indent@1.0.1: {}
 
-  mini-css-extract-plugin@2.9.2(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  mini-css-extract-plugin@2.9.2(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       schema-utils: 4.3.3
       tapable: 2.3.3
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
 
-  mini-css-extract-plugin@2.9.2(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  mini-css-extract-plugin@2.9.2(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       schema-utils: 4.3.3
       tapable: 2.3.3
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
 
   minimatch@10.2.6:
     dependencies:
@@ -16768,26 +16768,26 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minimizer-webpack-plugin@5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  minimizer-webpack-plugin@5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.51.2
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
     optionalDependencies:
       esbuild: 0.27.1
       lightningcss: 1.32.0
       postcss: 8.5.26
       uglify-js: 3.19.3
 
-  minimizer-webpack-plugin@5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  minimizer-webpack-plugin@5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.51.2
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
     optionalDependencies:
       esbuild: 0.27.1
       lightningcss: 1.32.0
@@ -18615,17 +18615,17 @@ snapshots:
 
   stubborn-utils@1.0.2: {}
 
-  style-loader@2.0.0(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
+  style-loader@2.0.0(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)
 
-  style-loader@2.0.0(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
+  style-loader@2.0.0(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
+      webpack: 5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)
 
   styled_string@0.0.1: {}
 
@@ -19423,7 +19423,7 @@ snapshots:
 
   webpack-sources@3.5.1: {}
 
-  webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3):
+  webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -19438,7 +19438,7 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
+      minimizer-webpack-plugin: 5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.26)(uglify-js@3.19.3))
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
@@ -19458,7 +19458,7 @@ snapshots:
       - postcss
       - uglify-js
 
-  webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3):
+  webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -19473,7 +19473,7 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)(webpack@5.110.2(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
+      minimizer-webpack-plugin: 5.8.0(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3)(webpack@5.110.3(esbuild@0.27.1)(lightningcss@1.32.0)(postcss@8.5.28)(uglify-js@3.19.3))
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
