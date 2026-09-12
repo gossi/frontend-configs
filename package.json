@@ -13,5 +13,5 @@
   "devDependencies": {
     "release-plan": "^0.20.0"
   },
-  "packageManager": "pnpm@12.1.0"
+  "packageManager": "pnpm@12.3.4"
 }
