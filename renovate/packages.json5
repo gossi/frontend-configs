@@ -96,6 +96,12 @@
         "@playwright/*",
         "playwright*",
       ]
+    },
+    {
+      "groupName": "Worp Drive",
+      "matchPackageNames": [
+        "@warp-drive/*"
+      ]
     }
   ]
 }
