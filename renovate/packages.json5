@@ -89,6 +89,13 @@
       "matchPackageNames": [
         "*typedoc*"
       ]
+    },
+    {
+      "groupName": "Playwright",
+      "matchPackageNames": [
+        "@playwright/*",
+        "playwright*",
+      ]
     }
   ]
 }
