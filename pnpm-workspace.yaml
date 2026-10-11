@@ -93,7 +93,7 @@ catalogs:
     "@typescript-eslint/parser": ^8.57.1
   ember:
     "@ember/app-tsconfig": ^2.0.0
-    "@ember/library-tsconfig": ^2.0.0
+    "@ember/library-tsconfig": ^3.0.0
     "@ember/optional-features": "3.0.0"
     "@ember/string": ^4.0.1
     "@ember/test-waiters": ^4.1.0
