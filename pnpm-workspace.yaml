@@ -139,7 +139,7 @@ catalogs:
   test:
     "@ember/test-helpers": "5.7.0"
     ember-qunit: ^9.0.4
-    qunit: ^2.24.3
+    qunit: ^3.0.0
     qunit-dom: ^3.5.0
     testem: ^3.17.0
     vitest: ^5.0.0
