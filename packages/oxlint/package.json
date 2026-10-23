@@ -1,0 +1,28 @@
+{
+  "name": "@gossi/config-oxlint",
+  "version": "0.0.0",
+  "repository": "https://github.com/gossi/frontend-configs",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
+    "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@gossi/config-eslint": "workspace:*",
+    "@gossi/config-prettier": "workspace:*",
+    "oxlint": "catalog:lint",
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
