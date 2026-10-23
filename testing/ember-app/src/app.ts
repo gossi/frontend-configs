@@ -15,5 +15,3 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   Resolver = Resolver.withModules(registry);
 }
-
-// loadInitializers(App, config.modulePrefix, compatModules);
