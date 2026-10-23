@@ -10,6 +10,7 @@ import * as parserOptions from '../parser-options.js';
 import { hasTypeModule, hasTypescript } from '../utils.js';
 import base from './base.js';
 import emberRules from './rules/ember.js';
+import emberTemplates from './rules/ember-templates.js';
 import emberTypescript from './rules/ember-typescript.js';
 import typescript from './rules/typescript.js';
 import typescriptTyped from './rules/typescript-typed.js';
@@ -59,6 +60,23 @@ export default function config(root) {
             ]
           }
         : undefined,
+      /**
+       * Templates
+       *
+       * Linting templates is handled by `eslint-plugin-ember` (see
+       * `./rules/ember-templates.js`), which needs its own parser for the `<template>`
+       * tag. Placing this after the JavaScript block above means `ember-eslint-parser`
+       * takes `.gjs` away from `@babel/eslint-parser`, which cannot parse it.
+       */
+      {
+        name: 'gossi/ember/templates',
+        files: ['**/*.{gjs,gts}'],
+        languageOptions: {
+          // eslint-disable-next-line import-x/no-named-as-default-member
+          parser: ember.parser
+        },
+        extends: [emberTemplates]
+      },
       hasTS
         ? {
             name: 'gossi/ember/tests/typescript',

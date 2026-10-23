@@ -636,9 +636,6 @@ importers:
       '@gossi/config-targets':
         specifier: workspace:*
         version: link:../../packages/targets
-      '@gossi/config-template-lint':
-        specifier: workspace:*
-        version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: catalog:build
         version: 7.1.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/babel__core@7.20.5)(rollup@4.64.5)(supports-color@10.2.2)
@@ -666,9 +663,6 @@ importers:
       ember-source:
         specifier: catalog:ember
         version: 6.12.0(@glimmer/component@2.0.0(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
-      ember-template-lint:
-        specifier: catalog:ember
-        version: 7.9.3
       eslint:
         specifier: catalog:lint
         version: 10.5.0(jiti@2.6.1)(supports-color@10.2.2)
@@ -780,9 +774,6 @@ importers:
       '@gossi/config-stylelint':
         specifier: workspace:*
         version: link:../../packages/stylelint
-      '@gossi/config-template-lint':
-        specifier: workspace:*
-        version: link:../../packages/template-lint
       '@rollup/plugin-babel':
         specifier: ^7.1.0
         version: 7.1.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/babel__core@7.20.5)(rollup@4.64.5)(supports-color@10.2.2)
@@ -834,9 +825,6 @@ importers:
       ember-source:
         specifier: catalog:ember
         version: 6.12.0(@glimmer/component@2.0.0(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
-      ember-template-lint:
-        specifier: catalog:ember
-        version: 7.9.3
       ember-welcome-page:
         specifier: ^8.0.6
         version: 8.0.6(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
