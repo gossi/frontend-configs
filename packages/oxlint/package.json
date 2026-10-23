@@ -7,13 +7,18 @@
     "src"
   ],
   "exports": {
-    ".": "./src/index.js"
+    ".": "./src/index.js",
+    "./base": "./src/configs/base.js",
+    "./node": "./src/configs/node.js"
   },
   "scripts": {
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
     "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.89.0"
   },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",

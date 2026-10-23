@@ -15,6 +15,9 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix"
   },
+  "peerDependencies": {
+    "oxfmt": "^0.74.0"
+  },
   "devDependencies": {
     "@gossi/config-eslint": "workspace:*",
     "@gossi/config-prettier": "workspace:*",

@@ -1,19 +1,31 @@
-# `@gossi/config-targets`
+# `@gossi/config-oxfmt`
 
-Provides compilation targets
+Oxfmt configuration, ported from `@gossi/config-prettier` and the `@stylistic/eslint-plugin`
+rules that a formatter subsumes.
 
 ## Installation
 
-1) Install these packages:
-
-    ```sh
-    pnpm add -D @gossi/config-targets
-    ```
+```sh
+pnpm add -D @gossi/config-oxfmt oxfmt
+```
 
 ## Usage
 
-Import browsers
+Create an `oxfmt.config.ts` (auto-discovered) or any `.js` config passed via `--config`:
 
 ```js
-import { browsers } from '@gossi/config-targets';
+// oxfmt.config.ts
+import config from '@gossi/config-oxfmt';
+
+export default config;
+```
+
+Or add your own overrides on top:
+
+```js
+// oxfmt.config.ts
+import config from '@gossi/config-oxfmt';
+import { defineConfig } from 'oxfmt';
+
+export default defineConfig({ ...config });
 ```
