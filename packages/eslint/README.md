@@ -74,6 +74,37 @@ export default [
 ];
 ```
 
+#### Templates
+
+`ember-template-lint` is deprecated. Its rules have been ported to
+[`eslint-plugin-ember`](https://github.com/ember-cli/eslint-plugin-ember), and the Ember
+config applies them for you, so `lint:js` lints the templates in your `*.gjs`/`*.gts`
+files. `*.hbs` files are not supported.
+
+This means `.template-lintrc.(m)js` and the `lint:hbs` scripts are no longer needed:
+
+```json
+{
+  "scripts": {
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  }
+}
+```
+
+Templates are formatted by Prettier through `eslint-plugin-prettier`, which is part of the
+base config.
+
+Inline `template-lint` directives have to become ESLint directives.
+`ember/template-no-template-lint-directives` reports them and rewrites them for you when
+you run `lint:js:fix`:
+
+```gjs
+{{! template-lint-disable no-inline-styles }}
+{{! is rewritten into }}
+{{! eslint-disable ember/template-no-inline-styles }}
+```
+
 ### JSON
 
 If you wish, use it for json.
