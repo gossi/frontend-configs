@@ -61,8 +61,7 @@ certain rules can only apply when the project being linted actually supports the
 | …and `oxlint-tsgolint` installed | `options.typeAware: true` — the type-aware rules run                  |
 | …but `oxlint-tsgolint` missing   | type-aware rules stay dormant — instead of failing the whole lint run |
 
-JS-only projects (like the `packages/*` in this repo, which ship hand-written `*.d.ts`
-shims) never see a TypeScript rule — not even the syntax-level defaults. Installation
+JS-only projects never see a TypeScript rule — not even the syntax-level defaults. Installation
 presence is probed with Node's official module resolution
 (`createRequire(root/package.json).resolve('oxlint-tsgolint/package.json')`), so hoisted
 layouts are followed. Under pnpm's virtual store the probe is evaluated in `oxlint`'s
