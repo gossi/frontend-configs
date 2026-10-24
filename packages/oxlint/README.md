@@ -34,8 +34,41 @@ import { defineConfig } from 'oxlint';
 export default defineConfig(node(import.meta.dirname));
 ```
 
-The `node` config inspects the project root and conditionally enables the
-`typescript-eslint` port when a `tsconfig.json` exists.
+Add your own overrides on top:
+
+```js
+// oxlint.config.ts
+import node from '@gossi/config-oxlint/node';
+import { defineConfig } from 'oxlint';
+
+const config = node(import.meta.dirname);
+
+export default defineConfig({
+  ...config,
+  rules: { ...config.rules, 'no-console': 'off' }
+});
+```
+
+## Rule detection
+
+The `node` config is a factory called with the project root (`import.meta.dirname`) because
+certain rules can only apply when the project being linted actually supports them:
+
+| Condition (`<root>/…`)           | Effect                                                                |
+| -------------------------------- | --------------------------------------------------------------------- |
+| no `tsconfig.json`               | `typescript` plugin disabled — **zero** `typescript/*` rules resolve  |
+| `tsconfig.json` present          | `typescript` plugin + ported TS rulesets on `**/*.ts` (not `*.d.ts`)  |
+| …and `oxlint-tsgolint` installed | `options.typeAware: true` — the type-aware rules run                  |
+| …but `oxlint-tsgolint` missing   | type-aware rules stay dormant — instead of failing the whole lint run |
+
+JS-only projects (like the `packages/*` in this repo, which ship hand-written `*.d.ts`
+shims) never see a TypeScript rule — not even the syntax-level defaults. Installation
+presence is probed with Node's official module resolution
+(`createRequire(root/package.json).resolve('oxlint-tsgolint/package.json')`), so hoisted
+layouts are followed. Under pnpm's virtual store the probe is evaluated in `oxlint`'s
+module context and can see a `oxlint-tsgolint` provided by a sibling workspace package;
+in that corner case type-aware rules are enabled while the `oxlint` runtime may still not
+locate the executable — install `oxlint-tsgolint` per project that lints TypeScript.
 
 > [!TIP]
 > The presets ship `.d.ts` files (`OxlintConfig` / `OxfmtConfig`), so editors and `tsc` get
@@ -56,8 +89,9 @@ The `node` config inspects the project root and conditionally enables the
 > `ignorePatterns`.
 
 > [!NOTE]
-> Type-aware linting requires the
-> `oxlint-tsgolint` package to be installed in the consuming project:
+> Type-aware linting requires the `oxlint-tsgolint` package to be installed in the
+> consuming project — the preset probes it and keeps type-aware rules dormant when it is
+> missing:
 >
 > ```sh
 > pnpm add -D oxlint-tsgolint
