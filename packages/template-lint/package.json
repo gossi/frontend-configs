@@ -2,31 +2,33 @@
   "name": "@gossi/config-template-lint",
   "version": "1.2.3",
   "repository": "https://github.com/gossi/frontend-configs",
-  "type": "module",
   "files": [
     "src"
   ],
+  "type": "module",
   "exports": {
     ".": "./src/index.js"
   },
   "scripts": {
+    "fmt": "oxfmt --check .",
+    "fmt:fix": "oxfmt .",
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
     "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
-    "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix"
+    "lint:js": "oxlint .",
+    "lint:js:fix": "oxlint . --fix"
   },
   "dependencies": {
     "ember-template-lint-plugin-prettier": "^5.0.0"
   },
+  "devDependencies": {
+    "@gossi/config-oxfmt": "workspace:*",
+    "@gossi/config-oxlint": "workspace:*",
+    "ember-template-lint": "catalog:ember",
+    "oxfmt": "catalog:lint",
+    "oxlint": "catalog:lint"
+  },
   "peerDependencies": {
     "ember-template-lint": "^7.0.0"
-  },
-  "devDependencies": {
-    "@gossi/config-eslint": "workspace:*",
-    "@gossi/config-prettier": "workspace:*",
-    "ember-template-lint": "catalog:ember",
-    "eslint": "catalog:lint",
-    "prettier": "catalog:lint"
   },
   "engines": {
     "node": ">=24"

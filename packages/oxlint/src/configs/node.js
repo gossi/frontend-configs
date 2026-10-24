@@ -2,8 +2,8 @@ import { defineConfig } from 'oxlint';
 
 import { hasTypescript } from '../utils.js';
 import base from './base.js';
-import ts from './rules/typescript.js';
 import tsTyped from './rules/typescript-typed.js';
+import ts from './rules/typescript.js';
 
 /**
  * The oxlint port of `@gossi/config-eslint` node.

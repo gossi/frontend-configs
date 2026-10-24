@@ -14,8 +14,8 @@ Create an `oxlint.config.ts` (auto-discovered) or any `.js` config passed via `-
 
 ```js
 // oxlint.config.ts
-import { defineConfig } from 'oxlint';
 import base from '@gossi/config-oxlint/base';
+import { defineConfig } from 'oxlint';
 
 export default defineConfig({
   ...base,
@@ -28,14 +28,27 @@ For Node.js projects (the port of `@gossi/config-eslint/node`):
 
 ```js
 // oxlint.config.ts
-import { defineConfig } from 'oxlint';
 import node from '@gossi/config-oxlint/node';
+import { defineConfig } from 'oxlint';
 
 export default defineConfig(node(import.meta.dirname));
 ```
 
 The `node` config inspects the project root and conditionally enables the
 `typescript-eslint` port when a `tsconfig.json` exists.
+
+> [!TIP]
+> The presets ship `.d.ts` files (`OxlintConfig` / `OxfmtConfig`), so editors and `tsc` get
+> full types. For type-aware linting of the config file itself, bring it into your tsconfig
+> program (`"include": ["*.config.ts"]` + `"types": ["node"]`, so `import.meta.dirname` is
+> typed — see [`testing/blog-core`](../../testing/blog-core/tsconfig.json)). If the file
+> must stay outside the program, tsgolint checks it without `@types/node` and
+> `typescript/no-unsafe-argument` may report; suppress it inline then:
+>
+> ```ts
+> // oxlint-disable-next-line typescript/no-unsafe-argument
+> export default node(import.meta.dirname);
+> ```
 
 > [!NOTE]
 > Spread the config instead of using `extends`. Oxlint's `extends` merges `rules`,

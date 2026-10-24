@@ -70,7 +70,9 @@ export default defineConfig({
 
   overrides: [
     {
-      files: ['*.md', '*.hbs'],
+      // HTML-ish syntax wants double-quoted attributes. Markdown is deliberately
+      // NOT here, so embedded ` ```js ` code fences keep the root singleQuote.
+      files: ['*.hbs'],
       options: {
         singleQuote: false
       }

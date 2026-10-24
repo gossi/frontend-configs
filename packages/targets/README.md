@@ -4,11 +4,11 @@ Provides compilation targets
 
 ## Installation
 
-1) Install these packages:
+1. Install these packages:
 
-    ```sh
-    pnpm add -D @gossi/config-targets
-    ```
+   ```sh
+   pnpm add -D @gossi/config-targets
+   ```
 
 ## Usage
 

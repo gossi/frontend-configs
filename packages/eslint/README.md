@@ -63,9 +63,8 @@ export default ember(import.meta.dirname);
 overriding with storybook (install `eslint-plugin-storybook`):
 
 ```js
-import storybook from 'eslint-plugin-storybook';
-
 import ember from '@gossi/config-eslint/ember';
+import storybook from 'eslint-plugin-storybook';
 
 export default [
   ...ember(import.meta.dirname),

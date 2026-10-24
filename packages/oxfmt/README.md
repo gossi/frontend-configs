@@ -24,8 +24,9 @@ Or add your own overrides on top:
 
 ```js
 // oxfmt.config.ts
-import config from '@gossi/config-oxfmt';
 import { defineConfig } from 'oxfmt';
+
+import config from '@gossi/config-oxfmt';
 
 export default defineConfig({ ...config });
 ```
