@@ -3,18 +3,20 @@
   "version": "1.1.4",
   "description": "postcss config",
   "repository": "https://github.com/gossi/frontend-configs",
-  "type": "module",
   "files": [
     "src"
   ],
+  "type": "module",
   "exports": {
     ".": "./src/index.js"
   },
   "scripts": {
+    "fmt": "oxfmt --check .",
+    "fmt:fix": "oxfmt .",
     "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
     "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
-    "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix"
+    "lint:js": "oxlint .",
+    "lint:js:fix": "oxlint . --fix"
   },
   "dependencies": {
     "@gossi/config-targets": "workspace:*",
@@ -22,15 +24,15 @@
     "postcss-lightningcss": "^1.0.1",
     "postcss-preset-env": "^11.0.0"
   },
+  "devDependencies": {
+    "@gossi/config-oxfmt": "workspace:*",
+    "@gossi/config-oxlint": "workspace:*",
+    "oxfmt": "catalog:lint",
+    "oxlint": "catalog:lint",
+    "postcss": "catalog:lint"
+  },
   "peerDependencies": {
     "postcss": "^8.4.24"
-  },
-  "devDependencies": {
-    "@gossi/config-eslint": "workspace:*",
-    "@gossi/config-prettier": "workspace:*",
-    "postcss": "catalog:lint",
-    "eslint": "catalog:lint",
-    "prettier": "catalog:lint"
   },
   "engines": {
     "node": ">=24"

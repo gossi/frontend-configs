@@ -4,8 +4,8 @@ import ts from 'typescript-eslint';
 import * as parserOptions from '../parser-options.js';
 import { hasTypeModule, hasTypescript } from '../utils.js';
 import base from './base.js';
-import typescript from './rules/typescript.js';
 import typescriptTyped from './rules/typescript-typed.js';
+import typescript from './rules/typescript.js';
 
 /**
  * @param {string} root the directory of the ESLint config file. can be import.meta.dirname

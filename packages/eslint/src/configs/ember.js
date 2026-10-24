@@ -9,11 +9,11 @@ import ts from 'typescript-eslint';
 import * as parserOptions from '../parser-options.js';
 import { hasTypeModule, hasTypescript } from '../utils.js';
 import base from './base.js';
-import emberRules from './rules/ember.js';
 import emberTemplates from './rules/ember-templates.js';
 import emberTypescript from './rules/ember-typescript.js';
-import typescript from './rules/typescript.js';
+import emberRules from './rules/ember.js';
 import typescriptTyped from './rules/typescript-typed.js';
+import typescript from './rules/typescript.js';
 
 /**
  * @param {string} root the directory of the ESLint config file. can be import.meta.dirname

@@ -4,14 +4,14 @@ Add prettier to your packages.
 
 ## Installation
 
-1) Install these packages:
+1. Install these packages:
 
-    ```sh
-    pnpm add -D @gossi/config-prettier prettier
-    ```
+   ```sh
+   pnpm add -D @gossi/config-prettier prettier
+   ```
 
-2) Create a `prettier.config.(m)js` file with these contents:
+2. Create a `prettier.config.(m)js` file with these contents:
 
-    ```js
-    export { default } from '@gossi/config-prettier';
-    ```
+   ```js
+   export { default } from '@gossi/config-prettier';
+   ```

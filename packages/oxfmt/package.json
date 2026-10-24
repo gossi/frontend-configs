@@ -1,0 +1,33 @@
+{
+  "name": "@gossi/config-oxfmt",
+  "version": "0.0.0",
+  "repository": "https://github.com/gossi/frontend-configs",
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "fmt": "oxfmt --check .",
+    "fmt:fix": "oxfmt .",
+    "lint": "pnpm run '/^lint:(?!.*(fix)).*$/'",
+    "lint:fix": "pnpm run '/^lint:[^:]*:fix/'",
+    "lint:js": "oxlint .",
+    "lint:js:fix": "oxlint . --fix"
+  },
+  "devDependencies": {
+    "oxfmt": "catalog:lint",
+    "oxlint": "catalog:lint"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.74.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
