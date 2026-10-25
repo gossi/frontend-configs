@@ -1,31 +1,5 @@
 # Changelog
 
-## Release (2026-10-25)
-
-* @gossi/config-eslint 1.4.0 (minor)
-* @gossi/config-oxfmt 0.0.1 (patch)
-* @gossi/config-oxlint 0.0.1 (patch)
-* @gossi/config-postcss 1.1.5 (patch)
-* @gossi/config-prettier 1.2.3 (patch)
-* @gossi/config-stylelint 1.1.5 (patch)
-* @gossi/config-targets 1.1.4 (patch)
-* @gossi/config-template-lint 1.2.4 (patch)
-
-#### :rocket: Enhancement
-* `@gossi/config-eslint`
-  * [#1689](https://github.com/gossi/frontend-configs/pull/1689) Switch from template-lint to eslint-plugin-ember ([@gossi](https://github.com/gossi))
-
-#### :house: Internal
-* `@gossi/config-eslint`, `@gossi/config-oxfmt`, `@gossi/config-oxlint`, `@gossi/config-postcss`, `@gossi/config-prettier`, `@gossi/config-stylelint`, `@gossi/config-targets`, `@gossi/config-template-lint`
-  * [#1696](https://github.com/gossi/frontend-configs/pull/1696) Add `oxlint` and `oxfmt` configs ([@gossi](https://github.com/gossi))
-* Other
-  * [#1690](https://github.com/gossi/frontend-configs/pull/1690) Update ember-source to v7 and remove the compat layer ([@gossi](https://github.com/gossi))
-  * [#1688](https://github.com/gossi/frontend-configs/pull/1688) Remove classic test app ([@gossi](https://github.com/gossi))
-  * [#1605](https://github.com/gossi/frontend-configs/pull/1605) Minimum Release Age for Renovate ([@gossi](https://github.com/gossi))
-
-#### Committers: 1
-- Thomas Gossmann ([@gossi](https://github.com/gossi))
-
 ## Release (2026-06-15)
 
 * @gossi/config-eslint 1.3.4 (patch)

@@ -1,6 +1,6 @@
 {
   "name": "@gossi/config-oxfmt",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "repository": "https://github.com/gossi/frontend-configs",
   "files": [
     "src"
