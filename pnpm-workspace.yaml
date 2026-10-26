@@ -125,7 +125,7 @@ catalogs:
     oxfmt: 0.74.0
     oxlint: 1.89.0
     prettier: ^3.8.0
-    postcss: 8.5.30
+    postcss: 8.5.31
     postcss-each: ^1.1.0
     postcss-lightningcss: ^1.0.1
     postcss-preset-env: ^11.0.0
