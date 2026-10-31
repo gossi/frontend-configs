@@ -22,7 +22,7 @@
     "eslint": "catalog:lint",
     "oxfmt": "catalog:lint",
     "oxlint": "catalog:lint",
-    "oxlint-tsgolint": "7.0.2004",
+    "oxlint-tsgolint": "7.0.2005",
     "prettier": "catalog:lint",
     "tsdown": "catalog:build",
     "typescript": "catalog:build",
