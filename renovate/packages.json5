@@ -109,6 +109,6 @@
         "@ember-intl/*",
         "ember-intl",
       ]
-    },
+    }
   ]
 }
