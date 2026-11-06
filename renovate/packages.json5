@@ -102,6 +102,13 @@
       "matchPackageNames": [
         "@warp-drive/*"
       ]
-    }
+    },
+    {
+      "groupName": "ember-intl",
+      "matchPackageNames": [
+        "@ember-intl/*",
+        "ember-intl",
+      ]
+    },
   ]
 }
