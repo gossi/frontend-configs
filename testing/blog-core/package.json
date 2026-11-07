@@ -18,7 +18,7 @@
     "@gossi/config-oxfmt": "workspace:*",
     "@gossi/config-oxlint": "workspace:*",
     "@gossi/config-targets": "workspace:*",
-    "@types/node": "~26.6.5",
+    "@types/node": "~26.6.6",
     "eslint": "catalog:lint",
     "oxfmt": "catalog:lint",
     "oxlint": "catalog:lint",
