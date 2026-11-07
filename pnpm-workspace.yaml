@@ -123,7 +123,7 @@ catalogs:
     eslint-plugin-storybook: ^10.0.8
     eslint-plugin-unicorn: ^66.0.0
     oxfmt: 0.74.0
-    oxlint: 1.89.0
+    oxlint: 1.90.0
     prettier: ^3.8.0
     postcss: 8.5.32
     postcss-each: ^1.1.0
