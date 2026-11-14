@@ -122,7 +122,7 @@ catalogs:
     eslint-plugin-simple-import-sort: ^13.0.0
     eslint-plugin-storybook: ^10.0.8
     eslint-plugin-unicorn: ^66.0.0
-    oxfmt: 0.75.0
+    oxfmt: 0.77.0
     oxlint: 1.90.0
     prettier: ^3.8.0
     postcss: 8.5.32
