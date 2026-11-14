@@ -174,7 +174,7 @@ catalogs:
     "@types/qunit": ^2.19.13
     "@types/rsvp": ^4.0.9
   test:
-    "@ember/test-helpers": "5.7.0"
+    "@ember/test-helpers": "5.8.0"
     ember-qunit: ^9.0.4
     qunit: ^3.0.0
     qunit-dom: ^3.5.0
