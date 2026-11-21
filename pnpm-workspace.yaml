@@ -108,7 +108,7 @@ catalogs:
     vite: ^8.0.0
   lint:
     "@eslint/js": ^10.0.0
-    "@stylistic/eslint-plugin": ^5.0.0
+    "@stylistic/eslint-plugin": ^6.0.0
     eslint: ^10.0.0
     eslint-config-prettier: ^10.1.5
     eslint-plugin-decorator-position: ^6.0.0
