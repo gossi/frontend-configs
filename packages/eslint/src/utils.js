@@ -27,7 +27,7 @@ export function hasDep(root, dependency) {
 
   const deps = [
     ...Object.keys(manifest.dependencies ?? {}),
-    Object.keys(manifest.devDependencies ?? {})
+    ...Object.keys(manifest.devDependencies ?? {})
   ];
 
   return deps.includes(dependency);
