@@ -98,7 +98,7 @@ catalogs:
     "@babel/plugin-transform-typescript": ^7.29.9
     "@babel/eslint-parser": ^7.29.9
     "@babel/plugin-proposal-decorators": ^7.29.7
-    "@babel/preset-env": 7.29.7
+    "@babel/preset-env": 7.29.14
     "@rollup/plugin-babel": "7.1.0"
     babel-plugin-ember-template-compilation: ^4.0.0
     "decorator-transforms": "^2.3.0"
