@@ -1,13 +1,14 @@
+import { createRequire } from 'node:module';
+import path from 'node:path';
+
 import babelParser from '@babel/eslint-parser';
 import ember from 'eslint-plugin-ember/recommended';
 import n from 'eslint-plugin-n';
-// eslint-disable-next-line import-x/default
-import qunit from 'eslint-plugin-qunit/configs/recommended';
 import globals from 'globals';
 import ts from 'typescript-eslint';
 
 import * as parserOptions from '../parser-options.js';
-import { hasTypeModule, hasTypescript } from '../utils.js';
+import { hasDep, hasTypeModule, hasTypescript } from '../utils.js';
 import base from './base.js';
 import emberTemplates from './rules/ember-templates.js';
 import emberTypescript from './rules/ember-typescript.js';
@@ -22,6 +23,29 @@ export default function config(root) {
   let hasTS = hasTypescript(root);
   let esm = parserOptions.esm(root);
   let isTypeModule = hasTypeModule(root);
+
+  // Only apply qunit rules when the consumer lists eslint-plugin-qunit as a
+  // direct dependency. Resolution-based checks find hoisted transitive copies,
+  // which wrongly enables qunit/* rules on non-qunit (e.g. vitest) projects.
+  let hasQunit = hasDep(root, 'eslint-plugin-qunit');
+  let qunit = hasQunit
+    ? createRequire(path.resolve(root, 'package.json'))('eslint-plugin-qunit/configs/recommended')
+    : undefined;
+
+  let qunitTests;
+  if (qunit) {
+    qunitTests = hasTS
+      ? {
+          name: 'gossi/ember/tests/typescript',
+          files: ['tests/**/*-test.{js,gjs,ts,gts}'],
+          ...qunit
+        }
+      : {
+          name: 'gossi/ember/tests',
+          files: ['tests/**/*-test.{js,gjs}'],
+          ...qunit
+        };
+  }
 
   return ts.config(
     [
@@ -77,17 +101,7 @@ export default function config(root) {
         },
         extends: [emberTemplates]
       },
-      hasTS
-        ? {
-            name: 'gossi/ember/tests/typescript',
-            files: ['tests/**/*-test.{js,gjs,ts,gts}'],
-            ...qunit
-          }
-        : {
-            name: 'gossi/ember/tests',
-            files: ['tests/**/*-test.{js,gjs}'],
-            ...qunit
-          },
+      qunitTests,
       /**
        * CJS node files
        */
