@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-11-28)
+
+* @gossi/config-eslint 1.4.1 (patch)
+
+#### :bug: Bug Fix
+* `@gossi/config-eslint`
+  * [#1737](https://github.com/gossi/frontend-configs/pull/1737) Fix detection-based rules ([@gossi](https://github.com/gossi))
+
+#### Committers: 1
+- Thomas Gossmann ([@gossi](https://github.com/gossi))
+
 ## Release (2026-10-25)
 
 * @gossi/config-eslint 1.4.0 (minor)
